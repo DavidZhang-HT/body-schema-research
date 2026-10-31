@@ -1,0 +1,380 @@
+[
+ {
+  "tag": "clean_R_a",
+  "dst": "SIDE",
+  "sign": 1,
+  "seed": 11,
+  "step": 3,
+  "cfg": {
+   "T_TRAJ": 6.0,
+   "N_WP": 8,
+   "DELTA": 0.6,
+   "SIGMA0": 0.12,
+   "N": 96,
+   "ELITE": 12,
+   "ITERS": 8,
+   "W_SETTLE": 50.0,
+   "W_END": 10.0,
+   "W_MAX": 5.0,
+   "W_TAU": 0.01,
+   "W_PEN": 500.0,
+   "W_KE": 500.0,
+   "SETTLE_T": 1.0,
+   "FINAL_SETTLE_T": 1.5,
+   "KE_CAP": 0.005,
+   "PEAK_REJECT": 0.03,
+   "SHRINK_TRIES": 3
+  },
+  "status": "FAIL_STALL",
+  "phase1": {
+   "peak_ke_J": 0.007224923744855831,
+   "ke_end_J": 0.007224923744855831
+  },
+  "ke_shrinks": 0,
+  "ke_cap_ok": true,
+  "cem_best": {
+   "p_settle": -0.00012507038964128936,
+   "pred": false,
+   "full": false,
+   "rho": 0.011600939632436942,
+   "peak_ke": 0.003427321487543805,
+   "ke_end": 0.0030984278601801046,
+   "p_max": 0.0026417823064380785,
+   "p_end": -0.006010839940966643
+  },
+  "final_settle": {
+   "predicate_ok": false,
+   "predicate_why": [
+    "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+   ],
+   "full_ok": false,
+   "full_why": [
+    "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+   ],
+   "rho": 0.011561260490843184,
+   "cert_feasible": true,
+   "R21": -0.00011258993808153041
+  },
+  "phase2_exec": {
+   "peak_ke_J": 0.0034273215278527638,
+   "ke_end_J": 0.0030984278719885837,
+   "max_selfpen_mm": 0.0
+  },
+  "wall_s": 395.6
+ },
+ {
+  "tag": "clean_R_b",
+  "dst": "SIDE",
+  "sign": 1,
+  "seed": 22,
+  "step": 3,
+  "cfg": {
+   "T_TRAJ": 6.0,
+   "N_WP": 8,
+   "DELTA": 0.6,
+   "SIGMA0": 0.12,
+   "N": 96,
+   "ELITE": 12,
+   "ITERS": 8,
+   "W_SETTLE": 50.0,
+   "W_END": 10.0,
+   "W_MAX": 5.0,
+   "W_TAU": 0.01,
+   "W_PEN": 500.0,
+   "W_KE": 500.0,
+   "SETTLE_T": 1.0,
+   "FINAL_SETTLE_T": 1.5,
+   "KE_CAP": 0.005,
+   "PEAK_REJECT": 0.03,
+   "SHRINK_TRIES": 3
+  },
+  "status": "FAIL_STALL",
+  "phase1": {
+   "peak_ke_J": 0.007224923744855831,
+   "ke_end_J": 0.007224923744855831
+  },
+  "ke_shrinks": 0,
+  "ke_cap_ok": true,
+  "cem_best": {
+   "p_settle": -6.875754259270082e-05,
+   "pred": false,
+   "full": false,
+   "rho": 0.018182489776174746,
+   "peak_ke": 0.0038624084566847195,
+   "ke_end": 0.0025558035037248723,
+   "p_max": 0.0009944746932538007,
+   "p_end": 0.0009938636175706895
+  },
+  "final_settle": {
+   "predicate_ok": false,
+   "predicate_why": [
+    "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+   ],
+   "full_ok": false,
+   "full_why": [
+    "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+   ],
+   "rho": 0.0182947169003172,
+   "cert_feasible": true,
+   "R21": -7.497959404970111e-05
+  },
+  "phase2_exec": {
+   "peak_ke_J": 0.003862408457756759,
+   "ke_end_J": 0.0025558035037213673,
+   "max_selfpen_mm": 0.0
+  },
+  "wall_s": 402.6
+ },
+ {
+  "tag": "mirr_L_a",
+  "dst": "SIDE_L",
+  "sign": -1,
+  "seed": 11,
+  "step": 3,
+  "cfg": {
+   "T_TRAJ": 6.0,
+   "N_WP": 8,
+   "DELTA": 0.6,
+   "SIGMA0": 0.12,
+   "N": 96,
+   "ELITE": 12,
+   "ITERS": 8,
+   "W_SETTLE": 50.0,
+   "W_END": 10.0,
+   "W_MAX": 5.0,
+   "W_TAU": 0.01,
+   "W_PEN": 500.0,
+   "W_KE": 500.0,
+   "SETTLE_T": 1.0,
+   "FINAL_SETTLE_T": 1.5,
+   "KE_CAP": 0.005,
+   "PEAK_REJECT": 0.03,
+   "SHRINK_TRIES": 3
+  },
+  "status": "FAIL_STALL",
+  "phase1": {
+   "peak_ke_J": 0.007229258996932452,
+   "ke_end_J": 0.007229258996932452
+  },
+  "ke_shrinks": 0,
+  "ke_cap_ok": true,
+  "cem_best": {
+   "p_settle": 0.00033692151157044617,
+   "pred": false,
+   "full": false,
+   "rho": 0.016421883389875755,
+   "peak_ke": 0.003984896732477875,
+   "ke_end": 0.0036595180324375753,
+   "p_max": 0.005564592223052913,
+   "p_end": 0.005564592223052913
+  },
+  "final_settle": {
+   "predicate_ok": false,
+   "predicate_why": [
+    "orientation fails [left_z <= -0.7 (body +y down, i.e. left side down)] (chest_z +0.99 left_z +0.00 head_z +0.10)"
+   ],
+   "full_ok": false,
+   "full_why": [
+    "orientation fails [left_z <= -0.7 (body +y down, i.e. left side down)] (chest_z +0.99 left_z +0.00 head_z +0.10)"
+   ],
+   "rho": 0.01633751798160765,
+   "cert_feasible": true,
+   "R21": -9.785072116627255e-05
+  },
+  "phase2_exec": {
+   "peak_ke_J": 0.003984896732477876,
+   "ke_end_J": 0.003659518032437556,
+   "max_selfpen_mm": 0.0
+  },
+  "wall_s": 404.8
+ },
+ {
+  "tag": "mirr_L_b",
+  "dst": "SIDE_L",
+  "sign": -1,
+  "seed": 22,
+  "step": 3,
+  "cfg": {
+   "T_TRAJ": 6.0,
+   "N_WP": 8,
+   "DELTA": 0.6,
+   "SIGMA0": 0.12,
+   "N": 96,
+   "ELITE": 12,
+   "ITERS": 8,
+   "W_SETTLE": 50.0,
+   "W_END": 10.0,
+   "W_MAX": 5.0,
+   "W_TAU": 0.01,
+   "W_PEN": 500.0,
+   "W_KE": 500.0,
+   "SETTLE_T": 1.0,
+   "FINAL_SETTLE_T": 1.5,
+   "KE_CAP": 0.005,
+   "PEAK_REJECT": 0.03,
+   "SHRINK_TRIES": 3
+  },
+  "status": "FAIL_STALL",
+  "phase1": {
+   "peak_ke_J": 0.007229258996932452,
+   "ke_end_J": 0.007229258996932452
+  },
+  "ke_shrinks": 0,
+  "ke_cap_ok": true,
+  "cem_best": {
+   "p_settle": -0.0005220956834479078,
+   "pred": false,
+   "full": false,
+   "rho": 0.01824443231788949,
+   "peak_ke": 0.0036875053888302837,
+   "ke_end": 0.0025983647288397678,
+   "p_max": 0.00261680719312158,
+   "p_end": -0.0011296992248573355
+  },
+  "final_settle": {
+   "predicate_ok": false,
+   "predicate_why": [
+    "orientation fails [left_z <= -0.7 (body +y down, i.e. left side down)] (chest_z +0.99 left_z +0.00 head_z +0.10)"
+   ],
+   "full_ok": false,
+   "full_why": [
+    "orientation fails [left_z <= -0.7 (body +y down, i.e. left side down)] (chest_z +0.99 left_z +0.00 head_z +0.10)"
+   ],
+   "rho": 0.018167593406111057,
+   "cert_feasible": true,
+   "R21": -0.0005309866809161956
+  },
+  "phase2_exec": {
+   "peak_ke_J": 0.0036875053888302833,
+   "ke_end_J": 0.0025983647288397803,
+   "max_selfpen_mm": 0.0
+  },
+  "wall_s": 409.1
+ },
+ {
+  "tag": "noisy_R",
+  "dst": "SIDE",
+  "sign": 1,
+  "seed": 33,
+  "step": 3,
+  "cfg": {
+   "T_TRAJ": 6.0,
+   "N_WP": 8,
+   "DELTA": 0.6,
+   "SIGMA0": 0.12,
+   "N": 96,
+   "ELITE": 12,
+   "ITERS": 8,
+   "W_SETTLE": 50.0,
+   "W_END": 10.0,
+   "W_MAX": 5.0,
+   "W_TAU": 0.01,
+   "W_PEN": 500.0,
+   "W_KE": 500.0,
+   "SETTLE_T": 1.0,
+   "FINAL_SETTLE_T": 1.5,
+   "KE_CAP": 0.005,
+   "PEAK_REJECT": 0.03,
+   "SHRINK_TRIES": 3
+  },
+  "status": "FAIL_STALL",
+  "phase1": {
+   "peak_ke_J": 0.20107081549687097,
+   "ke_end_J": 0.007261728424407512
+  },
+  "ke_shrinks": 0,
+  "ke_cap_ok": true,
+  "cem_best": {
+   "p_settle": -0.0001711261380458848,
+   "pred": false,
+   "full": false,
+   "rho": 0.014236130856625354,
+   "peak_ke": 0.004303116970843239,
+   "ke_end": 0.002663316003106825,
+   "p_max": 0.002087222317805187,
+   "p_end": 0.0009791866859115424
+  },
+  "final_settle": {
+   "predicate_ok": false,
+   "predicate_why": [
+    "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+   ],
+   "full_ok": false,
+   "full_why": [
+    "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+   ],
+   "rho": 0.011585113640389489,
+   "cert_feasible": true,
+   "R21": -0.0001536573103955675
+  },
+  "phase2_exec": {
+   "peak_ke_J": 0.004303116970843238,
+   "ke_end_J": 0.002663316003106824,
+   "max_selfpen_mm": 0.0
+  },
+  "wall_s": 406.9
+ },
+ {
+  "tag": "mirr_yaw_L",
+  "dst": "SIDE_L",
+  "sign": -1,
+  "seed": 33,
+  "step": 3,
+  "cfg": {
+   "T_TRAJ": 6.0,
+   "N_WP": 8,
+   "DELTA": 0.6,
+   "SIGMA0": 0.12,
+   "N": 96,
+   "ELITE": 12,
+   "ITERS": 8,
+   "W_SETTLE": 50.0,
+   "W_END": 10.0,
+   "W_MAX": 5.0,
+   "W_TAU": 0.01,
+   "W_PEN": 500.0,
+   "W_KE": 500.0,
+   "SETTLE_T": 1.0,
+   "FINAL_SETTLE_T": 1.5,
+   "KE_CAP": 0.005,
+   "PEAK_REJECT": 0.03,
+   "SHRINK_TRIES": 3
+  },
+  "status": "FAIL_STALL",
+  "phase1": {
+   "peak_ke_J": 0.007229258302412547,
+   "ke_end_J": 0.007229258302412547
+  },
+  "ke_shrinks": 0,
+  "ke_cap_ok": true,
+  "cem_best": {
+   "p_settle": -7.084681591772168e-05,
+   "pred": false,
+   "full": false,
+   "rho": 0.01722344181168578,
+   "peak_ke": 0.0037303574324229136,
+   "ke_end": 0.0033488178505083734,
+   "p_max": 0.0033082090868553765,
+   "p_end": -0.0007202899434393811
+  },
+  "final_settle": {
+   "predicate_ok": false,
+   "predicate_why": [
+    "orientation fails [left_z <= -0.7 (body +y down, i.e. left side down)] (chest_z +0.99 left_z +0.00 head_z +0.10)"
+   ],
+   "full_ok": false,
+   "full_why": [
+    "orientation fails [left_z <= -0.7 (body +y down, i.e. left side down)] (chest_z +0.99 left_z +0.00 head_z +0.10)"
+   ],
+   "rho": 0.017137144426416995,
+   "cert_feasible": true,
+   "R21": -6.272540474781818e-05
+  },
+  "phase2_exec": {
+   "peak_ke_J": 0.0037303574324229114,
+   "ke_end_J": 0.0033488178505083357,
+   "max_selfpen_mm": 0.0
+  },
+  "wall_s": 401.9
+ }
+]

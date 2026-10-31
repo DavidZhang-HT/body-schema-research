@@ -1,0 +1,11 @@
+aug16_s0_scorev2 level 1 evals 16 score 3.49 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 2
+aug16_s0_scorev2 level 2 evals 240 score 3.49 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 80
+aug16_s0_scorev2 level 3 evals 464 score 3.545 base 0.281 up 0.427 feet 85.9 nonfoot 0.0 any_handover_rollouts 0 wall 138
+aug16_s0_scorev2 level 4 evals 688 score 3.545 base 0.281 up 0.427 feet 85.9 nonfoot 0.0 any_handover_rollouts 1 wall 192
+aug16_s0_scorev2 level 5 evals 912 score 3.545 base 0.281 up 0.427 feet 85.9 nonfoot 0.0 any_handover_rollouts 1 wall 266
+aug16_s0_scorev2 level 6 evals 1136 score 3.748 base 0.241 up 0.768 feet 109.2 nonfoot 12.5 any_handover_rollouts 1 wall 334
+aug16_s0_scorev2 level 7 evals 1360 score 3.748 base 0.241 up 0.768 feet 109.2 nonfoot 12.5 any_handover_rollouts 1 wall 415
+aug16_s0_scorev2 level 8 evals 1584 score 3.748 base 0.241 up 0.768 feet 109.2 nonfoot 12.5 any_handover_rollouts 1 wall 463
+aug16_s0_scorev2 level 9 evals 1808 score 3.748 base 0.241 up 0.768 feet 109.2 nonfoot 12.5 any_handover_rollouts 2 wall 507
+aug16_s0_scorev2 level 10 evals 2032 score 3.748 base 0.241 up 0.768 feet 109.2 nonfoot 12.5 any_handover_rollouts 2 wall 542
+DONE aug16_s0_scorev2 success False evals 2032 final {'com_height': 0.22, 'base_height': 0.241, 'up_z': 0.768, 'kinetic_j': 0.034, 'foot_load': 109.209, 'nonfoot_load': 12.465, 'total_load': 121.674, 'com_speed': 0.021}

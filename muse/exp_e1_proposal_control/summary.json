@@ -1,0 +1,157 @@
+{
+  "n_files": 80,
+  "arms": {
+    "net": {
+      "n_runs": 20,
+      "n_ok": 20,
+      "n_timeout": 0,
+      "n_error": 0,
+      "n_success": 6,
+      "success_rate": 0.3,
+      "success_rate_wilson95": [
+        0.14547527396899385,
+        0.5189767762289793
+      ],
+      "km_median_evals_to_handover": null,
+      "median_evals_among_successes": 2940.0,
+      "mean_wall_s": 331.90816444158554,
+      "total_wall_s": 6638.163288831711,
+      "winning_path_tag_counts": {
+        "net": 66,
+        "rand": 23
+      },
+      "n_successful_paths": 6
+    },
+    "rand": {
+      "n_runs": 20,
+      "n_ok": 20,
+      "n_timeout": 0,
+      "n_error": 0,
+      "n_success": 4,
+      "success_rate": 0.2,
+      "success_rate_wilson95": [
+        0.08065635327119998,
+        0.4160217220257599
+      ],
+      "km_median_evals_to_handover": null,
+      "median_evals_among_successes": 3360.0,
+      "mean_wall_s": 211.61616481542586,
+      "total_wall_s": 4232.3232963085175,
+      "winning_path_tag_counts": {
+        "rand": 69
+      },
+      "n_successful_paths": 4
+    },
+    "heur": {
+      "n_runs": 20,
+      "n_ok": 20,
+      "n_timeout": 0,
+      "n_error": 0,
+      "n_success": 7,
+      "success_rate": 0.35,
+      "success_rate_wilson95": [
+        0.1811895478679446,
+        0.5671494897805353
+      ],
+      "km_median_evals_to_handover": null,
+      "median_evals_among_successes": 1848.0,
+      "mean_wall_s": 130.96931366920472,
+      "total_wall_s": 2619.3862733840942,
+      "winning_path_tag_counts": {
+        "heur": 62,
+        "rand": 11
+      },
+      "n_successful_paths": 7
+    },
+    "shuf": {
+      "n_runs": 20,
+      "n_ok": 20,
+      "n_timeout": 0,
+      "n_error": 0,
+      "n_success": 2,
+      "success_rate": 0.1,
+      "success_rate_wilson95": [
+        0.027865893984153196,
+        0.30103820641179335
+      ],
+      "km_median_evals_to_handover": null,
+      "median_evals_among_successes": 2520.0,
+      "mean_wall_s": 166.17656272649765,
+      "total_wall_s": 3323.531254529953,
+      "winning_path_tag_counts": {
+        "rand": 11,
+        "shuf": 17
+      },
+      "n_successful_paths": 2
+    }
+  },
+  "logrank": {
+    "net_vs_rand": {
+      "chi2": 0.6420133639715997,
+      "p": 0.422982667950904,
+      "O1-E1": 1.2606510466030585,
+      "O1": 6.0,
+      "E1": 4.7393489533969415
+    },
+    "net_vs_heur": {
+      "chi2": 0.2843912407542968,
+      "p": 0.5938373805515024,
+      "O1-E1": -0.9489253738656673,
+      "O1": 6.0,
+      "E1": 6.948925373865667
+    },
+    "net_vs_shuf": {
+      "chi2": 2.3481796404749375,
+      "p": 0.1254293999727573,
+      "O1-E1": 2.15675589205001,
+      "O1": 6.0,
+      "E1": 3.84324410794999
+    },
+    "rand_vs_heur": {
+      "chi2": 1.6446172933447003,
+      "p": 0.1996931324728698,
+      "O1-E1": -2.0878673806448953,
+      "O1": 4.0,
+      "E1": 6.087867380644895
+    },
+    "rand_vs_shuf": {
+      "chi2": 0.6509381634413004,
+      "p": 0.41977746125020976,
+      "O1-E1": 0.9879516879516879,
+      "O1": 4.0,
+      "E1": 3.012048312048312
+    },
+    "heur_vs_shuf": {
+      "chi2": 3.8843630306852024,
+      "p": 0.048737746766118625,
+      "O1-E1": 2.893445799695799,
+      "O1": 7.0,
+      "E1": 4.106554200304201
+    }
+  },
+  "fisher": {
+    "net_vs_rand": {
+      "p": 0.7164265551362325
+    },
+    "net_vs_heur": {
+      "p": 1.0
+    },
+    "net_vs_shuf": {
+      "p": 0.23511623511623514
+    },
+    "rand_vs_heur": {
+      "p": 0.48011535108309306
+    },
+    "rand_vs_shuf": {
+      "p": 0.6614196614196615
+    },
+    "heur_vs_shuf": {
+      "p": 0.12738612738612737
+    }
+  },
+  "falsifier": {
+    "a_beats_b_p05": false,
+    "a_beats_c_p05": false,
+    "verdict": "FALSIFIED: attention screening adds no search value (network arm not better than random AND/OR not better than the FK heuristic at p<0.05)"
+  }
+}

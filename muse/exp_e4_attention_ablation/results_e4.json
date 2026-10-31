@@ -1,0 +1,143 @@
+{
+ "edges": [
+  {
+   "tag": "e4_attn_R",
+   "src": "SUPINE",
+   "dst": "SIDE",
+   "status": "INFEASIBLE",
+   "reason": "T1_track[elev +15deg] STALLED: constraint-bound: no_hold_ramp",
+   "rule": "",
+   "ticks": 202,
+   "wall_s": 504.0,
+   "wall_s_edge": 504.0,
+   "n_subgoals": 2,
+   "subgoal_outcomes": [
+    [
+     "imagine_keyframe_chain",
+     "OK"
+    ],
+    [
+     "T1_track[elev +15deg]",
+     "STALLED"
+    ]
+   ],
+   "n_keyframes": 1,
+   "cost_total": 2.6046,
+   "peak_rho": 0.096,
+   "selfd_min_traj_mm": 3.282,
+   "selfd_violations": 0,
+   "trunk_R2_start": [
+    0.9921,
+    0.0001,
+    0.1252
+   ],
+   "trunk_R2_end": [
+    0.852,
+    0.0001,
+    0.5236
+   ],
+   "diagnosis_kind": "CONNECTIVITY",
+   "diagnosis_subgoal": "T1_track[elev +15deg]",
+   "diagnosis_stage": null,
+   "ladder": null,
+   "arm": "attn",
+   "arm_desc": "SchemaAttention default AttnParams (control arm)",
+   "perm_seed": null
+  },
+  {
+   "tag": "e4_uniform_R",
+   "src": "SUPINE",
+   "dst": "SIDE",
+   "status": "INFEASIBLE",
+   "reason": "T1_track[elev +15deg] STALLED: constraint-bound: no_hold_ramp",
+   "rule": "",
+   "ticks": 309,
+   "wall_s": 1247.8,
+   "wall_s_edge": 1247.8,
+   "n_subgoals": 2,
+   "subgoal_outcomes": [
+    [
+     "imagine_keyframe_chain",
+     "OK"
+    ],
+    [
+     "T1_track[elev +15deg]",
+     "STALLED"
+    ]
+   ],
+   "n_keyframes": 1,
+   "cost_total": 3.3621,
+   "peak_rho": 0.0969,
+   "selfd_min_traj_mm": 3.758,
+   "selfd_violations": 0,
+   "trunk_R2_start": [
+    0.993,
+    0.0103,
+    0.1177
+   ],
+   "trunk_R2_end": [
+    0.9947,
+    -0.0,
+    0.1032
+   ],
+   "diagnosis_kind": "CONNECTIVITY",
+   "diagnosis_subgoal": "T1_track[elev +15deg]",
+   "diagnosis_stage": null,
+   "ladder": null,
+   "arm": "uniform",
+   "arm_desc": "UniformAttention (flat prices, effort=None)",
+   "perm_seed": null
+  },
+  {
+   "tag": "e4_permuted_R",
+   "src": "SUPINE",
+   "dst": "SIDE",
+   "status": "INFEASIBLE",
+   "reason": "T1_track[elev +15deg] STALLED: local: certified keyframes exist on both sides, but the MPC finds no quasi-static descent direction between them from this configuration and no single constraint-family relaxation unlocks it (oracle path-finding limit, NOT a proof of non-existence)",
+   "rule": "",
+   "ticks": 152,
+   "wall_s": 413.6,
+   "wall_s_edge": 413.6,
+   "n_subgoals": 2,
+   "subgoal_outcomes": [
+    [
+     "imagine_keyframe_chain",
+     "OK"
+    ],
+    [
+     "T1_track[elev +15deg]",
+     "STALLED"
+    ]
+   ],
+   "n_keyframes": 1,
+   "cost_total": 2.2008,
+   "peak_rho": 0.0964,
+   "selfd_min_traj_mm": 2.778,
+   "selfd_violations": 0,
+   "trunk_R2_start": [
+    0.9923,
+    0.0012,
+    0.1236
+   ],
+   "trunk_R2_end": [
+    0.8685,
+    0.0049,
+    0.4956
+   ],
+   "diagnosis_kind": "CONNECTIVITY",
+   "diagnosis_subgoal": "T1_track[elev +15deg]",
+   "diagnosis_stage": null,
+   "ladder": null,
+   "arm": "permuted",
+   "arm_desc": "PermutedAttention(seed=7) (magnitudes kept, grounding destroyed)",
+   "perm_seed": 7
+  }
+ ],
+ "harness_deviations": [
+  "D1 SIDE_L local mode",
+  "D2 P-F3 bypass (SIT only)",
+  "D3 LADDER_TICKS=60",
+  "D4 run_phase log capture",
+  "E4 ctx.A replaced per arm"
+ ]
+}

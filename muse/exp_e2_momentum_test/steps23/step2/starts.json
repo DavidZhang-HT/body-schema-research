@@ -1,0 +1,62 @@
+[
+ {
+  "tag": "clean_R_a",
+  "dst": "SIDE",
+  "sign": 1,
+  "seed": 11,
+  "supine_ok": true,
+  "supine_why": [],
+  "rho0": 0.09518736576663422,
+  "selfd0_mm": 4.500449466318251
+ },
+ {
+  "tag": "clean_R_b",
+  "dst": "SIDE",
+  "sign": 1,
+  "seed": 22,
+  "supine_ok": true,
+  "supine_why": [],
+  "rho0": 0.09518736576663422,
+  "selfd0_mm": 4.500449466318251
+ },
+ {
+  "tag": "mirr_L_a",
+  "dst": "SIDE_L",
+  "sign": -1,
+  "seed": 11,
+  "supine_ok": true,
+  "supine_why": [],
+  "rho0": 0.0951869356815944,
+  "selfd0_mm": 4.500449466318251
+ },
+ {
+  "tag": "mirr_L_b",
+  "dst": "SIDE_L",
+  "sign": -1,
+  "seed": 22,
+  "supine_ok": true,
+  "supine_why": [],
+  "rho0": 0.0951869356815944,
+  "selfd0_mm": 4.500449466318251
+ },
+ {
+  "tag": "noisy_R",
+  "dst": "SIDE",
+  "sign": 1,
+  "seed": 33,
+  "supine_ok": true,
+  "supine_why": [],
+  "rho0": 0.09621812546733065,
+  "selfd0_mm": 2.2222311567114543
+ },
+ {
+  "tag": "mirr_yaw_L",
+  "dst": "SIDE_L",
+  "sign": -1,
+  "seed": 33,
+  "supine_ok": true,
+  "supine_why": [],
+  "rho0": 0.0951869356815944,
+  "selfd0_mm": 4.500449466318307
+ }
+]

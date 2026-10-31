@@ -11,3 +11,7 @@ MUJOCO_LOG.TXT
 # OS
 .DS_Store
 ._*
+
+# Experiment venvs (local only, never commit)
+.venv-exp/
+.venv-e3/

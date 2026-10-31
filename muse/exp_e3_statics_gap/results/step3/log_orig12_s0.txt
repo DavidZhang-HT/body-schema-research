@@ -1,0 +1,19 @@
+orig12_s0 level 1 evals 16 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 2
+orig12_s0 level 2 evals 240 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 30
+orig12_s0 level 3 evals 464 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 59
+orig12_s0 level 4 evals 688 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 89
+orig12_s0 level 5 evals 912 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 129
+orig12_s0 level 6 evals 1136 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 160
+orig12_s0 level 7 evals 1360 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 190
+orig12_s0 level 8 evals 1584 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 228
+orig12_s0 level 9 evals 1808 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 257
+orig12_s0 level 10 evals 2032 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 470
+orig12_s0 level 11 evals 2256 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 543
+orig12_s0 level 12 evals 2480 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 589
+orig12_s0 level 13 evals 2704 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 630
+orig12_s0 level 14 evals 2928 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 722
+orig12_s0 level 15 evals 3152 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 772
+orig12_s0 level 16 evals 3376 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 821
+orig12_s0 level 17 evals 3600 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 863
+orig12_s0 level 18 evals 3824 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 916
+DONE orig12_s0 success False evals 3824 final {'com_height': 0.236, 'base_height': 0.261, 'up_z': 0.691, 'kinetic_j': 0.126, 'foot_load': 104.032, 'nonfoot_load': 53.233, 'total_load': 157.265, 'com_speed': 0.063}

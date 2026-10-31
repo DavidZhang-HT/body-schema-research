@@ -1,0 +1,63 @@
+{
+ "tag": "clean_R_a",
+ "dst": "SIDE",
+ "sign": 1,
+ "seed": 11,
+ "step": 3,
+ "cfg": {
+  "T_TRAJ": 6.0,
+  "N_WP": 8,
+  "DELTA": 0.6,
+  "SIGMA0": 0.12,
+  "N": 96,
+  "ELITE": 12,
+  "ITERS": 8,
+  "W_SETTLE": 50.0,
+  "W_END": 10.0,
+  "W_MAX": 5.0,
+  "W_TAU": 0.01,
+  "W_PEN": 500.0,
+  "W_KE": 500.0,
+  "SETTLE_T": 1.0,
+  "FINAL_SETTLE_T": 1.5,
+  "KE_CAP": 0.005,
+  "PEAK_REJECT": 0.03,
+  "SHRINK_TRIES": 3
+ },
+ "status": "FAIL_STALL",
+ "phase1": {
+  "peak_ke_J": 0.007224923744855831,
+  "ke_end_J": 0.007224923744855831
+ },
+ "ke_shrinks": 0,
+ "ke_cap_ok": true,
+ "cem_best": {
+  "p_settle": -0.00012507038964128936,
+  "pred": false,
+  "full": false,
+  "rho": 0.011600939632436942,
+  "peak_ke": 0.003427321487543805,
+  "ke_end": 0.0030984278601801046,
+  "p_max": 0.0026417823064380785,
+  "p_end": -0.006010839940966643
+ },
+ "final_settle": {
+  "predicate_ok": false,
+  "predicate_why": [
+   "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+  ],
+  "full_ok": false,
+  "full_why": [
+   "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.99 left_z -0.00 head_z +0.10)"
+  ],
+  "rho": 0.011561260490843184,
+  "cert_feasible": true,
+  "R21": -0.00011258993808153041
+ },
+ "phase2_exec": {
+  "peak_ke_J": 0.0034273215278527638,
+  "ke_end_J": 0.0030984278719885837,
+  "max_selfpen_mm": 0.0
+ },
+ "wall_s": 395.6
+}

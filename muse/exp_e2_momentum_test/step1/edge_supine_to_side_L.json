@@ -1,0 +1,352 @@
+{
+ "src": "SUPINE",
+ "dst": "SIDE_L",
+ "status": "INFEASIBLE",
+ "rule": "",
+ "reason": "T1_track[elev -15deg] STALLED: constraint-bound: no_hold_ramp",
+ "cost": {
+  "switch": 1.0,
+  "effort": 0.439,
+  "margin": 0.1201,
+  "length": 1.01,
+  "peak_rho": 0.0961,
+  "ticks": 202,
+  "total": 2.5691
+ },
+ "subgoals": [
+  {
+   "name": "imagine_keyframe_chain",
+   "outcome": "OK",
+   "chain": {
+    "ok": true,
+    "keep": [
+     "L_foot",
+     "R_foot"
+    ],
+    "wall_s": 24.4,
+    "keyframes": [
+     {
+      "frac": 0.167,
+      "stage": "elev -15deg",
+      "cand": "dynamic_support_centroid",
+      "rho": 0.093,
+      "binding": "l_hip_pitch_joint",
+      "loads": {
+       "L_foot": 0.271,
+       "R_foot": 0.224,
+       "upper_trunk": 0.446,
+       "lower_back": 0.058
+      },
+      "touching": [
+       "upper_trunk",
+       "lower_back",
+       "L_foot",
+       "R_foot"
+      ]
+     },
+     {
+      "frac": 0.333,
+      "stage": "elev -30deg",
+      "cand": "none",
+      "rho": 0.083,
+      "binding": "r_shoulder_pitch_joint",
+      "loads": {
+       "L_foot": 0.112,
+       "L_forearm": 0.075,
+       "R_foot": 0.147,
+       "lower_back": 0.666
+      },
+      "touching": [
+       "upper_trunk",
+       "lower_back",
+       "L_upper_arm",
+       "L_forearm",
+       "L_hand",
+       "L_foot",
+       "R_foot"
+      ]
+     },
+     {
+      "frac": 0.5,
+      "stage": "elev -45deg",
+      "cand": "none",
+      "rho": 0.142,
+      "binding": "r_hip_pitch_joint",
+      "loads": {
+       "L_foot": 0.033,
+       "L_upper_arm": 0.533,
+       "R_foot": 0.434
+      },
+      "touching": [
+       "L_upper_arm",
+       "L_forearm",
+       "L_hand",
+       "L_foot",
+       "R_foot"
+      ],
+      "in_dst_mode": true
+     }
+    ],
+    "gap": null
+   }
+  },
+  {
+   "name": "T1_track[elev -15deg]",
+   "outcome": "STALLED",
+   "ticks": 202,
+   "wall_s": 213.9,
+   "restarts": 2,
+   "trunk_axes_z_start": [
+    0.995,
+    -0.0,
+    0.101
+   ],
+   "trunk_axes_z_end": [
+    0.852,
+    -0.0,
+    0.524
+   ],
+   "attention": {
+    "support_top": [
+     [
+      "pelvis",
+      0.336
+     ],
+     [
+      "R_thigh",
+      0.219
+     ],
+     [
+      "L_thigh",
+      0.209
+     ],
+     [
+      "lower_back",
+      0.189
+     ]
+    ],
+    "motion_top": [
+     [
+      "r_ankle_pitch_joint",
+      0.177
+     ],
+     [
+      "l_ankle_pitch_joint",
+      0.172
+     ],
+     [
+      "l_calf_joint",
+      0.125
+     ],
+     [
+      "r_calf_joint",
+      0.11
+     ]
+    ],
+    "effort_bottleneck": [
+     "r_shoulder_pitch_joint",
+     1.852
+    ],
+    "landing_subtasks": [
+     "L_knee",
+     "R_knee"
+    ],
+    "gate_opened_ticks": 0
+   },
+   "task_terms_end": {
+    "trunk_left(+y)": 2.0635,
+    "trunk_head(+z)": 2.0051,
+    "posture": 3.3308,
+    "com": 10.0246,
+    "upper_trunk_land": 3.7035,
+    "lower_back_land": 0.0,
+    "L_foot_land": 0.0,
+    "R_foot_land": 0.0
+   },
+   "cert_violations": 0
+  }
+ ],
+ "keyframes": [
+  {
+   "name": "SUPINE->SIDE_L:T1_track[elev -15deg]",
+   "q": [
+    0.04159512798843588,
+    -0.16130308827957865,
+    0.06900697987972329,
+    0.8728276294572833,
+    -3.5992450955466115e-05,
+    -0.48802860993212793,
+    6.20341597190753e-05,
+    -0.7174403170674422,
+    -0.03345772229956067,
+    0.07868735692542425,
+    0.08146071373755683,
+    0.6994752674038915,
+    0.27373369701456507,
+    -0.14988755049776262,
+    0.05125688975711208,
+    0.0006174039852319648,
+    -0.027907217214764538,
+    -0.6929027148643762,
+    -0.015457450476588086,
+    0.11798610954563299,
+    0.06385101644270602,
+    0.5297341319624316,
+    0.269323089447647,
+    -0.15426677519064727,
+    -0.07679891657072314,
+    -0.0011879007218739321,
+    -0.030255913971063073
+   ],
+   "cert": {
+    "rho": 0.0897,
+    "binding": "l_hip_pitch_joint",
+    "feasible": true,
+    "loads": {
+     "L_foot": 0.089,
+     "R_foot": 0.219,
+     "lower_back": 0.691
+    },
+    "pen_mm": -0.01,
+    "selfd_mm": 3.29
+   }
+  }
+ ],
+ "diagnosis": {
+  "kind": "CONNECTIVITY",
+  "subgoal": "T1_track[elev -15deg]",
+  "outcome": "STALLED",
+  "tick": 60,
+  "residual_task_terms": {
+   "trunk_left(+y)": 2.0635,
+   "trunk_head(+z)": 2.0051,
+   "posture": 3.3308,
+   "com": 10.0246,
+   "upper_trunk_land": 3.7035,
+   "lower_back_land": 0.0,
+   "L_foot_land": 0.0,
+   "R_foot_land": 0.0
+  },
+  "unmet_mode_predicates": [
+   "orientation fails [left_z <= -0.7 (body +y down, i.e. left side down)] (chest_z +0.85 left_z -0.00 head_z +0.52)"
+  ],
+  "qp_family_drop": null,
+  "elastic_iis": [],
+  "cert_end": {
+   "rho": 0.0897,
+   "binding": "l_hip_pitch_joint",
+   "feasible": true,
+   "loads": {
+    "L_foot": 0.089,
+    "R_foot": 0.219,
+    "lower_back": 0.691
+   },
+   "pen_mm": -0.01,
+   "selfd_mm": 3.29
+  },
+  "peak_rho": 0.09605087357868235,
+  "relaxation_ladder": {
+   "full": {
+    "cost0": 21.1275,
+    "cost": 20.9876,
+    "status": "ok",
+    "done": false
+   },
+   "no_selfcol": {
+    "cost0": 21.1275,
+    "cost": 20.9875,
+    "status": "ok",
+    "done": false
+   },
+   "no_jlim": {
+    "cost0": 21.1275,
+    "cost": 20.9876,
+    "status": "ok",
+    "done": false
+   },
+   "big_trust": {
+    "cost0": 21.1275,
+    "cost": 20.9876,
+    "status": "ok",
+    "done": false
+   },
+   "rho_cap_inf": {
+    "cost0": 21.1275,
+    "cost": 20.9876,
+    "status": "ok",
+    "done": false
+   },
+   "mu_x2": {
+    "cost0": 21.1275,
+    "cost": 20.7633,
+    "status": "ok",
+    "done": false
+   },
+   "no_hold_ramp": {
+    "cost0": 21.1275,
+    "cost": 13.0626,
+    "status": "QP_INFEASIBLE",
+    "done": false
+   }
+  },
+  "binding_families": [
+   "no_hold_ramp"
+  ],
+  "verdict": "constraint-bound: no_hold_ramp"
+ },
+ "q_end": [
+  0.04159512798843588,
+  -0.16130308827957865,
+  0.06900697987972329,
+  0.8728276294572833,
+  -3.5992450955466115e-05,
+  -0.48802860993212793,
+  6.20341597190753e-05,
+  -0.7174403170674422,
+  -0.03345772229956067,
+  0.07868735692542425,
+  0.08146071373755683,
+  0.6994752674038915,
+  0.27373369701456507,
+  -0.14988755049776262,
+  0.05125688975711208,
+  0.0006174039852319648,
+  -0.027907217214764538,
+  -0.6929027148643762,
+  -0.015457450476588086,
+  0.11798610954563299,
+  0.06385101644270602,
+  0.5297341319624316,
+  0.269323089447647,
+  -0.15426677519064727,
+  -0.07679891657072314,
+  -0.0011879007218739321,
+  -0.030255913971063073
+ ],
+ "ticks": 202,
+ "wall_s": 668.3,
+ "harness": {
+  "tag": "supine_to_side_L",
+  "ladder_ticks": 60,
+  "deviations": [
+   "D1 SIDE_L local mode",
+   "D2 P-F3 bypass (SIT only)",
+   "D3 LADDER_TICKS=60",
+   "D4 run_phase log capture"
+  ],
+  "selfd_assert_passed": true,
+  "selfd_min_traj_mm": 3.288,
+  "selfd_violation_ticks": [],
+  "trunk_R2_start": [
+   0.9921,
+   -0.0001,
+   0.1252
+  ],
+  "trunk_R2_end": [
+   0.8519,
+   -0.0001,
+   0.5237
+  ],
+  "wall_s_edge": 668.4
+ }
+}

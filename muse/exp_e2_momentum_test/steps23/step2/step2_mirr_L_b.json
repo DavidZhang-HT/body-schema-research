@@ -1,0 +1,56 @@
+{
+ "tag": "mirr_L_b",
+ "dst": "SIDE_L",
+ "sign": -1,
+ "seed": 22,
+ "step": 2,
+ "cfg": {
+  "T_TRAJ": 4.0,
+  "N_WP": 6,
+  "DELTA": 1.0,
+  "SIGMA0": 0.6,
+  "N": 96,
+  "ELITE": 12,
+  "ITERS": 8,
+  "W_SETTLE": 50.0,
+  "W_END": 10.0,
+  "W_MAX": 5.0,
+  "W_TAU": 0.01,
+  "W_PEN": 500.0,
+  "W_KE": 0.0,
+  "SETTLE_T": 1.0,
+  "FINAL_SETTLE_T": 1.5
+ },
+ "status": "SUCCESS",
+ "phase1": {
+  "peak_ke_J": 0.007229258996932452,
+  "ke_end_J": 0.007229258996932452
+ },
+ "ke_shrinks": 0,
+ "ke_cap_ok": true,
+ "cem_best": {
+  "p_settle": 0.9477317497476035,
+  "pred": true,
+  "full": true,
+  "rho": 0.07386294343440253,
+  "peak_ke": 1.7787544999893858,
+  "ke_end": 0.16642305507017305,
+  "p_max": 0.9648376863869094,
+  "p_end": 0.9648376863869094
+ },
+ "final_settle": {
+  "predicate_ok": true,
+  "predicate_why": [],
+  "full_ok": true,
+  "full_why": [],
+  "rho": 0.07380668290821994,
+  "cert_feasible": true,
+  "R21": 0.9476159406249784
+ },
+ "phase2_exec": {
+  "peak_ke_J": 1.7787544999894542,
+  "ke_end_J": 0.16642305507017402,
+  "max_selfpen_mm": 1.4692640715758856
+ },
+ "wall_s": 312.4
+}

@@ -1,0 +1,352 @@
+{
+ "src": "SUPINE",
+ "dst": "SIDE",
+ "status": "INFEASIBLE",
+ "rule": "",
+ "reason": "T1_track[elev +15deg] STALLED: local: certified keyframes exist on both sides, but the MPC finds no quasi-static descent direction between them from this configuration and no single constraint-family relaxation unlocks it (oracle path-finding limit, NOT a proof of non-existence)",
+ "cost": {
+  "switch": 1.0,
+  "effort": 0.3202,
+  "margin": 0.1206,
+  "length": 0.76,
+  "peak_rho": 0.0964,
+  "ticks": 152,
+  "total": 2.2008
+ },
+ "subgoals": [
+  {
+   "name": "imagine_keyframe_chain",
+   "outcome": "OK",
+   "chain": {
+    "ok": true,
+    "keep": [
+     "L_foot",
+     "R_foot"
+    ],
+    "wall_s": 10.0,
+    "keyframes": [
+     {
+      "frac": 0.167,
+      "stage": "elev +15deg",
+      "cand": "dynamic_support_centroid",
+      "rho": 0.093,
+      "binding": "r_hip_pitch_joint",
+      "loads": {
+       "L_foot": 0.223,
+       "R_foot": 0.271,
+       "upper_trunk": 0.444,
+       "lower_back": 0.061
+      },
+      "touching": [
+       "upper_trunk",
+       "lower_back",
+       "L_foot",
+       "R_foot"
+      ]
+     },
+     {
+      "frac": 0.333,
+      "stage": "elev +30deg",
+      "cand": "none",
+      "rho": 0.083,
+      "binding": "l_shoulder_pitch_joint",
+      "loads": {
+       "L_foot": 0.146,
+       "R_foot": 0.113,
+       "R_forearm": 0.075,
+       "lower_back": 0.666
+      },
+      "touching": [
+       "upper_trunk",
+       "lower_back",
+       "R_upper_arm",
+       "R_forearm",
+       "R_hand",
+       "L_foot",
+       "R_foot"
+      ]
+     },
+     {
+      "frac": 0.5,
+      "stage": "elev +45deg",
+      "cand": "none",
+      "rho": 0.142,
+      "binding": "l_hip_pitch_joint",
+      "loads": {
+       "L_foot": 0.434,
+       "R_foot": 0.033,
+       "R_upper_arm": 0.533
+      },
+      "touching": [
+       "R_upper_arm",
+       "R_forearm",
+       "R_hand",
+       "L_foot",
+       "R_foot"
+      ],
+      "in_dst_mode": true
+     }
+    ],
+    "gap": null
+   }
+  },
+  {
+   "name": "T1_track[elev +15deg]",
+   "outcome": "STALLED",
+   "ticks": 152,
+   "wall_s": 113.9,
+   "restarts": 1,
+   "trunk_axes_z_start": [
+    0.995,
+    0.0,
+    0.101
+   ],
+   "trunk_axes_z_end": [
+    0.869,
+    0.005,
+    0.496
+   ],
+   "attention": {
+    "support_top": [
+     [
+      "head",
+      0.531
+     ],
+     [
+      "R_knee",
+      0.161
+     ],
+     [
+      "R_foot",
+      0.13
+     ],
+     [
+      "R_upper_arm",
+      0.123
+     ]
+    ],
+    "motion_top": [
+     [
+      "r_hip_pitch_joint",
+      0.249
+     ],
+     [
+      "l_thigh_joint",
+      0.124
+     ],
+     [
+      "l_upper_arm_joint",
+      0.094
+     ],
+     [
+      "l_calf_joint",
+      0.094
+     ]
+    ],
+    "effort_bottleneck": [
+     "l_hip_pitch_joint",
+     1.933
+    ],
+    "landing_subtasks": [
+     "L_knee",
+     "R_knee"
+    ],
+    "gate_opened_ticks": 0
+   },
+   "task_terms_end": {
+    "trunk_left(+y)": 1.9894,
+    "trunk_head(+z)": 1.7256,
+    "posture": 5.8885,
+    "com": 11.4714,
+    "upper_trunk_land": 3.1995,
+    "lower_back_land": 0.0,
+    "L_foot_land": 0.0,
+    "R_foot_land": 0.0009
+   },
+   "cert_violations": 0
+  }
+ ],
+ "keyframes": [
+  {
+   "name": "SUPINE->SIDE:T1_track[elev +15deg]",
+   "q": [
+    0.039119193924296844,
+    0.16159988780392145,
+    0.07041597429235427,
+    0.864742812582831,
+    0.000716523016633638,
+    -0.5022010666054332,
+    -0.003666521712347947,
+    -0.6469669857784498,
+    -0.04529611750630291,
+    -0.16248414483089638,
+    0.0339713105674589,
+    0.48707576294564503,
+    0.02032972624530811,
+    -0.21378427236152509,
+    -0.016556919442176563,
+    0.0007017903815417691,
+    -0.037730873953038965,
+    -0.7001523670120011,
+    -0.013290651861936332,
+    0.0755217907982831,
+    0.2202260519951403,
+    0.14000790517999578,
+    0.33165292370197336,
+    -0.21329852937148586,
+    -0.12188362155416027,
+    -0.001523032365912571,
+    -0.040279519438683756
+   ],
+   "cert": {
+    "rho": 0.093,
+    "binding": "r_hip_pitch_joint",
+    "feasible": true,
+    "loads": {
+     "L_foot": 0.086,
+     "R_foot": 0.188,
+     "lower_back": 0.726
+    },
+    "pen_mm": -0.92,
+    "selfd_mm": 2.94
+   }
+  }
+ ],
+ "diagnosis": {
+  "kind": "CONNECTIVITY",
+  "subgoal": "T1_track[elev +15deg]",
+  "outcome": "STALLED",
+  "tick": 60,
+  "residual_task_terms": {
+   "trunk_left(+y)": 1.9894,
+   "trunk_head(+z)": 1.7256,
+   "posture": 5.8885,
+   "com": 11.4714,
+   "upper_trunk_land": 3.1995,
+   "lower_back_land": 0.0,
+   "L_foot_land": 0.0,
+   "R_foot_land": 0.0009
+  },
+  "unmet_mode_predicates": [
+   "orientation fails [left_z >= 0.7 (body +y up, i.e. right side down)] (chest_z +0.87 left_z +0.00 head_z +0.50)"
+  ],
+  "qp_family_drop": null,
+  "elastic_iis": [],
+  "cert_end": {
+   "rho": 0.093,
+   "binding": "r_hip_pitch_joint",
+   "feasible": true,
+   "loads": {
+    "L_foot": 0.086,
+    "R_foot": 0.188,
+    "lower_back": 0.726
+   },
+   "pen_mm": -0.92,
+   "selfd_mm": 2.94
+  },
+  "peak_rho": 0.09644203233056713,
+  "relaxation_ladder": {
+   "full": {
+    "cost0": 24.2753,
+    "cost": 24.0962,
+    "status": "ok",
+    "done": false
+   },
+   "no_selfcol": {
+    "cost0": 24.2753,
+    "cost": 24.1172,
+    "status": "ok",
+    "done": false
+   },
+   "no_jlim": {
+    "cost0": 24.2753,
+    "cost": 24.0962,
+    "status": "ok",
+    "done": false
+   },
+   "big_trust": {
+    "cost0": 24.2753,
+    "cost": 23.7089,
+    "status": "ok",
+    "done": false
+   },
+   "rho_cap_inf": {
+    "cost0": 24.2753,
+    "cost": 24.0962,
+    "status": "ok",
+    "done": false
+   },
+   "mu_x2": {
+    "cost0": 24.2753,
+    "cost": 24.0943,
+    "status": "ok",
+    "done": false
+   },
+   "no_hold_ramp": {
+    "cost0": 24.2753,
+    "cost": 19.6359,
+    "status": "QP_INFEASIBLE",
+    "done": false
+   }
+  },
+  "binding_families": [],
+  "verdict": "local: certified keyframes exist on both sides, but the MPC finds no quasi-static descent direction between them from this configuration and no single constraint-family relaxation unlocks it (oracle path-finding limit, NOT a proof of non-existence)"
+ },
+ "q_end": [
+  0.039119193924296844,
+  0.16159988780392145,
+  0.07041597429235427,
+  0.864742812582831,
+  0.000716523016633638,
+  -0.5022010666054332,
+  -0.003666521712347947,
+  -0.6469669857784498,
+  -0.04529611750630291,
+  -0.16248414483089638,
+  0.0339713105674589,
+  0.48707576294564503,
+  0.02032972624530811,
+  -0.21378427236152509,
+  -0.016556919442176563,
+  0.0007017903815417691,
+  -0.037730873953038965,
+  -0.7001523670120011,
+  -0.013290651861936332,
+  0.0755217907982831,
+  0.2202260519951403,
+  0.14000790517999578,
+  0.33165292370197336,
+  -0.21329852937148586,
+  -0.12188362155416027,
+  -0.001523032365912571,
+  -0.040279519438683756
+ ],
+ "ticks": 152,
+ "wall_s": 413.6,
+ "harness": {
+  "tag": "e4_permuted_R",
+  "ladder_ticks": 60,
+  "deviations": [
+   "D1 SIDE_L local mode (unused by this edge)",
+   "D2 P-F3 bypass (SIT only, unused by this edge)",
+   "D3 LADDER_TICKS=60",
+   "D4 run_phase log capture",
+   "E4 ctx.A replaced per arm"
+  ],
+  "attention_arm": "e4_permuted_R",
+  "selfd_assert_passed": true,
+  "selfd_min_traj_mm": 2.778,
+  "selfd_violation_ticks": [],
+  "trunk_R2_start": [
+   0.9923,
+   0.0012,
+   0.1236
+  ],
+  "trunk_R2_end": [
+   0.8685,
+   0.0049,
+   0.4956
+  ],
+  "wall_s_edge": 413.6
+ }
+}

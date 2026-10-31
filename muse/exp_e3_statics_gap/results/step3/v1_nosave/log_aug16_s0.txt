@@ -1,0 +1,19 @@
+aug16_s0 level 1 evals 16 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 4
+aug16_s0 level 2 evals 240 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 32
+aug16_s0 level 3 evals 464 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 57
+aug16_s0 level 4 evals 688 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 94
+aug16_s0 level 5 evals 912 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 134
+aug16_s0 level 6 evals 1136 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 165
+aug16_s0 level 7 evals 1360 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 198
+aug16_s0 level 8 evals 1584 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 233
+aug16_s0 level 9 evals 1808 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 289
+aug16_s0 level 10 evals 2032 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 481
+aug16_s0 level 11 evals 2256 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 0 wall 533
+aug16_s0 level 12 evals 2480 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 1 wall 568
+aug16_s0 level 13 evals 2704 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 1 wall 620
+aug16_s0 level 14 evals 2928 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 1 wall 656
+aug16_s0 level 15 evals 3152 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 1 wall 709
+aug16_s0 level 16 evals 3376 score 3.884 base 0.261 up 0.691 feet 104.0 nonfoot 53.2 any_handover_rollouts 1 wall 767
+aug16_s0 level 17 evals 3600 score 3.893 base 0.26 up 0.806 feet 100.1 nonfoot 0.0 any_handover_rollouts 1 wall 819
+aug16_s0 level 18 evals 3824 score 3.893 base 0.26 up 0.806 feet 100.1 nonfoot 0.0 any_handover_rollouts 2 wall 889
+DONE aug16_s0 success False evals 3824 final {'com_height': 0.241, 'base_height': 0.26, 'up_z': 0.806, 'kinetic_j': 0.57, 'foot_load': 100.129, 'nonfoot_load': 0.0, 'total_load': 100.129, 'com_speed': 0.29}
