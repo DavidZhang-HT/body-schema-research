@@ -10,3 +10,4 @@ venv/
 MUJOCO_LOG.TXT
 # OS
 .DS_Store
+._*

@@ -1,0 +1,283 @@
+{
+  "id": "pi-ade59be718e945a6",
+  "title": "挺直腰杆 · 正常向前走",
+  "prompt": "A person walks straight forward at a comfortable, steady normal walking pace. They stand tall throughout the walk, with a straight upright back, chest lifted naturally, shoulders level and relaxed, and head looking straight ahead. The torso stays vertically aligned over the hips. They take moderate, even alternating steps, extending each supporting leg naturally. Their arms swing gently and naturally on opposite sides of the body. A simple, ordinary, confident upright forward walk on level ground, maintaining the same direction and pace for the entire clip.",
+  "frames": 150,
+  "fps": 30,
+  "steps": 60,
+  "seed": 77,
+  "status": "ready",
+  "source": "umr_retarget",
+  "created": 1790498954.546529,
+  "started": 1790498862.964962,
+  "backend": "metal_motion_cpu_text",
+  "elapsed": 45.7,
+  "metrics": {
+    "max_root_displacement_m": 4.389463424682617,
+    "finite": true,
+    "physics_validated": false
+  },
+  "style": "upright_normal",
+  "collection": "pi-upright-walk-v1",
+  "model": "pi_plus",
+  "joint_count": 27,
+  "source_id": "ade59be718e945a6",
+  "target": "Pi+ 22 DOF supplied URDF",
+  "method": "UMR",
+  "skeleton": {
+    "model": "pi_plus",
+    "names": [
+      "base_link",
+      "torso_link",
+      "r_shoulder_pitch_link",
+      "r_shoulder_roll_link",
+      "r_upper_arm_link",
+      "r_elbow_link",
+      "r_wrist_link",
+      "l_shoulder_pitch_link",
+      "l_shoulder_roll_link",
+      "l_upper_arm_link",
+      "l_elbow_link",
+      "l_wrist_link",
+      "head_yaw_link",
+      "head_pitch_link",
+      "camera_link",
+      "r_hip_pitch_link",
+      "r_hip_roll_link",
+      "r_thigh_link",
+      "r_calf_link",
+      "r_ankle_pitch_link",
+      "r_ankle_roll_link",
+      "l_hip_pitch_link",
+      "l_hip_roll_link",
+      "l_thigh_link",
+      "l_calf_link",
+      "l_ankle_pitch_link",
+      "l_ankle_roll_link"
+    ],
+    "parents": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      1,
+      7,
+      8,
+      9,
+      10,
+      1,
+      12,
+      13,
+      0,
+      15,
+      16,
+      17,
+      18,
+      19,
+      0,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "offsets": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.1084,
+        0.117,
+        0.0
+      ],
+      [
+        -0.038000000000000006,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0724,
+        0.0
+      ],
+      [
+        0.0,
+        -0.038,
+        0.0
+      ],
+      [
+        0.0,
+        -0.029,
+        0.0
+      ],
+      [
+        0.1084,
+        0.117,
+        0.0
+      ],
+      [
+        0.038000000000000006,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0724,
+        0.0
+      ],
+      [
+        0.0,
+        -0.038,
+        0.0
+      ],
+      [
+        0.0,
+        -0.029,
+        0.0
+      ],
+      [
+        -0.00025,
+        0.1981,
+        0.0
+      ],
+      [
+        0.0,
+        0.027499999999999997,
+        0.0
+      ],
+      [
+        0.031484,
+        0.071792,
+        0.047642
+      ],
+      [
+        -0.0474,
+        -0.0435,
+        0.0
+      ],
+      [
+        -0.03409999999999999,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0924,
+        -0.00035
+      ],
+      [
+        0.0,
+        -0.05000000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        -0.14,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.051
+      ],
+      [
+        0.0474,
+        -0.0435,
+        0.0
+      ],
+      [
+        0.03409999999999999,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0924,
+        -0.00035
+      ],
+      [
+        0.0,
+        -0.05000000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        -0.14,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.051
+      ]
+    ]
+  },
+  "physics_validated": false,
+  "validation": {
+    "joint_limit_max_violation_rad": 0.0,
+    "minimum_ground_contact_distance_m": -1.4940610136224275e-08,
+    "maximum_floor_projection_m": 0.0
+  },
+  "physics_validation": {
+    "state": "failed",
+    "passed": false,
+    "scope": "Flat-ground torque-driven simulation with URDF effort/velocity limits; not hardware validation",
+    "reference_modified": false,
+    "simulation": {
+      "completed": false,
+      "failure": "Fall at t=1.380",
+      "duration_s": 1.380000000000001,
+      "landing_recovery_used": false,
+      "reference_policy": "Unmodified UMR trajectory; inferred foot contacts",
+      "max_original_reference_base_error_m": 0.5439676263724739,
+      "final_base_speed_m_s": 1.2588248090149954,
+      "final_max_joint_speed_rad_s": 19.65606694568052,
+      "controller": {
+        "refined": true,
+        "leg_kp": 80.0,
+        "leg_kd": 2.5,
+        "base_kp": 160.0,
+        "base_kd": 26.0,
+        "capture_gain": 0.0
+      },
+      "forward_distance_m": -0.30098592802189106,
+      "max_base_tracking_error_m": 0.5439676263724739,
+      "max_roll_pitch_rad": 1.015521675295449,
+      "min_base_height_m": 0.20017478840171826,
+      "max_motor_torque_Nm": 21.0,
+      "max_motor_torque_limit_ratio": 1.0,
+      "min_joint_limit_margin_rad": 0.0024667769317857358,
+      "max_velocity_limit_ratio": 1.320363569789723,
+      "nonfoot_ground_contact": true,
+      "base_externally_forced": false,
+      "planned_distance_m": 2.339794119260324,
+      "gait_duration_s": 4.966666666666667,
+      "commanded_average_speed_m_s": 0.47109948709939414,
+      "max_observed_flight_s": 0.026000000000000002,
+      "observed_flights_over_10ms": 1,
+      "flight_detection": "Both feet normal loads below 1 N during gait window",
+      "passed": false
+    },
+    "max_self_penetration_m": 0.0007019287757681764,
+    "loaded_foot_speed_p95_m_s": 0.21154263836071632,
+    "endpoint_error_m": 2.6466164891676858,
+    "contact_inference": "sole z < 18 mm and speed < 0.20 m/s; simulator adds initial/final double-support holds",
+    "simulation_exit_code": 1,
+    "reasons": [
+      "Fall at t=1.380",
+      "Load-bearing foot slip / missing support",
+      "Endpoint tracking error"
+    ],
+    "checked_at": 1790511102.5852008
+  }
+}

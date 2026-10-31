@@ -1,0 +1,20 @@
+{
+  "motion_id": "pi-ade59be718e945a6",
+  "title": "挺直腰杆 · 正常向前走",
+  "fps": 30.0,
+  "duration_s": 4.966666666666667,
+  "planned_forward_m": 2.339794119260324,
+  "min_knee_flexion_rad": -0.027454284951090813,
+  "max_raw_step_length_m": 0.6586779500544937,
+  "safe_flexed_stride_limit_m": 0.11,
+  "initial_sole_hover_mm": 17.22201066364889,
+  "max_ss_lateral_zmp_error_mm": 88.24433974669634,
+  "sole_half_width_mm": 25.0,
+  "detected_step_period_s": 0.6222222222222221,
+  "violations": [
+    "Straight-knee Jacobian singularity: min calf angle = -0.027 rad (< 0.25 rad safe floor)",
+    "Over-stride beyond flexed-leg reach: raw swing 0.659 m > 0.110 m",
+    "Contact schema mismatch: soles hover +17.2 mm above floor at t=0",
+    "Lateral ZMP out of support polygon: 88.2 mm > 25.0 mm sole half-width"
+  ]
+}

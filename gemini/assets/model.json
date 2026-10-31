@@ -1,0 +1,102 @@
+{
+  "urdf": "assets/PiPlus_S_12L8A0G2H0W_LSE_ZedMini_40V_260908.urdf",
+  "sha256": "ea49f6af6fe322f54864789b1c082de47675d60103780092accc104f8fc8e8eb",
+  "mass_kg": 15.862761,
+  "urdf_mass_kg": 15.86276427,
+  "actuated_dof": 22,
+  "nq": 29,
+  "nv": 28,
+  "nominal_knee_rad": 1.0,
+  "com": [
+    0.01428883682226255,
+    1.4074042900223055e-05,
+    0.31037516974927615
+  ],
+  "inertia_com": [
+    [
+      0.5413573393501842,
+      -9.52652301461918e-06,
+      0.03440252341169498
+    ],
+    [
+      -9.52652301461918e-06,
+      0.4362472503516074,
+      -6.882173196164076e-05
+    ],
+    [
+      0.03440252341169498,
+      -6.882173196164076e-05,
+      0.15496414698063576
+    ]
+  ],
+  "feet": [
+    [
+      0.02584346739598846,
+      0.08149999999999999,
+      5.551115123125783e-17
+    ],
+    [
+      0.02584346739598846,
+      -0.08149999999999999,
+      5.551115123125783e-17
+    ]
+  ],
+  "sole_offset": [
+    -0.026,
+    0.0,
+    -0.05
+  ],
+  "joint_names": [
+    "r_shoulder_pitch_joint",
+    "r_shoulder_roll_joint",
+    "r_upper_arm_joint",
+    "r_elbow_joint",
+    "l_shoulder_pitch_joint",
+    "l_shoulder_roll_joint",
+    "l_upper_arm_joint",
+    "l_elbow_joint",
+    "head_yaw_joint",
+    "head_pitch_joint",
+    "r_hip_pitch_joint",
+    "r_hip_roll_joint",
+    "r_thigh_joint",
+    "r_calf_joint",
+    "r_ankle_pitch_joint",
+    "r_ankle_roll_joint",
+    "l_hip_pitch_joint",
+    "l_hip_roll_joint",
+    "l_thigh_joint",
+    "l_calf_joint",
+    "l_ankle_pitch_joint",
+    "l_ankle_roll_joint"
+  ],
+  "joint_velocity_limits": [
+    16.755,
+    16.755,
+    16.755,
+    16.755,
+    16.755,
+    16.755,
+    16.755,
+    16.755,
+    31.416,
+    31.416,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854,
+    7.854
+  ],
+  "simulation_assumptions": {
+    "friction": 0.8,
+    "joint_damping": 0.04,
+    "armature": 0.002
+  }
+}

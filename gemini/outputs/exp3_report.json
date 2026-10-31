@@ -1,0 +1,73 @@
+{
+  "experiment": "exp3_full_body_schema",
+  "passed": true,
+  "completed_without_fall": true,
+  "failure_reason": null,
+  "duration_s": 13.396,
+  "forward_distance_m": 0.4527,
+  "lateral_drift_m": -0.0251,
+  "min_base_height_m": 0.3056,
+  "max_roll_pitch_rad": 0.1654,
+  "max_roll_pitch_deg": 9.48,
+  "max_motor_torque_Nm": 21.0,
+  "max_motor_torque_limit_ratio": 1.0,
+  "max_velocity_limit_ratio": 0.9191,
+  "min_joint_limit_margin_rad": -0.0031,
+  "nonfoot_ground_contact": false,
+  "qp_fallback_steps": 0,
+  "base_externally_stabilized": false,
+  "true_world_discrepancies": {
+    "delta_torso_mass_kg": 2.6,
+    "delta_torso_com_m": [
+      -0.056,
+      0.026,
+      0.025
+    ],
+    "true_joint_damping": 0.32,
+    "true_joint_frictionloss": 0.14,
+    "motor_lag_tau_s": 0.006,
+    "surprise_push_enabled": true,
+    "surprise_push_force_N": [
+      16.0,
+      -15.0,
+      0.0
+    ]
+  },
+  "final_body_schema_estimates": {
+    "est_delta_mass_kg": 2.6317,
+    "est_delta_torso_com_m": [
+      -0.0529,
+      0.0233,
+      0.0277
+    ],
+    "est_joint_damping": 0.3086,
+    "est_coulomb_friction": 0.1386,
+    "ss_z_droop_comp_mm": 0.0,
+    "ss_lat_bias_comp_mm": 0.0,
+    "swing_ff_gain": 1.0
+  },
+  "description": "Full 4-stage curriculum Body Schema Self-Exploration (ASID -> Stepping-in-Place -> UMR Walk + Push Reflex)",
+  "stage3_adapted_posture": {
+    "auto_pitch_bias_deg": 4.83,
+    "auto_roll_bias_deg": 1.16,
+    "adapted_stance_half_width_m": 0.0815
+  },
+  "surprise_events": [
+    {
+      "t_s": 8.814,
+      "type": "EXTERNAL_PUSH_REFLEX",
+      "inferred_ext_force_N": [
+        16.44,
+        -14.36
+      ],
+      "dcm_err_mm": [
+        5.7,
+        -23.2
+      ],
+      "foot_reproject_mm": [
+        4.1,
+        -16.7
+      ]
+    }
+  ]
+}
