@@ -1,0 +1,155 @@
+{
+  "mode": "learned",
+  "pose": "prone",
+  "seed": 212,
+  "node": 0,
+  "body": "base_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      0
+    ],
+    "local_points": [
+      [
+        0.0005802,
+        4.47e-05,
+        0.0564524
+      ]
+    ],
+    "target_positions": [
+      [
+        0.055681015280949264,
+        -0.0025360412723798662,
+        0.11009377008091101
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        0.05225636757066911,
+        0.9986337026311713,
+        -4.180635568225982e-06
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.055681015280949264,
+      -0.0025360412723798662,
+      0.08509377008091101
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 3.37784676458569,
+  "terminal_max_position_error_mm": 8.733718431620781,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.059261776485190945,
+  "effort_integral": 0.6608384251594543,
+  "positive_mechanical_work_J": 23.476621627807617,
+  "peak_torque_fraction": 0.5359281897544861,
+  "max_speed_limit_ratio": 0.7830014473305386,
+  "max_soft_joint_limit_penetration_rad": 0.0,
+  "final_body_metrics": {
+    "com_height": 0.08667133764509545,
+    "base_height": 0.11078961104703428,
+    "up_z": 0.056543548152059274,
+    "kinetic_j": 0.06283684263016258,
+    "foot_load": 31.284351035950678,
+    "nonfoot_load": 71.37719794260853,
+    "total_load": 102.66154897855921,
+    "com_speed": 0.016777289571899254
+  },
+  "wall_seconds": 5.831129550933838,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.4425204396247864,
+      "predicted_effort": 0.1026729941368103,
+      "predicted_position_error_m": 0.01663055270910263,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.0457833930850029,
+      "predicted_effort": 0.06380515545606613,
+      "predicted_position_error_m": 0.005349263548851013,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0003139001491945237,
+      "predicted_effort": 0.07252036780118942,
+      "predicted_position_error_m": 0.00044293070095591247,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 4.5125641918275505e-05,
+      "predicted_effort": 0.03498026356101036,
+      "predicted_position_error_m": 0.00016793905524536967,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0001977729407371953,
+      "predicted_effort": 0.12109769880771637,
+      "predicted_position_error_m": 0.000351579423295334,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 7.2776115302986e-06,
+      "predicted_effort": 0.09388557821512222,
+      "predicted_position_error_m": 6.744261918356642e-05,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 9.615060116630048e-05,
+      "predicted_effort": 0.04860363528132439,
+      "predicted_position_error_m": 0.00024514104006811976,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0002807870041579008,
+      "predicted_effort": 0.10795456916093826,
+      "predicted_position_error_m": 0.0004189175378996879,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.15363766252994537,
+      "predicted_effort": 0.04873335734009743,
+      "predicted_position_error_m": 0.009799160063266754,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.04373263567686081,
+      "predicted_effort": 0.040134936571121216,
+      "predicted_position_error_m": 0.005228087306022644,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "torch": "2.15.0+cpu",
+  "numpy": "2.3.5",
+  "training_seed": 42,
+  "source_repository": "HighTorque-Robotics/Mini-Pi-Plus_BeyondMimic",
+  "source_commit": "df3fcf16bf2cf645b8e3c24ee1e395d453f78f80",
+  "code_sha256": {
+    "attention_data.py": "8234f210420e36fb17e100b2ecb1c03e2bc8ea27d9b92997558e781020652cc8",
+    "attention_train.py": "94fec596969936dec54ca0a427d017d0c28e06792e239ac4af9d4f4989a0dd8d",
+    "attention_control_probe.py": "e938ee23282762830da07f280d024eb4ee1b940b2e19ab207c81d114f830932d",
+    "attention_checks.py": "0c2491a8ea78370f66e5a061981d23e329411072b269261f8ed522f9d350d6d2"
+  },
+  "weights_sha256": "61cd1e6a9cda41574a6b73c87bf3a8ed20e7996e3c99220b85cbdc634c851380",
+  "dataset_sha256": "3a38ee042bd351a6317e00bce9c8787ab3e29179dc563be40e2368e6a7360d26"
+}

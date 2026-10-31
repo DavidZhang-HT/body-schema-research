@@ -1,0 +1,41 @@
+{
+  "history": [
+    {
+      "step": 20,
+      "stage": 0,
+      "loss": 0.05193767324090004,
+      "wall_seconds": 0.9778738021850586
+    },
+    {
+      "step": 40,
+      "stage": 1,
+      "loss": 0.13703317940235138,
+      "wall_seconds": 4.176780939102173
+    },
+    {
+      "step": 60,
+      "stage": 1,
+      "loss": 0.10219863057136536,
+      "wall_seconds": 8.756300210952759
+    },
+    {
+      "step": 80,
+      "stage": 2,
+      "loss": 0.145717591047287,
+      "wall_seconds": 13.168011903762817
+    },
+    {
+      "step": 100,
+      "stage": 3,
+      "loss": 0.24627698957920074,
+      "wall_seconds": 17.59938144683838
+    },
+    {
+      "step": 120,
+      "stage": 3,
+      "loss": 0.24868524074554443,
+      "wall_seconds": 22.54025912284851
+    }
+  ],
+  "note": "Goal-conditioned proposal plus learned-model search; direct actor success is evaluated separately."
+}

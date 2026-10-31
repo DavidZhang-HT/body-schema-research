@@ -1,0 +1,147 @@
+{
+  "mode": "learned",
+  "pose": "supine",
+  "seed": 212,
+  "node": 0,
+  "body": "base_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      0
+    ],
+    "local_points": [
+      [
+        0.0005802,
+        4.47e-05,
+        0.0564524
+      ]
+    ],
+    "target_positions": [
+      [
+        -0.05256846214278206,
+        0.002119608202905176,
+        0.11181227262727061
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        0.033688711777223976,
+        0.999432374227749,
+        6.653789223366041e-06
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      -0.05256846214278206,
+      0.002119608202905176,
+      0.08681227262727062
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 23.996897726265843,
+  "terminal_max_position_error_mm": 24.007255158769766,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.014997256520074465,
+  "effort_integral": 0.803012490272522,
+  "positive_mechanical_work_J": 31.99451446533203,
+  "peak_torque_fraction": 0.7176660299301147,
+  "max_speed_limit_ratio": 0.813139407494789,
+  "max_soft_joint_limit_penetration_rad": 0.00859264075099847,
+  "final_body_metrics": {
+    "com_height": 0.09693468917333806,
+    "base_height": 0.08034900267895287,
+    "up_z": 0.12220790996539455,
+    "kinetic_j": 0.028652245206896926,
+    "foot_load": 0.0,
+    "nonfoot_load": 103.87285474038546,
+    "total_load": 103.87285474038546,
+    "com_speed": 0.004329521131643391
+  },
+  "wall_seconds": 4.081953525543213,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.6400583982467651,
+      "predicted_effort": 0.10122974961996078,
+      "predicted_position_error_m": 0.020000912249088287,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.12646204233169556,
+      "predicted_effort": 0.10650777071714401,
+      "predicted_position_error_m": 0.00889037549495697,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.00015758033259771764,
+      "predicted_effort": 0.04172375053167343,
+      "predicted_position_error_m": 0.0003138275060337037,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.026194127276539803,
+      "predicted_effort": 0.07569174468517303,
+      "predicted_position_error_m": 0.004046150017529726,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.4464099407196045,
+      "predicted_effort": 0.08602970838546753,
+      "predicted_position_error_m": 0.01670347899198532,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.3965323865413666,
+      "predicted_effort": 0.09722669422626495,
+      "predicted_position_error_m": 0.015742704272270203,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.20803138613700867,
+      "predicted_effort": 0.04151871055364609,
+      "predicted_position_error_m": 0.011402614414691925,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.39595532417297363,
+      "predicted_effort": 0.024083921685814857,
+      "predicted_position_error_m": 0.015731245279312134,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "trajectories_replayed": 48,
+  "maximum_state_motor_error": 0.0,
+  "all_success_decisions_recomputed": true,
+  "all_torque_limits_verified": true,
+  "checks": [
+    {
+      "trial": "control_actor_supine_1200_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1200_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1200_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_supine_1200_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1200_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1200_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_supine_1200_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1200_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1200_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_supine_1200_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1200_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1200_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_prone_1200_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1200_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_prone_1200_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_prone_1200_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1200_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": true
+    },
+    {
+      "trial": "control_effort_prone_1200_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_prone_1200_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1200_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_prone_1200_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_prone_1200_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1200_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_prone_1200_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_supine_1201_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1201_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1201_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_supine_1201_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1201_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1201_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_supine_1201_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1201_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1201_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_supine_1201_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_supine_1201_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_supine_1201_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_prone_1201_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1201_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_prone_1201_17",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": true
+    },
+    {
+      "trial": "control_actor_prone_1201_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1201_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_prone_1201_22",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_prone_1201_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1201_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_prone_1201_6",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_actor_prone_1201_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_goal_prone_1201_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    },
+    {
+      "trial": "control_effort_prone_1201_12",
+      "maximum_state_motor_error": 0.0,
+      "maximum_cost_error": 0.0,
+      "success_recomputed": false
+    }
+  ],
+  "predicted_generalized_velocity_vs_impulse_com_velocity_rmse_m_s": 0.10892301121455193,
+  "velocity_audit_note": "Geometry and Newton CoM integration are constrained, but root/joint velocity heads are not yet projected onto the same centroidal velocity. This limits multi-step physical consistency."
+}

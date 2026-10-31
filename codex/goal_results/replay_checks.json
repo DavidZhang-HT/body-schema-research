@@ -1,0 +1,34 @@
+[
+  {
+    "trial": "trial_efficient_prone_900_24_lift",
+    "success": true,
+    "max_replay_state_and_motor_error": 0.0,
+    "max_measured_cost_error": 0.0,
+    "success_recomputed": true,
+    "torque_limits_verified": true
+  },
+  {
+    "trial": "trial_efficient_prone_900_17_lift",
+    "success": true,
+    "max_replay_state_and_motor_error": 0.0,
+    "max_measured_cost_error": 0.0,
+    "success_recomputed": true,
+    "torque_limits_verified": true
+  },
+  {
+    "trial": "trial_efficient_prone_900_6_lift",
+    "success": false,
+    "max_replay_state_and_motor_error": 0.0,
+    "max_measured_cost_error": 0.0,
+    "success_recomputed": true,
+    "torque_limits_verified": true
+  },
+  {
+    "trial": "trial_kinematic_prone_900_24_lift",
+    "success": true,
+    "max_replay_state_and_motor_error": 0.0,
+    "max_measured_cost_error": 0.0,
+    "success_recomputed": true,
+    "torque_limits_verified": true
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "mode": "adapted",
+  "plant_perturbed": true,
+  "simulated_seconds": 13.588000000000001,
+  "requested_seconds": 24.0,
+  "fall_time": 13.588000000000001,
+  "post_transition_survival_seconds": 5.588000000000001,
+  "xy_displacement_m": 0.2519799590615731,
+  "max_tilt_rad": 0.449905773770607,
+  "joint_rmse_rad": 0.14316580579510302,
+  "planned_contact_transitions": 1,
+  "qp_failures": 0,
+  "max_dynamics_residual": 0.0022785280919754847,
+  "calibration": {
+    "samples": 1249,
+    "total_mass_estimate": 11.828629685207181,
+    "nominal_total_mass": 11.000235400000001,
+    "base_mass_delta": 0.82839428520718,
+    "base_com_xy_correction": [
+      0.025860796552377514,
+      0.0001523213158198857
+    ],
+    "mass_sample_std": 0.011257178360666862
+  },
+  "reference_z_offset": 0.08288874723651413,
+  "external_base_forces": false,
+  "reference_time_seconds": 3.2952000000000727,
+  "support_gate_pause_seconds": 0.1
+}

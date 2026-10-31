@@ -1,0 +1,82 @@
+{
+  "pose": "supine",
+  "seed": 1200,
+  "node": 17,
+  "mode": "actor",
+  "passively_settled": true,
+  "success": false,
+  "final_window_max_error_mm": 9.91372384467762,
+  "final_window_max_speed_m_s": 0.031528537706908145,
+  "measured_effort": 0.022619936615228653,
+  "positive_mechanical_work_J": 1.4936721324920654,
+  "duration_s": 2.56,
+  "goal": {
+    "nodes": [
+      17
+    ],
+    "local_points": [
+      [
+        0.0,
+        0.0,
+        -0.0234157
+      ]
+    ],
+    "target_positions": [
+      [
+        0.07426204930523965,
+        0.20050394286784795,
+        0.036736962405167516
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "target_directions": [
+      [
+        -0.9635563239058341,
+        -0.2675055322691496,
+        2.943595107681666e-05
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "decisions": [
+    {
+      "mode": "direct attention proposal"
+    },
+    {
+      "mode": "direct attention proposal"
+    },
+    {
+      "mode": "direct attention proposal"
+    },
+    {
+      "mode": "direct attention proposal"
+    },
+    {
+      "mode": "direct attention proposal"
+    },
+    {
+      "mode": "direct attention proposal"
+    },
+    {
+      "mode": "common terminal hold"
+    },
+    {
+      "mode": "common terminal hold"
+    }
+  ]
+}

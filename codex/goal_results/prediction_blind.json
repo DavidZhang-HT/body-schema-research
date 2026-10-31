@@ -1,0 +1,36 @@
+{
+  "condition": "no explicit contact features",
+  "test_pairs": 1152,
+  "independent_initial_cases": 6,
+  "point_3d_rmse_mm": 6.5929975509643555,
+  "fixed_base_kinematic_point_rmse_mm": 9.107648849487305,
+  "active_contact_fz_rmse_N": 14.192974090576172,
+  "effort_integral_rmse": 0.012422015890479088,
+  "effort_correlation": 0.6196109175637724,
+  "by_body_node": {
+    "0": {
+      "learned_point_rmse_mm": 2.8015987873077393,
+      "fixed_base_kinematic_rmse_mm": 2.596562147140503
+    },
+    "24": {
+      "learned_point_rmse_mm": 4.2589311599731445,
+      "fixed_base_kinematic_rmse_mm": 4.053494930267334
+    },
+    "17": {
+      "learned_point_rmse_mm": 8.150202751159668,
+      "fixed_base_kinematic_rmse_mm": 10.901284217834473
+    },
+    "22": {
+      "learned_point_rmse_mm": 8.446483612060547,
+      "fixed_base_kinematic_rmse_mm": 11.49553108215332
+    },
+    "6": {
+      "learned_point_rmse_mm": 10.126370429992676,
+      "fixed_base_kinematic_rmse_mm": 16.461872100830078
+    },
+    "12": {
+      "learned_point_rmse_mm": 11.507379531860352,
+      "fixed_base_kinematic_rmse_mm": 16.089628219604492
+    }
+  }
+}

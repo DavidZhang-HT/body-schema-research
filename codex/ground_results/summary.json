@@ -1,0 +1,293 @@
+{
+  "results": [
+    {
+      "method": "physics_search_then_QP",
+      "pose": "prone",
+      "seed": 0,
+      "success": true,
+      "macro_blocks": 15,
+      "macro_duration_s": 0.6,
+      "continuous_duration_s": 14.0,
+      "final": {
+        "com_height": 0.3061413228646805,
+        "base_height": 0.3566769424366345,
+        "up_z": 0.9997311794369843,
+        "kinetic_j": 1.3093881484111114e-06,
+        "foot_load": 108.12834701015586,
+        "nonfoot_load": 0.0,
+        "total_load": 108.12834701015586,
+        "com_speed": 0.00017865731933777986
+      },
+      "max_speed_to_URDF_limit_ratio": 1.1516103914577136,
+      "max_soft_joint_limit_penetration_rad": 0.01469528179149493,
+      "peak_applied_motor_torque_Nm": 15.239732645669307
+    },
+    {
+      "method": "physics_search_then_QP",
+      "pose": "supine",
+      "seed": 0,
+      "success": true,
+      "macro_blocks": 17,
+      "macro_duration_s": 0.6,
+      "continuous_duration_s": 15.2,
+      "final": {
+        "com_height": 0.29326314891536337,
+        "base_height": 0.32638154887884674,
+        "up_z": 0.9999617144292053,
+        "kinetic_j": 0.00017437573101601573,
+        "foot_load": 113.2880730691148,
+        "nonfoot_load": 0.0,
+        "total_load": 113.2880730691148,
+        "com_speed": 0.0016022702119904914
+      },
+      "max_speed_to_URDF_limit_ratio": 1.0953469159662723,
+      "max_soft_joint_limit_penetration_rad": 0.017369950163771408,
+      "peak_applied_motor_torque_Nm": 14.127003964290193
+    },
+    {
+      "method": "learned",
+      "pose": "prone",
+      "seed": 101,
+      "success": false,
+      "final": {
+        "com_height": 0.14299166357173385,
+        "base_height": 0.12494401118108123,
+        "up_z": 0.34489916229025175,
+        "kinetic_j": 0.03049314030592861,
+        "foot_load": 32.47090976406387,
+        "nonfoot_load": 77.57204039761754,
+        "total_load": 110.0429501616814,
+        "com_speed": 0.01314528007428656
+      }
+    },
+    {
+      "method": "learned",
+      "pose": "supine",
+      "seed": 101,
+      "success": false,
+      "final": {
+        "com_height": 0.10786477689576217,
+        "base_height": 0.06544045665016904,
+        "up_z": 0.5888854180235734,
+        "kinetic_j": 0.00043712107301169733,
+        "foot_load": 0.0,
+        "nonfoot_load": 107.90712594615474,
+        "total_load": 107.90712594615474,
+        "com_speed": 0.0005049317222945559
+      }
+    },
+    {
+      "method": "memory",
+      "pose": "prone",
+      "seed": 101,
+      "success": false,
+      "final": {
+        "com_height": 0.10558067298509277,
+        "base_height": 0.07712102961680342,
+        "up_z": 0.3102709317480681,
+        "kinetic_j": 0.060487601065611574,
+        "foot_load": 17.976350236570525,
+        "nonfoot_load": 82.68926440744836,
+        "total_load": 100.66561464401889,
+        "com_speed": 0.008081051909951767
+      }
+    },
+    {
+      "method": "memory",
+      "pose": "supine",
+      "seed": 101,
+      "success": false,
+      "final": {
+        "com_height": 0.10083004233699212,
+        "base_height": 0.0912602934453158,
+        "up_z": 0.1732958266624413,
+        "kinetic_j": 0.08945313570398128,
+        "foot_load": 0.0,
+        "nonfoot_load": 93.3815633755516,
+        "total_load": 93.3815633755516,
+        "com_speed": 0.009860925335609045
+      }
+    },
+    {
+      "method": "hybrid",
+      "pose": "prone",
+      "seed": 101,
+      "success": true,
+      "final": {
+        "com_height": 0.2937589548597048,
+        "base_height": 0.34685719881359917,
+        "up_z": 0.9980971156333849,
+        "kinetic_j": 6.482881636951147e-06,
+        "foot_load": 109.2456156960468,
+        "nonfoot_load": 0.0,
+        "total_load": 109.2456156960468,
+        "com_speed": 0.0004478830064781245
+      },
+      "physics_evaluations": 2520,
+      "search_wall_seconds": 134.98757410049438,
+      "continuous_replay_max_state_error": 0.0,
+      "max_speed_to_URDF_limit_ratio": 1.2754166210934417,
+      "max_soft_joint_limit_penetration_rad": 0.042382544547337586
+    },
+    {
+      "method": "hybrid",
+      "pose": "supine",
+      "seed": 101,
+      "success": false,
+      "final": {
+        "com_height": 0.10773602961007221,
+        "base_height": 0.10090156491379557,
+        "up_z": 0.7223308334371397,
+        "kinetic_j": 6.993905270354647e-05,
+        "foot_load": 34.87015512099232,
+        "nonfoot_load": 73.03649908851237,
+        "total_load": 107.9066542095047,
+        "com_speed": 0.0016250298455250378
+      },
+      "physics_evaluations": 3864,
+      "search_wall_seconds": 153.86467742919922,
+      "continuous_replay_max_state_error": 0.0,
+      "max_speed_to_URDF_limit_ratio": 1.515929669453197,
+      "max_soft_joint_limit_penetration_rad": 0.10771312956747581
+    }
+  ],
+  "fixed_sequence_transfer": [
+    {
+      "pose": "prone",
+      "seed": 101,
+      "passive_stable": true,
+      "success": false,
+      "final": {
+        "com_height": 0.11516235626888205,
+        "base_height": 0.08992740845362418,
+        "up_z": 0.10588837202363297,
+        "kinetic_j": 0.009044235790416029,
+        "foot_load": 43.05473484989728,
+        "nonfoot_load": 47.41224265526605,
+        "total_load": 90.46697750516333,
+        "com_speed": 0.013670249563043833
+      },
+      "method": "fixed schema path discovered by physics search, not neural selection"
+    },
+    {
+      "pose": "prone",
+      "seed": 102,
+      "passive_stable": true,
+      "success": false,
+      "final": {
+        "com_height": 0.11667181498498291,
+        "base_height": 0.09187546789428883,
+        "up_z": 0.09835556959540191,
+        "kinetic_j": 0.010709306087627216,
+        "foot_load": 49.270431337462945,
+        "nonfoot_load": 46.199475359372805,
+        "total_load": 95.46990669683575,
+        "com_speed": 0.00532856850183816
+      },
+      "method": "fixed schema path discovered by physics search, not neural selection"
+    },
+    {
+      "pose": "prone",
+      "seed": 103,
+      "passive_stable": true,
+      "success": false,
+      "final": {
+        "com_height": 0.11518104577351707,
+        "base_height": 0.09122973152131274,
+        "up_z": 0.10368497783731978,
+        "kinetic_j": 0.01711125440046931,
+        "foot_load": 45.01446757013762,
+        "nonfoot_load": 45.20513943713879,
+        "total_load": 90.21960700727641,
+        "com_speed": 0.020931770361985992
+      },
+      "method": "fixed schema path discovered by physics search, not neural selection"
+    },
+    {
+      "pose": "supine",
+      "seed": 101,
+      "passive_stable": true,
+      "success": false,
+      "final": {
+        "com_height": 0.11472420260901392,
+        "base_height": 0.12260245100404589,
+        "up_z": -0.12563818531085252,
+        "kinetic_j": 0.09368153064689938,
+        "foot_load": 34.00265111122567,
+        "nonfoot_load": 61.504573791895474,
+        "total_load": 95.50722490312114,
+        "com_speed": 0.042859748048051004
+      },
+      "method": "fixed schema path discovered by physics search, not neural selection"
+    },
+    {
+      "pose": "supine",
+      "seed": 102,
+      "passive_stable": true,
+      "success": false,
+      "final": {
+        "com_height": 0.10272542577154256,
+        "base_height": 0.1132379249284299,
+        "up_z": -0.05752965067741217,
+        "kinetic_j": 0.14685985908823432,
+        "foot_load": 43.91745528001717,
+        "nonfoot_load": 57.72334016369431,
+        "total_load": 101.64079544371148,
+        "com_speed": 0.021776378643091534
+      },
+      "method": "fixed schema path discovered by physics search, not neural selection"
+    },
+    {
+      "pose": "supine",
+      "seed": 103,
+      "passive_stable": true,
+      "success": false,
+      "final": {
+        "com_height": 0.11418050813004513,
+        "base_height": 0.12203117185724865,
+        "up_z": -0.12338124850913154,
+        "kinetic_j": 0.1381618992238799,
+        "foot_load": 29.054312214959882,
+        "nonfoot_load": 64.84053974100276,
+        "total_load": 93.89485195596264,
+        "com_speed": 0.0569884460747444
+      },
+      "method": "fixed schema path discovered by physics search, not neural selection"
+    }
+  ],
+  "prediction": {
+    "heldout_pairs": 288,
+    "horizon_seconds": 0.6,
+    "prediction": {
+      "com_height_rmse_mm": 8.384143829345703,
+      "base_height_rmse_mm": 8.946643829345703,
+      "contact_force_component_rmse_N": 5.864871501922607,
+      "ground_joint_load_rmse_Nm": 1.4053820371627808,
+      "joint_angle_rmse_rad": 0.0629558116197586
+    },
+    "persistence": {
+      "com_height_rmse_mm": 10.662099838256836,
+      "base_height_rmse_mm": 14.53211784362793,
+      "contact_force_component_rmse_N": 7.1328816413879395,
+      "ground_joint_load_rmse_Nm": 1.7736376523971558,
+      "joint_angle_rmse_rad": 0.17847295105457306
+    },
+    "contact_f1": 0.742393509127789,
+    "com_delta_correlation": 0.5364011781127195,
+    "com_delta_sign_accuracy_over_2mm": 0.875,
+    "scope": "Test starts from held-out unpowered equilibria. Oracle search transitions used only for training."
+  },
+  "source_sha256": {
+    "ground_schema.py": "ad2ff6bdbc809a1af35b9ce066e963a0c81de8e9240e6b1b148541b5abf3152e",
+    "ground_model.py": "3d82dac78804af464e5703aa6beccd48c64b06b89ac2f0a60c0274b5f8c4e00c",
+    "ground_balance.py": "2144a2c2d07b8119dfdacb27ef146062f91aa0ff05dd32832c66bac99d55c0cd",
+    "ground_search.py": "fe6597f9ebb048ffb7cca35bc0aa8439438aecdea01cd125855b28d4163dd34c",
+    "ground_hybrid.py": "ccb1086e804c708b2251221d1f5e02eb603b3612814f87f72917f0060821c0ae",
+    "build_model.py": "e7fe955269ab0e484b51b3bf7d1a088b50bfca96c5e6fb202e278611ef6496d3",
+    "experiment.py": "ed51b9092e6a01bb01d1bab3ed991ee2ad782d8f7cd99bbf0dd6b02d1939b1a6",
+    "upstream/GMR/assets/pi_plus_24dof_250826/urdf/pi_plus_24dof_250826.urdf": "de8158229e6fef04a7038e00c9896ec2373097a0c737c74249505afe068533ed"
+  },
+  "source_repository": "https://github.com/HighTorque-Robotics/Mini-Pi-Plus_BeyondMimic",
+  "source_commit": "df3fcf16bf2cf645b8e3c24ee1e395d453f78f80",
+  "physical_scope": "Nominal URDF, flat ground, assumed friction 0.8 and motor lag 15ms, ideal simulated state/tactile proxies. Floating base unassisted, applied motor torques bounded. Torque-speed envelope is not a hard velocity constraint; passive/backdriven speeds can exceed URDF velocity numbers."
+}

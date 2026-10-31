@@ -1,0 +1,107 @@
+{
+  "split": "validation",
+  "kind": "lift",
+  "goal_height_change_mm": 25,
+  "goal_direction_change_deg": null,
+  "method_results": {
+    "efficient": {
+      "trials": 8,
+      "successes": 2,
+      "success_rate": 0.25,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.25,
+        0.25
+      ],
+      "mean_final_position_error_mm": 10.857213511930318,
+      "mean_final_direction_error_deg": 0.0,
+      "mean_effort_all_trials": 0.3248752458021045,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 2,
+          "mean_final_position_error_mm": 18.889851405328564,
+          "mean_final_direction_error_deg": 0.0
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 0,
+          "trials": 2,
+          "mean_final_position_error_mm": 15.01102202271555,
+          "mean_final_direction_error_deg": 0.0
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 2,
+          "trials": 2,
+          "mean_final_position_error_mm": 2.356692204788482,
+          "mean_final_direction_error_deg": 0.0
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 0,
+          "trials": 2,
+          "mean_final_position_error_mm": 7.171288414888677,
+          "mean_final_direction_error_deg": 0.0
+        }
+      }
+    },
+    "learned": {
+      "trials": 8,
+      "successes": 2,
+      "success_rate": 0.25,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.25,
+        0.25
+      ],
+      "mean_final_position_error_mm": 8.394054537877524,
+      "mean_final_direction_error_deg": 0.0,
+      "mean_effort_all_trials": 0.36643085069954395,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 2,
+          "mean_final_position_error_mm": 13.812512628117398,
+          "mean_final_direction_error_deg": 0.0
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 0,
+          "trials": 2,
+          "mean_final_position_error_mm": 7.279704604535988,
+          "mean_final_direction_error_deg": 0.0
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 2,
+          "trials": 2,
+          "mean_final_position_error_mm": 3.7497820409466214,
+          "mean_final_direction_error_deg": 0.0
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 0,
+          "trials": 2,
+          "mean_final_position_error_mm": 8.734218877910093,
+          "mean_final_direction_error_deg": 0.0
+        }
+      }
+    }
+  },
+  "note": "Trials share six passive starts. Confidence intervals resample initial pose/seed groups, not individual time points. Small exploratory sample; one training seed.",
+  "matched_effort": {
+    "all_matched_tasks": 8,
+    "both_successful_tasks": 2,
+    "learned_only_successes": 0,
+    "efficient_only_successes": 0,
+    "mean_effort_difference_efficient_minus_learned": -0.054420363157987595,
+    "mean_relative_effort_reduction": 0.3735472273751081,
+    "median_relative_effort_reduction": 0.3735472273751081,
+    "cluster_bootstrap_relative_reduction_95_interval": [
+      0.3365549551008944,
+      0.4105394996493218
+    ],
+    "scope": "Conditioned on both methods succeeding; not an unconditional energy/success guarantee."
+  }
+}

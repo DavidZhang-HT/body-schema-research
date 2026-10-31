@@ -1,0 +1,21 @@
+{
+  "scope": "simulation validation only",
+  "convention": "q_corrected = q_encoder - offset_rad",
+  "joint_offsets_rad": {
+    "l_hip_pitch_joint": -0.0006744374358695513,
+    "l_hip_roll_joint": 0.02477506836010697,
+    "l_thigh_joint": -0.04134536524945921,
+    "l_calf_joint": 0.03834521370222593,
+    "l_ankle_pitch_joint": -0.06031880756526883,
+    "l_ankle_roll_joint": -0.027938731138031563,
+    "r_hip_pitch_joint": 0.03375547405133282,
+    "r_hip_roll_joint": -0.02920260943784724,
+    "r_thigh_joint": -0.03311584272927385,
+    "r_calf_joint": 0.03576061615541479,
+    "r_ankle_pitch_joint": 0.017265097772449774,
+    "r_ankle_roll_joint": 0.03583031379989352
+  },
+  "data_rank": 12,
+  "condition": 292.9653101169376,
+  "aborted": false
+}

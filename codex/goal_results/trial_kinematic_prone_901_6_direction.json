@@ -1,0 +1,147 @@
+{
+  "mode": "kinematic",
+  "pose": "prone",
+  "seed": 901,
+  "node": 6,
+  "body": "l_ankle_roll_link",
+  "kind": "direction",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      6
+    ],
+    "local_points": [
+      [
+        0.0026578,
+        0.0001757,
+        -0.0126664
+      ]
+    ],
+    "target_positions": [
+      [
+        -0.3172938930276262,
+        0.06607510696582898,
+        0.06038597603697101
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        -0.03473785739205618,
+        0.965914487967233,
+        0.25651994698036334
+      ]
+    ],
+    "direction_weights": [
+      1.0
+    ]
+  },
+  "initial_point": [
+    [
+      -0.3172938930276262,
+      0.06607510696582898,
+      0.06038597603697101
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 0.0,
+  "terminal_max_position_error_mm": 0.0,
+  "final_direction_error_deg": 1.418468404203039,
+  "terminal_max_direction_error_deg": 2.6160791956394935,
+  "terminal_max_point_speed_m_s": 0.04102089462054427,
+  "effort_integral": 0.08533766865730286,
+  "positive_mechanical_work_J": 8.027947425842285,
+  "peak_torque_fraction": 0.202335387468338,
+  "max_speed_limit_ratio": 0.6526636395882082,
+  "max_soft_joint_limit_penetration_rad": 0.0,
+  "final_body_metrics": {
+    "com_height": 0.06832058395769114,
+    "base_height": 0.0806773425358489,
+    "up_z": 0.08591046206636263,
+    "kinetic_j": 0.04086950612098235,
+    "foot_load": 41.807865612653686,
+    "nonfoot_load": 77.56497270537115,
+    "total_load": 119.37283831802483,
+    "com_speed": 0.0038595649782493763
+  },
+  "wall_seconds": 8.387888193130493,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.0008948789909482002,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.007478625513613224,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0004402824561111629,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.005245717708021402,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 7.870001718401909e-05,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0022178031504154205,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00010704380110837519,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0025865300558507442,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00014825844846200198,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0030440192203968763,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00010126716369995847,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0025157697964459658,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 8.663086191518232e-05,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.00232687103562057,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00013966683764010668,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0029545011930167675,
+      "predicted_feasible": true
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Preserve byte-for-byte scientific snapshot checksums across platforms.
+* -text
+*.npz binary
+*.npy binary
+*.pt binary
+*.png binary
+*.mp4 binary
+*.STL binary
+*.stl binary

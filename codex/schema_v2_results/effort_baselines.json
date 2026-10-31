@@ -1,0 +1,6 @@
+{
+  "scope": "Post-hoc descriptive baselines; no test-driven training or selection",
+  "squared_action_magnitude_spearman": 0.567916166278583,
+  "nominal_pd_scaled_action_magnitude_spearman": 0.5506327515856679,
+  "learned_spearman": 0.7259783472767891
+}

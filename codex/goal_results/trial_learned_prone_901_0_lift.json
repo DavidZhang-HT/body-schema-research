@@ -1,0 +1,147 @@
+{
+  "mode": "learned",
+  "pose": "prone",
+  "seed": 901,
+  "node": 0,
+  "body": "base_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      0
+    ],
+    "local_points": [
+      [
+        0.0005802,
+        4.47e-05,
+        0.0564524
+      ]
+    ],
+    "target_positions": [
+      [
+        0.056015907578111306,
+        0.004701449367246811,
+        0.11036051147904971
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        -0.06420053980550124,
+        0.9979370173915223,
+        -2.8974941499934626e-06
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.056015907578111306,
+      0.004701449367246811,
+      0.0853605114790497
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 8.696773520485271,
+  "terminal_max_position_error_mm": 11.52114668117224,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.11256013043539227,
+  "effort_integral": 0.8386217951774597,
+  "positive_mechanical_work_J": 25.030975341796875,
+  "peak_torque_fraction": 0.7041516900062561,
+  "max_speed_limit_ratio": 0.8710580703921136,
+  "max_soft_joint_limit_penetration_rad": 0.0,
+  "final_body_metrics": {
+    "com_height": 0.07961222585433528,
+    "base_height": 0.1000086527477688,
+    "up_z": 0.040524862295634574,
+    "kinetic_j": 0.043400384369368994,
+    "foot_load": 31.27979789121688,
+    "nonfoot_load": 79.6903732160267,
+    "total_load": 110.97017110724357,
+    "com_speed": 0.007091865495230609
+  },
+  "wall_seconds": 6.704002618789673,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.46801453828811646,
+      "predicted_effort": 0.10131743550300598,
+      "predicted_position_error_m": 0.01710289716720581,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.02772599272429943,
+      "predicted_effort": 0.07470590621232986,
+      "predicted_position_error_m": 0.004162780940532684,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0002298405597684905,
+      "predicted_effort": 0.07532840222120285,
+      "predicted_position_error_m": 0.0003790123446378857,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00337380263954401,
+      "predicted_effort": 0.11968069523572922,
+      "predicted_position_error_m": 0.0014521110570058227,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.030584905296564102,
+      "predicted_effort": 0.02895038202404976,
+      "predicted_position_error_m": 0.004372135270386934,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 7.895480666775256e-05,
+      "predicted_effort": 0.08359535038471222,
+      "predicted_position_error_m": 0.0002221413014922291,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 3.698936325235991e-06,
+      "predicted_effort": 0.12280135601758957,
+      "predicted_position_error_m": 4.8081546992762014e-05,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 3.050528221137938e-06,
+      "predicted_effort": 0.018926085904240608,
+      "predicted_position_error_m": 4.3664404074661434e-05,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

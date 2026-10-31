@@ -1,0 +1,11 @@
+# Frozen-network roll/sit follow-up
+
+Written before running seeds 910–912. Network weights and the existing GoalController remain unchanged. New task definitions and completion/holding logic are evaluated; this is not a claim that the old controller already succeeded.
+
+12 roll trials: supine/prone × seeds 910,911,912 × both roll directions. Final target is a 180-degree rotation around the initial trunk's longitudinal axis. To avoid the antipodal direction-gradient singularity, supply 30-degree orientation waypoints; advance a waypoint when its full-orientation error is <=10 degrees. These are body orientation targets, not joint-motion templates. The existing optimizer receives trunk front and longitudinal direction constraints; its actor proposal represents the last axis for the repeated node, while the optimizer evaluates both constraints.
+
+6 sit trials: supine/prone × the same fresh seeds. Use the previous trunk-upright/high-level 0.16 m guidance objective. Unlike the earlier test, arriving at a physically seated state triggers a common joint-position hold; it does not continue raising the torso solely to meet the 0.16 m guide. A seat is defined by upright trunk (<=10 degrees tilt), base height 0.07–0.20 m, base/hip/thigh ground support >=40% body weight and >=50% total ground support, and total ground support >=60% body weight. This is a simulation proxy for pelvis/thigh seating, not an anatomical pressure-sensor validation.
+
+Both tasks must remain valid for >=1.0 s in 20 ms samples and at the final physical endpoint. CoM speed <=0.04 m/s and root angular speed <=0.2 rad/s. Roll additionally requires final full-orientation error <=15 degrees, near-horizontal trunk longitudinal axis (abs(up_z)<=sin(20 degrees)), and total support >=60% body weight. No counting partial rotations or transient upright poses as success.
+
+Each trial has at most 40×0.32 s=12.8 s. On arrival in the geometric/support goal region, hold the current joint targets for four blocks (1.28 s); if stability is not achieved, resume goal planning within the same budget. No future MuJoCo rollout scoring, no QP, no external base forces, no state teleport during execution. Publish all failures and maximum progress. The existing sitting trace at seed 900 is diagnostic only and excluded from new trial success rates.

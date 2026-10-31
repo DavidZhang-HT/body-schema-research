@@ -1,0 +1,147 @@
+{
+  "mode": "blind",
+  "pose": "supine",
+  "seed": 901,
+  "node": 24,
+  "body": "head_pitch_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      24
+    ],
+    "local_points": [
+      [
+        0.0323338,
+        -0.0021962,
+        0.0509378
+      ]
+    ],
+    "target_positions": [
+      [
+        -0.2720588775534649,
+        -0.043743812447497116,
+        0.13414318309918905
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "target_directions": [
+      [
+        -0.9744670686215813,
+        0.2217966064375293,
+        0.0349313261250945
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      -0.2720588775534649,
+      -0.043743812447497116,
+      0.10914318309918905
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 24.509424701146393,
+  "terminal_max_position_error_mm": 24.65809983668582,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.023537056757550086,
+  "effort_integral": 0.4602322578430176,
+  "positive_mechanical_work_J": 22.99529457092285,
+  "peak_torque_fraction": 0.9084854125976562,
+  "max_speed_limit_ratio": 0.7852276736055546,
+  "max_soft_joint_limit_penetration_rad": 0.005523766176041389,
+  "final_body_metrics": {
+    "com_height": 0.07615164922151504,
+    "base_height": 0.0809528725330043,
+    "up_z": 0.10025866018416398,
+    "kinetic_j": 0.0608871877889157,
+    "foot_load": 0.0,
+    "nonfoot_load": 131.7655697329099,
+    "total_load": 131.7655697329099,
+    "com_speed": 0.0033878657090626076
+  },
+  "wall_seconds": 6.720534801483154,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.4775921106338501,
+      "predicted_effort": 0.014841258525848389,
+      "predicted_position_error_m": 0.017277009785175323,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.00013143308751750737,
+      "predicted_effort": 0.030046051368117332,
+      "predicted_position_error_m": 0.0002866106806322932,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0839119479060173,
+      "predicted_effort": 0.026694629341363907,
+      "predicted_position_error_m": 0.007241889834403992,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.0806475579738617,
+      "predicted_effort": 0.03975667804479599,
+      "predicted_position_error_m": 0.007099628448486328,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.1339958757162094,
+      "predicted_effort": 0.026493161916732788,
+      "predicted_position_error_m": 0.009151361882686615,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.002081802813336253,
+      "predicted_effort": 0.03947553411126137,
+      "predicted_position_error_m": 0.0011406694538891315,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.017317749559879303,
+      "predicted_effort": 0.027158210054039955,
+      "predicted_position_error_m": 0.003289923071861267,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.03566055744886398,
+      "predicted_effort": 0.042386315762996674,
+      "predicted_position_error_m": 0.004721000790596008,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

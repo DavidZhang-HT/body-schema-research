@@ -1,0 +1,46 @@
+{
+  "passive": [
+    {
+      "pose": "supine",
+      "settled": true,
+      "ground_load_N": 107.9514548709009,
+      "weight_N": 107.91230927400002
+    },
+    {
+      "pose": "prone",
+      "settled": true,
+      "ground_load_N": 107.17902043290644,
+      "weight_N": 107.91230927400002
+    }
+  ],
+  "replays": [
+    {
+      "pose": "prone",
+      "final_one_second_standing_verified": true,
+      "continuous_replay_matches_search": true
+    },
+    {
+      "pose": "supine",
+      "final_one_second_standing_verified": true,
+      "continuous_replay_matches_search": true
+    }
+  ],
+  "hybrid": [
+    {
+      "pose": "prone",
+      "seed": 101,
+      "success": true,
+      "continuous_replay_matches_search": true,
+      "final_standing_verified": true
+    },
+    {
+      "pose": "supine",
+      "seed": 101,
+      "success": false,
+      "continuous_replay_matches_search": true,
+      "final_standing_verified": false
+    }
+  ],
+  "data_finite": true,
+  "no_initial_case_overlap": true
+}

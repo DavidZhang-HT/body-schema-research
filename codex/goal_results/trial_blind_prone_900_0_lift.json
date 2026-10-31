@@ -1,0 +1,147 @@
+{
+  "mode": "blind",
+  "pose": "prone",
+  "seed": 900,
+  "node": 0,
+  "body": "base_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      0
+    ],
+    "local_points": [
+      [
+        0.0005802,
+        4.47e-05,
+        0.0564524
+      ]
+    ],
+    "target_positions": [
+      [
+        0.05619382905089008,
+        -0.0026696478709877375,
+        0.11002338496267391
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        0.04109624335324509,
+        0.9991551923857114,
+        1.763300925337885e-05
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.05619382905089008,
+      -0.0026696478709877375,
+      0.08502338496267392
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 11.797763003193406,
+  "terminal_max_position_error_mm": 11.826174922554417,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.01440031118824968,
+  "effort_integral": 0.28260037302970886,
+  "positive_mechanical_work_J": 23.024473190307617,
+  "peak_torque_fraction": 0.4655764102935791,
+  "max_speed_limit_ratio": 0.7846333467317355,
+  "max_soft_joint_limit_penetration_rad": 0.011314074523172124,
+  "final_body_metrics": {
+    "com_height": 0.1117986950828602,
+    "base_height": 0.0654706384531178,
+    "up_z": 0.5883149962328253,
+    "kinetic_j": 0.03920863907189778,
+    "foot_load": 0.0,
+    "nonfoot_load": 114.80662239715454,
+    "total_load": 114.80662239715454,
+    "com_speed": 0.0061476948343260965
+  },
+  "wall_seconds": 13.695439338684082,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.8005595207214355,
+      "predicted_effort": 0.03376507759094238,
+      "predicted_position_error_m": 0.022368498146533966,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.5254965424537659,
+      "predicted_effort": 0.04664317145943642,
+      "predicted_position_error_m": 0.018122784793376923,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.44657522439956665,
+      "predicted_effort": 0.034954339265823364,
+      "predicted_position_error_m": 0.016706570982933044,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.29779520630836487,
+      "predicted_effort": 0.04113677516579628,
+      "predicted_position_error_m": 0.013642653822898865,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.22792311012744904,
+      "predicted_effort": 0.056039243936538696,
+      "predicted_position_error_m": 0.011935323476791382,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.32527804374694824,
+      "predicted_effort": 0.06439831107854843,
+      "predicted_position_error_m": 0.014258287847042084,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.09240119159221649,
+      "predicted_effort": 0.027101952582597733,
+      "predicted_position_error_m": 0.007599391043186188,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.26760923862457275,
+      "predicted_effort": 0.06455691903829575,
+      "predicted_position_error_m": 0.012932740151882172,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

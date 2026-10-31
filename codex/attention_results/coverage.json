@@ -1,0 +1,33 @@
+{
+  "stand": {
+    "episodes": 16,
+    "upright_fraction": 1.0,
+    "joint_speed_p95_rad_s": 0.04047516733407974
+  },
+  "squat": {
+    "episodes": 16,
+    "upright_fraction": 1.0,
+    "joint_speed_p95_rad_s": 0.22719691693782806
+  },
+  "walk_reference": {
+    "episodes": 16,
+    "upright_fraction": 0.12001661129568106,
+    "joint_speed_p95_rad_s": 11.873520851135254
+  },
+  "excited": {
+    "episodes": 16,
+    "upright_fraction": 0.1592607973421927,
+    "joint_speed_p95_rad_s": 11.235946655273438
+  },
+  "supine_attempt": {
+    "episodes": 16,
+    "upright_fraction": 0.0,
+    "joint_speed_p95_rad_s": 11.482064247131348
+  },
+  "prone_attempt": {
+    "episodes": 16,
+    "upright_fraction": 0.0,
+    "joint_speed_p95_rad_s": 10.132173538208008
+  },
+  "dataset_sha256": "3a38ee042bd351a6317e00bce9c8787ab3e29179dc563be40e2368e6a7360d26"
+}

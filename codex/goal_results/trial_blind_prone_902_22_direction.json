@@ -1,0 +1,147 @@
+{
+  "mode": "blind",
+  "pose": "prone",
+  "seed": 902,
+  "node": 22,
+  "body": "r_wrist_link",
+  "kind": "direction",
+  "success": true,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      22
+    ],
+    "local_points": [
+      [
+        0.0,
+        0.0,
+        -0.0237055
+      ]
+    ],
+    "target_positions": [
+      [
+        -0.03457704339853537,
+        -0.20684561723100803,
+        0.02168771998511136
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "target_directions": [
+      [
+        0.8802905115788436,
+        0.3976206389322566,
+        0.258817392613716
+      ]
+    ],
+    "direction_weights": [
+      1.0
+    ]
+  },
+  "initial_point": [
+    [
+      -0.03457704339853537,
+      -0.20684561723100803,
+      0.02168771998511136
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 0.0,
+  "terminal_max_position_error_mm": 0.0,
+  "final_direction_error_deg": 4.242553000210075,
+  "terminal_max_direction_error_deg": 4.5683351584743646,
+  "terminal_max_point_speed_m_s": 0.0348094486114087,
+  "effort_integral": 0.31450727581977844,
+  "positive_mechanical_work_J": 15.61437702178955,
+  "peak_torque_fraction": 0.4819882810115814,
+  "max_speed_limit_ratio": 0.7382626235449304,
+  "max_soft_joint_limit_penetration_rad": 0.0,
+  "final_body_metrics": {
+    "com_height": 0.07312389791011438,
+    "base_height": 0.08583291352448931,
+    "up_z": 0.1136122719703147,
+    "kinetic_j": 0.06106632822502364,
+    "foot_load": 15.257088850878432,
+    "nonfoot_load": 89.70020130157737,
+    "total_load": 104.9572901524558,
+    "com_speed": 0.006745375903971878
+  },
+  "wall_seconds": 4.730678558349609,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.0004809978127013892,
+      "predicted_effort": 0.028976107016205788,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.005482906475663185,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0006162783829495311,
+      "predicted_effort": 0.024228624999523163,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.006206230726093054,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 3.515728531056084e-05,
+      "predicted_effort": 0.036416348069906235,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0014823056990280747,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0003763498389162123,
+      "predicted_effort": 0.033898837864398956,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.004849924240261316,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 7.149865268729627e-05,
+      "predicted_effort": 0.009671714156866074,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0021138982847332954,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0005132749211043119,
+      "predicted_effort": 0.012793095782399178,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.005663884337991476,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00015927328786347061,
+      "predicted_effort": 0.008271897211670876,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.003155072219669819,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00016176732606254518,
+      "predicted_effort": 0.018151476979255676,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.003179678926244378,
+      "predicted_feasible": true
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

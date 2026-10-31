@@ -1,0 +1,3566 @@
+[
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 900,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          0.05619382905089008,
+          -0.0026696478709877375,
+          0.08502338496267392
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.03969573526502513,
+          0.9651052448930613,
+          0.25883607724131735
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.05619382905089008,
+        -0.0026696478709877375,
+        0.08502338496267392
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.001639515254785,
+    "terminal_max_direction_error_deg": 15.002119437401744,
+    "terminal_max_point_speed_m_s": 0.0002834912663728973,
+    "effort_integral": 0.00046221938100643456,
+    "positive_mechanical_work_J": 0.03329110145568848,
+    "peak_torque_fraction": 0.04769463092088699,
+    "max_speed_limit_ratio": 0.05241940211883002,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06766735118693575,
+      "base_height": 0.08069928772064473,
+      "up_z": 0.08292930872174589,
+      "kinetic_j": 0.001869679997679172,
+      "foot_load": 25.20847321835199,
+      "nonfoot_load": 82.22505497488177,
+      "total_load": 107.43352819323377,
+      "com_speed": 3.996268459635823e-05
+    },
+    "wall_seconds": 0.7004148960113525,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 900,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          0.2674178123811011,
+          -0.013208902675338545,
+          0.06003125063636995
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.0393920797233869,
+          0.9642870789041477,
+          0.2619135229681205
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.2674178123811011,
+        -0.013208902675338545,
+        0.06003125063636995
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.18221821700882,
+    "terminal_max_direction_error_deg": 15.182721854683908,
+    "terminal_max_point_speed_m_s": 0.000440492968422047,
+    "effort_integral": 0.00046221938100643456,
+    "positive_mechanical_work_J": 0.03329110145568848,
+    "peak_torque_fraction": 0.04769463092088699,
+    "max_speed_limit_ratio": 0.05241940211883002,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06766735118693575,
+      "base_height": 0.08069928772064473,
+      "up_z": 0.08292930872174589,
+      "kinetic_j": 0.001869679997679172,
+      "foot_load": 25.20847321835199,
+      "nonfoot_load": 82.22505497488177,
+      "total_load": 107.43352819323377,
+      "com_speed": 3.996268459635823e-05
+    },
+    "wall_seconds": 0.7026979923248291,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 900,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.048033780987800964,
+          0.20369081558145802,
+          0.021684778639218052
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9040169282161884,
+          -0.34022735015920996,
+          0.2588411553486212
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.048033780987800964,
+        0.20369081558145802,
+        0.021684778639218052
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.009067401862389,
+    "terminal_max_direction_error_deg": 15.009067401862389,
+    "terminal_max_point_speed_m_s": 0.005202187283001197,
+    "effort_integral": 0.00046221938100643456,
+    "positive_mechanical_work_J": 0.03329110145568848,
+    "peak_torque_fraction": 0.04769463092088699,
+    "max_speed_limit_ratio": 0.05241940211883002,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06766735118693575,
+      "base_height": 0.08069928772064473,
+      "up_z": 0.08292930872174589,
+      "kinetic_j": 0.001869679997679172,
+      "foot_load": 25.20847321835199,
+      "nonfoot_load": 82.22505497488177,
+      "total_load": 107.43352819323377,
+      "com_speed": 3.996268459635823e-05
+    },
+    "wall_seconds": 0.6974704265594482,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 900,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.0658816320022109,
+          -0.1952620524075687,
+          0.0216806228356786
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9355159767724279,
+          0.24041547366818586,
+          0.2588633949101964
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.0658816320022109,
+        -0.1952620524075687,
+        0.0216806228356786
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.006433156651275,
+    "terminal_max_direction_error_deg": 15.01034911576781,
+    "terminal_max_point_speed_m_s": 0.004893769000148523,
+    "effort_integral": 0.00046221938100643456,
+    "positive_mechanical_work_J": 0.03329110145568848,
+    "peak_torque_fraction": 0.04769463092088699,
+    "max_speed_limit_ratio": 0.05241940211883002,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06766735118693575,
+      "base_height": 0.08069928772064473,
+      "up_z": 0.08292930872174589,
+      "kinetic_j": 0.001869679997679172,
+      "foot_load": 25.20847321835199,
+      "nonfoot_load": 82.22505497488177,
+      "total_load": 107.43352819323377,
+      "com_speed": 3.996268459635823e-05
+    },
+    "wall_seconds": 0.701911449432373,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 900,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3076282439616412,
+          0.09616006835085116,
+          0.05995418333290443
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.030558634811661683,
+          0.964873335042274,
+          0.2609322079829301
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3076282439616412,
+        0.09616006835085116,
+        0.05995418333290443
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.005055596280599,
+    "terminal_max_direction_error_deg": 15.005738998090424,
+    "terminal_max_point_speed_m_s": 0.00019795579459631823,
+    "effort_integral": 0.00046221938100643456,
+    "positive_mechanical_work_J": 0.03329110145568848,
+    "peak_torque_fraction": 0.04769463092088699,
+    "max_speed_limit_ratio": 0.05241940211883002,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06766735118693575,
+      "base_height": 0.08069928772064473,
+      "up_z": 0.08292930872174589,
+      "kinetic_j": 0.001869679997679172,
+      "foot_load": 25.20847321835199,
+      "nonfoot_load": 82.22505497488177,
+      "total_load": 107.43352819323377,
+      "com_speed": 3.996268459635823e-05
+    },
+    "wall_seconds": 0.685706615447998,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 900,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.31521864708014063,
+          -0.06425783214841521,
+          0.060395695837145075
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.05512073954019261,
+          0.9643039066654456,
+          0.25899745107298355
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.31521864708014063,
+        -0.06425783214841521,
+        0.060395695837145075
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.010912736102204,
+    "terminal_max_direction_error_deg": 15.011597331377933,
+    "terminal_max_point_speed_m_s": 0.0002030803543850566,
+    "effort_integral": 0.00046221938100643456,
+    "positive_mechanical_work_J": 0.03329110145568848,
+    "peak_torque_fraction": 0.04769463092088699,
+    "max_speed_limit_ratio": 0.05241940211883002,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06766735118693575,
+      "base_height": 0.08069928772064473,
+      "up_z": 0.08292930872174589,
+      "kinetic_j": 0.001869679997679172,
+      "foot_load": 25.20847321835199,
+      "nonfoot_load": 82.22505497488177,
+      "total_load": 107.43352819323377,
+      "com_speed": 3.996268459635823e-05
+    },
+    "wall_seconds": 0.6833927631378174,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 900,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.049283784409897585,
+          0.007000065167307705,
+          0.08681194671428374
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.1331944156848292,
+          0.956697758347918,
+          0.2588216505674276
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.049283784409897585,
+        0.007000065167307705,
+        0.08681194671428374
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.999668684179339,
+    "terminal_max_direction_error_deg": 14.999700913841279,
+    "terminal_max_point_speed_m_s": 2.4071920960357862e-05,
+    "effort_integral": 0.0021446100436151028,
+    "positive_mechanical_work_J": 0.00796913355588913,
+    "peak_torque_fraction": 0.02602621167898178,
+    "max_speed_limit_ratio": 0.00633043518454598,
+    "max_soft_joint_limit_penetration_rad": 0.0012718522497752183,
+    "final_body_metrics": {
+      "com_height": 0.0707446458874126,
+      "base_height": 0.08057573813957698,
+      "up_z": 0.1002458140702615,
+      "kinetic_j": 5.704117278384505e-07,
+      "foot_load": 25.165094253478024,
+      "nonfoot_load": 82.75291551942928,
+      "total_load": 107.91800977290731,
+      "com_speed": 1.6970694128200073e-05
+    },
+    "wall_seconds": 0.33760523796081543,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 900,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.2738408622699151,
+          0.024687591200469802,
+          0.10914285312025893
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.8512393566367193,
+          0.43576917283986627,
+          0.2923983339815148
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.2738408622699151,
+        0.024687591200469802,
+        0.10914285312025893
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.994624171845123,
+    "terminal_max_direction_error_deg": 14.997217605517212,
+    "terminal_max_point_speed_m_s": 0.008007755606021204,
+    "effort_integral": 0.0021446100436151028,
+    "positive_mechanical_work_J": 0.00796913355588913,
+    "peak_torque_fraction": 0.02602621167898178,
+    "max_speed_limit_ratio": 0.00633043518454598,
+    "max_soft_joint_limit_penetration_rad": 0.0012718522497752183,
+    "final_body_metrics": {
+      "com_height": 0.0707446458874126,
+      "base_height": 0.08057573813957698,
+      "up_z": 0.1002458140702615,
+      "kinetic_j": 5.704117278384505e-07,
+      "foot_load": 25.165094253478024,
+      "nonfoot_load": 82.75291551942928,
+      "total_load": 107.91800977290731,
+      "com_speed": 1.6970694128200073e-05
+    },
+    "wall_seconds": 0.3720431327819824,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 900,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          0.08895052189152648,
+          0.19136727997651246,
+          0.021736976515499967
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9501060597289881,
+          -0.17405885515439454,
+          0.258847426505654
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.08895052189152648,
+        0.19136727997651246,
+        0.021736976515499967
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.000031248309572,
+    "terminal_max_direction_error_deg": 15.000031248309572,
+    "terminal_max_point_speed_m_s": 9.917410101300247e-05,
+    "effort_integral": 0.0021446100436151028,
+    "positive_mechanical_work_J": 0.00796913355588913,
+    "peak_torque_fraction": 0.02602621167898178,
+    "max_speed_limit_ratio": 0.00633043518454598,
+    "max_soft_joint_limit_penetration_rad": 0.0012718522497752183,
+    "final_body_metrics": {
+      "com_height": 0.0707446458874126,
+      "base_height": 0.08057573813957698,
+      "up_z": 0.1002458140702615,
+      "kinetic_j": 5.704117278384505e-07,
+      "foot_load": 25.165094253478024,
+      "nonfoot_load": 82.75291551942928,
+      "total_load": 107.91800977290731,
+      "com_speed": 1.6970694128200073e-05
+    },
+    "wall_seconds": 0.35388851165771484,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 900,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          0.032288990744222104,
+          -0.21026497135966088,
+          0.021729990865312045
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.860938074176496,
+          0.43789156649864613,
+          0.2589142877915958
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.032288990744222104,
+        -0.21026497135966088,
+        0.021729990865312045
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.999340686267228,
+    "terminal_max_direction_error_deg": 14.999884672835499,
+    "terminal_max_point_speed_m_s": 0.0005105034707081605,
+    "effort_integral": 0.0021446100436151028,
+    "positive_mechanical_work_J": 0.00796913355588913,
+    "peak_torque_fraction": 0.02602621167898178,
+    "max_speed_limit_ratio": 0.00633043518454598,
+    "max_soft_joint_limit_penetration_rad": 0.0012718522497752183,
+    "final_body_metrics": {
+      "com_height": 0.0707446458874126,
+      "base_height": 0.08057573813957698,
+      "up_z": 0.1002458140702615,
+      "kinetic_j": 5.704117278384505e-07,
+      "foot_load": 25.165094253478024,
+      "nonfoot_load": 82.75291551942928,
+      "total_load": 107.91800977290731,
+      "com_speed": 1.6970694128200073e-05
+    },
+    "wall_seconds": 0.36482834815979004,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 900,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.33214261404482714,
+          0.03657619680596273,
+          0.10917683556315792
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.10181758883991956,
+          0.96215785266659,
+          0.252755702516964
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.33214261404482714,
+        0.03657619680596273,
+        0.10917683556315792
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.984338291064098,
+    "terminal_max_direction_error_deg": 14.985205818916935,
+    "terminal_max_point_speed_m_s": 0.00022316268180373923,
+    "effort_integral": 0.0021446100436151028,
+    "positive_mechanical_work_J": 0.00796913355588913,
+    "peak_torque_fraction": 0.02602621167898178,
+    "max_speed_limit_ratio": 0.00633043518454598,
+    "max_soft_joint_limit_penetration_rad": 0.0012718522497752183,
+    "final_body_metrics": {
+      "com_height": 0.0707446458874126,
+      "base_height": 0.08057573813957698,
+      "up_z": 0.1002458140702615,
+      "kinetic_j": 5.704117278384505e-07,
+      "foot_load": 25.165094253478024,
+      "nonfoot_load": 82.75291551942928,
+      "total_load": 107.91800977290731,
+      "com_speed": 1.6970694128200073e-05
+    },
+    "wall_seconds": 0.366091251373291,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 900,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.30793469153717556,
+          -0.1270818832361278,
+          0.10917024688411063
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.40337715152493875,
+          0.8583842155149896,
+          0.31695963809662786
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.30793469153717556,
+        -0.1270818832361278,
+        0.10917024688411063
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.092326607475888,
+    "terminal_max_direction_error_deg": 15.092326607475888,
+    "terminal_max_point_speed_m_s": 0.00016650721408502205,
+    "effort_integral": 0.0021446100436151028,
+    "positive_mechanical_work_J": 0.00796913355588913,
+    "peak_torque_fraction": 0.02602621167898178,
+    "max_speed_limit_ratio": 0.00633043518454598,
+    "max_soft_joint_limit_penetration_rad": 0.0012718522497752183,
+    "final_body_metrics": {
+      "com_height": 0.0707446458874126,
+      "base_height": 0.08057573813957698,
+      "up_z": 0.1002458140702615,
+      "kinetic_j": 5.704117278384505e-07,
+      "foot_load": 25.165094253478024,
+      "nonfoot_load": 82.75291551942928,
+      "total_load": 107.91800977290731,
+      "com_speed": 1.6970694128200073e-05
+    },
+    "wall_seconds": 0.42083168029785156,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 901,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          0.056015907578111306,
+          0.004701449367246811,
+          0.0853605114790497
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.062013007605529975,
+          0.9639338864879378,
+          0.25881624633700345
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.056015907578111306,
+        0.004701449367246811,
+        0.0853605114790497
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.001260008067494,
+    "terminal_max_direction_error_deg": 15.001260008067494,
+    "terminal_max_point_speed_m_s": 0.00018600648519609647,
+    "effort_integral": 0.0002566271577961743,
+    "positive_mechanical_work_J": 0.01640510931611061,
+    "peak_torque_fraction": 0.03489132225513458,
+    "max_speed_limit_ratio": 0.04207950620119916,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06781254105543358,
+      "base_height": 0.08065001684891238,
+      "up_z": 0.09000602582040734,
+      "kinetic_j": 9.677047488539993e-05,
+      "foot_load": 24.09541501399312,
+      "nonfoot_load": 84.32625128093771,
+      "total_load": 108.42166629493083,
+      "com_speed": 5.820558406835573e-05
+    },
+    "wall_seconds": 0.6696128845214844,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 901,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          0.26597321794136725,
+          0.015704441523772164,
+          0.060311436386697705
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.06117359130023917,
+          0.9668204240846561,
+          0.24802431191356572
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.26597321794136725,
+        0.015704441523772164,
+        0.060311436386697705
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.55179434061291,
+    "terminal_max_direction_error_deg": 14.56203398115638,
+    "terminal_max_point_speed_m_s": 0.00033807795284725953,
+    "effort_integral": 0.0002566271577961743,
+    "positive_mechanical_work_J": 0.01640510931611061,
+    "peak_torque_fraction": 0.03489132225513458,
+    "max_speed_limit_ratio": 0.04207950620119916,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06781254105543358,
+      "base_height": 0.08065001684891238,
+      "up_z": 0.09000602582040734,
+      "kinetic_j": 9.677047488539993e-05,
+      "foot_load": 24.09541501399312,
+      "nonfoot_load": 84.32625128093771,
+      "total_load": 108.42166629493083,
+      "com_speed": 5.820558406835573e-05
+    },
+    "wall_seconds": 0.6644332408905029,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 901,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.07025482475162334,
+          0.19273993457661934,
+          0.02168952399295381
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9426077461900915,
+          -0.21096216303358917,
+          0.2588157695941773
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.07025482475162334,
+        0.19273993457661934,
+        0.02168952399295381
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.00347807988654,
+    "terminal_max_direction_error_deg": 15.005769855418873,
+    "terminal_max_point_speed_m_s": 0.0048367509823770164,
+    "effort_integral": 0.0002566271577961743,
+    "positive_mechanical_work_J": 0.01640510931611061,
+    "peak_torque_fraction": 0.03489132225513458,
+    "max_speed_limit_ratio": 0.04207950620119916,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06781254105543358,
+      "base_height": 0.08065001684891238,
+      "up_z": 0.09000602582040734,
+      "kinetic_j": 9.677047488539993e-05,
+      "foot_load": 24.09541501399312,
+      "nonfoot_load": 84.32625128093771,
+      "total_load": 108.42166629493083,
+      "com_speed": 5.820558406835573e-05
+    },
+    "wall_seconds": 0.6534175872802734,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 901,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.040515304464043916,
+          -0.20947259235907256,
+          0.02168624036749079
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.8833120530271985,
+          0.39086047744759833,
+          0.25882021587641113
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.040515304464043916,
+        -0.20947259235907256,
+        0.02168624036749079
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.00479974063907,
+    "terminal_max_direction_error_deg": 15.008098184195994,
+    "terminal_max_point_speed_m_s": 0.00394867302459207,
+    "effort_integral": 0.0002566271577961743,
+    "positive_mechanical_work_J": 0.01640510931611061,
+    "peak_torque_fraction": 0.03489132225513458,
+    "max_speed_limit_ratio": 0.04207950620119916,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06781254105543358,
+      "base_height": 0.08065001684891238,
+      "up_z": 0.09000602582040734,
+      "kinetic_j": 9.677047488539993e-05,
+      "foot_load": 24.09541501399312,
+      "nonfoot_load": 84.32625128093771,
+      "total_load": 108.42166629493083,
+      "com_speed": 5.820558406835573e-05
+    },
+    "wall_seconds": 0.6729600429534912,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 901,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3172938930276262,
+          0.06607510696582898,
+          0.06038597603697101
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.03473785739205618,
+          0.965914487967233,
+          0.25651994698036334
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3172938930276262,
+        0.06607510696582898,
+        0.06038597603697101
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.988000658328238,
+    "terminal_max_direction_error_deg": 14.988557633068643,
+    "terminal_max_point_speed_m_s": 0.00021143249900627706,
+    "effort_integral": 0.0002566271577961743,
+    "positive_mechanical_work_J": 0.01640510931611061,
+    "peak_torque_fraction": 0.03489132225513458,
+    "max_speed_limit_ratio": 0.04207950620119916,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06781254105543358,
+      "base_height": 0.08065001684891238,
+      "up_z": 0.09000602582040734,
+      "kinetic_j": 9.677047488539993e-05,
+      "foot_load": 24.09541501399312,
+      "nonfoot_load": 84.32625128093771,
+      "total_load": 108.42166629493083,
+      "com_speed": 5.820558406835573e-05
+    },
+    "wall_seconds": 0.6647591590881348,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 901,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3056932451446928,
+          -0.10047653460883628,
+          0.0599868335827563
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.09410913699590581,
+          0.9601812900396863,
+          0.26305011041930826
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3056932451446928,
+        -0.10047653460883628,
+        0.0599868335827563
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.018126223696708,
+    "terminal_max_direction_error_deg": 15.018547037279495,
+    "terminal_max_point_speed_m_s": 0.00022731361003976467,
+    "effort_integral": 0.0002566271577961743,
+    "positive_mechanical_work_J": 0.01640510931611061,
+    "peak_torque_fraction": 0.03489132225513458,
+    "max_speed_limit_ratio": 0.04207950620119916,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06781254105543358,
+      "base_height": 0.08065001684891238,
+      "up_z": 0.09000602582040734,
+      "kinetic_j": 9.677047488539993e-05,
+      "foot_load": 24.09541501399312,
+      "nonfoot_load": 84.32625128093771,
+      "total_load": 108.42166629493083,
+      "com_speed": 5.820558406835573e-05
+    },
+    "wall_seconds": 0.648409366607666,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 901,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.05008171438841383,
+          -0.005470437677217139,
+          0.08681188363150807
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.10700808298227082,
+          0.9599779022401767,
+          0.2588275437178362
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.05008171438841383,
+        -0.005470437677217139,
+        0.08681188363150807
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.000021059804334,
+    "terminal_max_direction_error_deg": 15.000047985559274,
+    "terminal_max_point_speed_m_s": 2.5433943080135627e-05,
+    "effort_integral": 0.002150873886421323,
+    "positive_mechanical_work_J": 0.007962866686284542,
+    "peak_torque_fraction": 0.026022696867585182,
+    "max_speed_limit_ratio": 0.006330421649085406,
+    "max_soft_joint_limit_penetration_rad": 0.0012700417138156173,
+    "final_body_metrics": {
+      "com_height": 0.07073161436966775,
+      "base_height": 0.0805757203740636,
+      "up_z": 0.10024604252028875,
+      "kinetic_j": 5.791001676925022e-07,
+      "foot_load": 25.37639688969385,
+      "nonfoot_load": 82.57319208818103,
+      "total_load": 107.94958897787488,
+      "com_speed": 2.6642839608957856e-05
+    },
+    "wall_seconds": 0.3570880889892578,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 901,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.2720588775534649,
+          -0.043743812447497116,
+          0.10914318309918905
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.932447476539178,
+          0.2122326065571131,
+          0.29240216177328826
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.2720588775534649,
+        -0.043743812447497116,
+        0.10914318309918905
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.994920720620371,
+    "terminal_max_direction_error_deg": 14.997485432801765,
+    "terminal_max_point_speed_m_s": 0.007992766402283892,
+    "effort_integral": 0.002150873886421323,
+    "positive_mechanical_work_J": 0.007962866686284542,
+    "peak_torque_fraction": 0.026022696867585182,
+    "max_speed_limit_ratio": 0.006330421649085406,
+    "max_soft_joint_limit_penetration_rad": 0.0012700417138156173,
+    "final_body_metrics": {
+      "com_height": 0.07073161436966775,
+      "base_height": 0.0805757203740636,
+      "up_z": 0.10024604252028875,
+      "kinetic_j": 5.791001676925022e-07,
+      "foot_load": 25.37639688969385,
+      "nonfoot_load": 82.57319208818103,
+      "total_load": 107.94958897787488,
+      "com_speed": 2.6642839608957856e-05
+    },
+    "wall_seconds": 0.3819286823272705,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 901,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          0.04162996721800564,
+          0.19978693253775714,
+          0.021736886206138242
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.8951244214251144,
+          -0.3629740801271717,
+          0.2588476140979233
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.04162996721800564,
+        0.19978693253775714,
+        0.021736886206138242
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.000043079677218,
+    "terminal_max_direction_error_deg": 15.000043079677218,
+    "terminal_max_point_speed_m_s": 0.00011684259169739435,
+    "effort_integral": 0.002150873886421323,
+    "positive_mechanical_work_J": 0.007962866686284542,
+    "peak_torque_fraction": 0.026022696867585182,
+    "max_speed_limit_ratio": 0.006330421649085406,
+    "max_soft_joint_limit_penetration_rad": 0.0012700417138156173,
+    "final_body_metrics": {
+      "com_height": 0.07073161436966775,
+      "base_height": 0.0805757203740636,
+      "up_z": 0.10024604252028875,
+      "kinetic_j": 5.791001676925022e-07,
+      "foot_load": 25.37639688969385,
+      "nonfoot_load": 82.57319208818103,
+      "total_load": 107.94958897787488,
+      "com_speed": 2.6642839608957856e-05
+    },
+    "wall_seconds": 0.3735630512237549,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 901,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          0.0817951127377402,
+          -0.1992419634325761,
+          0.021729686961398056
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9381614221385235,
+          0.22981465804920084,
+          0.2589176876089221
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.0817951127377402,
+        -0.1992419634325761,
+        0.021729686961398056
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.000076682318273,
+    "terminal_max_direction_error_deg": 15.000076682318273,
+    "terminal_max_point_speed_m_s": 0.0005158824744887885,
+    "effort_integral": 0.002150873886421323,
+    "positive_mechanical_work_J": 0.007962866686284542,
+    "peak_torque_fraction": 0.026022696867585182,
+    "max_speed_limit_ratio": 0.006330421649085406,
+    "max_soft_joint_limit_penetration_rad": 0.0012700417138156173,
+    "final_body_metrics": {
+      "com_height": 0.07073161436966775,
+      "base_height": 0.0805757203740636,
+      "up_z": 0.10024604252028875,
+      "kinetic_j": 5.791001676925022e-07,
+      "foot_load": 25.37639688969385,
+      "nonfoot_load": 82.57319208818103,
+      "total_load": 107.94958897787488,
+      "com_speed": 2.6642839608957856e-05
+    },
+    "wall_seconds": 0.3822898864746094,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 901,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.31237818410074697,
+          0.11897147439395353,
+          0.10912072576825413
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.20152579681939342,
+          0.9490380469029809,
+          0.24231000546176867
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.31237818410074697,
+        0.11897147439395353,
+        0.10912072576825413
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.953153721205966,
+    "terminal_max_direction_error_deg": 14.956365442746543,
+    "terminal_max_point_speed_m_s": 0.0002489664117988056,
+    "effort_integral": 0.002150873886421323,
+    "positive_mechanical_work_J": 0.007962866686284542,
+    "peak_torque_fraction": 0.026022696867585182,
+    "max_speed_limit_ratio": 0.006330421649085406,
+    "max_soft_joint_limit_penetration_rad": 0.0012700417138156173,
+    "final_body_metrics": {
+      "com_height": 0.07073161436966775,
+      "base_height": 0.0805757203740636,
+      "up_z": 0.10024604252028875,
+      "kinetic_j": 5.791001676925022e-07,
+      "foot_load": 25.37639688969385,
+      "nonfoot_load": 82.57319208818103,
+      "total_load": 107.94958897787488,
+      "com_speed": 2.6642839608957856e-05
+    },
+    "wall_seconds": 0.3736763000488281,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 901,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.33038003623024703,
+          -0.04396053376085368,
+          0.109159692322179
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.04741442937787739,
+          0.9614510159709462,
+          0.27085755624535185
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.33038003623024703,
+        -0.04396053376085368,
+        0.109159692322179
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.032783265362106,
+    "terminal_max_direction_error_deg": 15.032783265362106,
+    "terminal_max_point_speed_m_s": 0.00025590398429039087,
+    "effort_integral": 0.002150873886421323,
+    "positive_mechanical_work_J": 0.007962866686284542,
+    "peak_torque_fraction": 0.026022696867585182,
+    "max_speed_limit_ratio": 0.006330421649085406,
+    "max_soft_joint_limit_penetration_rad": 0.0012700417138156173,
+    "final_body_metrics": {
+      "com_height": 0.07073161436966775,
+      "base_height": 0.0805757203740636,
+      "up_z": 0.10024604252028875,
+      "kinetic_j": 5.791001676925022e-07,
+      "foot_load": 25.37639688969385,
+      "nonfoot_load": 82.57319208818103,
+      "total_load": 107.94958897787488,
+      "com_speed": 2.6642839608957856e-05
+    },
+    "wall_seconds": 0.36408543586730957,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 902,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          0.05598523630989798,
+          0.005771070292813838,
+          0.08502873273062722
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.10286913755627188,
+          0.9604295301340429,
+          0.2588301724778854
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.05598523630989798,
+        0.005771070292813838,
+        0.08502873273062722
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.00137913065454,
+    "terminal_max_direction_error_deg": 15.0015554817058,
+    "terminal_max_point_speed_m_s": 0.00027104583546231264,
+    "effort_integral": 0.0008219699375331402,
+    "positive_mechanical_work_J": 0.06311339139938354,
+    "peak_torque_fraction": 0.060072753578424454,
+    "max_speed_limit_ratio": 0.06847492240816341,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06764826925780565,
+      "base_height": 0.08069716183386011,
+      "up_z": 0.08324796640183932,
+      "kinetic_j": 0.003910362645255139,
+      "foot_load": 24.891437323960155,
+      "nonfoot_load": 83.44603129486856,
+      "total_load": 108.33746861882871,
+      "com_speed": 8.133740015591883e-05
+    },
+    "wall_seconds": 0.7036142349243164,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 902,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          0.2664514830711483,
+          0.026291351907223037,
+          0.06003686893368427
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.10284326930914,
+          0.9605507595269185,
+          0.25839020943152835
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.2664514830711483,
+        0.026291351907223037,
+        0.06003686893368427
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.973818919883943,
+    "terminal_max_direction_error_deg": 14.973818919883943,
+    "terminal_max_point_speed_m_s": 0.0005182207272213416,
+    "effort_integral": 0.0008219699375331402,
+    "positive_mechanical_work_J": 0.06311339139938354,
+    "peak_torque_fraction": 0.060072753578424454,
+    "max_speed_limit_ratio": 0.06847492240816341,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06764826925780565,
+      "base_height": 0.08069716183386011,
+      "up_z": 0.08324796640183932,
+      "kinetic_j": 0.003910362645255139,
+      "foot_load": 24.891437323960155,
+      "nonfoot_load": 83.44603129486856,
+      "total_load": 108.33746861882871,
+      "com_speed": 8.133740015591883e-05
+    },
+    "wall_seconds": 0.7051448822021484,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 902,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.07769367858951721,
+          0.193571838630417,
+          0.021684943632606438
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9453427537240157,
+          -0.19830037853862492,
+          0.25885138178679895
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.07769367858951721,
+        0.193571838630417,
+        0.021684943632606438
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.999062768519305,
+    "terminal_max_direction_error_deg": 15.00800031230344,
+    "terminal_max_point_speed_m_s": 0.0066913542681557945,
+    "effort_integral": 0.0008219699375331402,
+    "positive_mechanical_work_J": 0.06311339139938354,
+    "peak_torque_fraction": 0.060072753578424454,
+    "max_speed_limit_ratio": 0.06847492240816341,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06764826925780565,
+      "base_height": 0.08069716183386011,
+      "up_z": 0.08324796640183932,
+      "kinetic_j": 0.003910362645255139,
+      "foot_load": 24.891437323960155,
+      "nonfoot_load": 83.44603129486856,
+      "total_load": 108.33746861882871,
+      "com_speed": 8.133740015591883e-05
+    },
+    "wall_seconds": 0.7023799419403076,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 902,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.03457704339853537,
+          -0.20684561723100803,
+          0.02168771998511136
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.8802905115788436,
+          0.3976206389322566,
+          0.258817392613716
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.03457704339853537,
+        -0.20684561723100803,
+        0.02168771998511136
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.00122752934398,
+    "terminal_max_direction_error_deg": 15.009185104391117,
+    "terminal_max_point_speed_m_s": 0.006362581367577378,
+    "effort_integral": 0.0008219699375331402,
+    "positive_mechanical_work_J": 0.06311339139938354,
+    "peak_torque_fraction": 0.060072753578424454,
+    "max_speed_limit_ratio": 0.06847492240816341,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06764826925780565,
+      "base_height": 0.08069716183386011,
+      "up_z": 0.08324796640183932,
+      "kinetic_j": 0.003910362645255139,
+      "foot_load": 24.891437323960155,
+      "nonfoot_load": 83.44603129486856,
+      "total_load": 108.33746861882871,
+      "com_speed": 8.133740015591883e-05
+    },
+    "wall_seconds": 0.6862268447875977,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 902,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3182451917242447,
+          0.048700790389830884,
+          0.059947581240510785
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.1542498791002772,
+          0.9515449331783912,
+          0.26602483895321205
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3182451917242447,
+        0.048700790389830884,
+        0.059947581240510785
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.019575186729671,
+    "terminal_max_direction_error_deg": 15.020731457854493,
+    "terminal_max_point_speed_m_s": 0.0002178593502106642,
+    "effort_integral": 0.0008219699375331402,
+    "positive_mechanical_work_J": 0.06311339139938354,
+    "peak_torque_fraction": 0.060072753578424454,
+    "max_speed_limit_ratio": 0.06847492240816341,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06764826925780565,
+      "base_height": 0.08069716183386011,
+      "up_z": 0.08324796640183932,
+      "kinetic_j": 0.003910362645255139,
+      "foot_load": 24.891437323960155,
+      "nonfoot_load": 83.44603129486856,
+      "total_load": 108.33746861882871,
+      "com_speed": 8.133740015591883e-05
+    },
+    "wall_seconds": 0.6932926177978516,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "prone",
+    "seed": 902,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3003271436328182,
+          -0.11918362009900653,
+          0.059974715717861254
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.12648914097145242,
+          0.9573619420624083,
+          0.2597279521091251
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3003271436328182,
+        -0.11918362009900653,
+        0.059974715717861254
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.003257705999578,
+    "terminal_max_direction_error_deg": 15.00352560038639,
+    "terminal_max_point_speed_m_s": 0.00018987934480711635,
+    "effort_integral": 0.0008219699375331402,
+    "positive_mechanical_work_J": 0.06311339139938354,
+    "peak_torque_fraction": 0.060072753578424454,
+    "max_speed_limit_ratio": 0.06847492240816341,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06764826925780565,
+      "base_height": 0.08069716183386011,
+      "up_z": 0.08324796640183932,
+      "kinetic_j": 0.003910362645255139,
+      "foot_load": 24.891437323960155,
+      "nonfoot_load": 83.44603129486856,
+      "total_load": 108.33746861882871,
+      "com_speed": 8.133740015591883e-05
+    },
+    "wall_seconds": 0.7029087543487549,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 902,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.049463953861953625,
+          -0.002265731482156231,
+          0.08681176980290435
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.04332135561831826,
+          0.9649518312376618,
+          0.25882662834120335
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.049463953861953625,
+        -0.002265731482156231,
+        0.08681176980290435
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.999984528083909,
+    "terminal_max_direction_error_deg": 15.000031778281219,
+    "terminal_max_point_speed_m_s": 1.9373315246958592e-05,
+    "effort_integral": 0.0021403473801910877,
+    "positive_mechanical_work_J": 0.007994968444108963,
+    "peak_torque_fraction": 0.026028091087937355,
+    "max_speed_limit_ratio": 0.006331134793863498,
+    "max_soft_joint_limit_penetration_rad": 0.0012682223218878352,
+    "final_body_metrics": {
+      "com_height": 0.07071431171298723,
+      "base_height": 0.08057580687868475,
+      "up_z": 0.10024496808458111,
+      "kinetic_j": 2.3292446826135603e-06,
+      "foot_load": 24.34593864243898,
+      "nonfoot_load": 83.57183519529366,
+      "total_load": 107.91777383773264,
+      "com_speed": 2.5477688734284197e-05
+    },
+    "wall_seconds": 0.37743115425109863,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 902,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.27348540500613777,
+          -0.02578310821398896,
+          0.10914385016988588
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9163793118216406,
+          0.2734013733624275,
+          0.29240493482298846
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.27348540500613777,
+        -0.02578310821398896,
+        0.10914385016988588
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.995142530307724,
+    "terminal_max_direction_error_deg": 14.99781286861974,
+    "terminal_max_point_speed_m_s": 0.008009280435547474,
+    "effort_integral": 0.0021403473801910877,
+    "positive_mechanical_work_J": 0.007994968444108963,
+    "peak_torque_fraction": 0.026028091087937355,
+    "max_speed_limit_ratio": 0.006331134793863498,
+    "max_soft_joint_limit_penetration_rad": 0.0012682223218878352,
+    "final_body_metrics": {
+      "com_height": 0.07071431171298723,
+      "base_height": 0.08057580687868475,
+      "up_z": 0.10024496808458111,
+      "kinetic_j": 2.3292446826135603e-06,
+      "foot_load": 24.34593864243898,
+      "nonfoot_load": 83.57183519529366,
+      "total_load": 107.91777383773264,
+      "com_speed": 2.5477688734284197e-05
+    },
+    "wall_seconds": 0.37265753746032715,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 902,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          0.051972596669979776,
+          0.20650224715141488,
+          0.02173683285680463
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.8977089371524464,
+          -0.3565340089663083,
+          0.25884776338040627
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.051972596669979776,
+        0.20650224715141488,
+        0.02173683285680463
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.000045361166979,
+    "terminal_max_direction_error_deg": 15.000056874837684,
+    "terminal_max_point_speed_m_s": 0.0001023596002314688,
+    "effort_integral": 0.0021403473801910877,
+    "positive_mechanical_work_J": 0.007994968444108963,
+    "peak_torque_fraction": 0.026028091087937355,
+    "max_speed_limit_ratio": 0.006331134793863498,
+    "max_soft_joint_limit_penetration_rad": 0.0012682223218878352,
+    "final_body_metrics": {
+      "com_height": 0.07071431171298723,
+      "base_height": 0.08057580687868475,
+      "up_z": 0.10024496808458111,
+      "kinetic_j": 2.3292446826135603e-06,
+      "foot_load": 24.34593864243898,
+      "nonfoot_load": 83.57183519529366,
+      "total_load": 107.91777383773264,
+      "com_speed": 2.5477688734284197e-05
+    },
+    "wall_seconds": 0.37133216857910156,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 902,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          0.07022154751056657,
+          -0.20138205184904284,
+          0.021728678608904893
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9257507223519387,
+          0.2755767661463769,
+          0.25892671941143824
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.07022154751056657,
+        -0.20138205184904284,
+        0.021728678608904893
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.000592682722539,
+    "terminal_max_direction_error_deg": 15.000773962807923,
+    "terminal_max_point_speed_m_s": 0.0005078564006392188,
+    "effort_integral": 0.0021403473801910877,
+    "positive_mechanical_work_J": 0.007994968444108963,
+    "peak_torque_fraction": 0.026028091087937355,
+    "max_speed_limit_ratio": 0.006331134793863498,
+    "max_soft_joint_limit_penetration_rad": 0.0012682223218878352,
+    "final_body_metrics": {
+      "com_height": 0.07071431171298723,
+      "base_height": 0.08057580687868475,
+      "up_z": 0.10024496808458111,
+      "kinetic_j": 2.3292446826135603e-06,
+      "foot_load": 24.34593864243898,
+      "nonfoot_load": 83.57183519529366,
+      "total_load": 107.91777383773264,
+      "com_speed": 2.5477688734284197e-05
+    },
+    "wall_seconds": 0.3641211986541748,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 902,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.3211788353381366,
+          0.099543627611305,
+          0.10899289273724679
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.07940143427955856,
+          0.963782186595041,
+          0.25459636493169413
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.3211788353381366,
+        0.099543627611305,
+        0.10899289273724679
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.991915534414797,
+    "terminal_max_direction_error_deg": 14.99207049429217,
+    "terminal_max_point_speed_m_s": 1.3636731616753767e-05,
+    "effort_integral": 0.0021403473801910877,
+    "positive_mechanical_work_J": 0.007994968444108963,
+    "peak_torque_fraction": 0.026028091087937355,
+    "max_speed_limit_ratio": 0.006331134793863498,
+    "max_soft_joint_limit_penetration_rad": 0.0012682223218878352,
+    "final_body_metrics": {
+      "com_height": 0.07071431171298723,
+      "base_height": 0.08057580687868475,
+      "up_z": 0.10024496808458111,
+      "kinetic_j": 2.3292446826135603e-06,
+      "foot_load": 24.34593864243898,
+      "nonfoot_load": 83.57183519529366,
+      "total_load": 107.91777383773264,
+      "com_speed": 2.5477688734284197e-05
+    },
+    "wall_seconds": 0.3692283630371094,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "hold",
+    "pose": "supine",
+    "seed": 902,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.3286887692589753,
+          -0.06688735753545082,
+          0.10899281335762573
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.01348039257938902,
+          0.9644456898601633,
+          0.263937095395967
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.3286887692589753,
+        -0.06688735753545082,
+        0.10899281335762573
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.009027024558945,
+    "terminal_max_direction_error_deg": 15.009061039278581,
+    "terminal_max_point_speed_m_s": 2.1223640193411196e-05,
+    "effort_integral": 0.0021403473801910877,
+    "positive_mechanical_work_J": 0.007994968444108963,
+    "peak_torque_fraction": 0.026028091087937355,
+    "max_speed_limit_ratio": 0.006331134793863498,
+    "max_soft_joint_limit_penetration_rad": 0.0012682223218878352,
+    "final_body_metrics": {
+      "com_height": 0.07071431171298723,
+      "base_height": 0.08057580687868475,
+      "up_z": 0.10024496808458111,
+      "kinetic_j": 2.3292446826135603e-06,
+      "foot_load": 24.34593864243898,
+      "nonfoot_load": 83.57183519529366,
+      "total_load": 107.91777383773264,
+      "com_speed": 2.5477688734284197e-05
+    },
+    "wall_seconds": 0.3731379508972168,
+    "predictions": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "asset_relocation_physics_arrays_identical": [
+    "body_mass",
+    "body_inertia",
+    "body_ipos",
+    "body_pos",
+    "body_quat",
+    "jnt_pos",
+    "jnt_axis",
+    "jnt_range",
+    "geom_pos",
+    "geom_size",
+    "geom_type",
+    "geom_friction",
+    "geom_solref",
+    "mesh_vert",
+    "mesh_face",
+    "actuator_ctrlrange"
+  ],
+  "replayed_successful_trajectory": "schema_v2_results/control_effort_prone_1201_17.npz",
+  "maximum_state_motor_error": 0.0,
+  "runtime_checked": "Linux CPU with original pinned environment",
+  "macos_status": "Python 3.12 ARM64 wheel availability checked; no Mac execution channel connected, so no Mac runtime or sync has been verified."
+}

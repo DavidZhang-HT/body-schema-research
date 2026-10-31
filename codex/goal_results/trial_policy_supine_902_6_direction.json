@@ -1,0 +1,115 @@
+{
+  "mode": "policy",
+  "pose": "supine",
+  "seed": 902,
+  "node": 6,
+  "body": "l_ankle_roll_link",
+  "kind": "direction",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      6
+    ],
+    "local_points": [
+      [
+        0.0026578,
+        0.0001757,
+        -0.0126664
+      ]
+    ],
+    "target_positions": [
+      [
+        0.3211788353381366,
+        0.099543627611305,
+        0.10899289273724679
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        -0.07940143427955856,
+        0.963782186595041,
+        0.25459636493169413
+      ]
+    ],
+    "direction_weights": [
+      1.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.3211788353381366,
+      0.099543627611305,
+      0.10899289273724679
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 0.0,
+  "terminal_max_position_error_mm": 0.0,
+  "final_direction_error_deg": 15.80660414991411,
+  "terminal_max_direction_error_deg": 16.96555462649415,
+  "terminal_max_point_speed_m_s": 0.032518776358805235,
+  "effort_integral": 0.020150523632764816,
+  "positive_mechanical_work_J": 2.8211982250213623,
+  "peak_torque_fraction": 0.14463259279727936,
+  "max_speed_limit_ratio": 0.27207300960218933,
+  "max_soft_joint_limit_penetration_rad": 0.0012665361042423218,
+  "final_body_metrics": {
+    "com_height": 0.07074016773090308,
+    "base_height": 0.08057426761677157,
+    "up_z": 0.10025615932086007,
+    "kinetic_j": 0.0138113447339895,
+    "foot_load": 25.78395412512368,
+    "nonfoot_load": 79.93088922801087,
+    "total_load": 105.71484335313455,
+    "com_speed": 0.0017286009259503156
+  },
+  "wall_seconds": 0.4764902591705322,
+  "predictions": [
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "method": "single shared goal-conditioned attention policy"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

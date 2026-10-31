@@ -1,0 +1,147 @@
+{
+  "mode": "kinematic",
+  "pose": "prone",
+  "seed": 902,
+  "node": 17,
+  "body": "l_wrist_link",
+  "kind": "direction",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      17
+    ],
+    "local_points": [
+      [
+        0.0,
+        0.0,
+        -0.0234157
+      ]
+    ],
+    "target_positions": [
+      [
+        -0.07769367858951721,
+        0.193571838630417,
+        0.021684943632606438
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "target_directions": [
+      [
+        0.9453427537240157,
+        -0.19830037853862492,
+        0.25885138178679895
+      ]
+    ],
+    "direction_weights": [
+      1.0
+    ]
+  },
+  "initial_point": [
+    [
+      -0.07769367858951721,
+      0.193571838630417,
+      0.021684943632606438
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 0.0,
+  "terminal_max_position_error_mm": 0.0,
+  "final_direction_error_deg": 7.998032646601463,
+  "terminal_max_direction_error_deg": 8.35945635510798,
+  "terminal_max_point_speed_m_s": 0.022004500143859688,
+  "effort_integral": 0.16759257018566132,
+  "positive_mechanical_work_J": 5.931762218475342,
+  "peak_torque_fraction": 0.3421531319618225,
+  "max_speed_limit_ratio": 0.7455987673396768,
+  "max_soft_joint_limit_penetration_rad": 0.0,
+  "final_body_metrics": {
+    "com_height": 0.06808413391472404,
+    "base_height": 0.0808320288310337,
+    "up_z": 0.07730337845161162,
+    "kinetic_j": 0.045799834249305574,
+    "foot_load": 38.59001381074115,
+    "nonfoot_load": 87.4616342387771,
+    "total_load": 126.05164804951825,
+    "com_speed": 0.0035456193870359093
+  },
+  "wall_seconds": 5.79786491394043,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.00028165383264422417,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0041956244967877865,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0018158899620175362,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.01065331045538187,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00045954171218909323,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.005359221715480089,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.006994470953941345,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.020908236503601074,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0001676352258073166,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.0032368351239711046,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.000723218428902328,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.006723172962665558,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.00030260859057307243,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.004348900634795427,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.0012716265628114343,
+      "predicted_effort": 0.0,
+      "predicted_position_error_m": 9.999999974752427e-07,
+      "predicted_direction_chord_error": 0.008914962410926819,
+      "predicted_feasible": true
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

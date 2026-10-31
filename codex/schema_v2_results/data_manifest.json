@@ -1,0 +1,223 @@
+{
+  "sequences": 1580,
+  "transitions": 4740,
+  "split_sequences": {
+    "train": 900,
+    "validation": 300,
+    "test": 380
+  },
+  "coverage": {
+    "left_arm": {
+      "sequences": 200,
+      "active_part_steps": 600,
+      "suspended_part_steps": 179,
+      "supported_part_steps": 310,
+      "switching_part_steps": 111
+    },
+    "right_arm": {
+      "sequences": 200,
+      "active_part_steps": 600,
+      "suspended_part_steps": 166,
+      "supported_part_steps": 325,
+      "switching_part_steps": 109
+    },
+    "left_leg": {
+      "sequences": 200,
+      "active_part_steps": 600,
+      "suspended_part_steps": 40,
+      "supported_part_steps": 430,
+      "switching_part_steps": 130
+    },
+    "right_leg": {
+      "sequences": 200,
+      "active_part_steps": 600,
+      "suspended_part_steps": 25,
+      "supported_part_steps": 475,
+      "switching_part_steps": 100
+    },
+    "both_arms": {
+      "sequences": 200,
+      "active_part_steps": 1200,
+      "suspended_part_steps": 310,
+      "supported_part_steps": 678,
+      "switching_part_steps": 212
+    },
+    "both_legs": {
+      "sequences": 200,
+      "active_part_steps": 1200,
+      "suspended_part_steps": 52,
+      "supported_part_steps": 973,
+      "switching_part_steps": 175
+    },
+    "four_limbs": {
+      "sequences": 200,
+      "active_part_steps": 2400,
+      "suspended_part_steps": 369,
+      "supported_part_steps": 1521,
+      "switching_part_steps": 510
+    },
+    "hold": {
+      "sequences": 100,
+      "active_part_steps": 0,
+      "suspended_part_steps": 0,
+      "supported_part_steps": 0,
+      "switching_part_steps": 0
+    },
+    "left_arm_right_leg": {
+      "sequences": 40,
+      "active_part_steps": 240,
+      "suspended_part_steps": 28,
+      "supported_part_steps": 160,
+      "switching_part_steps": 52
+    },
+    "right_arm_left_leg": {
+      "sequences": 40,
+      "active_part_steps": 240,
+      "suspended_part_steps": 30,
+      "supported_part_steps": 167,
+      "switching_part_steps": 43
+    }
+  },
+  "impulse_velocity_residual_rmse_m_s": 0.00010398979793535545,
+  "weighted_impulse_position_residual_rmse_m": 3.301936885691248e-05,
+  "sources": [
+    {
+      "cases": [
+        {
+          "case": 0,
+          "split": 0,
+          "seed": 1100,
+          "pose": "supine"
+        },
+        {
+          "case": 3,
+          "split": 0,
+          "seed": 1101,
+          "pose": "prone"
+        },
+        {
+          "case": 6,
+          "split": 0,
+          "seed": 1103,
+          "pose": "supine"
+        },
+        {
+          "case": 9,
+          "split": 0,
+          "seed": 1104,
+          "pose": "prone"
+        },
+        {
+          "case": 12,
+          "split": 1,
+          "seed": 1110,
+          "pose": "supine"
+        },
+        {
+          "case": 15,
+          "split": 1,
+          "seed": 1111,
+          "pose": "prone"
+        },
+        {
+          "case": 18,
+          "split": 2,
+          "seed": 1121,
+          "pose": "supine"
+        }
+      ],
+      "sequences": 545,
+      "wall_seconds": 129.97209000587463
+    },
+    {
+      "cases": [
+        {
+          "case": 1,
+          "split": 0,
+          "seed": 1100,
+          "pose": "prone"
+        },
+        {
+          "case": 4,
+          "split": 0,
+          "seed": 1102,
+          "pose": "supine"
+        },
+        {
+          "case": 7,
+          "split": 0,
+          "seed": 1103,
+          "pose": "prone"
+        },
+        {
+          "case": 10,
+          "split": 0,
+          "seed": 1105,
+          "pose": "supine"
+        },
+        {
+          "case": 13,
+          "split": 1,
+          "seed": 1110,
+          "pose": "prone"
+        },
+        {
+          "case": 16,
+          "split": 2,
+          "seed": 1120,
+          "pose": "supine"
+        },
+        {
+          "case": 19,
+          "split": 2,
+          "seed": 1121,
+          "pose": "prone"
+        }
+      ],
+      "sequences": 565,
+      "wall_seconds": 132.97088479995728
+    },
+    {
+      "cases": [
+        {
+          "case": 2,
+          "split": 0,
+          "seed": 1101,
+          "pose": "supine"
+        },
+        {
+          "case": 5,
+          "split": 0,
+          "seed": 1102,
+          "pose": "prone"
+        },
+        {
+          "case": 8,
+          "split": 0,
+          "seed": 1104,
+          "pose": "supine"
+        },
+        {
+          "case": 11,
+          "split": 0,
+          "seed": 1105,
+          "pose": "prone"
+        },
+        {
+          "case": 14,
+          "split": 1,
+          "seed": 1111,
+          "pose": "supine"
+        },
+        {
+          "case": 17,
+          "split": 2,
+          "seed": 1120,
+          "pose": "prone"
+        }
+      ],
+      "sequences": 470,
+      "wall_seconds": 64.53114867210388
+    }
+  ]
+}

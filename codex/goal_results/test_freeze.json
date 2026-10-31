@@ -1,0 +1,46 @@
+{
+  "freeze_utc": "2026-10-31T10:37:44.254967+00:00",
+  "source_and_checkpoint_sha256": {
+    "goal_world.py": "03fc89ac0ae7c29919c9771be4fbde1c23d0bf4ec9d81d6a20dac3ff9dfa975d",
+    "goal_models.py": "c66873e1010d9606d0cd4008585cfbfc211b57df24c440f5c3c6f16afaa3680f",
+    "goal_train.py": "7138e07c20be7a557c14245d4b8ec234443b1dc22f22144d4efbbf0b3938ce9f",
+    "goal_control.py": "9a5c97a1ee6bc5a667342b458fe82053ef379b33a6d22558e66500c9f3d6e3ac",
+    "goal_challenges.py": "bca83e60bc32e87af151062a9f97ce8cea92a48470e825e91ddcbf5cd019b2fb",
+    "GOAL_PROTOCOL.md": "7b266f10f93958bc2dbad8058c7bd0e65e39888db3f91e4f6f836c7de316c012",
+    "goal_results/dynamics_blind.pt": "6b2c177ac186817ad62d3df2898c5213bda869a60598ae977d0a454e41c34035",
+    "goal_results/dynamics_full.pt": "adfa013c82253a157a1ceeed6cf1ae2c33e2f1091e5c399b341807f4281b03c8",
+    "goal_results/policy_blind.pt": "2142025aad2072c078dd3c24abd7a6ab2a903e62378ee5fce34d5da0b6a56f4f",
+    "goal_results/policy_full.pt": "e83bd260dcd0a2fafe593a9c8d0e2b0674ff28f9a3c84496249926c8b6b25f82"
+  },
+  "decision": "No further model/controller/threshold tuning using test seeds 900\u2013902.",
+  "test_starts": {
+    "poses": [
+      "prone",
+      "supine"
+    ],
+    "seeds": [
+      900,
+      901,
+      902
+    ]
+  },
+  "nodes": [
+    0,
+    24,
+    17,
+    22,
+    6,
+    12
+  ],
+  "lift_m": 0.025,
+  "direction_rad": 0.2617993877991494,
+  "actions": 8,
+  "hold_blocks": 2,
+  "total_seconds": 3.2,
+  "terminal_window_seconds": 0.32,
+  "height_tolerance_m": 0.008,
+  "direction_tolerance_deg": 5,
+  "max_point_speed_m_s": 0.04,
+  "planner_iterations": 24,
+  "planner_restarts": 4
+}

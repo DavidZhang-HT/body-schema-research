@@ -1,0 +1,26 @@
+{
+  "scope": "Illustrations selected after scoring; full rates are 0/16 actor, 1/16 goal, 1/16 effort.",
+  "cases": [
+    {
+      "mode": "goal",
+      "pose": "prone",
+      "seed": 1201,
+      "node": 17,
+      "success": false
+    },
+    {
+      "mode": "effort",
+      "pose": "prone",
+      "seed": 1201,
+      "node": 17,
+      "success": true
+    },
+    {
+      "mode": "effort",
+      "pose": "supine",
+      "seed": 1200,
+      "node": 6,
+      "success": false
+    }
+  ]
+}

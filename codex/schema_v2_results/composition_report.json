@@ -1,0 +1,154 @@
+{
+  "paired_sets": 16,
+  "physical_sequences": 64,
+  "independent_initial_states": 4,
+  "scope": "Offline counterfactual validation only; physical outcomes do not select policy actions.",
+  "interaction_prediction_rmse_mm": 17.152934688969637,
+  "zero_interaction_additive_baseline_rmse_mm": 16.750381969263113,
+  "by_case": [
+    {
+      "seed": 1200,
+      "pose": "supine",
+      "combination": "arms",
+      "nonadditive_body_motion_mm": 18.40174955769779,
+      "predicted_interaction_error_mm": 18.75815698014972,
+      "nonadditive_com_motion_mm": 17.632304118513627,
+      "predicted_com_interaction_error_mm": 17.840857709525178
+    },
+    {
+      "seed": 1200,
+      "pose": "supine",
+      "combination": "legs",
+      "nonadditive_body_motion_mm": 6.159108857739016,
+      "predicted_interaction_error_mm": 7.037402129410261,
+      "nonadditive_com_motion_mm": 3.33089975216907,
+      "predicted_com_interaction_error_mm": 4.119261036598412
+    },
+    {
+      "seed": 1200,
+      "pose": "supine",
+      "combination": "four_limbs",
+      "nonadditive_body_motion_mm": 14.60124984079635,
+      "predicted_interaction_error_mm": 15.9736317007407,
+      "nonadditive_com_motion_mm": 6.3769195924358275,
+      "predicted_com_interaction_error_mm": 7.484431972586912
+    },
+    {
+      "seed": 1200,
+      "pose": "supine",
+      "combination": "diagonal",
+      "nonadditive_body_motion_mm": 13.853075128621484,
+      "predicted_interaction_error_mm": 14.73117599884755,
+      "nonadditive_com_motion_mm": 5.500848171974193,
+      "predicted_com_interaction_error_mm": 7.212599129679407
+    },
+    {
+      "seed": 1200,
+      "pose": "prone",
+      "combination": "arms",
+      "nonadditive_body_motion_mm": 1.4260761392682715,
+      "predicted_interaction_error_mm": 1.3903382863009743,
+      "nonadditive_com_motion_mm": 0.5853025730399073,
+      "predicted_com_interaction_error_mm": 0.6388849668485352
+    },
+    {
+      "seed": 1200,
+      "pose": "prone",
+      "combination": "legs",
+      "nonadditive_body_motion_mm": 33.87411487660226,
+      "predicted_interaction_error_mm": 33.047008939203145,
+      "nonadditive_com_motion_mm": 18.664097141366234,
+      "predicted_com_interaction_error_mm": 15.295008097111928
+    },
+    {
+      "seed": 1200,
+      "pose": "prone",
+      "combination": "four_limbs",
+      "nonadditive_body_motion_mm": 12.716895882427266,
+      "predicted_interaction_error_mm": 15.88557373272979,
+      "nonadditive_com_motion_mm": 10.784803086613339,
+      "predicted_com_interaction_error_mm": 13.476204490108895
+    },
+    {
+      "seed": 1200,
+      "pose": "prone",
+      "combination": "diagonal",
+      "nonadditive_body_motion_mm": 1.6597723444072936,
+      "predicted_interaction_error_mm": 3.0275546767538906,
+      "nonadditive_com_motion_mm": 1.5054171855262808,
+      "predicted_com_interaction_error_mm": 2.5124333186028727
+    },
+    {
+      "seed": 1201,
+      "pose": "supine",
+      "combination": "arms",
+      "nonadditive_body_motion_mm": 2.9993928336170255,
+      "predicted_interaction_error_mm": 2.951748758548444,
+      "nonadditive_com_motion_mm": 1.7928519178154274,
+      "predicted_com_interaction_error_mm": 1.9209215055814046
+    },
+    {
+      "seed": 1201,
+      "pose": "supine",
+      "combination": "legs",
+      "nonadditive_body_motion_mm": 0.9780176214847557,
+      "predicted_interaction_error_mm": 1.1002815171646474,
+      "nonadditive_com_motion_mm": 0.6471119001899858,
+      "predicted_com_interaction_error_mm": 0.6313999739338156
+    },
+    {
+      "seed": 1201,
+      "pose": "supine",
+      "combination": "four_limbs",
+      "nonadditive_body_motion_mm": 4.003336182479723,
+      "predicted_interaction_error_mm": 5.049615800269047,
+      "nonadditive_com_motion_mm": 0.7399656042588685,
+      "predicted_com_interaction_error_mm": 2.3408685346385627
+    },
+    {
+      "seed": 1201,
+      "pose": "supine",
+      "combination": "diagonal",
+      "nonadditive_body_motion_mm": 14.033298965521743,
+      "predicted_interaction_error_mm": 15.737046228446141,
+      "nonadditive_com_motion_mm": 8.133538428265354,
+      "predicted_com_interaction_error_mm": 10.311443295921434
+    },
+    {
+      "seed": 1201,
+      "pose": "prone",
+      "combination": "arms",
+      "nonadditive_body_motion_mm": 6.348110761457256,
+      "predicted_interaction_error_mm": 6.257040941181267,
+      "nonadditive_com_motion_mm": 3.231174303920469,
+      "predicted_com_interaction_error_mm": 3.7080308911496123
+    },
+    {
+      "seed": 1201,
+      "pose": "prone",
+      "combination": "legs",
+      "nonadditive_body_motion_mm": 29.560237783574713,
+      "predicted_interaction_error_mm": 27.858369460200468,
+      "nonadditive_com_motion_mm": 9.431885779512381,
+      "predicted_com_interaction_error_mm": 9.124515350476436
+    },
+    {
+      "seed": 1201,
+      "pose": "prone",
+      "combination": "four_limbs",
+      "nonadditive_body_motion_mm": 35.180555693779276,
+      "predicted_interaction_error_mm": 36.78053632598505,
+      "nonadditive_com_motion_mm": 22.204601636082685,
+      "predicted_com_interaction_error_mm": 23.355468400462122
+    },
+    {
+      "seed": 1201,
+      "pose": "prone",
+      "combination": "diagonal",
+      "nonadditive_body_motion_mm": 4.345938506799422,
+      "predicted_interaction_error_mm": 5.228147847970034,
+      "nonadditive_com_motion_mm": 2.1419162717255813,
+      "predicted_com_interaction_error_mm": 2.4060086996415175
+    }
+  ]
+}

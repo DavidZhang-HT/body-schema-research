@@ -1,0 +1,19 @@
+{
+  "mode": "direct",
+  "plant_perturbed": true,
+  "simulated_seconds": 13.128,
+  "requested_seconds": 24.0,
+  "fall_time": 13.128,
+  "post_transition_survival_seconds": 5.128,
+  "xy_displacement_m": 0.347517485414589,
+  "max_tilt_rad": 1.0018240339283713,
+  "joint_rmse_rad": 0.05604382560734878,
+  "planned_contact_transitions": 1,
+  "qp_failures": 0,
+  "max_dynamics_residual": 3.0440256324482107e-06,
+  "calibration": {},
+  "reference_z_offset": 0.08288874723651413,
+  "external_base_forces": false,
+  "reference_time_seconds": 3.0792000000000566,
+  "support_gate_pause_seconds": 0.0
+}

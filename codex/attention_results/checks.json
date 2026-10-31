@@ -1,0 +1,9 @@
+{
+  "episode_split_disjoint": true,
+  "normalization_training_only": true,
+  "causal_windows": true,
+  "finite_outputs": true,
+  "normalized_delta_mse": 0.1376173496246338,
+  "shuffled_action_history_mse": 0.7544367909431458,
+  "action_ablation_ratio": 5.482134287580409
+}

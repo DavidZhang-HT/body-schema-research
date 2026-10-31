@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "schema_v2_data.py": "d5601ec728b55609528d6841021e4ca302fd1a3f49b0d9ae47340b73e4434a10",
+    "schema_v2_models.py": "f4382dff9318ef84117e67af5bcfbf091dcd4a3a98eb1172ee684208c34f17d1",
+    "schema_v2_train.py": "3c215b2f7f9188726491fe79ae6cd24b55864b06fdcf7686c4b06d62f8c4fda5",
+    "schema_v2_evaluate.py": "919ff348960c3ea202e854a6453a59b2ded673724f58439f137a72ea8f882cbc",
+    "schema_v2_control.py": "69c9ff77e547eebebb23ff2afb65aae79cc1daffea3c0cd5c26b50bfc63b6f96",
+    "schema_v2_composition.py": "7c8482039b6a35d4be446e95eb9ecebb0c06be279096189563a69ae2b5568777",
+    "schema_v2_checks.py": "f01644ff2a5776298247954d2d788cf0a51385d49d1c4c44fa043da4c60e4bf5",
+    "SCHEMA_CURRICULUM_PROTOCOL.md": "2b0fb5d2b0fef938e0075834b988137cf531243cfa23d2f99c8083e4001be121",
+    "schema_v2_results/world_curriculum.pt": "f85cee2c228cc8de923bdf1b57e83cc419f9090c9b463e0a027df6394f646a07",
+    "schema_v2_results/world_mixed.pt": "c95e7a16ef2e611d253d470c88e5c14c4fa77e0fad4e9a436d56e242d7801818"
+  },
+  "previous_frozen_files_verified": 10
+}

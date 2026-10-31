@@ -1,0 +1,147 @@
+{
+  "mode": "efficient",
+  "pose": "prone",
+  "seed": 901,
+  "node": 24,
+  "body": "head_pitch_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      24
+    ],
+    "local_points": [
+      [
+        0.0323338,
+        -0.0021962,
+        0.0509378
+      ]
+    ],
+    "target_positions": [
+      [
+        0.26597321794136725,
+        0.015704441523772164,
+        0.0853114363866977
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        -0.06314275309856265,
+        0.9979421189938604,
+        -0.01115884712585543
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.26597321794136725,
+      0.015704441523772164,
+      0.060311436386697705
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 10.582943247962925,
+  "terminal_max_position_error_mm": 12.140854377186178,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.08678761223343961,
+  "effort_integral": 0.202627494931221,
+  "positive_mechanical_work_J": 16.188823699951172,
+  "peak_torque_fraction": 0.22503681480884552,
+  "max_speed_limit_ratio": 0.7901917612293384,
+  "max_soft_joint_limit_penetration_rad": 0.0,
+  "final_body_metrics": {
+    "com_height": 0.07282939172918554,
+    "base_height": 0.08075883514791816,
+    "up_z": 0.0729681672256786,
+    "kinetic_j": 0.07453233608136303,
+    "foot_load": 9.120672772493126,
+    "nonfoot_load": 100.94189679681106,
+    "total_load": 110.06256956930419,
+    "com_speed": 0.01300736207203108
+  },
+  "wall_seconds": 4.358208179473877,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.047908663749694824,
+      "predicted_effort": 0.037013281136751175,
+      "predicted_position_error_m": 0.005472011864185333,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.002438245341181755,
+      "predicted_effort": 0.008031444624066353,
+      "predicted_position_error_m": 0.0012344648130238056,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.05686502158641815,
+      "predicted_effort": 0.02371407113969326,
+      "predicted_position_error_m": 0.005961596965789795,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.045456212013959885,
+      "predicted_effort": 0.02241741493344307,
+      "predicted_position_error_m": 0.005330115556716919,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.017072563990950584,
+      "predicted_effort": 0.006454416085034609,
+      "predicted_position_error_m": 0.0032665508333593607,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.027578115463256836,
+      "predicted_effort": 0.026103582233190536,
+      "predicted_position_error_m": 0.004151665139943361,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.01708144322037697,
+      "predicted_effort": 0.010825248435139656,
+      "predicted_position_error_m": 0.00326740019954741,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.03807750344276428,
+      "predicted_effort": 0.022367145866155624,
+      "predicted_position_error_m": 0.0048783645033836365,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

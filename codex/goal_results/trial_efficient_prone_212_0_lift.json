@@ -1,0 +1,147 @@
+{
+  "mode": "efficient",
+  "pose": "prone",
+  "seed": 212,
+  "node": 0,
+  "body": "base_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      0
+    ],
+    "local_points": [
+      [
+        0.0005802,
+        4.47e-05,
+        0.0564524
+      ]
+    ],
+    "target_positions": [
+      [
+        0.055681015280949264,
+        -0.0025360412723798662,
+        0.11009377008091101
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        0.05225636757066911,
+        0.9986337026311713,
+        -4.180635568225982e-06
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.055681015280949264,
+      -0.0025360412723798662,
+      0.08509377008091101
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 19.73744955737504,
+  "terminal_max_position_error_mm": 19.762121176036374,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.012684189501823652,
+  "effort_integral": 0.9269692897796631,
+  "positive_mechanical_work_J": 28.147953033447266,
+  "peak_torque_fraction": 0.8034381866455078,
+  "max_speed_limit_ratio": 0.7744833730176189,
+  "max_soft_joint_limit_penetration_rad": 0.005521336383883968,
+  "final_body_metrics": {
+    "com_height": 0.07741043014518921,
+    "base_height": 0.0797799725261647,
+    "up_z": 0.19737940961659162,
+    "kinetic_j": 0.06459792781152268,
+    "foot_load": 0.0,
+    "nonfoot_load": 107.21248055454268,
+    "total_load": 107.21248055454268,
+    "com_speed": 0.0078370572326744
+  },
+  "wall_seconds": 4.602757215499878,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.46329399943351746,
+      "predicted_effort": 0.09688613563776016,
+      "predicted_position_error_m": 0.017016425728797913,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.043153584003448486,
+      "predicted_effort": 0.08552724868059158,
+      "predicted_position_error_m": 0.005193360149860382,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.049765583127737045,
+      "predicted_effort": 0.06382440030574799,
+      "predicted_position_error_m": 0.005577050149440765,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.015896672382950783,
+      "predicted_effort": 0.04017861932516098,
+      "predicted_position_error_m": 0.0031520500779151917,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.22492806613445282,
+      "predicted_effort": 0.12706512212753296,
+      "predicted_position_error_m": 0.011856645345687866,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.04190816357731819,
+      "predicted_effort": 0.13908547163009644,
+      "predicted_position_error_m": 0.00511787086725235,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.1044597327709198,
+      "predicted_effort": 0.07043349742889404,
+      "predicted_position_error_m": 0.008080057799816132,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.07950501143932343,
+      "predicted_effort": 0.048885881900787354,
+      "predicted_position_error_m": 0.007049158215522766,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

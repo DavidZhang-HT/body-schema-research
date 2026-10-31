@@ -1,0 +1,189 @@
+{
+  "passive_cases": [
+    {
+      "pose": "supine",
+      "seed": 50,
+      "settled": true,
+      "seconds": 3.7619999999998073,
+      "kinetic_j": 1.9069417009557878e-07
+    },
+    {
+      "pose": "prone",
+      "seed": 50,
+      "settled": true,
+      "seconds": 1.322000000000001,
+      "kinetic_j": 1.055668688515009e-05
+    },
+    {
+      "pose": "supine",
+      "seed": 51,
+      "settled": true,
+      "seconds": 3.681999999999816,
+      "kinetic_j": 6.694593981478741e-08
+    },
+    {
+      "pose": "prone",
+      "seed": 51,
+      "settled": true,
+      "seconds": 1.1620000000000008,
+      "kinetic_j": 1.515481166251506e-05
+    },
+    {
+      "pose": "supine",
+      "seed": 52,
+      "settled": true,
+      "seconds": 3.7619999999998073,
+      "kinetic_j": 9.012010288498756e-08
+    },
+    {
+      "pose": "prone",
+      "seed": 52,
+      "settled": true,
+      "seconds": 1.0820000000000007,
+      "kinetic_j": 7.3967243365329066e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 53,
+      "settled": true,
+      "seconds": 3.881999999999794,
+      "kinetic_j": 1.2141351677848519e-08
+    },
+    {
+      "pose": "prone",
+      "seed": 53,
+      "settled": true,
+      "seconds": 1.1220000000000008,
+      "kinetic_j": 6.375805723248912e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 54,
+      "settled": true,
+      "seconds": 3.8419999999997985,
+      "kinetic_j": 1.1020120038283203e-07
+    },
+    {
+      "pose": "prone",
+      "seed": 54,
+      "settled": true,
+      "seconds": 1.2020000000000008,
+      "kinetic_j": 6.75693610108715e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 55,
+      "settled": true,
+      "seconds": 3.601999999999825,
+      "kinetic_j": 1.571504142097784e-08
+    },
+    {
+      "pose": "prone",
+      "seed": 55,
+      "settled": true,
+      "seconds": 1.1220000000000008,
+      "kinetic_j": 3.961048672767011e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 56,
+      "settled": true,
+      "seconds": 4.0819999999997725,
+      "kinetic_j": 1.6353639363955795e-06
+    },
+    {
+      "pose": "prone",
+      "seed": 56,
+      "settled": true,
+      "seconds": 1.1220000000000008,
+      "kinetic_j": 3.136433386548268e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 57,
+      "settled": true,
+      "seconds": 3.8419999999997985,
+      "kinetic_j": 3.6662903955102755e-07
+    },
+    {
+      "pose": "prone",
+      "seed": 57,
+      "settled": true,
+      "seconds": 1.1620000000000008,
+      "kinetic_j": 5.039831894873267e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 58,
+      "settled": true,
+      "seconds": 3.801999999999803,
+      "kinetic_j": 4.142067958063049e-07
+    },
+    {
+      "pose": "prone",
+      "seed": 58,
+      "settled": true,
+      "seconds": 1.1620000000000008,
+      "kinetic_j": 2.4536174821093763e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 59,
+      "settled": true,
+      "seconds": 3.7619999999998073,
+      "kinetic_j": 2.1744121438351466e-08
+    },
+    {
+      "pose": "prone",
+      "seed": 59,
+      "settled": true,
+      "seconds": 1.1220000000000008,
+      "kinetic_j": 5.92868713826717e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 60,
+      "settled": true,
+      "seconds": 3.7219999999998117,
+      "kinetic_j": 2.945559067087756e-08
+    },
+    {
+      "pose": "prone",
+      "seed": 60,
+      "settled": true,
+      "seconds": 1.1220000000000008,
+      "kinetic_j": 3.5285889675527333e-06
+    },
+    {
+      "pose": "supine",
+      "seed": 61,
+      "settled": true,
+      "seconds": 3.881999999999794,
+      "kinetic_j": 1.8523431996637032e-06
+    },
+    {
+      "pose": "prone",
+      "seed": 61,
+      "settled": true,
+      "seconds": 1.2420000000000009,
+      "kinetic_j": 1.5089035161296144e-05
+    }
+  ],
+  "schemas": [
+    "bilateral_hip_pitch",
+    "bilateral_knee",
+    "bilateral_ankle_pitch",
+    "hip_spread",
+    "hip_yaw",
+    "bilateral_shoulder_pitch",
+    "shoulder_spread",
+    "bilateral_elbow",
+    "upper_arm_yaw",
+    "differential_hip_pitch",
+    "differential_shoulder_pitch",
+    "differential_elbow"
+  ],
+  "duration": 0.6,
+  "pairs": 1728,
+  "scope": "Contact force/J^T ground load are ideal simulated sensor proxies. Body CoM is privileged model-derived state. No external assistance."
+}

@@ -1,0 +1,4142 @@
+[
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 900,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          0.05619382905089008,
+          -0.0026696478709877375,
+          0.08502338496267392
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.03969573526502513,
+          0.9651052448930613,
+          0.25883607724131735
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.05619382905089008,
+        -0.0026696478709877375,
+        0.08502338496267392
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.991342568268264,
+    "terminal_max_direction_error_deg": 15.004439368522334,
+    "terminal_max_point_speed_m_s": 0.0005397572416119838,
+    "effort_integral": 0.05808503180742264,
+    "positive_mechanical_work_J": 8.461804389953613,
+    "peak_torque_fraction": 0.15198178589344025,
+    "max_speed_limit_ratio": 0.34588461888344735,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06796176413040808,
+      "base_height": 0.08070526748831253,
+      "up_z": 0.08102569559924878,
+      "kinetic_j": 0.03195739229678115,
+      "foot_load": 25.46338023845347,
+      "nonfoot_load": 84.38823101664671,
+      "total_load": 109.85161125510018,
+      "com_speed": 0.013097429952568943
+    },
+    "wall_seconds": 0.4646456241607666,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 900,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          0.2674178123811011,
+          -0.013208902675338545,
+          0.06003125063636995
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.0393920797233869,
+          0.9642870789041477,
+          0.2619135229681205
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.2674178123811011,
+        -0.013208902675338545,
+        0.06003125063636995
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.213418328636502,
+    "terminal_max_direction_error_deg": 15.214100853288091,
+    "terminal_max_point_speed_m_s": 0.002702517678194915,
+    "effort_integral": 0.0473349466919899,
+    "positive_mechanical_work_J": 7.266583442687988,
+    "peak_torque_fraction": 0.15541008114814758,
+    "max_speed_limit_ratio": 0.7621264566679349,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06797038956038541,
+      "base_height": 0.08069622034391048,
+      "up_z": 0.08231708669773384,
+      "kinetic_j": 0.045405547627798484,
+      "foot_load": 23.209372245503015,
+      "nonfoot_load": 79.46578129842655,
+      "total_load": 102.67515354392957,
+      "com_speed": 0.006110185829869237
+    },
+    "wall_seconds": 0.5568859577178955,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 900,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.048033780987800964,
+          0.20369081558145802,
+          0.021684778639218052
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9040169282161884,
+          -0.34022735015920996,
+          0.2588411553486212
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.048033780987800964,
+        0.20369081558145802,
+        0.021684778639218052
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.003392572611807,
+    "terminal_max_direction_error_deg": 15.004388149717428,
+    "terminal_max_point_speed_m_s": 0.006490714301708438,
+    "effort_integral": 0.012521352618932724,
+    "positive_mechanical_work_J": 0.16615289449691772,
+    "peak_torque_fraction": 0.0822349488735199,
+    "max_speed_limit_ratio": 0.10862381720482801,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06756998190990324,
+      "base_height": 0.08072225957750336,
+      "up_z": 0.07924003539587694,
+      "kinetic_j": 0.004681776211156607,
+      "foot_load": 25.644533689494725,
+      "nonfoot_load": 81.43744769402429,
+      "total_load": 107.08198138351901,
+      "com_speed": 0.00013705131783260885
+    },
+    "wall_seconds": 0.5756783485412598,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 900,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.0658816320022109,
+          -0.1952620524075687,
+          0.0216806228356786
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9355159767724279,
+          0.24041547366818586,
+          0.2588633949101964
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.0658816320022109,
+        -0.1952620524075687,
+        0.0216806228356786
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.931553477301009,
+    "terminal_max_direction_error_deg": 14.980719875644615,
+    "terminal_max_point_speed_m_s": 0.0031175763043122455,
+    "effort_integral": 0.011026278138160706,
+    "positive_mechanical_work_J": 0.08796464651823044,
+    "peak_torque_fraction": 0.06092336028814316,
+    "max_speed_limit_ratio": 0.07687426174991978,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06757084013765402,
+      "base_height": 0.08072155344805125,
+      "up_z": 0.07929189399894325,
+      "kinetic_j": 0.0028518823051779997,
+      "foot_load": 25.519734640852093,
+      "nonfoot_load": 82.75920568206645,
+      "total_load": 108.27894032291854,
+      "com_speed": 0.00012885202147795688
+    },
+    "wall_seconds": 0.4679756164550781,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 900,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3076282439616412,
+          0.09616006835085116,
+          0.05995418333290443
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.030558634811661683,
+          0.964873335042274,
+          0.2609322079829301
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3076282439616412,
+        0.09616006835085116,
+        0.05995418333290443
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.094769560622172,
+    "terminal_max_direction_error_deg": 15.10127251733892,
+    "terminal_max_point_speed_m_s": 0.00110880132218576,
+    "effort_integral": 0.01602228358387947,
+    "positive_mechanical_work_J": 0.13066233694553375,
+    "peak_torque_fraction": 0.06787462532520294,
+    "max_speed_limit_ratio": 0.0911836615492883,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.0675748906171012,
+      "base_height": 0.08072445868162113,
+      "up_z": 0.07882702322743611,
+      "kinetic_j": 0.0030023619366146815,
+      "foot_load": 25.979316646106966,
+      "nonfoot_load": 81.15141598186665,
+      "total_load": 107.13073262797361,
+      "com_speed": 8.889639128142073e-05
+    },
+    "wall_seconds": 0.40770888328552246,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 900,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.31521864708014063,
+          -0.06425783214841521,
+          0.060395695837145075
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.05512073954019261,
+          0.9643039066654456,
+          0.25899745107298355
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.31521864708014063,
+        -0.06425783214841521,
+        0.060395695837145075
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.910540913701288,
+    "terminal_max_direction_error_deg": 14.910540913701288,
+    "terminal_max_point_speed_m_s": 0.00014525064442856122,
+    "effort_integral": 0.014540322124958038,
+    "positive_mechanical_work_J": 0.13487151265144348,
+    "peak_torque_fraction": 0.06817127764225006,
+    "max_speed_limit_ratio": 0.08676857911296817,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06756836669469354,
+      "base_height": 0.08072409487021556,
+      "up_z": 0.07893025601054689,
+      "kinetic_j": 0.004844582551383497,
+      "foot_load": 25.50761348247886,
+      "nonfoot_load": 82.50741110095011,
+      "total_load": 108.01502458342897,
+      "com_speed": 0.00010616680171138379
+    },
+    "wall_seconds": 0.45403432846069336,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 900,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.049283784409897585,
+          0.007000065167307705,
+          0.08681194671428374
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.1331944156848292,
+          0.956697758347918,
+          0.2588216505674276
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.049283784409897585,
+        0.007000065167307705,
+        0.08681194671428374
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.587934966665733,
+    "terminal_max_direction_error_deg": 15.59686245321704,
+    "terminal_max_point_speed_m_s": 0.0006708320663529728,
+    "effort_integral": 0.08063586056232452,
+    "positive_mechanical_work_J": 7.434487342834473,
+    "peak_torque_fraction": 0.1412842720746994,
+    "max_speed_limit_ratio": 0.7020614517879343,
+    "max_soft_joint_limit_penetration_rad": 0.0013319570624543697,
+    "final_body_metrics": {
+      "com_height": 0.07112853314097291,
+      "base_height": 0.08057632958941287,
+      "up_z": 0.10024230617221472,
+      "kinetic_j": 0.04769279946056114,
+      "foot_load": 24.23810842432374,
+      "nonfoot_load": 76.48560363072463,
+      "total_load": 100.72371205504837,
+      "com_speed": 0.0044166927945343435
+    },
+    "wall_seconds": 0.6025485992431641,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 900,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.2738408622699151,
+          0.024687591200469802,
+          0.10914285312025893
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.8512393566367193,
+          0.43576917283986627,
+          0.2923983339815148
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.2738408622699151,
+        0.024687591200469802,
+        0.10914285312025893
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.99646284594737,
+    "terminal_max_direction_error_deg": 14.999159945841404,
+    "terminal_max_point_speed_m_s": 0.007993081396022908,
+    "effort_integral": 0.00419370923191309,
+    "positive_mechanical_work_J": 0.06655195355415344,
+    "peak_torque_fraction": 0.05771869048476219,
+    "max_speed_limit_ratio": 0.0756610635278551,
+    "max_soft_joint_limit_penetration_rad": 0.0012671443560858808,
+    "final_body_metrics": {
+      "com_height": 0.07075258470894451,
+      "base_height": 0.08057568784761565,
+      "up_z": 0.10024349650692475,
+      "kinetic_j": 0.0029891785480874416,
+      "foot_load": 25.044717154371313,
+      "nonfoot_load": 82.87368973423042,
+      "total_load": 107.91840688860174,
+      "com_speed": 2.5316747209354208e-05
+    },
+    "wall_seconds": 0.36005616188049316,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 900,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          0.08895052189152648,
+          0.19136727997651246,
+          0.021736976515499967
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9501060597289881,
+          -0.17405885515439454,
+          0.258847426505654
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.08895052189152648,
+        0.19136727997651246,
+        0.021736976515499967
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.922335561421955,
+    "terminal_max_direction_error_deg": 14.930428290686525,
+    "terminal_max_point_speed_m_s": 0.007379669538857521,
+    "effort_integral": 0.037673138082027435,
+    "positive_mechanical_work_J": 5.501732349395752,
+    "peak_torque_fraction": 0.14493437111377716,
+    "max_speed_limit_ratio": 0.7376654079285939,
+    "max_soft_joint_limit_penetration_rad": 0.001266026920411667,
+    "final_body_metrics": {
+      "com_height": 0.07080841342258752,
+      "base_height": 0.08057394846194033,
+      "up_z": 0.10026279947391883,
+      "kinetic_j": 0.04951681843772156,
+      "foot_load": 25.527744574533635,
+      "nonfoot_load": 76.62993669821665,
+      "total_load": 102.1576812727503,
+      "com_speed": 0.0012478134483337644
+    },
+    "wall_seconds": 0.5351982116699219,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 900,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          0.032288990744222104,
+          -0.21026497135966088,
+          0.021729990865312045
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.860938074176496,
+          0.43789156649864613,
+          0.2589142877915958
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.032288990744222104,
+        -0.21026497135966088,
+        0.021729990865312045
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.00403357519813,
+    "terminal_max_direction_error_deg": 15.00403357519813,
+    "terminal_max_point_speed_m_s": 0.0013719722012100052,
+    "effort_integral": 0.03414524346590042,
+    "positive_mechanical_work_J": 4.576200485229492,
+    "peak_torque_fraction": 0.1327434480190277,
+    "max_speed_limit_ratio": 0.6844719857762555,
+    "max_soft_joint_limit_penetration_rad": 0.0012666318501508567,
+    "final_body_metrics": {
+      "com_height": 0.07079708938433525,
+      "base_height": 0.08057370720064042,
+      "up_z": 0.10026945191464252,
+      "kinetic_j": 0.03169955769287648,
+      "foot_load": 27.211655778245934,
+      "nonfoot_load": 77.89776981479932,
+      "total_load": 105.10942559304526,
+      "com_speed": 0.001713893824678768
+    },
+    "wall_seconds": 0.5262928009033203,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 900,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.33214261404482714,
+          0.03657619680596273,
+          0.10917683556315792
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.10181758883991956,
+          0.96215785266659,
+          0.252755702516964
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.33214261404482714,
+        0.03657619680596273,
+        0.10917683556315792
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.923920093516406,
+    "terminal_max_direction_error_deg": 15.238252410332223,
+    "terminal_max_point_speed_m_s": 0.04338161983159075,
+    "effort_integral": 0.040891773998737335,
+    "positive_mechanical_work_J": 5.082479000091553,
+    "peak_torque_fraction": 0.14811500906944275,
+    "max_speed_limit_ratio": 0.716829392334701,
+    "max_soft_joint_limit_penetration_rad": 0.0012681820313593661,
+    "final_body_metrics": {
+      "com_height": 0.07078780611685771,
+      "base_height": 0.08057304165263358,
+      "up_z": 0.1002753352654635,
+      "kinetic_j": 0.04454341324198447,
+      "foot_load": 28.430004359832555,
+      "nonfoot_load": 85.25361408879307,
+      "total_load": 113.68361844862562,
+      "com_speed": 0.00546969077387806
+    },
+    "wall_seconds": 0.5496790409088135,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 900,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.30793469153717556,
+          -0.1270818832361278,
+          0.10917024688411063
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.40337715152493875,
+          0.8583842155149896,
+          0.31695963809662786
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.30793469153717556,
+        -0.1270818832361278,
+        0.10917024688411063
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.053671505075949,
+    "terminal_max_direction_error_deg": 15.298366520321093,
+    "terminal_max_point_speed_m_s": 0.057913085819168195,
+    "effort_integral": 0.015095963142812252,
+    "positive_mechanical_work_J": 1.5643270015716553,
+    "peak_torque_fraction": 0.1389317512512207,
+    "max_speed_limit_ratio": 0.6378535238045662,
+    "max_soft_joint_limit_penetration_rad": 0.0012651582112350734,
+    "final_body_metrics": {
+      "com_height": 0.07076310707379119,
+      "base_height": 0.0805755525764746,
+      "up_z": 0.10025113075637734,
+      "kinetic_j": 0.007982266775987481,
+      "foot_load": 26.457091181767623,
+      "nonfoot_load": 81.24351361728378,
+      "total_load": 107.7006047990514,
+      "com_speed": 0.0030099996959808794
+    },
+    "wall_seconds": 0.4545013904571533,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 901,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          0.056015907578111306,
+          0.004701449367246811,
+          0.0853605114790497
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.062013007605529975,
+          0.9639338864879378,
+          0.25881624633700345
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.056015907578111306,
+        0.004701449367246811,
+        0.0853605114790497
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.991273279184801,
+    "terminal_max_direction_error_deg": 14.992929130864466,
+    "terminal_max_point_speed_m_s": 0.0008500867477495733,
+    "effort_integral": 0.06301290541887283,
+    "positive_mechanical_work_J": 8.866695404052734,
+    "peak_torque_fraction": 0.15844959020614624,
+    "max_speed_limit_ratio": 0.7686776108185023,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.068109302765733,
+      "base_height": 0.08066084733309441,
+      "up_z": 0.08757068051803567,
+      "kinetic_j": 0.052324896929353965,
+      "foot_load": 31.651496095386605,
+      "nonfoot_load": 82.51672260321084,
+      "total_load": 114.16821869859744,
+      "com_speed": 0.01811826147336821
+    },
+    "wall_seconds": 0.3740847110748291,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 901,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          0.26597321794136725,
+          0.015704441523772164,
+          0.060311436386697705
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.06117359130023917,
+          0.9668204240846561,
+          0.24802431191356572
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.26597321794136725,
+        0.015704441523772164,
+        0.060311436386697705
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.443646026288784,
+    "terminal_max_direction_error_deg": 14.443646026288784,
+    "terminal_max_point_speed_m_s": 0.0009585757330337736,
+    "effort_integral": 0.026281246915459633,
+    "positive_mechanical_work_J": 2.7933731079101562,
+    "peak_torque_fraction": 0.149452343583107,
+    "max_speed_limit_ratio": 0.758264436678303,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06791021662955858,
+      "base_height": 0.08065046996187175,
+      "up_z": 0.0891180072509792,
+      "kinetic_j": 0.03160025419958274,
+      "foot_load": 25.204344771899045,
+      "nonfoot_load": 83.79012370160967,
+      "total_load": 108.99446847350872,
+      "com_speed": 0.007005891528340486
+    },
+    "wall_seconds": 0.39795851707458496,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 901,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.07025482475162334,
+          0.19273993457661934,
+          0.02168952399295381
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9426077461900915,
+          -0.21096216303358917,
+          0.2588157695941773
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.07025482475162334,
+        0.19273993457661934,
+        0.02168952399295381
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.003984956090266,
+    "terminal_max_direction_error_deg": 15.006242264512661,
+    "terminal_max_point_speed_m_s": 0.006832580200158225,
+    "effort_integral": 0.016372445970773697,
+    "positive_mechanical_work_J": 0.09331035614013672,
+    "peak_torque_fraction": 0.04770543798804283,
+    "max_speed_limit_ratio": 0.055267778399850837,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.0677627850369757,
+      "base_height": 0.08066216355839768,
+      "up_z": 0.08803689306334696,
+      "kinetic_j": 0.0018994563443937068,
+      "foot_load": 26.28972454209061,
+      "nonfoot_load": 81.71920799593003,
+      "total_load": 108.00893253802064,
+      "com_speed": 0.00013224479249281242
+    },
+    "wall_seconds": 0.45319223403930664,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 901,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.040515304464043916,
+          -0.20947259235907256,
+          0.02168624036749079
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.8833120530271985,
+          0.39086047744759833,
+          0.25882021587641113
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.040515304464043916,
+        -0.20947259235907256,
+        0.02168624036749079
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.580511560887794,
+    "terminal_max_direction_error_deg": 14.62572053557248,
+    "terminal_max_point_speed_m_s": 0.003317773260491321,
+    "effort_integral": 0.03855110704898834,
+    "positive_mechanical_work_J": 3.9892024993896484,
+    "peak_torque_fraction": 0.15383689105510712,
+    "max_speed_limit_ratio": 0.7620104371293216,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.0678417183348536,
+      "base_height": 0.08066167795866375,
+      "up_z": 0.08765266502104418,
+      "kinetic_j": 0.0316860741473717,
+      "foot_load": 31.9513438082061,
+      "nonfoot_load": 83.96497014602019,
+      "total_load": 115.9163139542263,
+      "com_speed": 0.006799930813013122
+    },
+    "wall_seconds": 0.4598839282989502,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 901,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3172938930276262,
+          0.06607510696582898,
+          0.06038597603697101
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.03473785739205618,
+          0.965914487967233,
+          0.25651994698036334
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3172938930276262,
+        0.06607510696582898,
+        0.06038597603697101
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.718302039185923,
+    "terminal_max_direction_error_deg": 15.749627923849705,
+    "terminal_max_point_speed_m_s": 0.0032340202693048547,
+    "effort_integral": 0.021376481279730797,
+    "positive_mechanical_work_J": 0.32098811864852905,
+    "peak_torque_fraction": 0.09175042808055878,
+    "max_speed_limit_ratio": 0.11539670231416638,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06780777883793888,
+      "base_height": 0.08066070842008544,
+      "up_z": 0.08812090747451351,
+      "kinetic_j": 0.002226785872917276,
+      "foot_load": 26.79881923306497,
+      "nonfoot_load": 80.65062484017709,
+      "total_load": 107.44944407324206,
+      "com_speed": 9.304945796198035e-05
+    },
+    "wall_seconds": 0.3913753032684326,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 901,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3056932451446928,
+          -0.10047653460883628,
+          0.0599868335827563
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.09410913699590581,
+          0.9601812900396863,
+          0.26305011041930826
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3056932451446928,
+        -0.10047653460883628,
+        0.0599868335827563
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.795012891505616,
+    "terminal_max_direction_error_deg": 15.81479122028838,
+    "terminal_max_point_speed_m_s": 0.0019992762898038163,
+    "effort_integral": 0.02050173282623291,
+    "positive_mechanical_work_J": 0.2975863218307495,
+    "peak_torque_fraction": 0.0868975967168808,
+    "max_speed_limit_ratio": 0.11122452794358369,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06780678698947533,
+      "base_height": 0.08066166957841796,
+      "up_z": 0.0879785413031771,
+      "kinetic_j": 0.0037732472474995026,
+      "foot_load": 26.54242514995587,
+      "nonfoot_load": 81.37499640462475,
+      "total_load": 107.91742155458063,
+      "com_speed": 0.0001351827213967398
+    },
+    "wall_seconds": 0.41722822189331055,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 901,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.05008171438841383,
+          -0.005470437677217139,
+          0.08681188363150807
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.10700808298227082,
+          0.9599779022401767,
+          0.2588275437178362
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.05008171438841383,
+        -0.005470437677217139,
+        0.08681188363150807
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.014320533887288,
+    "terminal_max_direction_error_deg": 15.01789567727685,
+    "terminal_max_point_speed_m_s": 0.000774602675362135,
+    "effort_integral": 0.05148469656705856,
+    "positive_mechanical_work_J": 5.55733060836792,
+    "peak_torque_fraction": 0.13763557374477386,
+    "max_speed_limit_ratio": 0.49995286697411534,
+    "max_soft_joint_limit_penetration_rad": 0.0012653300739446927,
+    "final_body_metrics": {
+      "com_height": 0.07081121789700202,
+      "base_height": 0.08057632303875607,
+      "up_z": 0.10024064570196616,
+      "kinetic_j": 0.019345594425021338,
+      "foot_load": 27.052310732847303,
+      "nonfoot_load": 78.84575507539421,
+      "total_load": 105.89806580824151,
+      "com_speed": 0.004870805763861312
+    },
+    "wall_seconds": 0.5921802520751953,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 901,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.2720588775534649,
+          -0.043743812447497116,
+          0.10914318309918905
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.932447476539178,
+          0.2122326065571131,
+          0.29240216177328826
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.2720588775534649,
+        -0.043743812447497116,
+        0.10914318309918905
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.987157845901917,
+    "terminal_max_direction_error_deg": 14.989174405116305,
+    "terminal_max_point_speed_m_s": 0.007796157084092839,
+    "effort_integral": 0.03845762833952904,
+    "positive_mechanical_work_J": 5.3218278884887695,
+    "peak_torque_fraction": 0.14548823237419128,
+    "max_speed_limit_ratio": 0.7311732310653145,
+    "max_soft_joint_limit_penetration_rad": 0.0012722032534797645,
+    "final_body_metrics": {
+      "com_height": 0.07076726886573001,
+      "base_height": 0.08057122251180328,
+      "up_z": 0.10029107538536683,
+      "kinetic_j": 0.038468518690531646,
+      "foot_load": 25.4524666287626,
+      "nonfoot_load": 94.13235261353262,
+      "total_load": 119.58481924229521,
+      "com_speed": 0.007588341420950712
+    },
+    "wall_seconds": 0.9488909244537354,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 901,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          0.04162996721800564,
+          0.19978693253775714,
+          0.021736886206138242
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.8951244214251144,
+          -0.3629740801271717,
+          0.2588476140979233
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.04162996721800564,
+        0.19978693253775714,
+        0.021736886206138242
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.92044702988387,
+    "terminal_max_direction_error_deg": 14.966636759534797,
+    "terminal_max_point_speed_m_s": 0.00817705011184103,
+    "effort_integral": 0.03279869258403778,
+    "positive_mechanical_work_J": 5.446231365203857,
+    "peak_torque_fraction": 0.14717324078083038,
+    "max_speed_limit_ratio": 0.7281720866660301,
+    "max_soft_joint_limit_penetration_rad": 0.0012671345099353193,
+    "final_body_metrics": {
+      "com_height": 0.07076958931420547,
+      "base_height": 0.08057282117430309,
+      "up_z": 0.10027013006049978,
+      "kinetic_j": 0.051436303657734224,
+      "foot_load": 25.356550881845802,
+      "nonfoot_load": 77.42773251790396,
+      "total_load": 102.78428339974977,
+      "com_speed": 0.005552695234972339
+    },
+    "wall_seconds": 0.8132507801055908,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 901,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          0.0817951127377402,
+          -0.1992419634325761,
+          0.021729686961398056
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9381614221385235,
+          0.22981465804920084,
+          0.2589176876089221
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.0817951127377402,
+        -0.1992419634325761,
+        0.021729686961398056
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.818719533264856,
+    "terminal_max_direction_error_deg": 14.850828887246111,
+    "terminal_max_point_speed_m_s": 0.004711071334656158,
+    "effort_integral": 0.03466382995247841,
+    "positive_mechanical_work_J": 5.758330345153809,
+    "peak_torque_fraction": 0.14927734434604645,
+    "max_speed_limit_ratio": 0.7340829002226011,
+    "max_soft_joint_limit_penetration_rad": 0.0012640521978570796,
+    "final_body_metrics": {
+      "com_height": 0.07079780158812629,
+      "base_height": 0.08057162027280003,
+      "up_z": 0.10027850172413261,
+      "kinetic_j": 0.03632578469748772,
+      "foot_load": 28.264331894318815,
+      "nonfoot_load": 77.32780598090903,
+      "total_load": 105.59213787522785,
+      "com_speed": 0.006946203629504974
+    },
+    "wall_seconds": 0.5029182434082031,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 901,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.31237818410074697,
+          0.11897147439395353,
+          0.10912072576825413
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.20152579681939342,
+          0.9490380469029809,
+          0.24231000546176867
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.31237818410074697,
+        0.11897147439395353,
+        0.10912072576825413
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.811475635137134,
+    "terminal_max_direction_error_deg": 15.095960818175579,
+    "terminal_max_point_speed_m_s": 0.04139506092375532,
+    "effort_integral": 0.03377724066376686,
+    "positive_mechanical_work_J": 5.413268089294434,
+    "peak_torque_fraction": 0.14277078211307526,
+    "max_speed_limit_ratio": 0.7109229348818091,
+    "max_soft_joint_limit_penetration_rad": 0.0012684437712002783,
+    "final_body_metrics": {
+      "com_height": 0.070778161863673,
+      "base_height": 0.0805689837652273,
+      "up_z": 0.10031878652335532,
+      "kinetic_j": 0.05283941553648885,
+      "foot_load": 27.378505284141465,
+      "nonfoot_load": 77.07640472993454,
+      "total_load": 104.454910014076,
+      "com_speed": 0.00911969441631682
+    },
+    "wall_seconds": 0.5614943504333496,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 901,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.33038003623024703,
+          -0.04396053376085368,
+          0.109159692322179
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.04741442937787739,
+          0.9614510159709462,
+          0.27085755624535185
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.33038003623024703,
+        -0.04396053376085368,
+        0.109159692322179
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.929347352413558,
+    "terminal_max_direction_error_deg": 14.92947083565079,
+    "terminal_max_point_speed_m_s": 0.0002723556651599819,
+    "effort_integral": 0.010913895443081856,
+    "positive_mechanical_work_J": 0.2545347809791565,
+    "peak_torque_fraction": 0.09186960011720657,
+    "max_speed_limit_ratio": 0.11629605295629244,
+    "max_soft_joint_limit_penetration_rad": 0.0012701134152341975,
+    "final_body_metrics": {
+      "com_height": 0.07073715181046539,
+      "base_height": 0.0805754013245604,
+      "up_z": 0.10024450075662737,
+      "kinetic_j": 0.00405829356487879,
+      "foot_load": 25.32085723941256,
+      "nonfoot_load": 82.59782721330141,
+      "total_load": 107.91868445271398,
+      "com_speed": 3.106382572983669e-05
+    },
+    "wall_seconds": 0.4122049808502197,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 902,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          0.05598523630989798,
+          0.005771070292813838,
+          0.08502873273062722
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.10286913755627188,
+          0.9604295301340429,
+          0.2588301724778854
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.05598523630989798,
+        0.005771070292813838,
+        0.08502873273062722
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.989357236863853,
+    "terminal_max_direction_error_deg": 14.990616906565224,
+    "terminal_max_point_speed_m_s": 0.0005546819300732723,
+    "effort_integral": 0.06172627583146095,
+    "positive_mechanical_work_J": 8.805283546447754,
+    "peak_torque_fraction": 0.15938891470432281,
+    "max_speed_limit_ratio": 0.775726161088362,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06808762995094422,
+      "base_height": 0.08071072653793195,
+      "up_z": 0.0802965840623803,
+      "kinetic_j": 0.059232740084738514,
+      "foot_load": 29.18708981315318,
+      "nonfoot_load": 70.57199462937038,
+      "total_load": 99.75908444252356,
+      "com_speed": 0.01127074617909538
+    },
+    "wall_seconds": 0.4123203754425049,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 902,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          0.2664514830711483,
+          0.026291351907223037,
+          0.06003686893368427
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.10284326930914,
+          0.9605507595269185,
+          0.25839020943152835
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.2664514830711483,
+        0.026291351907223037,
+        0.06003686893368427
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.89215296191002,
+    "terminal_max_direction_error_deg": 14.89215296191002,
+    "terminal_max_point_speed_m_s": 0.0014664357977687487,
+    "effort_integral": 0.019541213288903236,
+    "positive_mechanical_work_J": 1.8389341831207275,
+    "peak_torque_fraction": 0.14318802952766418,
+    "max_speed_limit_ratio": 0.600203315040414,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06768984046103958,
+      "base_height": 0.08070655223293799,
+      "up_z": 0.0810914443733305,
+      "kinetic_j": 0.014503988787293195,
+      "foot_load": 28.790441174433777,
+      "nonfoot_load": 81.88187748246024,
+      "total_load": 110.67231865689402,
+      "com_speed": 0.002720844691736519
+    },
+    "wall_seconds": 0.36525464057922363,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 902,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.07769367858951721,
+          0.193571838630417,
+          0.021684943632606438
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.9453427537240157,
+          -0.19830037853862492,
+          0.25885138178679895
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.07769367858951721,
+        0.193571838630417,
+        0.021684943632606438
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.00688819283506,
+    "terminal_max_direction_error_deg": 15.009016677814444,
+    "terminal_max_point_speed_m_s": 0.006963486000632904,
+    "effort_integral": 0.01656973548233509,
+    "positive_mechanical_work_J": 0.1484116166830063,
+    "peak_torque_fraction": 0.07307279109954834,
+    "max_speed_limit_ratio": 0.09286289357087293,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06756697096776756,
+      "base_height": 0.08072017257100113,
+      "up_z": 0.0794191836516237,
+      "kinetic_j": 0.0031035898768547333,
+      "foot_load": 26.31730356913276,
+      "nonfoot_load": 81.55343407292737,
+      "total_load": 107.87073764206013,
+      "com_speed": 8.466952296625602e-05
+    },
+    "wall_seconds": 0.44319868087768555,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 902,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.03457704339853537,
+          -0.20684561723100803,
+          0.02168771998511136
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          0.8802905115788436,
+          0.3976206389322566,
+          0.258817392613716
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.03457704339853537,
+        -0.20684561723100803,
+        0.02168771998511136
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.585395140414928,
+    "terminal_max_direction_error_deg": 14.662747712650159,
+    "terminal_max_point_speed_m_s": 0.003755392016140946,
+    "effort_integral": 0.04429135099053383,
+    "positive_mechanical_work_J": 5.398861885070801,
+    "peak_torque_fraction": 0.15355873107910156,
+    "max_speed_limit_ratio": 0.758060127491105,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06762329327017383,
+      "base_height": 0.08071847452541905,
+      "up_z": 0.07933458685403653,
+      "kinetic_j": 0.04286919681710553,
+      "foot_load": 14.802414639654483,
+      "nonfoot_load": 81.62199631703847,
+      "total_load": 96.42441095669295,
+      "com_speed": 0.00970561188458075
+    },
+    "wall_seconds": 0.4438498020172119,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 902,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3182451917242447,
+          0.048700790389830884,
+          0.059947581240510785
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.1542498791002772,
+          0.9515449331783912,
+          0.26602483895321205
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3182451917242447,
+        0.048700790389830884,
+        0.059947581240510785
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 17.2168342448815,
+    "terminal_max_direction_error_deg": 17.499482009201856,
+    "terminal_max_point_speed_m_s": 0.07483661787334792,
+    "effort_integral": 0.04230028763413429,
+    "positive_mechanical_work_J": 4.389513969421387,
+    "peak_torque_fraction": 0.1497221142053604,
+    "max_speed_limit_ratio": 0.7561200969238899,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06758280073051189,
+      "base_height": 0.08072535379761958,
+      "up_z": 0.0786357532962588,
+      "kinetic_j": 0.036306309633084566,
+      "foot_load": 35.15193810064791,
+      "nonfoot_load": 72.91462469445302,
+      "total_load": 108.06656279510094,
+      "com_speed": 0.0031499009571280562
+    },
+    "wall_seconds": 0.47646594047546387,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "prone",
+    "seed": 902,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.3003271436328182,
+          -0.11918362009900653,
+          0.059974715717861254
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.12648914097145242,
+          0.9573619420624083,
+          0.2597279521091251
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.3003271436328182,
+        -0.11918362009900653,
+        0.059974715717861254
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.794979842197524,
+    "terminal_max_direction_error_deg": 17.60636408368174,
+    "terminal_max_point_speed_m_s": 0.040641971541072346,
+    "effort_integral": 0.04282734915614128,
+    "positive_mechanical_work_J": 4.848383903503418,
+    "peak_torque_fraction": 0.15226252377033234,
+    "max_speed_limit_ratio": 0.750840010245808,
+    "max_soft_joint_limit_penetration_rad": 0.0,
+    "final_body_metrics": {
+      "com_height": 0.06763704733175176,
+      "base_height": 0.08072066564695485,
+      "up_z": 0.07912946115220673,
+      "kinetic_j": 0.03701695758956138,
+      "foot_load": 29.05690284806985,
+      "nonfoot_load": 74.65217352188296,
+      "total_load": 103.70907636995281,
+      "com_speed": 0.006014969345226995
+    },
+    "wall_seconds": 0.4258759021759033,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 902,
+    "node": 0,
+    "body": "base_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        0
+      ],
+      "local_points": [
+        [
+          0.0005802,
+          4.47e-05,
+          0.0564524
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.049463953861953625,
+          -0.002265731482156231,
+          0.08681176980290435
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.04332135561831826,
+          0.9649518312376618,
+          0.25882662834120335
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.049463953861953625,
+        -0.002265731482156231,
+        0.08681176980290435
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.236619040655443,
+    "terminal_max_direction_error_deg": 15.240756253403163,
+    "terminal_max_point_speed_m_s": 0.0007901144860482795,
+    "effort_integral": 0.05776657909154892,
+    "positive_mechanical_work_J": 3.7598676681518555,
+    "peak_torque_fraction": 0.1289495825767517,
+    "max_speed_limit_ratio": 0.6412538709055101,
+    "max_soft_joint_limit_penetration_rad": 0.0012622536051660749,
+    "final_body_metrics": {
+      "com_height": 0.0708764825013267,
+      "base_height": 0.0805718926451624,
+      "up_z": 0.10028233272991574,
+      "kinetic_j": 0.020423874503290865,
+      "foot_load": 27.112567295546157,
+      "nonfoot_load": 84.79768430045755,
+      "total_load": 111.9102515960037,
+      "com_speed": 0.0008174656799301098
+    },
+    "wall_seconds": 0.6413984298706055,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 902,
+    "node": 24,
+    "body": "head_pitch_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        24
+      ],
+      "local_points": [
+        [
+          0.0323338,
+          -0.0021962,
+          0.0509378
+        ]
+      ],
+      "target_positions": [
+        [
+          -0.27348540500613777,
+          -0.02578310821398896,
+          0.10914385016988588
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9163793118216406,
+          0.2734013733624275,
+          0.29240493482298846
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        -0.27348540500613777,
+        -0.02578310821398896,
+        0.10914385016988588
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.992323981258155,
+    "terminal_max_direction_error_deg": 14.993580248070575,
+    "terminal_max_point_speed_m_s": 0.008035139315721555,
+    "effort_integral": 0.020761778578162193,
+    "positive_mechanical_work_J": 2.697784423828125,
+    "peak_torque_fraction": 0.1335739940404892,
+    "max_speed_limit_ratio": 0.7017315655594142,
+    "max_soft_joint_limit_penetration_rad": 0.001271069860063534,
+    "final_body_metrics": {
+      "com_height": 0.07075429534060895,
+      "base_height": 0.08057465138507425,
+      "up_z": 0.10025413874287169,
+      "kinetic_j": 0.025110934888130047,
+      "foot_load": 26.622240932005163,
+      "nonfoot_load": 79.36507409131636,
+      "total_load": 105.98731502332151,
+      "com_speed": 0.002108159924372164
+    },
+    "wall_seconds": 0.4974820613861084,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 902,
+    "node": 17,
+    "body": "l_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        17
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0234157
+        ]
+      ],
+      "target_positions": [
+        [
+          0.051972596669979776,
+          0.20650224715141488,
+          0.02173683285680463
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.8977089371524464,
+          -0.3565340089663083,
+          0.25884776338040627
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.051972596669979776,
+        0.20650224715141488,
+        0.02173683285680463
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.87995337826843,
+    "terminal_max_direction_error_deg": 14.931945776994484,
+    "terminal_max_point_speed_m_s": 0.002700019050734421,
+    "effort_integral": 0.016318069770932198,
+    "positive_mechanical_work_J": 2.3586244583129883,
+    "peak_torque_fraction": 0.13647250831127167,
+    "max_speed_limit_ratio": 0.607209651722458,
+    "max_soft_joint_limit_penetration_rad": 0.0012669832825846772,
+    "final_body_metrics": {
+      "com_height": 0.07075904739842004,
+      "base_height": 0.08057576131631519,
+      "up_z": 0.10023847017637522,
+      "kinetic_j": 0.01876509583864738,
+      "foot_load": 26.211233677090046,
+      "nonfoot_load": 79.52406494464978,
+      "total_load": 105.73529862173983,
+      "com_speed": 0.0030120507752543478
+    },
+    "wall_seconds": 0.4675862789154053,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 902,
+    "node": 22,
+    "body": "r_wrist_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        22
+      ],
+      "local_points": [
+        [
+          0.0,
+          0.0,
+          -0.0237055
+        ]
+      ],
+      "target_positions": [
+        [
+          0.07022154751056657,
+          -0.20138205184904284,
+          0.021728678608904893
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.9257507223519387,
+          0.2755767661463769,
+          0.25892671941143824
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.07022154751056657,
+        -0.20138205184904284,
+        0.021728678608904893
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.853766536776286,
+    "terminal_max_direction_error_deg": 14.893530758289474,
+    "terminal_max_point_speed_m_s": 0.004376677583091881,
+    "effort_integral": 0.022172782570123672,
+    "positive_mechanical_work_J": 2.937246322631836,
+    "peak_torque_fraction": 0.14092513918876648,
+    "max_speed_limit_ratio": 0.2618276700095856,
+    "max_soft_joint_limit_penetration_rad": 0.001264605539061936,
+    "final_body_metrics": {
+      "com_height": 0.07077866524310364,
+      "base_height": 0.08057292881797144,
+      "up_z": 0.10026612168806334,
+      "kinetic_j": 0.013125157008674278,
+      "foot_load": 26.352696494107708,
+      "nonfoot_load": 80.2140347969833,
+      "total_load": 106.566731291091,
+      "com_speed": 0.0017211875965465009
+    },
+    "wall_seconds": 0.44640421867370605,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 902,
+    "node": 6,
+    "body": "l_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        6
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.3211788353381366,
+          0.099543627611305,
+          0.10899289273724679
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.07940143427955856,
+          0.963782186595041,
+          0.25459636493169413
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.3211788353381366,
+        0.099543627611305,
+        0.10899289273724679
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 15.80660414991411,
+    "terminal_max_direction_error_deg": 16.96555462649415,
+    "terminal_max_point_speed_m_s": 0.032518776358805235,
+    "effort_integral": 0.020150523632764816,
+    "positive_mechanical_work_J": 2.8211982250213623,
+    "peak_torque_fraction": 0.14463259279727936,
+    "max_speed_limit_ratio": 0.27207300960218933,
+    "max_soft_joint_limit_penetration_rad": 0.0012665361042423218,
+    "final_body_metrics": {
+      "com_height": 0.07074016773090308,
+      "base_height": 0.08057426761677157,
+      "up_z": 0.10025615932086007,
+      "kinetic_j": 0.0138113447339895,
+      "foot_load": 25.78395412512368,
+      "nonfoot_load": 79.93088922801087,
+      "total_load": 105.71484335313455,
+      "com_speed": 0.0017286009259503156
+    },
+    "wall_seconds": 0.4764902591705322,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  },
+  {
+    "mode": "policy",
+    "pose": "supine",
+    "seed": 902,
+    "node": 12,
+    "body": "r_ankle_roll_link",
+    "kind": "direction",
+    "success": false,
+    "settled": true,
+    "goal": {
+      "nodes": [
+        12
+      ],
+      "local_points": [
+        [
+          0.0026578,
+          0.0001757,
+          -0.0126664
+        ]
+      ],
+      "target_positions": [
+        [
+          0.3286887692589753,
+          -0.06688735753545082,
+          0.10899281335762573
+        ]
+      ],
+      "position_masks": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "local_axes": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_directions": [
+        [
+          -0.01348039257938902,
+          0.9644456898601633,
+          0.263937095395967
+        ]
+      ],
+      "direction_weights": [
+        1.0
+      ]
+    },
+    "initial_point": [
+      [
+        0.3286887692589753,
+        -0.06688735753545082,
+        0.10899281335762573
+      ]
+    ],
+    "steps": 10,
+    "duration_s": 3.2,
+    "final_position_error_mm": 0.0,
+    "terminal_max_position_error_mm": 0.0,
+    "final_direction_error_deg": 14.845762096092638,
+    "terminal_max_direction_error_deg": 14.846425886226717,
+    "terminal_max_point_speed_m_s": 5.13811220775424e-05,
+    "effort_integral": 0.005952516570687294,
+    "positive_mechanical_work_J": 0.1778741478919983,
+    "peak_torque_fraction": 0.08043783903121948,
+    "max_speed_limit_ratio": 0.10544883801130085,
+    "max_soft_joint_limit_penetration_rad": 0.0012670553074567437,
+    "final_body_metrics": {
+      "com_height": 0.07071636032702647,
+      "base_height": 0.08057536750425283,
+      "up_z": 0.10024328024826264,
+      "kinetic_j": 0.00431781829523719,
+      "foot_load": 24.716647762868554,
+      "nonfoot_load": 83.33664382812123,
+      "total_load": 108.05329159098979,
+      "com_speed": 4.0695004340146267e-05
+    },
+    "wall_seconds": 0.4353816509246826,
+    "predictions": [
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "method": "single shared goal-conditioned attention policy"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      },
+      {
+        "phase": "common terminal joint hold; no future physics query"
+      }
+    ]
+  }
+]

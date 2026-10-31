@@ -1,0 +1,39 @@
+{
+  "train_cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "validation_cases": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "test_cases": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "oracle_training_files": [
+    "oracle_supine_data.npz",
+    "oracle_prone_data.npz"
+  ],
+  "training_pairs": 10144,
+  "validation_pairs": 288,
+  "test_pairs": 288
+}

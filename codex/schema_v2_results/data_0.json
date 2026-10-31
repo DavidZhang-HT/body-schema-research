@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "split": 0,
+      "seed": 1100,
+      "pose": "supine"
+    },
+    {
+      "case": 3,
+      "split": 0,
+      "seed": 1101,
+      "pose": "prone"
+    },
+    {
+      "case": 6,
+      "split": 0,
+      "seed": 1103,
+      "pose": "supine"
+    },
+    {
+      "case": 9,
+      "split": 0,
+      "seed": 1104,
+      "pose": "prone"
+    },
+    {
+      "case": 12,
+      "split": 1,
+      "seed": 1110,
+      "pose": "supine"
+    },
+    {
+      "case": 15,
+      "split": 1,
+      "seed": 1111,
+      "pose": "prone"
+    },
+    {
+      "case": 18,
+      "split": 2,
+      "seed": 1121,
+      "pose": "supine"
+    }
+  ],
+  "sequences": 545,
+  "wall_seconds": 129.97209000587463
+}

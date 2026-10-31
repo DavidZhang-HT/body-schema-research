@@ -1,0 +1,225 @@
+{
+  "curriculum": {
+    "sequences": 380,
+    "independent_initial_cases": 4,
+    "horizons": [
+      {
+        "seconds": 0.32,
+        "body_point_rmse_mm": 13.736237771809101,
+        "stationary_body_point_rmse_mm": 13.769817538559437,
+        "whole_com_rmse_mm": 7.246884051710367,
+        "stationary_whole_com_rmse_mm": 6.4284005202353,
+        "constant_current_force_com_rmse_mm": 63.097482139578304,
+        "com_velocity_rmse_m_s": 0.02587229758501053
+      },
+      {
+        "seconds": 0.64,
+        "body_point_rmse_mm": 24.144908413290977,
+        "stationary_body_point_rmse_mm": 25.146260857582092,
+        "whole_com_rmse_mm": 12.74837739765644,
+        "stationary_whole_com_rmse_mm": 11.310628615319729,
+        "constant_current_force_com_rmse_mm": 251.21640488467813,
+        "com_velocity_rmse_m_s": 0.02733643911778927
+      },
+      {
+        "seconds": 0.96,
+        "body_point_rmse_mm": 34.50873866677284,
+        "stationary_body_point_rmse_mm": 35.28140485286713,
+        "whole_com_rmse_mm": 18.860498443245888,
+        "stationary_whole_com_rmse_mm": 15.509845688939095,
+        "constant_current_force_com_rmse_mm": 564.9059046629815,
+        "com_velocity_rmse_m_s": 0.028502311557531357
+      }
+    ],
+    "by_group": {
+      "left_arm": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 29.217302799224854,
+        "whole_com_3step_rmse_mm": 14.388324692845345
+      },
+      "right_arm": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 25.899654254317284,
+        "whole_com_3step_rmse_mm": 14.699927531182766
+      },
+      "left_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 33.63867476582527,
+        "whole_com_3step_rmse_mm": 18.752647563815117
+      },
+      "right_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 34.87987071275711,
+        "whole_com_3step_rmse_mm": 21.53686434030533
+      },
+      "both_arms": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 30.013713985681534,
+        "whole_com_3step_rmse_mm": 16.287824138998985
+      },
+      "both_legs": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 38.916539400815964,
+        "whole_com_3step_rmse_mm": 18.66818591952324
+      },
+      "four_limbs": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 44.65486481785774,
+        "whole_com_3step_rmse_mm": 21.536000072956085
+      },
+      "hold": {
+        "sequences": 20,
+        "body_point_3step_rmse_mm": 23.7879678606987,
+        "whole_com_3step_rmse_mm": 14.074962586164474
+      },
+      "left_arm_right_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 40.67154601216316,
+        "whole_com_3step_rmse_mm": 26.357175782322884
+      },
+      "right_arm_left_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 33.07582437992096,
+        "whole_com_3step_rmse_mm": 16.412436962127686
+      }
+    },
+    "by_initial_action_contact_mode": {
+      "suspended": {
+        "sequences": 18,
+        "one_step_com_rmse_mm": 5.248598288744688
+      },
+      "supported": {
+        "sequences": 300,
+        "one_step_com_rmse_mm": 7.414777297526598
+      },
+      "switching": {
+        "sequences": 42,
+        "one_step_com_rmse_mm": 7.754421792924404
+      }
+    },
+    "effort_total_rmse": 0.06743531674146652,
+    "effort_spearman": 0.7259783472767891,
+    "torque_rms_normalized_rmse": 0.04565383121371269,
+    "active_contact_fz_rmse_N": 17.957443237304688,
+    "inactive_body_action_effect_rmse_mm": 18.955809995532036,
+    "zero_effect_baseline_rmse_mm": 18.054910004138947,
+    "whole_com_action_effect_rmse_mm": 15.148322097957134,
+    "sensory_path_interventions": {
+      "zero": {
+        "body_point_3step_rmse_mm": 33.944156020879745,
+        "mean_prediction_change_mm": 5.588675498962402
+      },
+      "swap": {
+        "body_point_3step_rmse_mm": 34.32246297597885,
+        "mean_prediction_change_mm": 0.6850818395614624
+      }
+    },
+    "intervention_note": "Inference-time diagnostics, not separately trained causal ablations; analytic COM impulse path remains active."
+  },
+  "mixed": {
+    "sequences": 380,
+    "independent_initial_cases": 4,
+    "horizons": [
+      {
+        "seconds": 0.32,
+        "body_point_rmse_mm": 13.160724192857742,
+        "stationary_body_point_rmse_mm": 13.769817538559437,
+        "whole_com_rmse_mm": 7.479568477720022,
+        "stationary_whole_com_rmse_mm": 6.4284005202353,
+        "constant_current_force_com_rmse_mm": 63.097482139578304,
+        "com_velocity_rmse_m_s": 0.0251388568431139
+      },
+      {
+        "seconds": 0.64,
+        "body_point_rmse_mm": 22.82719314098358,
+        "stationary_body_point_rmse_mm": 25.146260857582092,
+        "whole_com_rmse_mm": 12.966965325176716,
+        "stationary_whole_com_rmse_mm": 11.310628615319729,
+        "constant_current_force_com_rmse_mm": 251.21640488467813,
+        "com_velocity_rmse_m_s": 0.026267243549227715
+      },
+      {
+        "seconds": 0.96,
+        "body_point_rmse_mm": 32.19791129231453,
+        "stationary_body_point_rmse_mm": 35.28140485286713,
+        "whole_com_rmse_mm": 18.534667789936066,
+        "stationary_whole_com_rmse_mm": 15.509845688939095,
+        "constant_current_force_com_rmse_mm": 564.9059046629815,
+        "com_velocity_rmse_m_s": 0.02690310589969158
+      }
+    ],
+    "by_group": {
+      "left_arm": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 25.163719430565834,
+        "whole_com_3step_rmse_mm": 12.961827218532562
+      },
+      "right_arm": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 21.709740161895752,
+        "whole_com_3step_rmse_mm": 13.791217468678951
+      },
+      "left_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 29.590770602226257,
+        "whole_com_3step_rmse_mm": 18.11511628329754
+      },
+      "right_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 31.833745539188385,
+        "whole_com_3step_rmse_mm": 19.455546513199806
+      },
+      "both_arms": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 25.980770587921143,
+        "whole_com_3step_rmse_mm": 14.428859576582909
+      },
+      "both_legs": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 38.363561034202576,
+        "whole_com_3step_rmse_mm": 20.218007266521454
+      },
+      "four_limbs": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 44.38740760087967,
+        "whole_com_3step_rmse_mm": 22.873863577842712
+      },
+      "hold": {
+        "sequences": 20,
+        "body_point_3step_rmse_mm": 19.289469346404076,
+        "whole_com_3step_rmse_mm": 13.126152567565441
+      },
+      "left_arm_right_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 38.848627358675,
+        "whole_com_3step_rmse_mm": 25.325598195195198
+      },
+      "right_arm_left_leg": {
+        "sequences": 40,
+        "body_point_3step_rmse_mm": 32.2941318154335,
+        "whole_com_3step_rmse_mm": 18.192928284406662
+      }
+    },
+    "by_initial_action_contact_mode": {
+      "suspended": {
+        "sequences": 18,
+        "one_step_com_rmse_mm": 5.142809357494116
+      },
+      "supported": {
+        "sequences": 300,
+        "one_step_com_rmse_mm": 7.570890244096518
+      },
+      "switching": {
+        "sequences": 42,
+        "one_step_com_rmse_mm": 8.551396429538727
+      }
+    },
+    "effort_total_rmse": 0.06958486884832382,
+    "effort_spearman": 0.699155519738619,
+    "torque_rms_normalized_rmse": 0.04548728093504906,
+    "active_contact_fz_rmse_N": 17.485597610473633,
+    "inactive_body_action_effect_rmse_mm": 18.795369192957878,
+    "zero_effect_baseline_rmse_mm": 18.054910004138947,
+    "whole_com_action_effect_rmse_mm": 14.519402757287025
+  }
+}

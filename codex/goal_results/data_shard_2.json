@@ -1,0 +1,79 @@
+{
+  "shard": 2,
+  "pairs": 2304,
+  "cases": [
+    {
+      "case": 2,
+      "pose": "supine",
+      "seed": 201,
+      "settled": true
+    },
+    {
+      "case": 5,
+      "pose": "prone",
+      "seed": 202,
+      "settled": true
+    },
+    {
+      "case": 8,
+      "pose": "supine",
+      "seed": 204,
+      "settled": true
+    },
+    {
+      "case": 11,
+      "pose": "prone",
+      "seed": 205,
+      "settled": true
+    },
+    {
+      "case": 14,
+      "pose": "supine",
+      "seed": 207,
+      "settled": true
+    },
+    {
+      "case": 17,
+      "pose": "prone",
+      "seed": 208,
+      "settled": true
+    },
+    {
+      "case": 20,
+      "pose": "supine",
+      "seed": 210,
+      "settled": true
+    },
+    {
+      "case": 23,
+      "pose": "prone",
+      "seed": 211,
+      "settled": true
+    },
+    {
+      "case": 26,
+      "pose": "supine",
+      "seed": 213,
+      "settled": true
+    },
+    {
+      "case": 29,
+      "pose": "prone",
+      "seed": 214,
+      "settled": true
+    },
+    {
+      "case": 32,
+      "pose": "supine",
+      "seed": 216,
+      "settled": true
+    },
+    {
+      "case": 35,
+      "pose": "prone",
+      "seed": 217,
+      "settled": true
+    }
+  ],
+  "wall_seconds": 90.28267979621887
+}

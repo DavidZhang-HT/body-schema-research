@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/HighTorque-Robotics/Mini-Pi-Plus_BeyondMimic",
+  "commit": "df3fcf16bf2cf645b8e3c24ee1e395d453f78f80",
+  "source_fps": 30,
+  "source_frames_used": "[30:390] (zero based, end exclusive)",
+  "files": {
+    "GMR/assets/pi_plus_24dof_250826/urdf/pi_plus_24dof_250826.urdf": "de8158229e6fef04a7038e00c9896ec2373097a0c737c74249505afe068533ed",
+    "GMR/RetargetData/lafan1/csv/pi_plus/pi_plus_walk1_subject1.csv": "84c333c68b0e82c0777597f1eff6134c406d61a1c43454cf396c39a69a153d84"
+  }
+}

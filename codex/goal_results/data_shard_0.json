@@ -1,0 +1,367 @@
+{
+  "shard": 0,
+  "pairs": 3072,
+  "cases": [
+    {
+      "case": 0,
+      "pose": "supine",
+      "seed": 200,
+      "settled": true
+    },
+    {
+      "case": 3,
+      "pose": "prone",
+      "seed": 201,
+      "settled": true
+    },
+    {
+      "case": 6,
+      "pose": "supine",
+      "seed": 203,
+      "settled": true
+    },
+    {
+      "case": 9,
+      "pose": "prone",
+      "seed": 204,
+      "settled": true
+    },
+    {
+      "case": 12,
+      "pose": "supine",
+      "seed": 206,
+      "settled": true
+    },
+    {
+      "case": 15,
+      "pose": "prone",
+      "seed": 207,
+      "settled": true
+    },
+    {
+      "case": 18,
+      "pose": "supine",
+      "seed": 209,
+      "settled": true
+    },
+    {
+      "case": 21,
+      "pose": "prone",
+      "seed": 210,
+      "settled": true
+    },
+    {
+      "case": 24,
+      "pose": "supine",
+      "seed": 212,
+      "settled": true
+    },
+    {
+      "case": 27,
+      "pose": "prone",
+      "seed": 213,
+      "settled": true
+    },
+    {
+      "case": 30,
+      "pose": "supine",
+      "seed": 215,
+      "settled": true
+    },
+    {
+      "case": 33,
+      "pose": "prone",
+      "seed": 216,
+      "settled": true
+    },
+    {
+      "case": 36,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 0,
+      "training_only": true
+    },
+    {
+      "case": 37,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 30,
+      "training_only": true
+    },
+    {
+      "case": 38,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 60,
+      "training_only": true
+    },
+    {
+      "case": 39,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 91,
+      "training_only": true
+    },
+    {
+      "case": 40,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 121,
+      "training_only": true
+    },
+    {
+      "case": 41,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 152,
+      "training_only": true
+    },
+    {
+      "case": 42,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 182,
+      "training_only": true
+    },
+    {
+      "case": 43,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 213,
+      "training_only": true
+    },
+    {
+      "case": 44,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 243,
+      "training_only": true
+    },
+    {
+      "case": 45,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 273,
+      "training_only": true
+    },
+    {
+      "case": 46,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 304,
+      "training_only": true
+    },
+    {
+      "case": 47,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 334,
+      "training_only": true
+    },
+    {
+      "case": 48,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 365,
+      "training_only": true
+    },
+    {
+      "case": 49,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 395,
+      "training_only": true
+    },
+    {
+      "case": 50,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 426,
+      "training_only": true
+    },
+    {
+      "case": 51,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 456,
+      "training_only": true
+    },
+    {
+      "case": 52,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 486,
+      "training_only": true
+    },
+    {
+      "case": 53,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 517,
+      "training_only": true
+    },
+    {
+      "case": 54,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 547,
+      "training_only": true
+    },
+    {
+      "case": 55,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 578,
+      "training_only": true
+    },
+    {
+      "case": 56,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 608,
+      "training_only": true
+    },
+    {
+      "case": 57,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 639,
+      "training_only": true
+    },
+    {
+      "case": 58,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 669,
+      "training_only": true
+    },
+    {
+      "case": 59,
+      "source": "ground_results/getup_replay_prone.npz",
+      "frame": 700,
+      "training_only": true
+    },
+    {
+      "case": 60,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 0,
+      "training_only": true
+    },
+    {
+      "case": 61,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 33,
+      "training_only": true
+    },
+    {
+      "case": 62,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 66,
+      "training_only": true
+    },
+    {
+      "case": 63,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 99,
+      "training_only": true
+    },
+    {
+      "case": 64,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 132,
+      "training_only": true
+    },
+    {
+      "case": 65,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 165,
+      "training_only": true
+    },
+    {
+      "case": 66,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 198,
+      "training_only": true
+    },
+    {
+      "case": 67,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 231,
+      "training_only": true
+    },
+    {
+      "case": 68,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 264,
+      "training_only": true
+    },
+    {
+      "case": 69,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 297,
+      "training_only": true
+    },
+    {
+      "case": 70,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 330,
+      "training_only": true
+    },
+    {
+      "case": 71,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 363,
+      "training_only": true
+    },
+    {
+      "case": 72,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 396,
+      "training_only": true
+    },
+    {
+      "case": 73,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 429,
+      "training_only": true
+    },
+    {
+      "case": 74,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 462,
+      "training_only": true
+    },
+    {
+      "case": 75,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 495,
+      "training_only": true
+    },
+    {
+      "case": 76,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 528,
+      "training_only": true
+    },
+    {
+      "case": 77,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 561,
+      "training_only": true
+    },
+    {
+      "case": 78,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 594,
+      "training_only": true
+    },
+    {
+      "case": 79,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 627,
+      "training_only": true
+    },
+    {
+      "case": 80,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 660,
+      "training_only": true
+    },
+    {
+      "case": 81,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 693,
+      "training_only": true
+    },
+    {
+      "case": 82,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 726,
+      "training_only": true
+    },
+    {
+      "case": 83,
+      "source": "ground_results/getup_replay_supine.npz",
+      "frame": 760,
+      "training_only": true
+    }
+  ],
+  "wall_seconds": 107.09746718406677
+}

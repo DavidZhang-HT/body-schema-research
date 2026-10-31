@@ -1,0 +1,104 @@
+[
+  {
+    "pose": "prone",
+    "seed": 101,
+    "passive_stable": true,
+    "success": false,
+    "final": {
+      "com_height": 0.11516235626888205,
+      "base_height": 0.08992740845362418,
+      "up_z": 0.10588837202363297,
+      "kinetic_j": 0.009044235790416029,
+      "foot_load": 43.05473484989728,
+      "nonfoot_load": 47.41224265526605,
+      "total_load": 90.46697750516333,
+      "com_speed": 0.013670249563043833
+    },
+    "method": "fixed schema path discovered by physics search, not neural selection"
+  },
+  {
+    "pose": "prone",
+    "seed": 102,
+    "passive_stable": true,
+    "success": false,
+    "final": {
+      "com_height": 0.11667181498498291,
+      "base_height": 0.09187546789428883,
+      "up_z": 0.09835556959540191,
+      "kinetic_j": 0.010709306087627216,
+      "foot_load": 49.270431337462945,
+      "nonfoot_load": 46.199475359372805,
+      "total_load": 95.46990669683575,
+      "com_speed": 0.00532856850183816
+    },
+    "method": "fixed schema path discovered by physics search, not neural selection"
+  },
+  {
+    "pose": "prone",
+    "seed": 103,
+    "passive_stable": true,
+    "success": false,
+    "final": {
+      "com_height": 0.11518104577351707,
+      "base_height": 0.09122973152131274,
+      "up_z": 0.10368497783731978,
+      "kinetic_j": 0.01711125440046931,
+      "foot_load": 45.01446757013762,
+      "nonfoot_load": 45.20513943713879,
+      "total_load": 90.21960700727641,
+      "com_speed": 0.020931770361985992
+    },
+    "method": "fixed schema path discovered by physics search, not neural selection"
+  },
+  {
+    "pose": "supine",
+    "seed": 101,
+    "passive_stable": true,
+    "success": false,
+    "final": {
+      "com_height": 0.11472420260901392,
+      "base_height": 0.12260245100404589,
+      "up_z": -0.12563818531085252,
+      "kinetic_j": 0.09368153064689938,
+      "foot_load": 34.00265111122567,
+      "nonfoot_load": 61.504573791895474,
+      "total_load": 95.50722490312114,
+      "com_speed": 0.042859748048051004
+    },
+    "method": "fixed schema path discovered by physics search, not neural selection"
+  },
+  {
+    "pose": "supine",
+    "seed": 102,
+    "passive_stable": true,
+    "success": false,
+    "final": {
+      "com_height": 0.10272542577154256,
+      "base_height": 0.1132379249284299,
+      "up_z": -0.05752965067741217,
+      "kinetic_j": 0.14685985908823432,
+      "foot_load": 43.91745528001717,
+      "nonfoot_load": 57.72334016369431,
+      "total_load": 101.64079544371148,
+      "com_speed": 0.021776378643091534
+    },
+    "method": "fixed schema path discovered by physics search, not neural selection"
+  },
+  {
+    "pose": "supine",
+    "seed": 103,
+    "passive_stable": true,
+    "success": false,
+    "final": {
+      "com_height": 0.11418050813004513,
+      "base_height": 0.12203117185724865,
+      "up_z": -0.12338124850913154,
+      "kinetic_j": 0.1381618992238799,
+      "foot_load": 29.054312214959882,
+      "nonfoot_load": 64.84053974100276,
+      "total_load": 93.89485195596264,
+      "com_speed": 0.0569884460747444
+    },
+    "method": "fixed schema path discovered by physics search, not neural selection"
+  }
+]

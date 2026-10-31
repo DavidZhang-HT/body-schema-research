@@ -1,0 +1,210 @@
+{
+  "test_pairs": 288,
+  "independent_test_initial_cases": 4,
+  "active_contact_nodes": 1213,
+  "active_contact_force_vector_component_rmse_N": 12.981977462768555,
+  "active_contact_vertical_force_rmse_N": 19.691688537597656,
+  "active_contact_vertical_force_persistence_rmse_N": 20.44218635559082,
+  "contact_point_3d_rmse_mm": 127.85355746746063,
+  "input_interventions": {
+    "normal": {
+      "com_height_rmse_mm": 8.384143933653831,
+      "ground_joint_load_rmse_Nm": 1.4053820371627808
+    },
+    "zero_action": {
+      "com_height_rmse_mm": 9.357447735965252,
+      "ground_joint_load_rmse_Nm": 1.4960581064224243
+    },
+    "shuffled_action": {
+      "com_height_rmse_mm": 9.6729202196002,
+      "ground_joint_load_rmse_Nm": 1.53174889087677
+    },
+    "zero_force_inputs": {
+      "com_height_rmse_mm": 8.467385545372963,
+      "ground_joint_load_rmse_Nm": 1.6802860498428345
+    }
+  },
+  "intervention_note": "Diagnostic only. Removing inputs after training is out of distribution, not a retrained ablation or a causal attention explanation.",
+  "recursive_com_prediction": [
+    {
+      "horizon_s": 0.6,
+      "episodes": 48,
+      "rmse_mm": 3.753582971433581,
+      "persistence_rmse_mm": 6.3915612409124805
+    },
+    {
+      "horizon_s": 1.2,
+      "episodes": 48,
+      "rmse_mm": 5.351696469793821,
+      "persistence_rmse_mm": 8.957655312269507
+    },
+    {
+      "horizon_s": 1.8,
+      "episodes": 48,
+      "rmse_mm": 14.572244218859696,
+      "persistence_rmse_mm": 22.58592193593525
+    },
+    {
+      "horizon_s": 2.4,
+      "episodes": 48,
+      "rmse_mm": 15.296468956687002,
+      "persistence_rmse_mm": 26.675108623131003
+    },
+    {
+      "horizon_s": 3.0,
+      "episodes": 48,
+      "rmse_mm": 14.277893825252026,
+      "persistence_rmse_mm": 27.934776866635474
+    },
+    {
+      "horizon_s": 3.6,
+      "episodes": 48,
+      "rmse_mm": 14.209050716689543,
+      "persistence_rmse_mm": 29.3809846345843
+    }
+  ],
+  "independent_schema_probes": [
+    {
+      "pose": "prone",
+      "seed": 101,
+      "com_delta_rmse_mm": 3.6377127170562744,
+      "schemas": [
+        "bilateral_hip_pitch",
+        "bilateral_knee",
+        "bilateral_ankle_pitch",
+        "hip_spread",
+        "hip_yaw",
+        "bilateral_shoulder_pitch",
+        "shoulder_spread",
+        "bilateral_elbow",
+        "upper_arm_yaw",
+        "differential_hip_pitch",
+        "differential_shoulder_pitch",
+        "differential_elbow"
+      ],
+      "observed_com_delta_mm": [
+        8.446752548217773,
+        5.712233543395996,
+        3.6667585372924805,
+        7.978983402252197,
+        -0.48901885747909546,
+        0.27836114168167114,
+        0.10275840759277344,
+        0.10811537504196167,
+        0.6526336073875427,
+        0.5783438682556152,
+        7.448859691619873,
+        5.5422186851501465,
+        0.38852542638778687,
+        0.8409395813941956,
+        1.678362488746643,
+        2.482645273208618,
+        0.6145834922790527,
+        0.5427822470664978,
+        2.6326403617858887,
+        2.6497020721435547,
+        2.442784547805786,
+        2.470813751220703,
+        1.1783764362335205,
+        1.197896957397461
+      ],
+      "predicted_com_delta_mm": [
+        9.900562286376953,
+        4.272714138031006,
+        7.144749164581299,
+        4.22230339050293,
+        4.420489311218262,
+        4.915170192718506,
+        5.106866359710693,
+        4.5684428215026855,
+        5.155674934387207,
+        4.838533878326416,
+        5.763590335845947,
+        6.007015705108643,
+        5.767464637756348,
+        4.368722438812256,
+        5.388207912445068,
+        4.667840957641602,
+        5.241513252258301,
+        4.54530143737793,
+        5.283340930938721,
+        5.696922302246094,
+        5.000710487365723,
+        5.468480110168457,
+        4.6746134757995605,
+        4.90802526473999
+      ]
+    },
+    {
+      "pose": "supine",
+      "seed": 101,
+      "com_delta_rmse_mm": 3.9704318046569824,
+      "schemas": [
+        "bilateral_hip_pitch",
+        "bilateral_knee",
+        "bilateral_ankle_pitch",
+        "hip_spread",
+        "hip_yaw",
+        "bilateral_shoulder_pitch",
+        "shoulder_spread",
+        "bilateral_elbow",
+        "upper_arm_yaw",
+        "differential_hip_pitch",
+        "differential_shoulder_pitch",
+        "differential_elbow"
+      ],
+      "observed_com_delta_mm": [
+        5.585275650024414,
+        6.7641215324401855,
+        9.389191627502441,
+        6.312049865722656,
+        -0.08685141801834106,
+        1.4082342386245728,
+        0.10447204113006592,
+        0.11789053678512573,
+        0.5179941654205322,
+        0.6310418248176575,
+        5.584187984466553,
+        8.562393188476562,
+        0.30972808599472046,
+        0.8803829550743103,
+        2.425588607788086,
+        1.830071210861206,
+        0.5587786436080933,
+        0.6211251020431519,
+        2.663120746612549,
+        2.7334837913513184,
+        2.58678936958313,
+        2.478785753250122,
+        1.0587499141693115,
+        1.0839998722076416
+      ],
+      "predicted_com_delta_mm": [
+        5.532607555389404,
+        7.006250381469727,
+        6.29188871383667,
+        5.24348783493042,
+        5.1666646003723145,
+        5.785532474517822,
+        5.561359405517578,
+        5.130328178405762,
+        5.810558795928955,
+        4.963040351867676,
+        7.913984298706055,
+        6.461858749389648,
+        6.017051696777344,
+        5.2561163902282715,
+        5.719252109527588,
+        5.755134105682373,
+        5.59083366394043,
+        5.554892063140869,
+        4.385925769805908,
+        6.5174102783203125,
+        5.874387741088867,
+        6.352424621582031,
+        5.6558027267456055,
+        5.254901885986328
+      ]
+    }
+  ]
+}

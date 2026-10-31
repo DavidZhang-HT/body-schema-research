@@ -1,0 +1,31 @@
+{
+  "source_directory": "/workspace/pi_plus_experiment",
+  "publication_directory": "/workspace/pi-plus-body-schema",
+  "source_files_copied": 1436,
+  "asset_path_changes": [
+    {
+      "file": "assets/source.urdf",
+      "source_sha256": "156c3061de5179e0ab496c8dbe636a629ba957e652c38a286917f39b37e36eb0",
+      "published_sha256": "48aa32698a7ecb07135dd4fa048ad6a76747551b98d219b7cc6e58540c4cb8cc",
+      "change": "Only asset paths made relative; geometry and physics parameters retained."
+    },
+    {
+      "file": "assets/scene.xml",
+      "source_sha256": "f0dcf123c5872f0b36045012e2c2451d4735021a0e56addc901f8de34079d760",
+      "published_sha256": "628ba51fa8bf66b55c386886fd95dd0bd167b84c64f6c5a7bf0ee21f671d8b7b",
+      "change": "Only asset paths made relative; geometry and physics parameters retained."
+    },
+    {
+      "file": "assets/converted.xml",
+      "source_sha256": "fe961cac1e38000857d1bbf813d7ccd2a492e2fef13638743ce2c2bf6916f46d",
+      "published_sha256": "77b16e9fe940c454ff32029dcf88249dd436323ecc0262f0cb7775d16d19ffb3",
+      "change": "Only asset paths made relative; geometry and physics parameters retained."
+    }
+  ],
+  "excluded": [
+    "Python virtual environment and caches",
+    "Redundant ZIP bundles and console logs",
+    "Unrelated upstream code/assets; required robot and motion assets retained"
+  ],
+  "upstream_commit": "df3fcf16bf2cf645b8e3c24ee1e395d453f78f80"
+}

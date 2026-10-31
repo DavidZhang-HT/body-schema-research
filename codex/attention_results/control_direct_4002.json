@@ -1,0 +1,9 @@
+{
+  "mode": "direct",
+  "seed": 4002,
+  "seconds": 1.9000000000000015,
+  "fall_time": 1.9000000000000015,
+  "mean_reference_torque_fraction": 1.0,
+  "base_xy_displacement_m": 0.3830163049263092,
+  "note": "Filter may choose standing fallback; survival is not evidence of walking. No control weights trained on these trials."
+}

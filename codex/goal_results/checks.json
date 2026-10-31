@@ -1,0 +1,9 @@
+{
+  "exact_physics_replay": true,
+  "differentiable_URDF_geometry": true,
+  "maximum_Jacobian_check_error": 1.4379620552062988e-06,
+  "disjoint_initial_cases": true,
+  "all_target_nodes_use_same_goal_interface": true,
+  "nonnegative_measured_effort_and_work": true,
+  "torque_limits": true
+}

@@ -1,0 +1,99 @@
+{
+  "mode": "hold",
+  "pose": "supine",
+  "seed": 901,
+  "node": 17,
+  "body": "l_wrist_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      17
+    ],
+    "local_points": [
+      [
+        0.0,
+        0.0,
+        -0.0234157
+      ]
+    ],
+    "target_positions": [
+      [
+        0.04162996721800564,
+        0.19978693253775714,
+        0.046736886206138244
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "target_directions": [
+      [
+        -0.9267083362713923,
+        -0.3757813973712826,
+        2.957691763873921e-05
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.04162996721800564,
+      0.19978693253775714,
+      0.021736886206138242
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 24.999654841514086,
+  "terminal_max_position_error_mm": 24.999921307571604,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.00011684259169739435,
+  "effort_integral": 0.002150873886421323,
+  "positive_mechanical_work_J": 0.007962866686284542,
+  "peak_torque_fraction": 0.026022696867585182,
+  "max_speed_limit_ratio": 0.006330421649085406,
+  "max_soft_joint_limit_penetration_rad": 0.0012700417138156173,
+  "final_body_metrics": {
+    "com_height": 0.07073161436966775,
+    "base_height": 0.0805757203740636,
+    "up_z": 0.10024604252028875,
+    "kinetic_j": 5.791001676925022e-07,
+    "foot_load": 25.37639688969385,
+    "nonfoot_load": 82.57319208818103,
+    "total_load": 107.94958897787488,
+    "com_speed": 2.6642839608957856e-05
+  },
+  "wall_seconds": 0.35599803924560547,
+  "predictions": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

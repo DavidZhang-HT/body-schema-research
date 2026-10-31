@@ -1,0 +1,147 @@
+{
+  "mode": "efficient",
+  "pose": "prone",
+  "seed": 900,
+  "node": 0,
+  "body": "base_link",
+  "kind": "lift",
+  "success": false,
+  "settled": true,
+  "goal": {
+    "nodes": [
+      0
+    ],
+    "local_points": [
+      [
+        0.0005802,
+        4.47e-05,
+        0.0564524
+      ]
+    ],
+    "target_positions": [
+      [
+        0.05619382905089008,
+        -0.0026696478709877375,
+        0.11002338496267391
+      ]
+    ],
+    "position_masks": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "local_axes": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "target_directions": [
+      [
+        0.04109624335324509,
+        0.9991551923857114,
+        1.763300925337885e-05
+      ]
+    ],
+    "direction_weights": [
+      0.0
+    ]
+  },
+  "initial_point": [
+    [
+      0.05619382905089008,
+      -0.0026696478709877375,
+      0.08502338496267392
+    ]
+  ],
+  "steps": 10,
+  "duration_s": 3.2,
+  "final_position_error_mm": 3.5562148393480237,
+  "terminal_max_position_error_mm": 10.540652852813206,
+  "final_direction_error_deg": 0.0,
+  "terminal_max_direction_error_deg": 0.0,
+  "terminal_max_point_speed_m_s": 0.10234864843102422,
+  "effort_integral": 0.9237828850746155,
+  "positive_mechanical_work_J": 26.968713760375977,
+  "peak_torque_fraction": 0.784257709980011,
+  "max_speed_limit_ratio": 0.781883257480405,
+  "max_soft_joint_limit_penetration_rad": 0.0,
+  "final_body_metrics": {
+    "com_height": 0.09018403837839686,
+    "base_height": 0.10939501041684462,
+    "up_z": -0.04184697252286384,
+    "kinetic_j": 0.06448295463764331,
+    "foot_load": 25.73782394537077,
+    "nonfoot_load": 75.71100481183078,
+    "total_load": 101.44882875720155,
+    "com_speed": 0.02393043532347202
+  },
+  "wall_seconds": 10.536667585372925,
+  "predictions": [
+    {
+      "predicted_goal_cost": 0.4680422842502594,
+      "predicted_effort": 0.0919095054268837,
+      "predicted_position_error_m": 0.0171034038066864,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "predicted_goal_cost": 0.044053815305233,
+      "predicted_effort": 0.09364677220582962,
+      "predicted_position_error_m": 0.005247250199317932,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.01731688715517521,
+      "predicted_effort": 0.013215584680438042,
+      "predicted_position_error_m": 0.003289841115474701,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.05680107697844505,
+      "predicted_effort": 0.11082405596971512,
+      "predicted_position_error_m": 0.005958244204521179,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.057174015790224075,
+      "predicted_effort": 0.07835278660058975,
+      "predicted_position_error_m": 0.0059777721762657166,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.05745098367333412,
+      "predicted_effort": 0.11527694761753082,
+      "predicted_position_error_m": 0.005992233753204346,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.035223834216594696,
+      "predicted_effort": 0.020076926797628403,
+      "predicted_position_error_m": 0.004692003596574068,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": true
+    },
+    {
+      "predicted_goal_cost": 0.09078078716993332,
+      "predicted_effort": 0.13203324377536774,
+      "predicted_position_error_m": 0.007532462477684021,
+      "predicted_direction_chord_error": 0.0,
+      "predicted_feasible": false
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    },
+    {
+      "phase": "common terminal joint hold; no future physics query"
+    }
+  ]
+}

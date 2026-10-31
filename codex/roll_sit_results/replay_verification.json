@@ -1,0 +1,190 @@
+{
+  "frozen_file_count": 10,
+  "fresh_start_checks": [
+    {
+      "trial": "roll_supine_910_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_supine_910_-1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_prone_910_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_prone_910_-1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_supine_911_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_supine_911_-1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_prone_911_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_prone_911_-1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_supine_912_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_supine_912_-1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_prone_912_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "roll_prone_912_-1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "sit_supine_910_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "sit_prone_910_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "sit_supine_911_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "sit_prone_911_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "sit_supine_912_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    },
+    {
+      "trial": "sit_prone_912_+1",
+      "success_recomputed": false,
+      "max_state_motor_replay_error": 0.0,
+      "max_cost_replay_error": 0.0,
+      "torque_limits_verified": true,
+      "posthoc_low_upright_final_1s": false
+    }
+  ],
+  "known_state_continuation": {
+    "scope": "post-hoc continuation diagnostic on previously inspected seed 900; excluded from fresh-start success rate",
+    "strict_seated_success": false,
+    "posthoc_low_upright_final_1s": false,
+    "max_state_motor_replay_error": 0.0,
+    "final": {
+      "com_height": 0.11776047986188715,
+      "base_height": 0.08822476102375476,
+      "up_z": 0.9967024464935229,
+      "kinetic_j": 0.0001534024662130078,
+      "foot_load": 73.22040046830047,
+      "nonfoot_load": 35.849970967427296,
+      "total_load": 109.07037143572776,
+      "com_speed": 0.0012660133134235337,
+      "tilt_deg": 4.654284969802064,
+      "full_rotation_error_deg": 17.27472189257581,
+      "signed_roll_deg": 73.86912751498927,
+      "angular_speed": 0.030695561695410507,
+      "seat_load_N": 35.8499709674273,
+      "seat_fraction": 0.3286866130143577,
+      "weight_N": 107.912309274
+    },
+    "last_1s_ranges": {
+      "tilt_deg": [
+        4.470071810986594,
+        4.741545647581939
+      ],
+      "com_speed": [
+        0.000829997169143459,
+        0.031246647697293118
+      ],
+      "angular_speed": [
+        0.01807609671028644,
+        0.4105574112198279
+      ],
+      "seat_fraction": [
+        0.20803928421345513,
+        0.3704358974836335
+      ]
+    }
+  }
+}

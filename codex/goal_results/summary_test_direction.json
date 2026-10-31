@@ -1,0 +1,359 @@
+{
+  "split": "test",
+  "kind": "direction",
+  "goal_height_change_mm": null,
+  "goal_direction_change_deg": 15,
+  "method_results": {
+    "blind": {
+      "trials": 36,
+      "successes": 4,
+      "success_rate": 0.1111111111111111,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.05555555555555555,
+        0.16666666666666666
+      ],
+      "mean_final_position_error_mm": 0.0,
+      "mean_final_direction_error_deg": 6.4748551977073525,
+      "mean_effort_all_trials": 0.38461831646660966,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 19.84125205938923
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 5.43027331272339
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 1,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 6.217981233649205
+        },
+        "22": {
+          "body": "r_wrist_link",
+          "successes": 2,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 5.7164945907830464
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 1,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 0.8940812769553658
+        },
+        "12": {
+          "body": "r_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 0.7490487127438809
+        }
+      }
+    },
+    "efficient": {
+      "trials": 36,
+      "successes": 13,
+      "success_rate": 0.3611111111111111,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.2222222222222222,
+        0.5
+      ],
+      "mean_final_position_error_mm": 0.0,
+      "mean_final_direction_error_deg": 7.0272815466999425,
+      "mean_effort_all_trials": 0.27770390630596214,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 22.016028645925115
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 2,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 8.662291814839106
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 6,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 3.4168201232862407
+        },
+        "22": {
+          "body": "r_wrist_link",
+          "successes": 3,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 4.0504217749689255
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 2,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 2.16268418902871
+        },
+        "12": {
+          "body": "r_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 1.8554427321515492
+        }
+      }
+    },
+    "hold": {
+      "trials": 36,
+      "successes": 0,
+      "success_rate": 0.0,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.0,
+        0.0
+      ],
+      "mean_final_position_error_mm": 0.0,
+      "mean_final_direction_error_deg": 14.99525396652518,
+      "mean_effort_all_trials": 0.0013294412977605437,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.0006588210074
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 14.94875315004648
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.001954656570334
+        },
+        "22": {
+          "body": "r_wrist_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.002078412990395
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 14.990339831337229
+        },
+        "12": {
+          "body": "r_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.027738927199238
+        }
+      }
+    },
+    "kinematic": {
+      "trials": 36,
+      "successes": 1,
+      "success_rate": 0.027777777777777776,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.0,
+        0.08333333333333333
+      ],
+      "mean_final_position_error_mm": 0.0,
+      "mean_final_direction_error_deg": 8.092997560357885,
+      "mean_effort_all_trials": 0.09543833090881687,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.0006588210074
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 13.898088979539319
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 8.08616862585219
+        },
+        "22": {
+          "body": "r_wrist_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 8.570444091735851
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 1,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 1.6300241804717706
+        },
+        "12": {
+          "body": "r_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 1.3726006635407855
+        }
+      }
+    },
+    "learned": {
+      "trials": 36,
+      "successes": 13,
+      "success_rate": 0.3611111111111111,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.2777777777777778,
+        0.4444444444444444
+      ],
+      "mean_final_position_error_mm": 0.0,
+      "mean_final_direction_error_deg": 7.390348853610307,
+      "mean_effort_all_trials": 0.3904648270044062,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 23.495238561674878
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 1,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 10.639516517817048
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 5,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 3.4116367960890224
+        },
+        "22": {
+          "body": "r_wrist_link",
+          "successes": 5,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 3.434860799355956
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 2,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 1.833693081222145
+        },
+        "12": {
+          "body": "r_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 1.52714736550279
+        }
+      }
+    },
+    "policy": {
+      "trials": 36,
+      "successes": 0,
+      "success_rate": 0.0,
+      "cluster_bootstrap_success_rate_95_interval": [
+        0.0,
+        0.0
+      ],
+      "mean_final_position_error_mm": 0.0,
+      "mean_final_direction_error_deg": 15.104116984851844,
+      "mean_effort_all_trials": 0.03140934080713325,
+      "by_body": {
+        "0": {
+          "body": "base_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.135141270920895
+        },
+        "24": {
+          "body": "head_pitch_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 14.920860331657124
+        },
+        "17": {
+          "body": "l_wrist_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 14.956166948518565
+        },
+        "22": {
+          "body": "r_wrist_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 14.795663303973834
+        },
+        "6": {
+          "body": "l_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.595317620542874
+        },
+        "12": {
+          "body": "r_ankle_roll_link",
+          "successes": 0,
+          "trials": 6,
+          "mean_final_position_error_mm": 0.0,
+          "mean_final_direction_error_deg": 15.221552433497763
+        }
+      }
+    }
+  },
+  "note": "Trials share six passive starts. Confidence intervals resample initial pose/seed groups, not individual time points. Small exploratory sample; one training seed.",
+  "matched_effort": {
+    "all_matched_tasks": 36,
+    "both_successful_tasks": 9,
+    "learned_only_successes": 4,
+    "efficient_only_successes": 4,
+    "mean_effort_difference_efficient_minus_learned": -0.1057577563656701,
+    "mean_relative_effort_reduction": 0.30142306447261663,
+    "median_relative_effort_reduction": 0.24468015285069922,
+    "cluster_bootstrap_relative_reduction_95_interval": [
+      0.19045451147492182,
+      0.3701984759286145
+    ],
+    "scope": "Conditioned on both methods succeeding; not an unconditional energy/success guarantee."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "previous_frozen_files_verified": 10,
+  "matched_training_presentations": 30720,
+  "disjoint_initial_case_splits": [
+    12,
+    4,
+    4
+  ],
+  "unseen_diagonal_masks_excluded_from_training": true,
+  "command_masks_verified": true,
+  "free_flight_internal_motion": {
+    "whole_com_difference_m": 3.7156904618927816e-05,
+    "body_point_motion_difference_m": 0.035374104296146805,
+    "no_external_contact_force": true
+  },
+  "max_model_mass_weighted_com_error_m": 1.4901161193847656e-08,
+  "friction_cone_checks": true,
+  "effort_from_imagined_torque_rms_verified": true,
+  "future_sensation_input": "Model API accepts only current observation, current configuration and candidate actions; targets appear only in loss functions."
+}
