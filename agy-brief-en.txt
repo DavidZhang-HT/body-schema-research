@@ -1,0 +1,31 @@
+TASK: Body-schema self-exploration for bipedal gait — from kinematic reference to physically feasible walking in simulation.
+
+CONTEXT:
+- The user (ZH, CEO of a robotics company) proposes a 4-phase "predict-calibrate-control" alternative to brute-force RL motion imitation (DeepMimic/AMP). The hypothesis: given a URDF (static kinematic schema), the robot should self-explore to fill in the missing/incorrect DYNAMIC schema and CONTACT schema (true CoM offset, actuator delay/stiction, gearbox backlash, foot-ground contact stiffness, weight-transfer strategy), then project a kinematic walking reference into a dynamically feasible gait via constrained optimization, with surprise-driven online updates.
+- Target robot: pi+ (humanoid used in user's company). No local URDF file was found on this VM (searched ~/workspace and ~/memory). If the pi+ URDF is not retrievable, use the closest available humanoid proxy (e.g. Unitree G1 29-DoF MJCF from the BFM-Zero repo conventions) AND clearly document this substitution and its limits.
+
+WHAT TO DO (use claude-opus-5-5-medium via agy):
+1. Locate or reconstruct the pi+ URDF. Check ~/workspace/robot-interaction-demo, ~/workspace/bfm-research, and any cached models. If unavailable, fall back to a documented proxy model and note the assumption.
+2. Find one walking reference motion: a short human walking clip retargetable to the robot's joints (e.g. from AMASS/LAFAN1 conventions, or a synthetic kinematic walking trajectory if datasets are unreachable). Keep it purely kinematic (joint-angle sequence, no forces).
+3. Implement the 4-phase pipeline in a physics simulator (MuJoCo preferred, CPU is fine):
+   Phase 1 — Kinematic retargeting: map the human walking reference to robot joint space using the URDF link geometry; produce nominal joint + nominal CoM trajectories; compute self-collision boundaries / reachable space.
+   Phase 2 — Safe active postural exploration: in double support (no stepping), run multi-frequency trunk swaying, slight squats, single-foot light unloading; compare URDF-nominal dynamics predictions (IMU/joint torques) vs simulated "real" observations with perturbed parameters (CoM offset, friction, delay, contact stiffness); identify task-relevant parameter deviations within a small safe budget.
+   Phase 3 — Dynamic feasibility projection: formulate the correction as constrained optimization: minimize deviation from reference + control cost + uncertainty risk, subject to full rigid-body dynamics M(q;θ)q̈+h(q,q̇;θ)=Sᵀτ+Jcᵀλ, friction cones, unilateral contact, joint/torque limits, self-collision, contact kinematics. Use trajectory optimization or MPC; let trunk pitch, step width, cadence emerge from the optimization (do not hardcode directions).
+   Phase 4 — Surprise-driven closed-loop update: during stepping, run a 3-layer update (fast feedback stabilization; state/contact estimation; slower model adaptation only on sufficient evidence). Never write transient impact errors into the long-term body model.
+4. Run the curriculum: stable standing → double-support calibration → stepping in place → reference-guided forward walking.
+5. Evaluate with a minimal experiment: same exploration time/safety budget, compare (a) fixed nominal model, (b) passive online identification, (c) active identification (this scheme). Metrics: fall rate, reference-motion fidelity, constraint-violation rate, recovery time after a perturbation (e.g. ground friction change or push).
+
+CONSTRAINTS:
+- This is a per-task explicit user order to use opus 5.5 (model claude-opus-5-5-medium); the general opus-pause rule is overridden for this task only.
+- Research is purely academic, non-commercial.
+- Do NOT git clone the BFM-Zero repo (LFS hangs); fetch single files via raw.githubusercontent.com if needed.
+- Keep compute modest: this VM has 2 CPUs; run headless, no GUI.
+- Document every assumption, especially URDF substitution and sensor configuration (which parameters are identifiable vs. kept as prior).
+
+DELIVERABLES (write under ~/workspace/research/body-schema-gait/):
+- `plan.md`: the concrete 4-phase design adapted to the actual URDF/proxy used.
+- `sim/`: runnable simulation code (Python + MuJoCo).
+- `results.md`: quantitative metrics table for the 3-way comparison + fall/fidelity/violation/recovery numbers, with honest limitations.
+- `report-cn.md`: a concise Chinese summary of what was tried, what worked, what failed, and the single most important next experiment.
+
+Feed back ALL analysis promptly in Chinese (translate your findings into Chinese for the user). If you get blocked (e.g. no URDF, no reference motion, simulator missing), report the blocker precisely and propose the smallest unblocking step instead of stalling.

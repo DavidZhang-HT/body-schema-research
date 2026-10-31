@@ -1,0 +1,53 @@
+TASK (continuation, same user order — one-off opus 5.5 use for this task only):
+Finish a body-schema self-exploration gait study in ~/workspace/research/body-schema-gait.
+A previous agy run was killed by infrastructure SIGTERM after ~19 min; substantial work
+survives on disk. Do NOT redo completed work — read and reuse it.
+
+EXISTING ON-DISK STATE (read these first):
+- sim/model.py — builds the pi+ humanoid MuJoCo model (REAL pi+ 24-DoF model from
+  HighTorque's public release, no proxy needed; documents masses/limits/effort).
+- sim/phase1_retarget.py — Phase 1 DONE: retargets a LAFAN1 BVH human walking clip to the
+  pi+ joint space via scaled-keypoint IK; validated against HighTorque's GMR reference
+  (sagittal-plane mean correlation 0.96). Use the 5 s window version (2 strides, ~20° total
+  heading change; the 6.5 s window curved 56° and was rejected).
+- sim/wbc.py — whole-body controller (QP-based CoM/DCM tracking). Working:
+  stepping-in-place drift fixed (leg-posture task weight was lowered after the QP was
+  found delivering only ~half the desired CoM acceleration); base xy ends ~(0.01, 0.016).
+  Forward walking holds at 0.06 m stride (~0.63 m covered) but FALLS at 0.10/0.14 m strides
+  with lateral drift — treat this as your nominal-model baseline and diagnose, don't start over.
+- sim/test_walk.py, sim/scenarios.py, sim/_diag*.py, sim/_sweep.py — diagnostics/helpers.
+- data/, assets/ — retargeted trajectories and model assets.
+- sim/.venv — Python venv with MuJoCo (use it, headless, CPU only, 2 CPUs total).
+
+WHAT REMAINS (prioritized — wall-clock budget is tight, ~15 min; finish top items first):
+1. Phase 2 — Safe active postural exploration: in double support, run multi-frequency trunk
+   sway + slight squat + single-foot light unloading. Build a "real robot" plant = nominal
+   model with perturbed θ* (CoM offset, joint friction/damping, actuator delay, foot-ground
+   contact stiffness). Compare nominal predictions vs "real" observations; identify the
+   task-relevant deviations. Also implement PASSIVE online ID for comparison.
+2. Phase 3 — Dynamic feasibility projection of the reference gait: constrained correction
+   (minimize reference deviation + control cost + uncertainty risk s.t. rigid-body dynamics,
+   friction cones, unilateral contact, joint/torque limits, self-collision). Fix the
+   lateral-fall failure mode of the baseline; let trunk pitch / step width / cadence emerge
+   from the optimization — do not hardcode directions.
+3. Phase 4 — Surprise-driven closed-loop update with 3 layers (fast feedback stabilization;
+   state/contact estimation; slower model adaptation only on sufficient evidence; never
+   write transient impact errors into the long-term body model).
+4. Curriculum end-to-end: stable standing → double-support calibration → stepping in place
+   → reference-guided forward walking.
+5. Minimal 3-way experiment (same exploration time/safety budget): (a) fixed nominal model,
+   (b) passive online ID, (c) active ID (this scheme). Metrics: fall rate, reference-motion
+   fidelity, constraint-violation rate, recovery time after a perturbation (friction change
+   or push).
+
+DELIVERABLES (all under ~/workspace/research/body-schema-gait/):
+- plan.md — concrete 4-phase design as actually implemented (note the pi+ 24-DoF real model,
+  LAFAN1→pi+ retarget, sensor config, which parameters are identifiable vs kept as prior).
+- sim/ — make sure everything runs headless end-to-end (at least the stepping + comparison
+  harness); fix the forward-walking fall if cheap, otherwise document it honestly as a limit.
+- results.md — quantitative metrics table for the 3-way comparison with honest limitations.
+- report-cn.md — concise CHINESE summary: what was tried, what worked, what failed, and the
+  single most important next experiment.
+Research is purely academic, non-commercial. If blocked, write blocker.md with the precise
+blocker + smallest unblocking step instead of stalling. Feed back ALL analysis promptly,
+translated into Chinese.

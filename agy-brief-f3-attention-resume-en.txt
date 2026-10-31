@@ -1,0 +1,17 @@
+CONTINUATION BRIEF — F3 attention test (previous run hit the 25-min print timeout mid-turn; work on disk is intact).
+
+DO NOT REDO COMPLETED WORK. What already exists under ~/workspace/research/body-schema-gait/ (verify, don't rebuild):
+- sim/model.py — G0 edits done (simplified limb collision geoms for thighs/hands/knees, supine spawn/reset, get-up failure criterion).
+- sim/getup_g0_probe.py + results/f3/g0_probe.json + results/f3/g0_probe.log — G0 probe VERIFIED: supine contacts = base_link + both ankles (12 contacts, torque-channel readout max err 2.3% of mg); long_sit = ankles + elbows + hip_roll_links (new limb geoms collide as intended); prone hands-and-feet = ankles + elbows. Multi-link contacts form and are readable via the torque channel. results/f3/q_supine_settled.npy exists.
+- sim/getup_schema.py — schema/statics module. sim/getup_attention.py — interpretable attention module. sim/getup_mpc.py — explicit MPC keyframe-sequence optimizer. sim/_f3_dev.py — dev script (a dev run was in progress when the timeout hit; treat its outputs as provisional).
+- plan.md has only a stub mention of F3; results.md and report-cn.md have NO F3 content yet.
+
+DO ONLY THE REMAINING PARTS, in this order:
+1. Finish the F3 keyframe search to completion: run sim/getup_mpc.py (fix/extend as needed, keep it deterministic) for the supine→standing sequence on the nominal model. The dev run from the previous turn may be incomplete — re-run cleanly to completion and confirm determinism (re-run twice, compare).
+2. Attention inspectability: log and visualize the attention weight matrices per keyframe/phase (contact-link attention + joint attention per region-to-target task). Save at least one figure or structured table under results/f3/ (PNG via matplotlib Agg, no GL). The report must show the weights track something physical (e.g. back→hands→feet shift across supine→sit→support→squat→stand).
+3. F3 VERDICT: sequence found or not; per-keyframe peak |tau|/tau_max (torque limits 20 N·m legs / 10 N·m arms) against the 0.8 threshold; wall-clock compute time. If NOT found: diagnose the binding constraint / failing transition precisely (which keyframe transition, which constraint binds: torque limit at which joint? friction? unilateral contact? self-collision? no feasible contact set?). A negative verdict is a first-class valid outcome — report it plainly, do not force a positive.
+4. DOCS (keep prior content intact): plan.md new section "F3: attention-based explicit MPC get-up test"; results.md F3 section (verdict table, attention figure/table reference, timing); report-cn.md "补充 4" Chinese summary (open with the one-line verdict + the one number that matters, then detail).
+
+HARD RULES (unchanged): explicit/interpretable throughout, no black-box policy; QUASI-STATIC ONLY (no momentum — F3 tests exactly whether momentum is needed); per-task explicit user order for claude-opus-5-5-medium (standing opus-pause overridden for this task only); academic only; no BFM-Zero git clone; 2 CPUs, headless, deterministic sim.
+
+DELIVERABLES: completed F3 run + verdict, attention visualization, doc updates. Feed back ALL results promptly in Chinese.

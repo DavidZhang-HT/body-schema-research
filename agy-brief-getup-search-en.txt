@@ -1,0 +1,30 @@
+TASK: Implement AUTONOMOUS, INTERPRETABLE get-up strategy search — the robot must find its own contact-mode sequence from supine to standing, with every decision analyzable and optimizable. No hand-supplied sequences. No end-to-end black-box policy.
+
+CONTEXT:
+- Codebase: ~/workspace/research/body-schema-gait/ (sim/model.py with G0 limb geoms + supine reset; sim/getup_schema.py, sim/getup_attention.py, sim/getup_mpc.py, sim/getup_f3_run.py, sim/getup_f3_diag.py; sim/zero_id.py estimator with torque channel + gating; plan.md, results.md, report-cn.md).
+- Architecture correction (user ground truth, in plan.md): "head up first" was NEVER required — F3's P1_head_up sequence was human-imposed; its NOT_FOUND verdict is scoped to that choice. Region-to-target skills (head/hand/waist to targets) are GENERAL capabilities learned via motion testing, not get-up-specific. Get-up is a SEPARATE task that DECOMPOSES into region-to-target subproblems. The strategy must be found autonomously and the process must be interpretable (analyzable, optimizable).
+- F3's stall diagnosis is the search's first input: direct supine trunk lift is structurally infeasible (trunk-flexion work unavailable; trunk_upright cost stuck at 2.84; relaxing every constraint class failed). Peak torque ratio was only 0.181 — not torque-bound.
+- Open question from F3: does any quasi-static mode sequence exist, or is momentum required? The search below answers it.
+
+WHAT TO DO (in this order):
+1. CONTACT-MODE GRAPH (explicit, inspectable): define nodes as contact SETS relevant to get-up — supine {back}, side-lying {side}, prone {chest}, quadruped {hands+knees}, {hands+feet}, deep squat {feet}, standing {feet} — each with an explicit, human-readable definition (which links in contact, from the G0 geoms). Edges = candidate transitions between modes. The graph definition itself is a deliverable artifact (documented table, not hidden in code).
+2. FEASIBILITY ORACLE per transition: reuse the existing explicit MPC (`sim/getup_mpc.py` "imagine" solver: min-effort keyframe QP subject to quasi-static equilibrium + contact friction/unilateral constraints + joint/torque/self-collision limits) to test whether a transition between two modes is quasi-statically feasible. Keep the interpretable attention (`sim/getup_attention.py`) selecting contacts/joints within each transition. Seed the oracle with F3's diagnosis: direct trunk-lift transitions are known structural failures — encode this as EXPLICIT pruned edges with stated reasons, not silent omissions.
+3. INTERPRETABLE SEARCH: run an explicit graph search (A* or equivalent with documented cost = effort + feasibility margins) from supine to standing over the mode graph. The search trace must be fully inspectable: log expanded nodes, cost breakdowns per edge, pruned branches WITH REASONS (which constraint bound). The final strategy — if found — is emitted as a human-readable plan: mode sequence + per-transition keyframes + attention traces + cost accounting. If the search exhausts all quasi-static options, that IS the verdict (it answers the momentum question more strongly than F3 did): report the exhaustive failure with the binding diagnoses per frontier.
+4. DECOMPOSITION DISCIPLINE: keep the region-to-target "imagine" solver as the low-level workhorse (general capability); the NEW layer is only the autonomous sequencing. Do not entangle them. Document the interface between the two layers.
+5. DOCS: plan.md new section ("Autonomous interpretable get-up strategy search"), results.md (graph definition, search trace summary, verdict), report-cn.md ("补充 5", Chinese). Keep prior content intact.
+
+CONSTRAINTS:
+- Per-task explicit user order, continuing the same thread: claude-opus-5-5-medium (standing opus-pause overridden for this task only).
+- Interpretable throughout: every mode, edge, cost term, and pruning reason must be human-readable. No learned black-box sequencing policy. If any component threatens interpretability, justify in docs or drop it.
+- Research is purely academic, non-commercial.
+- Do NOT git clone the BFM-Zero repo (LFS hangs); single-file fetch via raw.githubusercontent.com only.
+- 2 CPUs, headless, no GUI. Keep the sim deterministic. Quasi-static scope for this task (momentum is out of scope; exhausting quasi-static IS a valid terminal verdict).
+- A negative verdict (no quasi-static strategy exists) is valid and must be reported plainly with the per-frontier diagnosis.
+
+DELIVERABLES (under ~/workspace/research/body-schema-gait/):
+- Contact-mode graph definition (documented) + search implementation (new sim files).
+- Search result: human-readable strategy plan (mode sequence + keyframes + attention/cost traces), OR certified quasi-static exhaustion with per-frontier diagnoses.
+- F3-diagnosis seeding (explicit pruned edges with reasons).
+- Doc updates: plan.md, results.md, report-cn.md (Chinese).
+
+Feed back ALL analysis promptly in Chinese.

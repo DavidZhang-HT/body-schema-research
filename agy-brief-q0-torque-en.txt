@@ -1,0 +1,29 @@
+TASK: Integrate the joint-torque-residual channel into Phase 2b (joint-zero active identification) of the body-schema gait pipeline — first validate via the observability scan, then implement if the scan confirms.
+
+CONTEXT:
+- Codebase: ~/workspace/research/body-schema-gait/ (sim/model.py, sim/wbc.py, sim/experiment.py, sim/zero_id.py, sim/zero_observability.py, sim/zero_experiment.py, sim/zero_motion_scan.py). Docs: plan.md ("Phase 2b: joint-zero active identification"), results.md, report-cn.md.
+- Established facts (do not re-litigate): loop-closure estimator gets the observable subspace of joint-zero offsets to 0.17–0.38°; W1 (intra-leg common-mode shank-vs-ankle-pitch allocation, both legs same direction) is a near-nullspace (rel. singular values ~1e-3) for the kinematic residuals; symmetric motions are provably useless (1e-8); no safe double-support motion pushes W1 below the 2° prior; the AprilTag external-reference proposal exists as fallback (not built).
+- The user's proposal (conceptually validated in discussion, NOT yet numerically validated): when the leg is straight per the TRUE geometry, pitch gravity torques vanish — a first-order signal (~1.5 N·m at 2° bias under body weight, vs 0.05 N·m torque noise). The current estimator compresses the 12-D leg joint-torque vector into 3 equations (weight + CoM xy), so W1 gets absorbed into the trunk CoM-offset estimate. Using the FULL torque vector as an overdetermined residual should make W1 observable.
+
+WHAT TO DO (in this order):
+1. OBSERVABILITY SCAN FIRST (the arbiter): extend sim/zero_observability.py with the quasi-static gravity-torque residual r = tau_meas − g(q_meas − delta; theta) over the existing Phase-2 sway trajectory (which passes through near-straight configurations — no new motion needed). Unknowns: trunk_dm, trunk_dx, trunk_dy, delta (12 leg joints), friction (see 3). Report W1–W4 singular values / formal std. Verdict: does W1 come below 2°? If NO, report the numbers and STOP (do not implement); the AprilTag fallback stands.
+2. If YES, implement in sim/zero_id.py: extend ZeroEstimator with the torque-residual channel alongside the existing loop-closure channel, keeping the triple-gating discipline (surprise gate, evidence gate, loop-consistency gate — a torque-channel consistency gate may be added if justified). Wire into experiment.py Phase-2b.
+3. FRICTION HANDLING (mandatory): leg stiction is 0.6 N·m vs ~1.5 N·m signal — same order. Either co-identify frictionloss (currently held at prior) or use bidirectional-approach averaging; document the choice and show it works on the validation seeds. Do not hand-wave this.
+4. TRUNK-COM DISAMBIGUATION: a trunk CoM offset (~2.5 cm → ~2.7 N·m at hip) mimics the bias signal in a single static pose. Show via the trajectory that the two separate by configuration dependence (bias signal → 0 at true straight; CoM signal ~constant), i.e. the scan/validation must demonstrate this separation, not just assert it.
+5. VALIDATE on seeds: per-joint offset error table (torque channel vs loop-closure-only vs quiet baseline), gating behavior (must still reject on the seed-4 fall case), and confirm no regression on the previously observable subspace.
+6. DOCS: update plan.md Phase 2b with the torque channel (mechanism, residual equations, friction + CoM-disambiguation design), results.md (scan table + validation table), report-cn.md (Chinese summary). If the scan verdict is NO, document the negative result honestly instead.
+
+CONSTRAINTS:
+- Per-task explicit user order, continuing the same thread: claude-opus-5-5-medium (standing opus-pause overridden for this task only).
+- Research is purely academic, non-commercial.
+- Do NOT git clone the BFM-Zero repo (LFS hangs); single-file fetch via raw.githubusercontent.com only.
+- 2 CPUs, headless, no GUI. Keep the sim deterministic. Safe double-support envelope only — no new risky motions.
+- A negative scan result is a valid outcome: report it plainly and stop.
+
+DELIVERABLES (under ~/workspace/research/body-schema-gait/):
+- Extended observability scan + verdict table (W1–W4 with torque channel).
+- Implementation in sim/zero_id.py + wiring (only if scan validates).
+- Validation tables + gating check (only if implemented).
+- Doc updates: plan.md, results.md, report-cn.md (Chinese).
+
+Feed back ALL analysis promptly in Chinese.

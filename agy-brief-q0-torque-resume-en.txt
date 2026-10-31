@@ -1,0 +1,19 @@
+CONTINUATION BRIEF — resume the interrupted joint-torque-channel task. Read this first; do NOT redo completed work.
+
+ON-DISK PROGRESS (all under ~/workspace/research/body-schema-gait/, written before the SIGTERM):
+- sim/zero_torque.py (178 lines, COMPLETE): TorqueChannel class implementing the quasi-static/dynamic torque residual. Key design (see module docstring): 12 leg rows solved exactly for the two sole wrenches via J_leg^-T, leaving 6 floating-base residuals r = h_base − J_L^T F_L − J_R^T F_R per sample; base velocity/acceleration from the left-sole contact constraint (no base-state estimator); IMU roll/pitch only; per-joint noise model sigma^2 = s_tau^2 + (rel·tau)^2 + stick term mu_f^2(1−tanh^2)/3 propagated through A = d r/d tau_j; residuals(delta, trunk, mu, S) returns R, J, C with finite-difference Jacobians; friction co-identified as mu unknowns. prepare() builds sample dicts from full-rate recordings with Savitzky-Golay qdd.
+- sim/zero_torque_record.py (15 lines): re-runs Phase-2 calibrations with full-rate recording → results/q0/samples_tau_<mode>_<seed>.npz; asserts bit-identical to published calib runs.
+- sim/zero_experiment.py: modified — calibrate() now accepts record=True.
+
+WHAT REMAINS (do only this, in order):
+1. OBSERVABILITY SCAN WITH TORQUE RESIDUAL (the arbiter): extend sim/zero_observability.py (or a small new script reusing TorqueChannel.residuals) to compute W1–W4 singular values / formal std WITH the torque channel on the existing Phase-2 sway trajectory (run zero_torque_record.py first if the .npz files are missing). Unknowns: trunk (4) + delta (12) + mu (friction). Verdict table: W1–W4 formal std, torque channel vs loop-closure-only. Does W1 come below 2°?
+2. If verdict is NO: report the numbers plainly, update plan.md / results.md / report-cn.md with the honest negative result (torque channel subsection under Phase 2b), and STOP. Do not implement. The AprilTag fallback stands.
+3. If YES: implement the torque channel in sim/zero_id.py alongside the existing loop-closure channel, keeping the triple-gating discipline (add a torque-channel consistency gate if justified); wire into experiment.py Phase-2b.
+4. FRICTION: co-identify mu (already in the residual signature) — show per-seed that it works; no hand-waving.
+5. TRUNK-COM DISAMBIGUATION: demonstrate via the trajectory (not assertion) that trunk CoM offset vs zero bias separate by configuration dependence (bias → 0 at true straight; CoM ~constant). A small numerical demonstration suffices.
+6. VALIDATE on seeds 0–3 (+ seed-4 fall case): per-joint offset error table (torque channel vs loop-closure-only vs quiet baseline); gating must still REJECT on the seed-4 fall; confirm no regression on the previously observable subspace (0.17–0.38°).
+7. DOCS: plan.md Phase 2b torque-channel subsection (mechanism, residual equations, friction + disambiguation design), results.md (scan table + validation table), report-cn.md (Chinese summary). Negative result documented honestly if NO.
+
+CONSTRAINTS (unchanged): claude-opus-5-5-medium, this task only; academic; no BFM-Zero git clone; 2 CPUs, headless, deterministic sim; safe double-support envelope only.
+
+DELIVERABLES: scan verdict table; implementation + validation (only if YES); doc updates either way. Feed back ALL analysis in Chinese.

@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+# Virtualenvs
+.venv/
+venv/
+# Logs / caches
+*.log
+MUJOCO_LOG.TXT
+# OS
+.DS_Store

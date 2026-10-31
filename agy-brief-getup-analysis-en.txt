@@ -1,0 +1,38 @@
+TASK: Analyze the user's new research proposal ("get-up from lying via learned body-schema / contact-schema exploration") against the CURRENT pipeline, and answer three explicit questions: does the current network match this logic? How big is the difference? How much would need to change?
+
+THE USER'S PROPOSAL (translated, keep as ground truth):
+1. Robot starts lying on the ground. Find passively stable rest states.
+2. Active exploration: try different joint movements; observe effects on CoM and other body parts. Assume flat ground.
+3. Learn contact: observe and predict contact forces vs joint torques — learn the contact model (where the body touches, how forces distribute over changing contact regions).
+4. Learn the mapping between joint-schema change trends and CoM changes (i.e., how joint motions move the CoM).
+5. Invert it: given a DESIRED CoM change ("imagine the CoM moving this way"), generate the movement — then compose a get-up: imagine head lifting → how to move; imagine sitting upright → how to move; imagine waist lifting → how to move; imagine standing straight → how to support and move; and find the MINIMUM-EFFORT way for each.
+6. Generalize: the same machinery should learn "bring body region X to a target point/direction" (head/hand/leg all the same) — i.e., proprioceptive body-schema relationships plus external support/contact dynamics.
+
+CONTEXT — the current pipeline (~/workspace/research/body-schema-gait/):
+- sim/model.py (pi+ 24-DoF MuJoCo model, RealRobot with latency/friction/backlash/zero-offset truth model), sim/wbc.py (whole-body QP controller, fixed-contact: feet), sim/experiment.py (curriculum: stand → double-support calibration → stepping in place → forward walk; perturbations), sim/zero_id.py + sim/zero_torque*.py (SchemaEstimator/ZeroEstimator/TorqueChannel: identifies trunk_dm/dx/dy, delay, friction, 12 leg joint zeros from proprioception with triple gating; loop-closure + gravity + full-torque residuals).
+- Philosophy so far: URDF as kinematic prior → task-relevant active identification of dynamic/contact deviations → constrained optimization (Phase 3) → surprise-gated online adaptation (Phase 4). Research is purely academic.
+- Known limits: all 9 runs fell on the mismatched plant (delay-compensation bug is the prime suspect); contact mode is FIXED (feet flat, double support); identification is PARAMETRIC (a handful of scalars), not a learned mapping.
+
+WHAT TO DO (analysis only — no new simulation code unless a tiny probe is needed to settle a factual question):
+1. Formalize the proposal as a research problem: state variables, what is learned (forward model? inverse model? contact model?), what "imagine" means operationally (inverse inference), what "minimum effort" means (objective).
+2. Point-by-point mapping: for each of the 6 proposal elements above, say what EXISTS in the current codebase (cite files/functions), what PARTIALLY exists, and what is MISSING.
+3. Answer the three questions explicitly:
+   (a) Does the current network/architecture logic match the proposal's logic? (Consider: predictive body schema + active ID + constrained control vs the proposal's explore→learn mapping→invert→compose.)
+   (b) How big is the difference? Name the load-bearing differences — expected candidates: FIXED vs SWITCHING contact sets (lying→rolling→sitting→kneeling→standing is fundamentally multi-contact planning; current WBC assumes feet); PARAMETRIC ID vs LEARNED MAPPING (a few scalars vs joint-trend↔CoM / region-to-target relationships); task representation (track-reference-gait vs "bring region X to target with min effort" = operational-space formulation); exploration curriculum (stable standing vs passively-stable rest poses as the starting point).
+   (c) How much would need to change? Give a concrete module-level estimate: which modules are reusable as-is (estimator? gating? URDF prior?), which need extension (WBC → multi-contact?), which are new (contact-set estimator/sequencer? task-space inverse? get-up curriculum? min-effort sequenced optimization?). A rough reuse-vs-new split with justification is fine; do not fake precision.
+4. Propose the MINIMAL extension path that stays inside the current philosophy and sim: e.g., Phase 0 "supine exploration" (find rest states, learn per-region contact responses on flat ground), a contact-set estimator reusing the torque-channel machinery (contact forces ARE observable through joint torques — the user already validated this intuition), CoM-Jacobian identification from the URDF+identified masses (note: the "joint trend ↔ CoM change" mapping may already fall out of the identified model rather than needing a learned network — say which parts need learning and which are analytic), and get-up as SEQUENCED constrained optimization over imagined CoM/region targets with an effort objective. State what can be validated in the existing MuJoCo sim vs what needs the real robot.
+5. Key risks and falsification criteria for the extension (at least 3), in the spirit of the project's existing falsification-first culture.
+
+CONSTRAINTS:
+- Per-task explicit user order, continuing the same thread: claude-opus-5-5-medium (standing opus-pause overridden for this task only).
+- Analysis only; do not start a large implementation. A tiny numerical probe in the existing sim is allowed ONLY if needed to settle a factual claim (e.g., "is the CoM Jacobian identifiable from the current estimator's outputs?").
+- Research is purely academic, non-commercial.
+- Do NOT git clone the BFM-Zero repo (LFS hangs).
+- 2 CPUs, headless if any compute is used.
+
+DELIVERABLES (under ~/workspace/research/body-schema-gait/):
+- analysis-getup.md (English technical analysis, may be detailed).
+- report-cn-getup.md (Chinese summary that DIRECTLY answers the three questions first — one-line verdict + the one number/fact that matters for each — then the detail; the user reads Chinese and asks "啥意思？" when briefs open with tables).
+- Append a short pointer entry in plan.md (not a full rewrite).
+
+Feed back ALL analysis promptly in Chinese.

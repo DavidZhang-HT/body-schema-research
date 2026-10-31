@@ -1,0 +1,269 @@
+[
+ {
+  "theta_deg": 0,
+  "lsq_cost": 1.520128526903346e-07,
+  "feasible": true,
+  "rho": 0.09518736576663422,
+  "binding": "r_hip_pitch_joint",
+  "loads": {
+   "L_foot": 0.111,
+   "R_foot": 0.075,
+   "lower_back": 0.814
+  },
+  "pen_mm": -0.0,
+  "selfd_mm": 4.5,
+  "left_z": 0.0,
+  "touching": [
+   "upper_trunk",
+   "lower_back",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SUPINE"
+  ]
+ },
+ {
+  "theta_deg": 10,
+  "lsq_cost": 8.866951887547934e-05,
+  "feasible": true,
+  "rho": 0.09469265680170755,
+  "binding": "l_hip_pitch_joint",
+  "loads": {
+   "L_foot": 0.216,
+   "R_foot": 0.064,
+   "upper_trunk": 0.24,
+   "lower_back": 0.48
+  },
+  "pen_mm": -0.01,
+  "selfd_mm": 3.5,
+  "left_z": 0.174,
+  "touching": [
+   "upper_trunk",
+   "lower_back",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SUPINE"
+  ]
+ },
+ {
+  "theta_deg": 20,
+  "lsq_cost": 0.00035801425358103446,
+  "feasible": true,
+  "rho": 0.08943944764777159,
+  "binding": "r_hip_pitch_joint",
+  "loads": {
+   "L_foot": 0.128,
+   "R_foot": 0.062,
+   "upper_trunk": 0.008,
+   "lower_back": 0.801
+  },
+  "pen_mm": -0.03,
+  "selfd_mm": 2.99,
+  "left_z": 0.342,
+  "touching": [
+   "upper_trunk",
+   "lower_back",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SUPINE"
+  ]
+ },
+ {
+  "theta_deg": 30,
+  "lsq_cost": 0.0008317000053981898,
+  "feasible": true,
+  "rho": 0.08242772418202873,
+  "binding": "r_hip_pitch_joint",
+  "loads": {
+   "L_foot": 0.139,
+   "R_foot": 0.062,
+   "R_forearm": 0.07,
+   "upper_trunk": 0.034,
+   "lower_back": 0.692
+  },
+  "pen_mm": -0.05,
+  "selfd_mm": 2.98,
+  "left_z": 0.5,
+  "touching": [
+   "upper_trunk",
+   "lower_back",
+   "R_upper_arm",
+   "R_forearm",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SUPINE"
+  ]
+ },
+ {
+  "theta_deg": 40,
+  "lsq_cost": 0.0015582205607569952,
+  "feasible": false,
+  "rho": null,
+  "binding": null,
+  "loads": {},
+  "pen_mm": -0.07,
+  "selfd_mm": 2.96,
+  "left_z": 0.643,
+  "touching": [
+   "R_upper_arm",
+   "R_forearm",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": []
+ },
+ {
+  "theta_deg": 45,
+  "lsq_cost": 0.0020522007574533788,
+  "feasible": false,
+  "rho": null,
+  "binding": null,
+  "loads": {},
+  "pen_mm": -0.09,
+  "selfd_mm": 2.94,
+  "left_z": 0.707,
+  "touching": [
+   "R_upper_arm",
+   "R_forearm",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": []
+ },
+ {
+  "theta_deg": 50,
+  "lsq_cost": 0.002651008632285112,
+  "feasible": true,
+  "rho": 0.1734574223487492,
+  "binding": "l_hip_pitch_joint",
+  "loads": {
+   "L_foot": 0.405,
+   "R_upper_arm": 0.592
+  },
+  "pen_mm": -0.12,
+  "selfd_mm": 2.91,
+  "left_z": 0.766,
+  "touching": [
+   "R_upper_arm",
+   "R_forearm",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SIDE"
+  ]
+ },
+ {
+  "theta_deg": 60,
+  "lsq_cost": 0.004247004819208335,
+  "feasible": true,
+  "rho": 0.08442145362609087,
+  "binding": "l_hip_pitch_joint",
+  "loads": {
+   "L_foot": 0.315,
+   "R_foot": 0.085,
+   "R_upper_arm": 0.573,
+   "R_forearm": 0.027
+  },
+  "pen_mm": -0.19,
+  "selfd_mm": 2.83,
+  "left_z": 0.866,
+  "touching": [
+   "R_upper_arm",
+   "R_forearm",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SIDE"
+  ]
+ },
+ {
+  "theta_deg": 70,
+  "lsq_cost": 0.006696288593110396,
+  "feasible": true,
+  "rho": 0.09124127999772944,
+  "binding": "r_hip_pitch_joint",
+  "loads": {
+   "L_foot": 0.247,
+   "R_foot": 0.159,
+   "R_upper_arm": 0.566,
+   "R_forearm": 0.028
+  },
+  "pen_mm": -0.29,
+  "selfd_mm": 2.67,
+  "left_z": 0.94,
+  "touching": [
+   "R_upper_arm",
+   "R_forearm",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SIDE"
+  ]
+ },
+ {
+  "theta_deg": 80,
+  "lsq_cost": 0.011550871620154678,
+  "feasible": true,
+  "rho": 0.09528878624695249,
+  "binding": "l_calf_joint",
+  "loads": {
+   "L_foot": 0.302,
+   "R_foot": 0.137,
+   "R_upper_arm": 0.53,
+   "R_forearm": 0.031
+  },
+  "pen_mm": -0.38,
+  "selfd_mm": 2.05,
+  "left_z": 0.985,
+  "touching": [
+   "R_upper_arm",
+   "R_forearm",
+   "R_hand",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SIDE"
+  ]
+ },
+ {
+  "theta_deg": 90,
+  "lsq_cost": 0.028614371177499726,
+  "feasible": true,
+  "rho": 0.09644099094451432,
+  "binding": "l_calf_joint",
+  "loads": {
+   "L_foot": 0.248,
+   "R_foot": 0.179,
+   "R_upper_arm": 0.573
+  },
+  "pen_mm": -1.2,
+  "selfd_mm": -2.14,
+  "left_z": 1.0,
+  "touching": [
+   "R_upper_arm",
+   "L_foot",
+   "R_foot"
+  ],
+  "modes": [
+   "SIDE"
+  ]
+ }
+]

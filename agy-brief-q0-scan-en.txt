@@ -1,0 +1,31 @@
+TASK: Execute the recommended minimal next step from the joint-zero identification report: scan safe double-support exploratory motions with the noiseless observability tool to see if any motion lifts the zero-position nullspace directions above the usability threshold.
+
+CONTEXT:
+- Codebase: ~/workspace/research/body-schema-gait/ (sim/zero_id.py, sim/zero_observability.py, sim/zero_experiment.py, sim/model.py, sim/wbc.py, sim/experiment.py). Docs: plan.md (has "Phase 2b: joint-zero active identification"), results.md, report-cn.md.
+- Established facts (do not re-litigate): loop-closure zero estimator gets the observable subspace to 0.17–0.38° (prior 1.8–2.2°); intra-leg common-mode allocation directions (shank vs ankle-pitch, hip vs knee+ankle-pitch) are near-nullspace with relative singular values ~1e-3 and formal std 6.5–10.5°, gated to prior; residual collapse alone does not prove correctness; downstream 7×3 comparison still all-fell (delay-compensation bug is the dominant cause, separate issue).
+- The open question: does ANY safe double-support motion (no stepping, both feet flat, bounded base height/tilt) make those nullspace directions identifiable to better than the 2° prior?
+
+WHAT TO DO:
+1. Use sim/zero_observability.py (noiseless observability rank analysis; extend it as needed) to scan candidate double-support exploratory motions:
+   - squat depth sweep (e.g. base height from nominal down to a safe minimum in steps),
+   - fore-aft stance variations (feet shifted forward/backward relative to base, asymmetric stances),
+   - lateral stance width variations,
+   - combinations with the existing multi-frequency sway (the tool should evaluate observability of a motion TRAJECTORY, not just static poses, if feasible).
+   Safety envelope: both feet flat on ground at all times, no step initiation, base tilt within a few degrees, joint torques within limits (use the existing model to sanity-check feasibility; do not invent unsafe motions).
+2. For each candidate, report the observability metric for the previously-identified weak directions (relative singular values / formal std of the intra-leg common-mode allocation). Verdict per candidate: does it push the weak directions below 2° formal std?
+3. Final verdict: (a) YES — name the motion(s), give the numbers, and propose how to integrate the winning motion into Phase-2 exploration_targets in experiment.py (implement it if it is a small change, and run the zero-ID validation for the new motion on 2-3 seeds to confirm the predicted improvement); or (b) NO — state clearly that no safe double-support motion suffices, with the best-achieved numbers, and then specify the MINIMAL external reference that would close the gap (e.g. known foot fixture geometry, base-height measurement, or a brief single-foot contact probe), with a concrete, safe proposal for how to obtain it on the real pi+.
+4. Update plan.md (observability scan section), results.md (scan table + verdict), report-cn.md (Chinese summary). Keep prior results intact.
+
+CONSTRAINTS:
+- Per-task explicit user order: use claude-opus-5-5-medium (standing opus-pause overridden for this task only, continuing the same thread as the zero-ID task).
+- Research is purely academic, non-commercial.
+- Do NOT git clone the BFM-Zero repo (LFS hangs); single-file fetch via raw.githubusercontent.com only.
+- 2 CPUs, headless, no GUI. Keep the sim deterministic.
+- If the scan shows the answer is NO, do not build the external-reference hardware procedure beyond a concrete proposal — report it and stop; the user decides.
+
+DELIVERABLES (under ~/workspace/research/body-schema-gait/):
+- Scan code + results table (candidate motion → weak-direction formal std).
+- Verdict (a) or (b) with numbers; implementation + validation if (a).
+- Doc updates: plan.md, results.md, report-cn.md (Chinese).
+
+Feed back ALL analysis promptly in Chinese.

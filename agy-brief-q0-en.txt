@@ -1,0 +1,28 @@
+TASK: Extend the body-schema self-exploration gait pipeline with ACTIVE IDENTIFICATION OF JOINT ZERO POSITIONS (encoder zero offsets).
+
+CONTEXT:
+- Codebase: ~/workspace/research/body-schema-gait/ (sim/model.py, sim/wbc.py, sim/experiment.py, sim/scenarios.py). Prior work (opus 5.5, 2026-10-31) built a 4-phase pipeline on the official pi+ 24-DoF model in MuJoCo: kinematic retargeting (LAFAN1) → safe double-support active exploration (multi-frequency sway/squat/unloading) → constrained feasibility projection → surprise-gated online adaptation. Deliverables: plan.md, results.md, report-cn.md, videos/.
+- Current SchemaEstimator identifies theta_id = (trunk_dm, trunk_dx, trunk_dy, delay) from proprioception only. Joint zero offsets (q_meas = q_true + delta, per-joint encoder bias) are NOT modeled anywhere. model.py line 234 documents what is not in the URDF; zero offsets belong on that list.
+- Prior honest negative result: all 9 runs fell on the mismatched plant; ablation traced it to wrong delay-compensation usage. Keep that finding intact; this task ADDS a new identification channel, it does not re-litigate the old one.
+
+WHAT TO DO:
+1. Model the effect: add joint zero offsets to BodyParams (start with the 12 leg joints; arms optional) as the "unknown truth" in scenarios.py (plausible magnitudes, e.g. 1-3 deg assembly/encoder bias), and inject them in RealRobot.observe() as q += delta (keep the existing backlash/noise terms untouched).
+2. Design the identifier. Recommended observability argument (verify, don't assume): during Phase-2 double-support sway both feet are flat on the ground, forming a closed kinematic chain; the measured joint angles minus candidate offsets must satisfy loop closure (feet flat, known relative foot transform from the nominal stance). Residuals of loop closure over the multi-frequency sway trajectory carry the zero-offset information. The IMU gravity vector anchors absolute trunk orientation and removes part of the nullspace. State clearly which offset combinations are observable, which live in the nullspace (e.g. common-mode offsets absorbed by base pose), and which must stay on prior.
+3. Implement it in sim/: extend SchemaEstimator (or a new ZeroEstimator used in the same gated manner) with a loop-closure least-squares over the calibration trajectory; wire the identified offsets into BodyModel via bm.set_params / a q-correction applied in wbc.control before planning. Respect the Phase-4 lesson: gate the update (only commit on sufficient evidence, never write transient/impact samples into the long-term estimate).
+4. Validate in simulation (deterministic seeds, CPU): inject KNOWN zero offsets into the plant, run the calibration, and report per-joint offset estimation error (deg) for (a) active sway exploration, (b) quiet-standing baseline. Also report whether adding zero-ID changes the downstream 3-way comparison (fall rate / fidelity / violation rate) on the mismatched plant. Be honest if the nullspace makes some joints unidentifiable.
+5. Update plan.md with a short "zero-position ID" section (observability analysis + method), append validation numbers to results.md, and add a Chinese summary section to report-cn.md. Optionally render one new video if a run is illustrative (reuse sim/render_videos.py).
+
+CONSTRAINTS:
+- This is a per-task explicit user order to use a Claude model (claude-opus-5-5-medium); the general opus-pause rule is overridden for this task only.
+- Research is purely academic, non-commercial.
+- Do NOT git clone the BFM-Zero repo (LFS hangs); single-file fetch via raw.githubusercontent.com only.
+- Keep compute modest: 2 CPUs on this VM, headless, no GUI. Simulation is deterministic; keep it that way.
+- Do not break existing deliverables: the prior 3-way comparison numbers stay as-is unless a rerun is justified and documented.
+- If blocked (e.g. loop-closure unobservable for a joint subset), report precisely which subset and why, with the residual evidence, instead of stalling.
+
+DELIVERABLES (under ~/workspace/research/body-schema-gait/):
+- Code changes in sim/ implementing zero-offset truth model + estimator + wiring.
+- Validation: per-joint offset error table (active vs quiet baseline), identifiability verdict per joint group, downstream effect on the 3-way comparison if any.
+- Doc updates: plan.md section, results.md appendix, report-cn.md Chinese summary.
+
+Feed back ALL analysis promptly in Chinese (translate findings into Chinese for the user).

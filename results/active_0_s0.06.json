@@ -1,0 +1,67 @@
+{
+ "cond": "active",
+ "seed": 0,
+ "fell": true,
+ "t_end": 8.968000000000469,
+ "stage_reached": "sip",
+ "fidelity_deg": null,
+ "viol_rate": 0.017276422764227643,
+ "recovery_s": null,
+ "pushed": false,
+ "fwd_dist": -0.04421145353559157,
+ "lat_drift": 0.3653247195644262,
+ "theta_true": {
+  "trunk_dm": 0.8,
+  "trunk_dx": 0.025,
+  "trunk_dy": -0.012,
+  "trunk_dz": 0.03,
+  "delay": 0.012,
+  "frictionloss": 0.6,
+  "contact_tc": 0.035,
+  "mu": 0.55,
+  "backlash": 0.014
+ },
+ "theta_hat": {
+  "trunk_dm": 1.405002380672693,
+  "trunk_dx": 0.03267701202709875,
+  "trunk_dy": -0.024862414518972534,
+  "trunk_dz": 0.0,
+  "delay": 0.01399995968875542,
+  "frictionloss": 0.2,
+  "contact_tc": 0.02,
+  "mu": 1.0,
+  "backlash": 0.0
+ },
+ "theta_err": {
+  "dm": 0.605002380672693,
+  "dx": 0.007677012027098751,
+  "dy": -0.012862414518972534,
+  "delay": 0.00199995968875542
+ },
+ "theta_err_prior": {
+  "dm": -0.8,
+  "dx": -0.025,
+  "dy": 0.012,
+  "delay": -0.012
+ },
+ "ident": {
+  "n_static": 2638,
+  "dm_std": 0.049667843468810924,
+  "off_res_std": 0.0162554767347034,
+  "delay_contrast": 7.755811603038164
+ },
+ "commits": 2,
+ "rejected": 0,
+ "gp": {
+  "T_step": 0.45,
+  "ds_frac": 0.2,
+  "step_width": 0.16,
+  "stride": 0.06,
+  "trunk_pitch": 0.0,
+  "com_height": 0.3,
+  "swing_height": 0.035,
+  "k_dcm": 2.5,
+  "zmp_margin": 0.015
+ },
+ "wall_s": 10.588892698287964
+}

@@ -1,0 +1,30 @@
+TASK: Implement the F3 falsification test — quasi-static get-up keyframe feasibility from supine to standing — using an ATTENTION mechanism, with the emphasis on EXPLICIT motion predictive control grounded in understanding of body-schema motion, force, and movement.
+
+CONTEXT:
+- Codebase: ~/workspace/research/body-schema-gait/ (sim/model.py = pi+ 24-DoF MuJoCo model; sim/wbc.py = whole-body QP, fixed foot contacts; sim/experiment.py; sim/zero_id.py + sim/zero_torque*.py = estimator with torque channel, triple gating; analysis-getup.md + report-cn-getup.md = the gap analysis this task builds on; plan.md has "Get-up proposal gap analysis").
+- F3 (from the analysis): on the NOMINAL model, search for a sequence of quasi-statically feasible keyframes from supine (lying on back) to standing, each keyframe with peak |tau|/tau_max ≤ 0.8 (torque limits: 20 N·m legs, 10 N·m arms per model.py). If NO such sequence exists → get-up requires momentum → the quasi-static "imagine" framework is insufficient (this negative verdict is a first-class valid outcome; do not force a positive).
+- Known prerequisite (probe-verified): limb collision geoms are missing — arm/thigh/knee geoms never touch the floor; there is no supine spawn/reset; fallen() is defined for standing. These must be fixed first (G0 in the analysis), otherwise the test is not physical.
+- Philosophy: explicit/model-based, NOT black-box. The attention mechanism must be interpretable — it should express UNDERSTANDING of (a) body-schema motion (which joints/regions move which body parts: kinematics), (b) force (which contacts bear load, torque distribution: statics), (c) movement (how the motion evolves: dynamics/kinematics over the horizon).
+
+WHAT TO DO (in this order):
+1. G0 PREREQUISITES: add simplified collision geoms for thighs, hands/arms, knees (keep visual meshes as-is; internal model uses simplified shells — the analysis defines the mesh-vs-model gap as "contact schema error", keep that convention); add a supine spawn/reset pose; redefine failure for the get-up context (getting UP is the goal — "fallen" needs a get-up-appropriate success/failure criterion, e.g. reached standing with base height/orientation thresholds). Verify with a tiny probe: drop the model supine, confirm multi-link ground contacts form and are readable via the torque channel.
+2. ATTENTION MECHANISM (interpretable, explicit): design an attention module whose weights are FUNCTIONS of the body schema, not learned black-box scalars. Concrete suggested form (adapt as justified): per planning phase, attention over candidate CONTACT LINKS (which body parts should bear load — the "support understanding") and over JOINTS for the active task (e.g. "lift head" attends to neck/trunk/arm chains; "lift waist" attends to hip/knee/ankle chains — the "motion understanding"). The attention must be inspectable: log and visualize the weight matrices per keyframe/phase, and the report must show that the weights track something physically meaningful (e.g. attention shifts from back→hands→feet across the supine→sit→support→squat→stand phases). A learned component is allowed ONLY if its inputs are explicit schema quantities and its outputs remain interpretable.
+3. EXPLICIT MPC: formulate get-up as explicit model-predictive / keyframe-sequence optimization: minimize effort (sum of squared torques, or peak torque ratio) subject to quasi-static equilibrium (ΣF=mg, ΣM=0 about CoM, or the full static equations), contact unilateral + friction constraints on the ATTENDED contact set, joint/torque limits, and self-collision avoidance. The "imagine" step = solve this optimization for the next imagined target (head up / sit upright / waist up / stand); the attention weights select which contacts and joints participate. Receding-horizon or sequential-keyframe formulation is acceptable — document the choice.
+4. RUN F3: search the keyframe sequence supine→standing on the nominal model. Report: sequence found or not; per-keyframe peak torque ratios; the attention weight evolution across phases (figure or table); compute time. If not found, diagnose WHY (which transition fails, which constraint binds) — that diagnosis IS the result.
+5. DOCS: new section in plan.md ("F3: attention-based explicit MPC get-up test"), results in results.md, Chinese summary in report-cn.md ("补充 4"). Keep prior content intact.
+
+CONSTRAINTS:
+- Per-task explicit user order, continuing the same thread: claude-opus-5-5-medium (standing opus-pause overridden for this task only).
+- Research is purely academic, non-commercial.
+- Explicit and interpretable throughout: no end-to-end black-box policy; every learned weight must be traceable to a schema quantity. If a design choice sacrifices interpretability, justify it in the docs or drop it.
+- Do NOT git clone the BFM-Zero repo (LFS hangs); single-file fetch via raw.githubusercontent.com only.
+- 2 CPUs, headless, no GUI. Keep the sim deterministic. Quasi-static only for this test — no momentum/hopping (that is exactly what F3 is testing the need for).
+- A negative F3 verdict is valid and must be reported plainly with the binding-constraint diagnosis.
+
+DELIVERABLES (under ~/workspace/research/body-schema-gait/):
+- G0 changes (geoms, supine reset, failure criterion) + probe verification.
+- Attention module + explicit MPC implementation (new sim files, documented).
+- F3 result: keyframe sequence (or certified failure + diagnosis), attention visualizations, timing.
+- Doc updates: plan.md, results.md, report-cn.md (Chinese).
+
+Feed back ALL analysis promptly in Chinese.

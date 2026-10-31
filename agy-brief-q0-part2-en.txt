@@ -1,0 +1,48 @@
+TASK (continuation): finish the q0 joint-zero active-identification work. All simulation
+results are already on disk — do NOT re-run completed sweeps. Working directory:
+~/workspace/research/body-schema-gait (run everything from there).
+
+CONTEXT OF WHAT EXISTS:
+- sim/zero_id.py : loop-closure zero-offset estimator (IMU gravity anchor, surprise
+  gating, tau_int inflation, loop-consistency gate).
+- sim/zero_experiment.py : calibration harness (active sway vs quiet standing, seeds 0-4).
+- sim/zero_observability.py : noise-free kinematic rank analysis.
+- sim/model.py, sim/wbc.py, sim/experiment.py : already patched with q0 truth-model
+  offsets (BodyParams), RealRobot.observe injection, and zero-ID wired into
+  wbc.control with the same gating discipline as the existing estimator.
+- results/q0/calib_{active,quiet}_{0..4}.json, samples_*.npz, observability.json :
+  calibration + observability results (complete).
+- results/q0/{active,passive,active_nodc}_z_{0,1}_s0.06.json and non-z counterparts :
+  downstream episode comparison on the q0-plant. MISSING: seed 2 of the three _z
+  conditions.
+- Regression check already done: old conditions reproduce published numbers bit-for-bit.
+
+DO ONLY THESE THREE THINGS:
+1. Run the 3 missing downstream episodes (deterministic, CPU):
+     sim/.venv/bin/python sim/zero_experiment.py  (or the episode entry you built;
+     check how the existing *_z_*.json files were produced and reuse that exact path)
+   for conditions active_z, passive_z, active_nodc_z, seed 2, stride 0.06,
+   writing results/q0/active_z_2_s0.06.json, results/q0/passive_z_2_s0.06.json,
+   results/q0/active_nodc_z_2_s0.06.json. Do not touch existing files.
+2. Update the docs IN PLACE (append new sections, keep existing content):
+   - plan.md: add a "Phase 2b: joint-zero active identification" section — truth-model
+     q0 injection, loop-closure estimator design (IMU gravity anchor, double-support
+     sway excitation), the three gates (surprise gate, tau_int inflation,
+     loop-consistency gate), and the identifiability verdict per joint group
+     (differential/antisymmetric combos observable; common-mode pitch/roll combos in
+     the nullspace, absorbed by base-pose ambiguity).
+   - results.md: add calibration results table (active vs quiet, seeds 0-4: prior RMS,
+     posterior RMS, observable-subspace RMS, commit/refuse behaviour incl. seed-4
+     fall refusal), the residual collapse numbers (gravity 1.02°→0.15°,
+     rel-rot 1.26°→0.06°, rel-pos 2.25mm→0.97mm on seed 0), the observability
+     eigen-structure summary, and the downstream 7-condition × 3-seed table
+     (fall/stage/fidelity/violation/q0-error).
+   - report-cn.md: concise Chinese summary — what was built, the honest numbers,
+     the nullspace verdict, and the single most important next experiment.
+3. Report back a compact English summary with the final numbers (calibration table,
+   observability verdict, downstream table). Keep it factual; flag anything you did
+   not verify.
+
+CONSTRAINTS: 2 CPUs, headless, deterministic sims only. Do not git clone anything.
+Research is purely academic, non-commercial. If anything blocks you, write it to
+blocker-q0.md with the smallest unblocking step instead of stalling.
