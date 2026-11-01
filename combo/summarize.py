@@ -39,6 +39,11 @@ def summarize(selection="robust"):
                       if not (v>threshold if op=='>' else v<threshold)]
             lines += ['Budget exhausted. Final retained state misses handover gates: '+('; '.join(failed) or 'none; QP rejected entry')+'.',
                       'These are measured algorithmic stopping constraints, not a proof of physical impossibility.']
+        if not r['success'] and r['handovers']:
+            h = r['handovers'][-1]
+            lines += [f'Last QP attempt ended at base={h["final"]["base_height"]:.3f} m, '
+                      f'up_z={h["final"]["up_z"]:.3f}, nonfoot load={h["final"]["nonfoot_load"]:.1f} N '
+                      f'after about {h["seconds"]:.2f} s.']
         if e is None:
             continue
         lines += ['', 'Sampled mode sequence: '+' → '.join(e['mode_sequence'])+'.',

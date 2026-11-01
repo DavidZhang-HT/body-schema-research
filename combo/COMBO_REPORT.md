@@ -1,6 +1,6 @@
 # De-networked combination — build and evaluation
 
-Status: IMPLEMENTED, EVALUATION RUNNING. No completed success claimed yet.
+Status: IMPLEMENTED, EVALUATION RUNNING. First revised supine search/QP success recorded; independent replay pending.
 Branch `combo-denetworked`, baseline `cb17ccd`. See CHECKPOINT.md for restart state.
 
 ## Plant and components
@@ -103,12 +103,23 @@ No saved successful actions seed the search. Results resume from per-level
 checkpoints after restart. These are build-validation runs, not a preregistered
 comparison against E1 or E5, whose budgets/distributions differ.
 
-Results pending. Four regression tests pass: deterministic cloned rollout,
+Initial robust-only sweep: **0/3 SUPINE and 0/3 PRONE**, 6000 evaluations each,
+zero QP entries. Endpoint bases 0.101–0.172 m, foot loads 0–38.6 N, nonfoot
+loads 69.6–107.4 N. These are low supported states, not stand-controller
+failures. Revised campaign still running; seed-0 SUPINE succeeded at 5607
+evaluations, seed-0 PRONE failed after 19 QP entries. No efficiency claim.
+
+The VM restarted during the initial seed-0 runs; resumed from 240 supine and
+464 prone evaluations. Counters and wall times retain checkpointed work but
+exclude any uncheckpointed partial level and restart downtime. This affects
+development-run compute accounting, not the fresh revised seed-0 success.
+
+Regression tests pass: deterministic cloned rollout,
 24-DoF standing/supine LP sanity, both score-pathology checks, graph/label semantics.
 
 ## Still missing
 
-Quantitative outcomes and rendered success pending. No closed-loop get-up
+Final sweep outcomes, independent replay and rendered success pending. No closed-loop get-up
 policy: this is privileged-state cloned-simulator planning plus open-loop action
 replay and QP stabilization. No global search completeness, quasi-static path
 proof, necessity proof for momentum, robustness distribution, real-time bound,
