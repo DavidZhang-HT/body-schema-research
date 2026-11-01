@@ -86,3 +86,10 @@ running. Prone seed 1 still searching, seed 0 failed at 6000 (19 QP attempts).
 Operational-only fix committed 039eb79: terminal success/winner retained in
 checkpoint, NPZ writes atomic; new mocked terminal-resume regression PASSED.
 Search rankings/proposals unchanged. Artifacts launcher still waiting.
+
+03:17 UTC: VM available RAM increased to ~2.9 GB. Started ONE low-priority
+independent replay/certificate process for dynamic supine_0 alongside the two
+search workers (three CPU tasks, within user's <=4 cap): `nice -n 10 python -m
+combo.explain --pose supine --seed 0 --selection dynamic`, log
+results/dynamic/supine_0_explain.log. Artifacts launcher later skips completed
+JSON+trace. Do not launch another analyzer until this one finishes.
