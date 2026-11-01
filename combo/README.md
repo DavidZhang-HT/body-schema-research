@@ -42,7 +42,7 @@ MUJOCO_GL=glfw xvfb-run -a .venv-exp/bin/python -m combo.render --pose supine --
 
 `results/*_explanation.json` contains per-block labels and interior certificates;
 `RESULTS.md` is generated from actual result files. Video is CPU-rendered with
-simultaneous front/side views at real-time playback. Run explanation/rendering
+simultaneous front/side views at labeled 2x playback (12 fps). Run explanation/rendering
 after the simulation queues finish to avoid memory contention from mesh models.
 
 Rendering uses system FFmpeg, Pillow, and CPU Mesa through Xvfb/GLX in this VM
