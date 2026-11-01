@@ -31,3 +31,13 @@ Before any dynamic runs: exploration priority changed to original B absolute
 foot-load bonus (not foot fraction; adding hand load at fixed feet load has no
 cost), including B foot-height and total-load corrections. Primary v3 unchanged.
 The earlier gated variant was never run. Robust baseline behavior unchanged.
+
+A lightweight launcher is waiting for all six robust JSONs, then runs six
+`--selection dynamic` jobs (same seeds/budget) with two child processes:
+`.venv-exp/bin/python -m combo.sweep --selection dynamic --after-robust`
+Log combo/results/dynamic_sweep.log. On restart check processes before relaunch;
+resume robust first via `python -m combo.sweep --selection robust`, and then
+dynamic. Completed JSONs are skipped, in-progress jobs resume per-level pickle.
+Do not explain/render while two searches run (mesh memory). After both sweeps,
+run explain for all attempts sequentially, render a verified successful supine
+trajectory, generate summary and finish report. Original first sweep is not lost.
