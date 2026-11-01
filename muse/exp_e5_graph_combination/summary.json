@@ -1,0 +1,129 @@
+{
+  "n_files": 60,
+  "arms": {
+    "g": {
+      "n_runs": 20,
+      "n_ok": 20,
+      "n_timeout": 0,
+      "n_error": 0,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "success_rate_wilson95": [
+        0.0,
+        0.1611301254949332
+      ],
+      "km_median_evals_to_handover": null,
+      "median_evals_among_successes": null,
+      "mean_wall_s": 430.90884855985644,
+      "total_wall_s": 8618.176971197128,
+      "winning_path_tag_counts": {},
+      "n_successful_paths": 0,
+      "edge_feasibility": {
+        "PRONE->STAND": {
+          "attempts": 20,
+          "feasible": 0
+        },
+        "SUPINE->SIDE": {
+          "attempts": 10,
+          "feasible": 10
+        },
+        "SIDE->STAND": {
+          "attempts": 20,
+          "feasible": 0
+        }
+      },
+      "mean_edges_per_run": 2.5
+    },
+    "gr": {
+      "n_runs": 20,
+      "n_ok": 20,
+      "n_timeout": 0,
+      "n_error": 0,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "success_rate_wilson95": [
+        0.0,
+        0.1611301254949332
+      ],
+      "km_median_evals_to_handover": null,
+      "median_evals_among_successes": null,
+      "mean_wall_s": 357.00145199298856,
+      "total_wall_s": 7140.029039859772,
+      "winning_path_tag_counts": {},
+      "n_successful_paths": 0,
+      "edge_feasibility": {
+        "PRONE->STAND": {
+          "attempts": 20,
+          "feasible": 0
+        },
+        "SUPINE->SIDE": {
+          "attempts": 10,
+          "feasible": 10
+        },
+        "SIDE->STAND": {
+          "attempts": 20,
+          "feasible": 0
+        }
+      },
+      "mean_edges_per_run": 2.5
+    },
+    "f": {
+      "n_runs": 20,
+      "n_ok": 20,
+      "n_timeout": 0,
+      "n_error": 0,
+      "n_success": 6,
+      "success_rate": 0.3,
+      "success_rate_wilson95": [
+        0.14547527396899385,
+        0.5189767762289793
+      ],
+      "km_median_evals_to_handover": null,
+      "median_evals_among_successes": 2940.0,
+      "mean_wall_s": 331.90816444158554,
+      "total_wall_s": 6638.163288831711,
+      "winning_path_tag_counts": {
+        "net": 66,
+        "rand": 23
+      },
+      "n_successful_paths": 6
+    }
+  },
+  "logrank": {
+    "g_vs_f": {
+      "chi2": 3.0369551268724906,
+      "p": 0.0813884467500825,
+      "O1-E1": -1.7727411477411479,
+      "O1": 0.0,
+      "E1": 1.7727411477411479
+    },
+    "gr_vs_f": {
+      "chi2": 2.954339836929188,
+      "p": 0.0856472774229565,
+      "O1-E1": -1.666153846153846,
+      "O1": 0.0,
+      "E1": 1.666153846153846
+    },
+    "g_vs_gr": {
+      "chi2": 0.0,
+      "p": 1.0,
+      "O1-E1": 0.0,
+      "note": "no variance"
+    }
+  },
+  "fisher": {
+    "g_vs_f": {
+      "p": 0.0201960201960202
+    },
+    "gr_vs_f": {
+      "p": 0.0201960201960202
+    },
+    "g_vs_gr": {
+      "p": 1.0
+    }
+  },
+  "falsifier": {
+    "g_beats_f_logrank_p05": false,
+    "verdict": "FALSIFIED on efficiency: graph search (G) is NOT more successful per evaluation than flat search (F) -> the graph contributes INTERPRETABILITY ONLY, not efficiency"
+  }
+}
