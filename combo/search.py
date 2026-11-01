@@ -79,7 +79,12 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="dynamic"):
     tag = f'{pose}_{seed}'
     result_path, checkpoint = out/f'{tag}.json', out/f'{tag}.checkpoint.pkl'
     if result_path.exists():
-        return json.loads(result_path.read_text())
+        existing = json.loads(result_path.read_text())
+        expected = (pose, seed, budget, width, branches, selection)
+        recorded = tuple(existing[k] for k in ('pose','seed','budget','width','branches')) + (existing.get('selection','robust'),)
+        if recorded != expected:
+            raise ValueError(f'Completed result has configuration {recorded}, requested {expected}; preserve it and use a separate output campaign.')
+        return existing
     w = GroundWorld()
     rng = np.random.default_rng(2027+seed)
     history, attempts, edges, evals, level, elapsed = [], [], {}, 0, 0, 0.

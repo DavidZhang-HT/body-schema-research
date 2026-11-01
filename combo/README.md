@@ -12,9 +12,10 @@ OPENBLAS_NUM_THREADS=1 .venv-exp/bin/python -m combo.search --pose supine --seed
 
 Use at most two concurrent runs. Default budget: 6000 action rollouts, plus
 separately logged QP attempts. Search saves an atomic local checkpoint each
-level and resumes it automatically; completed results are skipped. Checkpoints
+level and resumes it automatically; matching completed results are skipped; configuration mismatches are rejected. Checkpoints
 are trusted local pickle files and must not be imported from other sources.
-Small paths/results are committed; full traces and movies stay local.
+Small paths/results and the ~0.5 MB demonstration movie are committed; full
+traces and partial renders stay local.
 
 Graph is complete and directed (including descent and both sides); self-mode
 refinement is allowed. Each expansion tests all possible outgoing edges through

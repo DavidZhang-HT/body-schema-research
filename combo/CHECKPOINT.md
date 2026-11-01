@@ -125,3 +125,11 @@ unchanged. Robust retained explicitly. Render uses 12 fps / labeled 2x playback
 Full report must disclose E3 certificate does NOT gate joint-limit margin:
 dynamic supine_0 sampled minimum jl=-0.02852 rad (~1.63 deg), even though
 penetration/self thresholds pass. This limits hard-joint-limit claims.
+
+03:29 UTC: successful supine_0 MP4 COMPLETE and inspected (start + final frames).
+H.264, 1024x384, 117 frames at 12 fps, 9.75 s / labeled 2x playback of full
+19.4 s simulation, 492448 bytes. Small enough to commit without large binaries;
+only this exact success movie and final PNG will be included. Six full tests
+passed (3.584 s); added completed-config mismatch check to prevent silently
+reusing old results for a different requested budget, terminal-resume test passes.
+Remaining artifact jobs underway; dynamic supine_1 also exact replay success.

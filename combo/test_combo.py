@@ -68,6 +68,8 @@ class ComboTests(unittest.TestCase):
                 self.assertTrue(result['success'])
                 self.assertEqual(result['evaluations'],16)
                 world.return_value.advance.assert_not_called()
+                with self.assertRaises(ValueError):
+                    search.run('supine',99,budget=32,width=1,branches=1,selection='dynamic')
 
     def test_graph_and_label_semantics(self):
         self.assertIn('SUPINE', GRAPH['STAND'])
