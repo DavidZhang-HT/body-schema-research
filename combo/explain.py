@@ -118,7 +118,23 @@ def explain(pose, seed, selection="robust"):
                                        **transition_label(segment),
                                        endpoint_certificate=sample['certificate']))
                 segment = [sample]
-    result = dict(pose=pose, seed=seed, replay_success=ok, mode_transitions=mode_edges, replay_snapshot_max_error=replay_error,
+    graph_witnesses = []
+    edge_file = out/f'{tag}_edges.npz'
+    if edge_file.exists():
+        edge_data = np.load(edge_file)
+        for edge, source, destination, action in zip(edge_data['labels'], edge_data['sources'],
+                                                     edge_data['destinations'], edge_data['actions']):
+            w.restore(source)
+            _, frames = w.advance(action, trace=True)
+            replay_end = w.snapshot()
+            samples = [inspect(s) for s in [source]+frames[4::5]+[replay_end]]
+            graph_witnesses.append(dict(edge=str(edge), **transition_label(samples),
+                                       source_certificate=samples[0]['certificate'],
+                                       destination_certificate=samples[-1]['certificate'],
+                                       peak_sampled_ke=max(s['metrics']['kinetic_j'] for s in samples),
+                                       replay_error=float(np.max(np.abs(replay_end-destination)))))
+    result = dict(pose=pose, seed=seed, replay_success=ok, mode_transitions=mode_edges,
+                  graph_witnesses=graph_witnesses, replay_snapshot_max_error=replay_error,
                   mode_sequence=sequence, sample_period_s=.1, transitions=transitions,
                   final=records[-1] if records else None)
     write_json(out/f'{tag}_explanation.json', result)

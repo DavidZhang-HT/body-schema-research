@@ -90,6 +90,7 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
         settle.pop('trace')
         initial = w.snapshot()
         beam = [Node(score_v3([sample(w)]), initial, [], classify(w), 0, w.metrics())]
+    witnesses = state.get('witnesses', {}) if checkpoint.exists() else {}
     start = time.time()
     success, winner = False, None
     while evals < budget and not success:
@@ -119,6 +120,9 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
                          parent.path+[action], mode, level, r)
                 edge = parent.mode+'->'+mode
                 edges[edge] = edges.get(edge, 0)+1
+                if selection == 'dynamic' and (edge not in witnesses or value > witnesses[edge]['value']):
+                    witnesses[edge] = dict(value=value, source=parent.snap.copy(),
+                                           destination=n.snap.copy(), action=action.copy())
                 pool.append(n)
                 if handover(r):
                     ok, bt, br = balance(w)
@@ -141,11 +145,16 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
         state = dict(config=(pose,seed,budget,width,branches), selection=selection, initial=initial,
                      beam=beam, history=history, attempts=attempts, edges=edges,
                      evals=evals, level=level, elapsed=elapsed+time.time()-start,
-                     rng=rng.bit_generator.state, settle=settle)
+                     rng=rng.bit_generator.state, settle=settle, witnesses=witnesses)
         tmp = checkpoint.with_suffix('.tmp')
         tmp.write_bytes(pickle.dumps(state))
         tmp.replace(checkpoint)
     best = winner if success else beam[0]
+    if witnesses:
+        np.savez_compressed(out/f'{tag}_edges.npz', labels=np.array(list(witnesses)),
+                            sources=np.array([v['source'] for v in witnesses.values()]),
+                            destinations=np.array([v['destination'] for v in witnesses.values()]),
+                            actions=np.array([v['action'] for v in witnesses.values()]))
     result = dict(pose=pose, seed=seed, selection=selection, success=success, evaluations=evals,
                   budget=budget, width=width, branches=branches, settle=settle,
                   seconds=elapsed+time.time()-start, history=history,
