@@ -63,9 +63,12 @@ continues from whatever DAG node it actually landed in).
      `mode_term(STAND) = 0.5*up_z + 0.5*min(base_height/0.45,1) + 0.5*foot_frac`.
      Same 64-proposal pool, same diversity cells, same `advance()` as E1.
    - **Edge feasible** when a physics rollout lands in the destination
-     predicate AND still satisfies it after a 150-step passive settle
-     (settle costs 0.5 eval, counted — a "mode" must be a resting config,
-     not a transient pass-through).
+     predicate. Lying-mode edges (→SIDE, →PRONE) additionally require the
+     predicate to survive a 150-step passive settle (0.5 eval, counted) —
+     a "mode" there must be a resting config, not a transient pass-through.
+     The STAND edge instead requires the predicate at end of advance +
+     `kinetic_j < 0.10` (quasi-static gate), because a standing humanoid is
+     not passively stable (see §8 for the mid-sweep fix of this rule).
    - STAND reached → **final handover = E1's criterion**
      (`base_height>.16, up_z>.9, foot_load>75, nonfoot_load<8`) **+
      `balance()`** (vendor, unchanged). If handover fails, a STAND→STAND
@@ -104,8 +107,8 @@ Edge feasibility (40 runs, 100 edge attempts total):
 | PRONE→STAND | 40 (20 G + 20 GR) | **0/40** |
 | SIDE→STAND | 40 (20 G + 20 GR) | **0/40** |
 
-The lying-mode edges work fine (SUPINE→SIDE feasible in ~170–790 evals, both
-arms). The blocker is systematic: **no beam, network-guided or random, ever
+The lying-mode edges work fine (SUPINE→SIDE 20/20 feasible, in 34–794 evals,
+both arms). The blocker is systematic: **no beam, network-guided or random, ever
 reached the STAND predicate** (base_height>0.30, up_z>0.95, foot_frac>0.80,
 quasi-static) within the 1400-eval edge cap. An instrumented re-run of the
 PRONE→STAND edge on seed prone/1004 (where E1's flat search succeeded in
@@ -137,15 +140,28 @@ contributes *negative* efficiency: the mode decomposition (1400-eval edge
 caps with beam restarts, plus the hand-specified `mode_term` shaping) made
 the search strictly worse than the flat baseline it was meant to structure.
 
-Mechanistic note (post-hoc, not pre-registered): the STAND edge objective
-`score + 3·mode_term(STAND)` rewards `foot_frac` even at low base height
-(+1.5 bonus for feet-planted crouches), plausibly penalizing the
-hand-supported transitional configurations that flat `score()` permits on
-the way up — a "foot-frac moat" around standing. The beam's plateau in a
-feet-planted crouch is consistent with this. The edge-cap/restart structure
-is a second suspect: E1's flat successes needed up to 3696 *continuous*
-evals; the graph restarts the beam from the entry state after each failed
-1400-eval attempt, discarding exploration progress.
+Mechanistic note (post-hoc diagnostics, not pre-registered — script
+`diag_mech_posthoc.py`, seed prone/1004 where E1's flat search succeeded in
+1176 evals):
+
+- **D1** — PRONE→STAND edge with the cap raised 1400→4000 (single attempt,
+  same `edge_score`, network screening): **feasible at 3030 evals**
+  (20 levels). The edge is reachable; the 1400-eval cap *plus beam restart
+  from the entry state* was the primary blocker (two attempts × 1400 = 2800
+  < 3030, and each attempt discards the previous attempt's exploration).
+- **D2** — flat E1-style beam (4000 budget, network screening) maximizing
+  `edge_score = score + 3·mode_term(STAND)` instead of plain `score()`:
+  **STAND never reached in 3864 evals**. The hand-specified shaping alone
+  breaks an otherwise-successful search: `mode_term` rewards `foot_frac`
+  even at low base height (+1.5 bonus for feet-planted crouches), plausibly
+  penalizing the hand-supported transitional configurations that flat
+  `score()` permits on the way up — a "foot-frac moat" around standing,
+  consistent with the beam's plateau in a feet-planted crouch
+  (base_h 0.205, up_z 0.728, foot_frac 1.0).
+
+Both mechanisms point the same way: the graph's hand-specified structure
+(edge caps/restarts, mode shaping) made search strictly worse than the flat
+baseline it was meant to organize.
 
 ## 8. Caveats
 

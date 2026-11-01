@@ -267,6 +267,13 @@ not the whole story — the edge genuinely needs a ballistic phase.
 - `steps23/step2/` — `starts.json`, `results.json`, `step2_<tag>.json`,
   `traj_step2_<tag>.npz` (×6)
 - `steps23/step3/` — same for Step 3 (×6)
+- `steps23/e2_step2_roll_success.mp4` — rendered video of the Step 2
+  `clean_R_a` trajectory (front-view stick figure, R21 readout): supine →
+  wind-up counter-swing → settled SIDE (6 s, 50 Hz source)
+- `steps23/e2_step3_capped_fail.mp4` — same start, Step 3 KE-capped run:
+  no roll progress, visual contrast for the momentum requirement
+- `steps23/render_e2.py` — renders both videos from the saved `.npz`
+  trajectories (matplotlib Agg + ffmpeg; same style as `muse/videos/` gait clips)
 - `steps23/diag_*.py`, `probe_push.py`, `smoke2.py`, `analyze_traj.py` —
   diagnostics (reach, stability, energy landscape, weight-shift, trajectory)
 - `steps23/*.log` — run logs
