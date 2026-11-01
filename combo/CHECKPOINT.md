@@ -18,3 +18,11 @@ combo/results/{pose}_{seed}.log (not /tmp). Each level writes atomic checkpoint.
 Explanation semantics include DYNAMIC_UNRESOLVED: high KE alone is not proof of
 momentum necessity. Need replay/explain all six completed paths, render successful
 supine path, summarize outcomes. No new successes asserted yet.
+
+02:45 UTC: first completed runs supine_0/prone_0 both FAILED, 6000 evals,
+zero QP entries, low hand-supported endpoints. Original queues still doing
+seeds 1 then 2. Added OPTIONAL --selection dynamic, separate results/dynamic/
+campaign (NOT started). It reserves six exploratory seats ranked by instantaneous
+progress with weak KE cost and height-gated foot-load bonus (zero below 20 cm),
+two mode seats, remainder robust score. Score v3 itself unchanged. Need compare
+this build refinement if baseline sweep fails; preserve all attempted results.

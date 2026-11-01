@@ -11,8 +11,10 @@ from .plant import GroundWorld, gs, np, ROOT
 from .modes import classify
 
 
-def render(pose, seed):
+def render(pose, seed, selection="robust"):
     out = ROOT/'combo/results'
+    if selection != 'robust':
+        out = out / selection
     tag = f'{pose}_{seed}'
     report = json.loads((out/f'{tag}_explanation.json').read_text())
     states = np.load(out/f'{tag}_trace.npz')['trace']
@@ -55,5 +57,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('--pose', required=True)
     p.add_argument('--seed', type=int, default=0)
+    p.add_argument("--selection", choices=["robust", "dynamic"], default="robust")
     a = p.parse_args()
-    render(a.pose,a.seed)
+    render(a.pose,a.seed,a.selection)

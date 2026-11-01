@@ -57,8 +57,10 @@ def transition_label(samples):
                 momentum_required_proven=False)
 
 
-def explain(pose, seed):
+def explain(pose, seed, selection="robust"):
     out = ROOT/'combo/results'
+    if selection != 'robust':
+        out = out / selection
     tag = f'{pose}_{seed}'
     data = np.load(out/f'{tag}_path.npz')
     w = GroundWorld()
@@ -110,5 +112,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('--pose', required=True)
     p.add_argument('--seed', type=int, default=0)
+    p.add_argument("--selection", choices=["robust", "dynamic"], default="robust")
     a = p.parse_args()
-    explain(a.pose, a.seed)
+    explain(a.pose, a.seed, a.selection)

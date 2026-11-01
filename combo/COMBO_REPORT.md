@@ -97,3 +97,17 @@ replay and QP stabilization. No global search completeness, quasi-static path
 proof, necessity proof for momentum, robustness distribution, real-time bound,
 or hardware/sim-to-real evidence. Mode geometry is a documented mesh adaptation
 rather than an identical port of A's primitive-region vocabulary.
+
+## Development update: dynamic exploration slots
+
+Initial seed-0 runs both exhausted 6000 evaluations without any QP entry.
+They retained very slow, low hand-supported states. An optional `--selection
+dynamic` revision therefore reserves six seats for instantaneous progress,
+two for modes, and the remainder for score v3. Exploration priority uses B's
+weak KE/speed costs and an absolute foot-load bonus multiplied by
+`clip((base_z-0.20)/0.12,0,1)`: exactly zero below 20 cm. It is a separate
+exploration queue, not a settled-state certificate or terminal score. Score v3
+and the two-level parent expiry remain unchanged. This variant has separate
+output in `results/dynamic/`; baseline attempts remain visible. No variant
+outcomes are claimed until runs complete. This is build iteration, not a
+controlled causal attribution of the failed design.
