@@ -30,3 +30,17 @@ High-energy intermediate motion is allowed. This is a heuristic, not a guarantee
 that every settled state outranks every moving state of different geometry.
 
 See COMBO_REPORT.md for evaluated outcomes and explanation semantics.
+
+After each search finishes:
+
+```bash
+.venv-exp/bin/python -m combo.explain --pose supine --seed 0
+.venv-exp/bin/python -m combo.render --pose supine --seed 0
+.venv-exp/bin/python -m combo.summarize
+.venv-exp/bin/python -m unittest combo.test_combo
+```
+
+`results/*_explanation.json` contains per-block labels and interior certificates;
+`RESULTS.md` is generated from actual result files. Video is CPU-rendered with
+simultaneous front/side views at real-time playback. Run explanation/rendering
+after the simulation queues finish to avoid memory contention from mesh models.
