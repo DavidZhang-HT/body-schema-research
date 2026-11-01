@@ -4,10 +4,11 @@ A static failure at a sampled configuration is evidence about THAT path under
 E3's conservative contact LP, not proof that every route requires momentum.
 """
 import argparse
+import copy
 import math
 from pathlib import Path
 from scipy.spatial import ConvexHull, QhullError
-from .plant import GroundWorld, BSchema, balance, np, ROOT
+from .plant import GroundWorld, BSchema, balance, np, ROOT, gs
 from .modes import classify
 from .search import write_json, write_npz
 
@@ -68,14 +69,17 @@ def explain(pose, seed, selection="robust"):
     data = np.load(out/f'{tag}_path.npz')
     w = GroundWorld()
     schema = BSchema(w.m)
+    reader = copy.copy(w)
+    reader.d = gs.mj.MjData(w.m)
+    reader.actual = w.actual.copy()
     w.restore(data['initial'])
     trace = [w.snapshot()]
     transitions = []
     sequence = [classify(w)]
 
     def inspect(snap):
-        w.restore(snap)
-        return dict(time=float(snap[-1]), mode=classify(w), metrics=w.metrics(),
+        reader.restore(snap)
+        return dict(time=float(snap[-1]), mode=classify(reader), metrics=reader.metrics(),
                     certificate=certificate(schema, snap))
 
     for i, action in enumerate(data['actions']):
@@ -92,8 +96,9 @@ def explain(pose, seed, selection="robust"):
         transitions.append(dict(block=i, source=samples[0]['mode'], destination=samples[-1]['mode'],
                                 **transition_label(samples), samples=samples,
                                 endpoint_feet_only=certificate(schema, end, feet_only=True)))
-        w.restore(end)
     replay_error = float(np.max(np.abs(w.snapshot()-data['final'])))
+    qpos_error = float(np.max(np.abs(w.d.qpos-data['final'][:31])))
+    qvel_error = float(np.max(np.abs(w.d.qvel-data['final'][31:61])))
     ok, bt, records = balance(w)
     trace.extend(bt)
     if bt:
@@ -136,6 +141,8 @@ def explain(pose, seed, selection="robust"):
     result = dict(pose=pose, seed=seed, replay_success=ok, mode_transitions=mode_edges,
                   graph_witnesses=graph_witnesses, replay_snapshot_max_error=replay_error,
                   mode_sequence=sequence, sample_period_s=.1, transitions=transitions,
+                  uninterrupted_execution=True, replay_qpos_max_error=qpos_error,
+                  replay_qvel_max_error=qvel_error,
                   final=records[-1] if records else None)
     write_json(out/f'{tag}_explanation.json', result)
     write_npz(out/f'{tag}_trace.npz', trace=np.asarray(trace))

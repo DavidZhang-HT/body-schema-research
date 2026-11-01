@@ -93,3 +93,12 @@ search workers (three CPU tasks, within user's <=4 cap): `nice -n 10 python -m
 combo.explain --pose supine --seed 0 --selection dynamic`, log
 results/dynamic/supine_0_explain.log. Artifacts launcher later skips completed
 JSON+trace. Do not launch another analyzer until this one finishes.
+
+03:19 UTC: dynamic SUPINE seed 2 SUCCESS at 3542 evals / 6 QP attempts;
+PRONE seed 1 SUCCESS at 4986 / 77 QP attempts. Only prone_2 still searching.
+First supine_0 replay succeeded with EXACT full-snapshot endpoint match (0.0).
+Improved explanation reader to separate MjData sharing model, so certificate
+sampling never resets executing trajectory. Re-running supine_0 once to validate
+this stricter uninterrupted replay. Old trace was exact too; this is validation
+hardening, not search change. Three supine successes / three completed, prone
+one success / two completed so far. Need finish remaining replay/render/report.
