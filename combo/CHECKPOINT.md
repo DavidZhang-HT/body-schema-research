@@ -71,3 +71,11 @@ Independent continuous replay/explanation/render still pending (do not claim
 replay verified yet). Dynamic prone_0 near budget, many geometric STAND hits
 but failed QP attempts so far. Queues continue remaining seeds automatically.
 This is fresh physics search, no historical action path used.
+
+03:11 UTC: artifacts launcher waiting for both sweeps to finish:
+`python -m combo.artifacts --wait` -> combo/results/artifacts.log.
+Then sequentially replays/certifies all 12 results (skips existing JSON+trace),
+generates both RESULTS tables, renders first verified supine success via Xvfb,
+and records ffprobe metadata/SHA256. On restart relaunch only if not running.
+Pending final work after artifacts: inspect movie/frame, inspect explanation
+labels and failures, finish COMBO_REPORT/README, run full tests, commit.
