@@ -21,9 +21,12 @@ def render(pose, seed, selection="robust"):
     w = GroundWorld()
     renderer = gs.mj.Renderer(w.m, height=384, width=512)
     cams = []
+    w.restore(states[-1])
+    rot = w.d.xmat[w.base].reshape(3, 3)
+    heading = float(np.degrees(np.arctan2(rot[1, 0], rot[0, 0])))
     w.restore(states[0])
-    # Fixed world viewpoints show the whole motion; recenter follows translation.
-    for azimuth in (90, 0):
+    # Orthogonal viewpoints relative to final torso heading; follow translation.
+    for azimuth in (heading, heading+90):
         cam = gs.mj.MjvCamera()
         cam.distance, cam.azimuth, cam.elevation = 1.65, azimuth, -15
         cams.append(cam)

@@ -51,6 +51,15 @@ def summarize(selection="robust"):
             loads = ', '.join(f'{k}:{v:.2f}' for k,v in c['loads'].items() if v>.01)
             lines.append(f'| {t["block"]} | {t["source"]} → {t["destination"]} | {t["label"]} | '
                          f'{c["ok"]} | {rho} / {c["binding"]} | {loads} |')
+        lines += ['', '| Mode edge (sampled interval) | Label | Destination certified |',
+                  '|---|---|---|']
+        for t in e.get('mode_transitions', []):
+            lines.append(f'| {t["source"]} → {t["destination"]} ({t["start_time"]:.2f}–{t["end_time"]:.2f} s) | '
+                         f'{t["label"]} | {t["endpoint_certificate"]["ok"]} |')
+        witnesses = e.get('graph_witnesses', [])
+        if witnesses:
+            lines += ['', f'{len(witnesses)} distinct graph-edge witnesses replayed and explained; '
+                      f'{sum(t["destination_certificate"]["ok"] for t in witnesses)} certified destination configurations.']
         samples = [s for t in e['transitions'] for s in t['samples']]
         counts = Counter(t['label'] for t in e['transitions'])
         lines += ['', 'Transition labels: '+', '.join(f'{k}={v}' for k,v in counts.items())+'.',
