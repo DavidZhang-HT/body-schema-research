@@ -79,3 +79,10 @@ generates both RESULTS tables, renders first verified supine success via Xvfb,
 and records ffprobe metadata/SHA256. On restart relaunch only if not running.
 Pending final work after artifacts: inspect movie/frame, inspect explanation
 labels and failures, finish COMBO_REPORT/README, run full tests, commit.
+
+03:13 UTC: dynamic SUPINE seed 1 also SEARCH/QP SUCCESS, 4235 evaluations,
+53 QP attempts. Both supine successes await independent replay. Seed 2 now
+running. Prone seed 1 still searching, seed 0 failed at 6000 (19 QP attempts).
+Operational-only fix committed 039eb79: terminal success/winner retained in
+checkpoint, NPZ writes atomic; new mocked terminal-resume regression PASSED.
+Search rankings/proposals unchanged. Artifacts launcher still waiting.
