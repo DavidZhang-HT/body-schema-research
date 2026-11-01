@@ -1,0 +1,13 @@
+{
+  "runs_checked": 12,
+  "successful_searches": 4,
+  "successful_replays": 4,
+  "all_search_replay_outcomes_match": true,
+  "all_uninterrupted_replay_snapshot_errors_zero": true,
+  "all_paths_finite_with_16_actions_and_140_state_entries": true,
+  "all_passive_starts_settled": true,
+  "graph_edge_witnesses_replayed": 252,
+  "all_graph_witness_replay_errors_zero": true,
+  "unchanged_upstream_hashes": true,
+  "regression_tests_passed": 6
+}

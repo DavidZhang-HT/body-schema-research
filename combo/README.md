@@ -18,15 +18,16 @@ Small paths/results and the ~0.5 MB demonstration movie are committed; full
 traces and partial renders stay local.
 
 Graph is complete and directed (including descent and both sides); self-mode
-refinement is allowed. Each expansion tests all possible outgoing edges through
-shared dynamic proposals and classifies the landing mode. Six exploration seats retain dynamic candidates, two seats represent modes,
+refinement is allowed. Each expansion samples outgoing edges through
+shared dynamic proposals and classifies their landing modes. Six exploration seats retain dynamic candidates, two seats represent modes,
 and the remaining seats follow robust score v3. There are no per-edge caps or mode restart boundaries. P-F3 is
 a 0.05 score prior only. TRANSITION keeps unclassified dynamic states searchable.
 The graph supplies structure and explanations; no efficiency advantage is claimed.
 
 Score v3 uses worst progress in the final 0.2 s, logarithmic terminal KE and
-speed penalties, and expires retained parents after two levels. It removes
-foot-fraction/foot-load shaping entirely, so hand support has no score tax.
+speed penalties, and expires retained parents after two levels. The robust rank has no contact-load reward. Exploration seats retain B's
+bounded absolute foot-load bonus, never a foot fraction; adding hand support at
+fixed foot force has no score tax.
 High-energy intermediate motion is allowed. This is a heuristic, not a guarantee
 that every settled state outranks every moving state of different geometry.
 
@@ -41,8 +42,9 @@ MUJOCO_GL=glfw xvfb-run -a .venv-exp/bin/python -m combo.render --pose supine --
 .venv-exp/bin/python -m unittest combo.test_combo
 ```
 
-`results/*_explanation.json` contains per-block labels and interior certificates;
-`RESULTS.md` is generated from actual result files. Video is CPU-rendered with
+`results/dynamic/*_explanation.json` contains per-block labels and interior certificates;
+`RESULTS_dynamic.md` is generated from the final configuration; `RESULTS.md`
+preserves the initial failed configuration. Video is CPU-rendered with
 simultaneous front/side views at labeled 2x playback (12 fps). Run explanation/rendering
 after the simulation queues finish to avoid memory contention from mesh models.
 
