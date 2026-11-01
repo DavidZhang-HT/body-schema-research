@@ -61,7 +61,7 @@ def transition_label(samples):
                 momentum_required_proven=False)
 
 
-def explain(pose, seed, selection="robust"):
+def explain(pose, seed, selection="dynamic"):
     out = ROOT/'combo/results'
     if selection != 'robust':
         out = out / selection
@@ -146,7 +146,7 @@ def explain(pose, seed, selection="robust"):
                   final=records[-1] if records else None)
     write_json(out/f'{tag}_explanation.json', result)
     write_npz(out/f'{tag}_trace.npz', trace=np.asarray(trace))
-    print(tag, 'replay', ok, 'error', replay_error, sequence, flush=True)
+    print(selection, tag, 'replay', ok, 'error', replay_error, sequence, flush=True)
     return result
 
 
@@ -154,6 +154,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('--pose', required=True)
     p.add_argument('--seed', type=int, default=0)
-    p.add_argument("--selection", choices=["robust", "dynamic"], default="robust")
+    p.add_argument("--selection", choices=["robust", "dynamic"], default="dynamic")
     a = p.parse_args()
     explain(a.pose, a.seed, a.selection)

@@ -114,3 +114,14 @@ proved ~3 s/frame; partial file is *.partial.mp4 (ignored). New render writes
 *.tmp.mp4 then atomic final rename, logs every 50 frames. No physics rerun.
 Still only prone_2 search running; artifacts supervisor will start remaining
 sequential explanations after it finishes, skipping already completed supine_0.
+
+03:26 UTC: BOTH search sweeps COMPLETE. Final dynamic results: SUPINE 3/3,
+PRONE 1/3 (seed 1); prone_2 failed with one QP entry. Initial robust 0/6.
+Artifact pass now replays/certifies all remaining runs; log prefixes now include
+selection to distinguish failed robust supine_0 from successful dynamic supine_0.
+Default CLI selection changed to dynamic AFTER searches completed; algorithm
+unchanged. Robust retained explicitly. Render uses 12 fps / labeled 2x playback
+(117 frames), no shadows/reflections; per-movie flock prevents duplicate writers.
+Full report must disclose E3 certificate does NOT gate joint-limit margin:
+dynamic supine_0 sampled minimum jl=-0.02852 rad (~1.63 deg), even though
+penetration/self thresholds pass. This limits hard-joint-limit claims.

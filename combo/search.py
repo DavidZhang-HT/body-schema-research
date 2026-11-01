@@ -73,7 +73,7 @@ def choose(pool, width, selection="robust"):
     return selected[:width] if selection == "robust" else sorted(selected[:width], key=lambda n: n.value, reverse=True)
 
 
-def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
+def run(pose, seed, budget=6000, width=14, branches=16, selection="dynamic"):
     out = OUT if selection == "robust" else OUT / selection
     out.mkdir(parents=True, exist_ok=True)
     tag = f'{pose}_{seed}'
@@ -179,6 +179,6 @@ if __name__ == '__main__':
     p.add_argument('--pose', choices=['supine','prone'], required=True)
     p.add_argument('--seed', type=int, default=0)
     p.add_argument('--budget', type=int, default=6000)
-    p.add_argument("--selection", choices=["robust", "dynamic"], default="robust")
+    p.add_argument("--selection", choices=["robust", "dynamic"], default="dynamic")
     a = p.parse_args()
     run(a.pose, a.seed, a.budget, selection=a.selection)

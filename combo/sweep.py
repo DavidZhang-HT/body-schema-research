@@ -34,7 +34,7 @@ def sweep(selection, after_robust=False):
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
-    p.add_argument('--selection', choices=['robust','dynamic'], default='robust')
+    p.add_argument('--selection', choices=['robust','dynamic'], default='dynamic')
     p.add_argument('--after-robust', action='store_true')
     a = p.parse_args()
     sweep(a.selection,a.after_robust)

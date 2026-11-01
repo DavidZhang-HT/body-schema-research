@@ -18,8 +18,8 @@ Small paths/results are committed; full traces and movies stay local.
 
 Graph is complete and directed (including descent and both sides); self-mode
 refinement is allowed. Each expansion tests all possible outgoing edges through
-shared dynamic proposals and classifies the landing mode. Four beam seats retain
-different modes. There are no per-edge caps or mode restart boundaries. P-F3 is
+shared dynamic proposals and classifies the landing mode. Six exploration seats retain dynamic candidates, two seats represent modes,
+and the remaining seats follow robust score v3. There are no per-edge caps or mode restart boundaries. P-F3 is
 a 0.05 score prior only. TRANSITION keeps unclassified dynamic states searchable.
 The graph supplies structure and explanations; no efficiency advantage is claimed.
 
@@ -46,6 +46,11 @@ simultaneous front/side views at labeled 2x playback (12 fps). Run explanation/r
 after the simulation queues finish to avoid memory contention from mesh models.
 
 Rendering uses system FFmpeg, Pillow, and CPU Mesa through Xvfb/GLX in this VM
-(EGL is absent). No imageio dependency. To run the optional dynamic-exploration
+(EGL is absent). No imageio dependency. To run the default dynamic-exploration
 revision, use `python -m combo.sweep --selection dynamic`; pass the same
 `--selection dynamic` to explain/render/summarize. Results live separately.
+
+The default is now `--selection dynamic`, which found 3/3 supine and 1/3 prone
+search/QP successes in the six-seed build evaluation. The initial unsuccessful
+variant remains reproducible with `--selection robust`. See COMBO_REPORT.md
+and RESULTS_dynamic.md for independent replay and certificate results.

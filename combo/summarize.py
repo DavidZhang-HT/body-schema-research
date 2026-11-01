@@ -6,7 +6,7 @@ from .plant import ROOT
 from .explain import transition_label
 
 
-def summarize(selection="robust"):
+def summarize(selection="dynamic"):
     out = ROOT/'combo/results'
     if selection != "robust":
         out = out/selection
@@ -83,5 +83,5 @@ def summarize(selection="robust"):
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
-    p.add_argument('--selection', choices=['robust','dynamic'], default='robust')
+    p.add_argument('--selection', choices=['robust','dynamic'], default='dynamic')
     summarize(p.parse_args().selection)

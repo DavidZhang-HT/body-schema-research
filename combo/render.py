@@ -12,7 +12,7 @@ from .plant import GroundWorld, gs, np, ROOT
 from .modes import classify
 
 
-def render(pose, seed, selection="robust"):
+def render(pose, seed, selection="dynamic"):
     out = ROOT/'combo/results'
     if selection != 'robust':
         out = out / selection
@@ -82,6 +82,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('--pose', required=True)
     p.add_argument('--seed', type=int, default=0)
-    p.add_argument("--selection", choices=["robust", "dynamic"], default="robust")
+    p.add_argument("--selection", choices=["robust", "dynamic"], default="dynamic")
     a = p.parse_args()
     render(a.pose,a.seed,a.selection)
