@@ -35,7 +35,7 @@ After each search finishes:
 
 ```bash
 .venv-exp/bin/python -m combo.explain --pose supine --seed 0
-.venv-exp/bin/python -m combo.render --pose supine --seed 0
+MUJOCO_GL=glfw xvfb-run -a .venv-exp/bin/python -m combo.render --pose supine --seed 0
 .venv-exp/bin/python -m combo.summarize
 .venv-exp/bin/python -m unittest combo.test_combo
 ```
@@ -44,3 +44,8 @@ After each search finishes:
 `RESULTS.md` is generated from actual result files. Video is CPU-rendered with
 simultaneous front/side views at real-time playback. Run explanation/rendering
 after the simulation queues finish to avoid memory contention from mesh models.
+
+Rendering uses system FFmpeg, Pillow, and CPU Mesa through Xvfb/GLX in this VM
+(EGL is absent). No imageio dependency. To run the optional dynamic-exploration
+revision, use `python -m combo.sweep --selection dynamic`; pass the same
+`--selection dynamic` to explain/render/summarize. Results live separately.

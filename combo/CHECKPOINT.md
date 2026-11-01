@@ -41,3 +41,9 @@ dynamic. Completed JSONs are skipped, in-progress jobs resume per-level pickle.
 Do not explain/render while two searches run (mesh memory). After both sweeps,
 run explain for all attempts sequentially, render a verified successful supine
 trajectory, generate summary and finish report. Original first sweep is not lost.
+
+Rendering runtime verified: EGL absent; initial apt attempt made no changes
+(bootstrap apt update owns lock). Existing Xvfb + GLX software renderer passes
+small MuJoCo render test. Use `MUJOCO_GL=glfw xvfb-run -a ... -m combo.render`.
+Renderer now pipes raw frames to system ffmpeg (imageio absent), Pillow present.
+Environment package versions and unchanged upstream source hashes recorded.

@@ -5,7 +5,7 @@ os.environ['LIBGL_ALWAYS_SOFTWARE'] = '1'
 os.environ['LP_NUM_THREADS'] = '1'
 import argparse
 import json
-import imageio.v2 as imageio
+import subprocess
 from PIL import Image, ImageDraw
 from .plant import GroundWorld, gs, np, ROOT
 from .modes import classify
@@ -29,8 +29,12 @@ def render(pose, seed, selection="robust"):
         cams.append(cam)
     times = states[:, -1]
     indices = np.searchsorted(times, np.arange(times[0], times[-1]+1e-6, .04))
-    writer = imageio.get_writer(out/f'{tag}_getup.mp4', fps=25, quality=7,
-                                ffmpeg_params=['-threads','1'])
+    movie = out/f'{tag}_getup.mp4'
+    writer = subprocess.Popen(['ffmpeg','-y','-loglevel','error','-f','rawvideo',
+                               '-vcodec','rawvideo','-pix_fmt','rgb24','-s','1024x384',
+                               '-r','25','-i','-','-an','-vcodec','libx264','-crf','20',
+                               '-pix_fmt','yuv420p','-threads','1',str(movie)],
+                              stdin=subprocess.PIPE)
     try:
         for idx in np.minimum(indices, len(states)-1):
             w.restore(states[idx])
@@ -45,11 +49,14 @@ def render(pose, seed, selection="robust"):
             draw.text((10,5), f'24-DoF pi+ | {pose}, seed {seed} | t={times[idx]-times[0]:.2f}s | {classify(w)}', fill='white')
             draw.text((10,22), 'Physics search (16 synergies), then unchanged QP balance | no network | 1x playback', fill='white')
             draw.text((10,37), f'Replay sustained stand: {report["replay_success"]} | front / side', fill='white')
-            writer.append_data(np.asarray(im))
+            writer.stdin.write(np.asarray(im).tobytes())
         im.save(out/f'{tag}_final.png')
     finally:
-        writer.close()
+        writer.stdin.close()
+        returncode = writer.wait()
         renderer.close()
+        if returncode:
+            raise RuntimeError(f"ffmpeg exited {returncode}")
     print(out/f'{tag}_getup.mp4', flush=True)
 
 
