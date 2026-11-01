@@ -3,6 +3,7 @@ import json
 import argparse
 from collections import Counter
 from .plant import ROOT
+from .explain import transition_label
 
 
 def summarize(selection="robust"):
@@ -67,6 +68,11 @@ def summarize(selection="robust"):
                       f'{sum(t["destination_certificate"]["ok"] for t in witnesses)} certified destination configurations.']
         samples = [s for t in e['transitions'] for s in t['samples']]
         counts = Counter(t['label'] for t in e['transitions'])
+        terminal = e['transitions'][-1]['samples']
+        tail = [s for s in terminal if s['time'] >= terminal[-1]['time']-1.]
+        lines += ['', f'Terminal sampled tail: {transition_label(tail)["label"]}, '
+                  f'span {tail[-1]["time"]-tail[0]["time"]:.2f} s, '
+                  f'peak KE {max(s["metrics"]["kinetic_j"] for s in tail):.6f} J.']
         lines += ['', 'Transition labels: '+', '.join(f'{k}={v}' for k,v in counts.items())+'.',
                   f'Sampled peak KE: {max(s["metrics"]["kinetic_j"] for s in samples):.3f} J; '
                   f'minimum shell height: {1000*min(s["certificate"]["pen"] for s in samples):.2f} mm; '

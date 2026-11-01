@@ -33,18 +33,21 @@ def render(pose, seed, selection="robust"):
     times = states[:, -1]
     indices = np.searchsorted(times, np.arange(times[0], times[-1]+1e-6, .04))
     movie = out/f'{tag}_getup.mp4'
+    temporary_movie = movie.with_name(movie.stem+'.tmp.mp4')
     writer = subprocess.Popen(['ffmpeg','-y','-loglevel','error','-f','rawvideo',
                                '-vcodec','rawvideo','-pix_fmt','rgb24','-s','1024x384',
                                '-r','25','-i','-','-an','-vcodec','libx264','-crf','20',
-                               '-pix_fmt','yuv420p','-threads','1',str(movie)],
+                               '-pix_fmt','yuv420p','-threads','1',str(temporary_movie)],
                               stdin=subprocess.PIPE)
     try:
-        for idx in np.minimum(indices, len(states)-1):
+        for frame_number, idx in enumerate(np.minimum(indices, len(states)-1)):
             w.restore(states[idx])
             views = []
             for cam in cams:
                 cam.lookat[:] = [w.d.qpos[0], w.d.qpos[1], .25]
                 renderer.update_scene(w.d, camera=cam)
+                renderer.scene.flags[gs.mj.mjtRndFlag.mjRND_SHADOW] = False
+                renderer.scene.flags[gs.mj.mjtRndFlag.mjRND_REFLECTION] = False
                 views.append(renderer.render().copy())
             im = Image.fromarray(np.concatenate(views, axis=1))
             draw = ImageDraw.Draw(im)
@@ -53,6 +56,8 @@ def render(pose, seed, selection="robust"):
             draw.text((10,22), 'Physics search (16 synergies), then unchanged QP balance | no network | 1x playback', fill='white')
             draw.text((10,37), f'Replay sustained stand: {report["replay_success"]} | front / side', fill='white')
             writer.stdin.write(np.asarray(im).tobytes())
+            if frame_number % 50 == 0:
+                print("render frame", frame_number, "of", len(indices), flush=True)
         im.save(out/f'{tag}_final.png')
     finally:
         writer.stdin.close()
@@ -60,7 +65,8 @@ def render(pose, seed, selection="robust"):
         renderer.close()
         if returncode:
             raise RuntimeError(f"ffmpeg exited {returncode}")
-    print(out/f'{tag}_getup.mp4', flush=True)
+    temporary_movie.replace(movie)
+    print(movie, flush=True)
 
 
 if __name__ == '__main__':

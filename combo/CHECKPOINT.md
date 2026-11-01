@@ -102,3 +102,15 @@ sampling never resets executing trajectory. Re-running supine_0 once to validate
 this stricter uninterrupted replay. Old trace was exact too; this is validation
 hardening, not search change. Three supine successes / three completed, prone
 one success / two completed so far. Need finish remaining replay/render/report.
+
+03:22 UTC: strict uninterrupted supine_0 replay PASSED with qpos/qvel/full
+snapshot errors all exactly 0.0, sustained stand true. Explanation: 5 block
+STATICS_GAP flags, 20 DYNAMIC_UNRESOLVED; all 25 block endpoints certified;
+7 interior LP failures; sampled geometry stays within E3 penetration/self bounds.
+Final rho .08997, feet loads .5258/.4742 mg, COM margin .07176 m. Terminal
+sampled .98 s tail is QS (peak KE 1.44e-5 J).
+Manual CPU renderer restarted WITHOUT shadow/reflection after default shadows
+proved ~3 s/frame; partial file is *.partial.mp4 (ignored). New render writes
+*.tmp.mp4 then atomic final rename, logs every 50 frames. No physics rerun.
+Still only prone_2 search running; artifacts supervisor will start remaining
+sequential explanations after it finishes, skipping already completed supine_0.
