@@ -36,3 +36,17 @@ def evaluate(w, frames):
     w.restore(end)
     samples.append(sample(w))
     return score_v3(samples)
+
+
+def exploration_priority(r):
+    """B's instantaneous priority, only for explicitly exploratory beam seats.
+
+    Absolute foot load is bounded at 0.6; no division by total contact load.
+    Adding hand support cannot reduce this score at fixed foot load/geometry.
+    This priority makes no claim of settled-state quality.
+    """
+    return float(4*r['com_height'] + 6*r['base_height'] + 1.2*r['up_z']
+                 + .6*min(r['foot_load']/108, 1)
+                 - .12*r['kinetic_j'] - .3*r['com_speed']
+                 - 2*max(r.get('foot_height', 0)-r['com_height'], 0)
+                 - max(0, .5-r['total_load']/108))

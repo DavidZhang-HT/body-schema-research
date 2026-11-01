@@ -8,7 +8,7 @@ from pathlib import Path
 from dataclasses import dataclass
 from .plant import GroundWorld, BOUNDS, balance, np, ROOT
 from .modes import classify, prior, handover
-from .score import evaluate, sample, score_v3
+from .score import evaluate, sample, score_v3, exploration_priority
 
 OUT = ROOT / 'combo/results'
 
@@ -35,15 +35,8 @@ def choose(pool, width, selection="robust"):
     if selection == "dynamic":
         # A separate exploration queue can retain useful momentum without
         # claiming that a fast snapshot is settled progress. Same parent expiry.
-        def potential(n):
-            r = n.metrics
-            return (4*r['com_height'] + 6*r['base_height'] + 1.2*r['up_z']
-                    + .6*min(r['foot_load']/108, 1)
-                    - .12*r['kinetic_j'] - .3*r['com_speed']
-                    - 2*max(r.get('foot_height', 0)-r['com_height'], 0)
-                    - max(0, .5-r['total_load']/108))
         dynamic_cells = set()
-        for n in sorted(pool, key=potential, reverse=True):
+        for n in sorted(pool, key=lambda n: exploration_priority(n.metrics), reverse=True):
             r, q = n.metrics, n.snap[7:31]
             cell = (n.mode, int(r['base_height']/.025), int(r['up_z']/.12),
                     int((q[0]+q[6])/.6), int((q[3]+q[9])/.7))

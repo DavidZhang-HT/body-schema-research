@@ -3,7 +3,7 @@ import sys
 import unittest
 from .plant import GroundWorld, BSchema, BOUNDS, np
 from .modes import GRAPH, prior
-from .score import score_v3
+from .score import score_v3, exploration_priority
 from .explain import transition_label
 from experiment import standing
 
@@ -40,6 +40,12 @@ class ComboTests(unittest.TestCase):
         self.assertEqual(score_v3([(r,.02)]), score_v3([(feet,.02)]))
         spike = dict(r, base_height=.4)
         self.assertEqual(score_v3([(r,.02),(spike,.02)]), score_v3([(r,.02)]))
+
+    def test_exploration_has_no_hand_support_tax(self):
+        r = dict(com_height=.2,base_height=.15,up_z=.8,kinetic_j=.1,
+                 com_speed=.05,foot_load=80,nonfoot_load=0,total_load=80)
+        supported = dict(r,nonfoot_load=40,total_load=120)
+        self.assertEqual(exploration_priority(r), exploration_priority(supported))
 
     def test_graph_and_label_semantics(self):
         self.assertIn('SUPINE', GRAPH['STAND'])
