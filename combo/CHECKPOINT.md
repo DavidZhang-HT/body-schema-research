@@ -47,3 +47,11 @@ Rendering runtime verified: EGL absent; initial apt attempt made no changes
 small MuJoCo render test. Use `MUJOCO_GL=glfw xvfb-run -a ... -m combo.render`.
 Renderer now pipes raw frames to system ffmpeg (imageio absent), Pillow present.
 Environment package versions and unchanged upstream source hashes recorded.
+
+02:56 UTC: robust sweep 4/6 finished, all failures with zero QP entries.
+Seed-2 searches running (~3500/6000 each); dynamic launcher still waiting.
+Latest code saves one replayable witness per distinct discovered graph edge
+for dynamic campaign; offline explanations certify these plus every returned
+block endpoint/interior and feet-only endpoint. Mode-change tables implemented.
+Five regression checks total (four full earlier, three lightweight after edits).
+No successful trajectory yet. No upstream code modified.
