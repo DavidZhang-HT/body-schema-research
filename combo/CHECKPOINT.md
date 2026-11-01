@@ -64,3 +64,10 @@ for search semantics. Six exploratory slots use original B absolute-load
 priority, two mode seats and remaining robust-score slots; no network.
 Next after dynamic sweep: explain BOTH campaigns sequentially, render verified
 supine success, regenerate tables, complete report and final tests/commit.
+
+03:06 UTC IMPORTANT: dynamic SUPINE seed 0 SEARCH/QP SUCCESS at 5607 evals,
+5 handover attempts. Saved results/dynamic/supine_0.json, _path.npz, _edges.npz.
+Independent continuous replay/explanation/render still pending (do not claim
+replay verified yet). Dynamic prone_0 near budget, many geometric STAND hits
+but failed QP attempts so far. Queues continue remaining seeds automatically.
+This is fresh physics search, no historical action path used.
