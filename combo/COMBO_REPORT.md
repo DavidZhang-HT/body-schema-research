@@ -103,9 +103,12 @@ rather than an identical port of A's primitive-region vocabulary.
 Initial seed-0 runs both exhausted 6000 evaluations without any QP entry.
 They retained very slow, low hand-supported states. An optional `--selection
 dynamic` revision therefore reserves six seats for instantaneous progress,
-two for modes, and the remainder for score v3. Exploration priority uses B's
-weak KE/speed costs and an absolute foot-load bonus multiplied by
-`clip((base_z-0.20)/0.12,0,1)`: exactly zero below 20 cm. It is a separate
+two for modes, and the remainder for score v3. Exploration priority restores B's
+original weak KE/speed costs and bounded **absolute** foot-load bonus
+`0.6 min(foot_load/108,1)`. This is not foot fraction: adding a supporting hand
+with unchanged foot force leaves the priority unchanged, whereas E5's extra
+foot-fraction reward would decrease. There is no destination-mode bonus or
+nonfoot-load penalty. The primary robust score still has no contact-load term. It is a separate
 exploration queue, not a settled-state certificate or terminal score. Score v3
 and the two-level parent expiry remain unchanged. This variant has separate
 output in `results/dynamic/`; baseline attempts remain visible. No variant

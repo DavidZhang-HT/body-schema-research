@@ -37,10 +37,11 @@ def choose(pool, width, selection="robust"):
         # claiming that a fast snapshot is settled progress. Same parent expiry.
         def potential(n):
             r = n.metrics
-            gate = float(np.clip((r['base_height']-.20)/.12, 0, 1))
             return (4*r['com_height'] + 6*r['base_height'] + 1.2*r['up_z']
-                    + .6*gate*min(r['foot_load']/108, 1)
-                    - .12*r['kinetic_j'] - .3*r['com_speed'])
+                    + .6*min(r['foot_load']/108, 1)
+                    - .12*r['kinetic_j'] - .3*r['com_speed']
+                    - 2*max(r.get('foot_height', 0)-r['com_height'], 0)
+                    - max(0, .5-r['total_load']/108))
         dynamic_cells = set()
         for n in sorted(pool, key=potential, reverse=True):
             r, q = n.metrics, n.snap[7:31]
@@ -119,6 +120,8 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
                 evals += 1
                 value = evaluate(w, frames)
                 r, mode = w.metrics(), classify(w)
+                if selection == 'dynamic':
+                    r['foot_height'] = float(np.mean(w.d.xipos[[w.bodies[6], w.bodies[12]], 2]))
                 n = Node(value-prior(parent.mode, mode), w.snapshot(),
                          parent.path+[action], mode, level, r)
                 edge = parent.mode+'->'+mode

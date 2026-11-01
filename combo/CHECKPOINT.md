@@ -26,3 +26,8 @@ campaign (NOT started). It reserves six exploratory seats ranked by instantaneou
 progress with weak KE cost and height-gated foot-load bonus (zero below 20 cm),
 two mode seats, remainder robust score. Score v3 itself unchanged. Need compare
 this build refinement if baseline sweep fails; preserve all attempted results.
+
+Before any dynamic runs: exploration priority changed to original B absolute
+foot-load bonus (not foot fraction; adding hand load at fixed feet load has no
+cost), including B foot-height and total-load corrections. Primary v3 unchanged.
+The earlier gated variant was never run. Robust baseline behavior unchanged.
