@@ -7,7 +7,7 @@ import time
 from pathlib import Path
 from dataclasses import dataclass
 from .plant import GroundWorld, BOUNDS, balance, np, ROOT
-from .modes import classify, prior, handover
+from .modes import classify, prior, handover, edge_key
 from .score import evaluate, sample, score_v3, exploration_priority
 
 OUT = ROOT / 'combo/results'
@@ -118,7 +118,7 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
                     r['foot_height'] = float(np.mean(w.d.xipos[[w.bodies[6], w.bodies[12]], 2]))
                 n = Node(value-prior(parent.mode, mode), w.snapshot(),
                          parent.path+[action], mode, level, r)
-                edge = parent.mode+'->'+mode
+                edge = edge_key(parent.mode, mode)
                 edges[edge] = edges.get(edge, 0)+1
                 if selection == 'dynamic' and (edge not in witnesses or value > witnesses[edge]['value']):
                     witnesses[edge] = dict(value=value, source=parent.snap.copy(),

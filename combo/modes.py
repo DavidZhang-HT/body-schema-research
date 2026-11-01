@@ -49,3 +49,9 @@ def classify(w, r=None):
 
 def handover(r):
     return r['base_height'] > .16 and r['up_z'] > .9 and r['foot_load'] > 75 and r['nonfoot_load'] < 8
+
+
+def edge_key(source, destination):
+    if destination != source and destination not in GRAPH[source]:
+        raise ValueError(f"Unknown graph edge {source}->{destination}")
+    return source+'->'+destination

@@ -27,6 +27,23 @@ Both side directions, descent, skipping modes and self-mode refinement are
 allowed. A complete directed mode graph avoids making negative assumptions
 about dynamic reachability. A P-F3 prior costs only 0.05 on direct supine lift.
 
+The classifier tests these predicates in order; touching means an actual
+MuJoCo floor contact with distance <=5 mm (the LP independently uses shell
+vertices within 5 mm). Arms include wrist, elbow and shoulder bodies; lower
+limbs include calf and ankle bodies.
+
+| Mode | Predicate on the 24-DoF plant |
+|---|---|
+| STAND | Both ankle-roll bodies touch, base>0.30 m, head_z>0.95, nonfoot load<5 N |
+| SUPINE | Trunk touches, chest_z>0.7 |
+| SIDE_R / SIDE_L | Trunk or arm touches, base<0.25 m, left_z>0.7 / left_z<-0.7 |
+| PRONE | Trunk touches, chest_z<-0.7 |
+| ALLFOURS | Arm and lower-limb contact, trunk off, chest_z<-0.5; not necessarily four supports |
+| HAND_SUPPORT | Arm and lower-limb contact, trunk off; includes forearm support |
+| SIT | head_z>0.5 and trunk/hip/thigh contact |
+| CROUCH | Both ankle-roll bodies touch, head_z>0.5, nonfoot load<8 N |
+| TRANSITION | None of the above |
+
 A shared width-14 beam tests outgoing edges with 16 direct random physics
 proposals per state (half coordinated; one zero action), no screening.
 Four beam seats preserve distinct contact modes; remaining seats use B-style
