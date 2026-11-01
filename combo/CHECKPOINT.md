@@ -55,3 +55,12 @@ for dynamic campaign; offline explanations certify these plus every returned
 block endpoint/interior and feet-only endpoint. Mode-change tables implemented.
 Five regression checks total (four full earlier, three lightweight after edits).
 No successful trajectory yet. No upstream code modified.
+
+03:00 UTC: robust sweep COMPLETE, 0/3 supine + 0/3 prone, all 6000 evals,
+zero QP handover entries across all six. results/{pose}_{seed}.json and paths
+are preserved; RESULTS.md generated (explanations still pending).
+Dynamic sweep started automatically, seed 0 both poses, code frozen at 333e6ad
+for search semantics. Six exploratory slots use original B absolute-load
+priority, two mode seats and remaining robust-score slots; no network.
+Next after dynamic sweep: explain BOTH campaigns sequentially, render verified
+supine success, regenerate tables, complete report and final tests/commit.
