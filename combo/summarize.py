@@ -1,11 +1,14 @@
 """Generate outcome tables from completed search and replay evidence only."""
 import json
+import argparse
 from collections import Counter
 from .plant import ROOT
 
 
-def summarize():
+def summarize(selection="robust"):
     out = ROOT/'combo/results'
+    if selection != "robust":
+        out = out/selection
     lines = ['# Measured outcomes', '',
              '| Start | Seed | Search/QP success | Replay success | Evals | Blocks | Wall s |',
              '|---|---:|---|---|---:|---:|---:|']
@@ -55,8 +58,10 @@ def summarize():
                   f'minimum shell height: {1000*min(s["certificate"]["pen"] for s in samples):.2f} mm; '
                   f'minimum self distance: {1000*min(s["certificate"]["selfd"] for s in samples):.2f} mm.',
                   'Full per-sample reasons, torque ratios, polygons and margins are in the explanation JSON.']
-    (ROOT/'combo/RESULTS.md').write_text('\n'.join(lines)+'\n')
+    (ROOT/'combo'/('RESULTS.md' if selection == 'robust' else 'RESULTS_'+selection+'.md')).write_text('\n'.join(lines)+'\n')
 
 
 if __name__ == '__main__':
-    summarize()
+    p = argparse.ArgumentParser()
+    p.add_argument('--selection', choices=['robust','dynamic'], default='robust')
+    summarize(p.parse_args().selection)

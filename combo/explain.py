@@ -22,10 +22,13 @@ def finite(obj):
     return obj
 
 
-def certificate(schema, snap):
-    c = schema.certify(snap[:31])
+def certificate(schema, snap, feet_only=False):
+    c = schema.certify(snap[:31], feet_only=feet_only)
     points = schema.points_world()
-    xy = points[points[:, 2] <= .005, :2]
+    mask = points[:, 2] <= .005
+    if feet_only:
+        mask &= schema.is_foot
+    xy = points[mask, :2]
     c['support_polygon_xy'] = []
     c['com_margin_m'] = None
     if len(xy) >= 3:
@@ -87,7 +90,8 @@ def explain(pose, seed, selection="robust"):
             if sequence[-1] != s['mode']:
                 sequence.append(s['mode'])
         transitions.append(dict(block=i, source=samples[0]['mode'], destination=samples[-1]['mode'],
-                                **transition_label(samples), samples=samples))
+                                **transition_label(samples), samples=samples,
+                                endpoint_feet_only=certificate(schema, end, feet_only=True)))
         w.restore(end)
     replay_error = float(np.max(np.abs(w.snapshot()-data['final'])))
     ok, bt, records = balance(w)
@@ -98,8 +102,23 @@ def explain(pose, seed, selection="robust"):
             if sequence[-1] != s['mode']:
                 sequence.append(s['mode'])
         transitions.append(dict(block='balance', source=samples[0]['mode'], destination=samples[-1]['mode'],
-                                **transition_label(samples), samples=samples))
-    result = dict(pose=pose, seed=seed, replay_success=ok, replay_snapshot_max_error=replay_error,
+                                **transition_label(samples), samples=samples,
+                                endpoint_feet_only=certificate(schema, bt[-1], feet_only=True)))
+    mode_edges, segment = [], []
+    last_time = -float('inf')
+    for block in transitions:
+        for sample in block['samples']:
+            if sample['time'] <= last_time + 1e-9:
+                continue
+            last_time = sample['time']
+            segment.append(sample)
+            if len(segment) > 1 and segment[-1]['mode'] != segment[0]['mode']:
+                mode_edges.append(dict(source=segment[0]['mode'], destination=sample['mode'],
+                                       start_time=segment[0]['time'], end_time=sample['time'],
+                                       **transition_label(segment),
+                                       endpoint_certificate=sample['certificate']))
+                segment = [sample]
+    result = dict(pose=pose, seed=seed, replay_success=ok, mode_transitions=mode_edges, replay_snapshot_max_error=replay_error,
                   mode_sequence=sequence, sample_period_s=.1, transitions=transitions,
                   final=records[-1] if records else None)
     write_json(out/f'{tag}_explanation.json', result)
