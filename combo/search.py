@@ -19,6 +19,13 @@ def write_json(path, obj):
     tmp.replace(path)
 
 
+def write_npz(path, **arrays):
+    tmp = path.with_suffix('.tmp')
+    with tmp.open('wb') as stream:
+        np.savez_compressed(stream, **arrays)
+    tmp.replace(path)
+
+
 @dataclass
 class Node:
     value: float
@@ -92,7 +99,8 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
         beam = [Node(score_v3([sample(w)]), initial, [], classify(w), 0, w.metrics())]
     witnesses = state.get('witnesses', {}) if checkpoint.exists() else {}
     start = time.time()
-    success, winner = False, None
+    success = bool(state.get('success', False)) if checkpoint.exists() else False
+    winner = state.get('winner') if checkpoint.exists() else None
     while evals < budget and not success:
         level += 1
         # Parents are retained briefly, never indefinitely frozen at a lucky peak.
@@ -140,18 +148,19 @@ def run(pose, seed, budget=6000, width=14, branches=16, selection="robust"):
                             mode=best.mode, metrics=best.metrics))
         print(tag, level, evals, best.mode, round(best.value,3),
               'handover', len(attempts), 'success', success, flush=True)
-        np.savez_compressed(out/f'{tag}_path.npz', initial=initial,
+        write_npz(out/f'{tag}_path.npz', initial=initial,
                             actions=np.asarray(best.path), final=best.snap)
         state = dict(config=(pose,seed,budget,width,branches), selection=selection, initial=initial,
                      beam=beam, history=history, attempts=attempts, edges=edges,
                      evals=evals, level=level, elapsed=elapsed+time.time()-start,
-                     rng=rng.bit_generator.state, settle=settle, witnesses=witnesses)
+                     rng=rng.bit_generator.state, settle=settle, witnesses=witnesses,
+                     success=success, winner=winner)
         tmp = checkpoint.with_suffix('.tmp')
         tmp.write_bytes(pickle.dumps(state))
         tmp.replace(checkpoint)
     best = winner if success else beam[0]
     if witnesses:
-        np.savez_compressed(out/f'{tag}_edges.npz', labels=np.array(list(witnesses)),
+        write_npz(out/f'{tag}_edges.npz', labels=np.array(list(witnesses)),
                             sources=np.array([v['source'] for v in witnesses.values()]),
                             destinations=np.array([v['destination'] for v in witnesses.values()]),
                             actions=np.array([v['action'] for v in witnesses.values()]))

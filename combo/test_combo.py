@@ -1,6 +1,10 @@
 """Physics/semantics regression checks; run python -m unittest combo.test_combo."""
 import sys
 import unittest
+import tempfile
+import pickle
+from pathlib import Path
+from unittest.mock import patch
 from .plant import GroundWorld, BSchema, BOUNDS, np
 from .modes import GRAPH, prior
 from .score import score_v3, exploration_priority
@@ -46,6 +50,24 @@ class ComboTests(unittest.TestCase):
                  com_speed=.05,foot_load=80,nonfoot_load=0,total_load=80)
         supported = dict(r,nonfoot_load=40,total_load=120)
         self.assertEqual(exploration_priority(r), exploration_priority(supported))
+
+    def test_resume_terminal_success(self):
+        from . import search
+        with tempfile.TemporaryDirectory() as temp:
+            out = Path(temp)/'dynamic'
+            out.mkdir()
+            n = search.Node(1.,np.zeros(140),[np.zeros(16)],'CROUCH',1,{})
+            state = dict(config=('supine',99,16,1,1),selection='dynamic',
+                         initial=np.zeros(140),beam=[n],history=[],attempts=[],edges={},
+                         evals=16,level=1,elapsed=3.,settle={},
+                         rng=np.random.default_rng(1).bit_generator.state,
+                         success=True,winner=n)
+            (out/'supine_99.checkpoint.pkl').write_bytes(pickle.dumps(state))
+            with patch.object(search,'OUT',Path(temp)), patch.object(search,'GroundWorld') as world:
+                result = search.run('supine',99,budget=16,width=1,branches=1,selection='dynamic')
+                self.assertTrue(result['success'])
+                self.assertEqual(result['evaluations'],16)
+                world.return_value.advance.assert_not_called()
 
     def test_graph_and_label_semantics(self):
         self.assertIn('SUPINE', GRAPH['STAND'])

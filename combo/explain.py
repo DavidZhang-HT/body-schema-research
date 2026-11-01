@@ -9,7 +9,7 @@ from pathlib import Path
 from scipy.spatial import ConvexHull, QhullError
 from .plant import GroundWorld, BSchema, balance, np, ROOT
 from .modes import classify
-from .search import write_json
+from .search import write_json, write_npz
 
 
 def finite(obj):
@@ -138,7 +138,7 @@ def explain(pose, seed, selection="robust"):
                   mode_sequence=sequence, sample_period_s=.1, transitions=transitions,
                   final=records[-1] if records else None)
     write_json(out/f'{tag}_explanation.json', result)
-    np.savez_compressed(out/f'{tag}_trace.npz', trace=np.asarray(trace))
+    write_npz(out/f'{tag}_trace.npz', trace=np.asarray(trace))
     print(tag, 'replay', ok, 'error', replay_error, sequence, flush=True)
     return result
 
