@@ -1,0 +1,508 @@
+{
+  "pose": "supine",
+  "seed": 2,
+  "selection": "robust",
+  "success": false,
+  "evaluations": 6000,
+  "budget": 6000,
+  "width": 14,
+  "branches": 16,
+  "settle": {
+    "pose": "supine",
+    "seed": 2,
+    "settled": true,
+    "seconds": 3.7219999999998117,
+    "kinetic_j": 1.5111261097869953e-07
+  },
+  "seconds": 428.1987087726593,
+  "history": [
+    {
+      "level": 1,
+      "evaluations": 16,
+      "score": 1.0197869117729659,
+      "mode": "SUPINE",
+      "metrics": {
+        "com_height": 0.08979260099692292,
+        "base_height": 0.07340917549884352,
+        "up_z": 0.4218484204442688,
+        "kinetic_j": 0.01727094641064178,
+        "foot_load": 0.0,
+        "nonfoot_load": 118.86724271785818,
+        "total_load": 118.86724271785818,
+        "com_speed": 0.001885421228611347
+      }
+    },
+    {
+      "level": 2,
+      "evaluations": 240,
+      "score": 1.2268099289949534,
+      "mode": "SIT",
+      "metrics": {
+        "com_height": 0.11434717703140544,
+        "base_height": 0.07186875723858237,
+        "up_z": 0.7378498233768686,
+        "kinetic_j": 0.052052931115793614,
+        "foot_load": 0.0,
+        "nonfoot_load": 99.27821644897347,
+        "total_load": 99.27821644897347,
+        "com_speed": 0.007179502259207706
+      }
+    },
+    {
+      "level": 3,
+      "evaluations": 464,
+      "score": 1.6001141180845375,
+      "mode": "SIT",
+      "metrics": {
+        "com_height": 0.1363809517828802,
+        "base_height": 0.07491281896691333,
+        "up_z": 0.8234550306478288,
+        "kinetic_j": 0.037957522601009056,
+        "foot_load": 0.0,
+        "nonfoot_load": 103.55225150265014,
+        "total_load": 103.55225150265014,
+        "com_speed": 0.0041583334186943285
+      }
+    },
+    {
+      "level": 4,
+      "evaluations": 688,
+      "score": 1.9139972961373817,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.11088704475179333,
+        "base_height": 0.07858626492360378,
+        "up_z": 0.8921115764514169,
+        "kinetic_j": 0.001196626823191346,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.40845772968834,
+        "total_load": 108.40845772968834,
+        "com_speed": 0.0007886852675432753
+      }
+    },
+    {
+      "level": 5,
+      "evaluations": 912,
+      "score": 2.060850084887903,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1271732206794748,
+        "base_height": 0.09291409767022255,
+        "up_z": 0.9933261733521894,
+        "kinetic_j": 0.00450907912053844,
+        "foot_load": 0.0,
+        "nonfoot_load": 107.6443839612851,
+        "total_load": 107.6443839612851,
+        "com_speed": 0.002928858764970091
+      }
+    },
+    {
+      "level": 6,
+      "evaluations": 1136,
+      "score": 2.3531399039834753,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.13203985544993693,
+        "base_height": 0.1287131555449612,
+        "up_z": 0.9505107034863376,
+        "kinetic_j": 0.0005214953555380647,
+        "foot_load": 12.078019123662715,
+        "nonfoot_load": 95.75003349067258,
+        "total_load": 107.82805261433529,
+        "com_speed": 0.0007255623776549479
+      }
+    },
+    {
+      "level": 7,
+      "evaluations": 1360,
+      "score": 2.3531399039834753,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.13203985544993693,
+        "base_height": 0.1287131555449612,
+        "up_z": 0.9505107034863376,
+        "kinetic_j": 0.0005214953555380647,
+        "foot_load": 12.078019123662715,
+        "nonfoot_load": 95.75003349067258,
+        "total_load": 107.82805261433529,
+        "com_speed": 0.0007255623776549479
+      }
+    },
+    {
+      "level": 8,
+      "evaluations": 1584,
+      "score": 2.371162982720937,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.142967454124412,
+        "base_height": 0.12213603476527589,
+        "up_z": 0.9674299845265326,
+        "kinetic_j": 0.0031067765851286286,
+        "foot_load": 0.0,
+        "nonfoot_load": 107.41230193358066,
+        "total_load": 107.41230193358066,
+        "com_speed": 0.0011513160664604403
+      }
+    },
+    {
+      "level": 9,
+      "evaluations": 1808,
+      "score": 2.371162982720937,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.142967454124412,
+        "base_height": 0.12213603476527589,
+        "up_z": 0.9674299845265326,
+        "kinetic_j": 0.0031067765851286286,
+        "foot_load": 0.0,
+        "nonfoot_load": 107.41230193358066,
+        "total_load": 107.41230193358066,
+        "com_speed": 0.0011513160664604403
+      }
+    },
+    {
+      "level": 10,
+      "evaluations": 2032,
+      "score": 2.371162982720937,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.142967454124412,
+        "base_height": 0.12213603476527589,
+        "up_z": 0.9674299845265326,
+        "kinetic_j": 0.0031067765851286286,
+        "foot_load": 0.0,
+        "nonfoot_load": 107.41230193358066,
+        "total_load": 107.41230193358066,
+        "com_speed": 0.0011513160664604403
+      }
+    },
+    {
+      "level": 11,
+      "evaluations": 2256,
+      "score": 2.4195032682966215,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.14813146246468448,
+        "base_height": 0.13168228699551704,
+        "up_z": 0.9993787559881442,
+        "kinetic_j": 0.0004995256894502246,
+        "foot_load": 0.0,
+        "nonfoot_load": 107.4491896443297,
+        "total_load": 107.4491896443297,
+        "com_speed": 0.0007953042036938742
+      }
+    },
+    {
+      "level": 12,
+      "evaluations": 2480,
+      "score": 2.494871283529846,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.14755454708208818,
+        "base_height": 0.13141007438469587,
+        "up_z": 0.9996294902391373,
+        "kinetic_j": 0.008045370462409414,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.03400952874618,
+        "total_load": 108.03400952874618,
+        "com_speed": 0.0004998055779607098
+      }
+    },
+    {
+      "level": 13,
+      "evaluations": 2704,
+      "score": 2.494871283529846,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.14755454708208818,
+        "base_height": 0.13141007438469587,
+        "up_z": 0.9996294902391373,
+        "kinetic_j": 0.008045370462409414,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.03400952874618,
+        "total_load": 108.03400952874618,
+        "com_speed": 0.0004998055779607098
+      }
+    },
+    {
+      "level": 14,
+      "evaluations": 2928,
+      "score": 2.522284254768263,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1553326307550314,
+        "base_height": 0.12894246435623027,
+        "up_z": 0.996401370177685,
+        "kinetic_j": 0.004698906874021902,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.06722143486772,
+        "total_load": 108.06722143486772,
+        "com_speed": 0.002459396333432808
+      }
+    },
+    {
+      "level": 15,
+      "evaluations": 3152,
+      "score": 2.522284254768263,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1553326307550314,
+        "base_height": 0.12894246435623027,
+        "up_z": 0.996401370177685,
+        "kinetic_j": 0.004698906874021902,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.06722143486772,
+        "total_load": 108.06722143486772,
+        "com_speed": 0.002459396333432808
+      }
+    },
+    {
+      "level": 16,
+      "evaluations": 3376,
+      "score": 2.522284254768263,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1553326307550314,
+        "base_height": 0.12894246435623027,
+        "up_z": 0.996401370177685,
+        "kinetic_j": 0.004698906874021902,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.06722143486772,
+        "total_load": 108.06722143486772,
+        "com_speed": 0.002459396333432808
+      }
+    },
+    {
+      "level": 17,
+      "evaluations": 3600,
+      "score": 2.534840584099146,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.17097693264681232,
+        "base_height": 0.13898402939383392,
+        "up_z": 0.9227913086567069,
+        "kinetic_j": 0.008446216090077634,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.12890995264473,
+        "total_load": 109.12890995264473,
+        "com_speed": 0.004778989757313845
+      }
+    },
+    {
+      "level": 18,
+      "evaluations": 3824,
+      "score": 2.534840584099146,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.17097693264681232,
+        "base_height": 0.13898402939383392,
+        "up_z": 0.9227913086567069,
+        "kinetic_j": 0.008446216090077634,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.12890995264473,
+        "total_load": 109.12890995264473,
+        "com_speed": 0.004778989757313845
+      }
+    },
+    {
+      "level": 19,
+      "evaluations": 4048,
+      "score": 2.534840584099146,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.17097693264681232,
+        "base_height": 0.13898402939383392,
+        "up_z": 0.9227913086567069,
+        "kinetic_j": 0.008446216090077634,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.12890995264473,
+        "total_load": 109.12890995264473,
+        "com_speed": 0.004778989757313845
+      }
+    },
+    {
+      "level": 20,
+      "evaluations": 4272,
+      "score": 2.533032603723926,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.16548032623103187,
+        "base_height": 0.1312448823366519,
+        "up_z": 0.9764022713846546,
+        "kinetic_j": 0.0007737787814820914,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.27876872873469,
+        "total_load": 109.27876872873469,
+        "com_speed": 0.0017631135989430735
+      }
+    },
+    {
+      "level": 21,
+      "evaluations": 4496,
+      "score": 2.5311440164807166,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1654796790362073,
+        "base_height": 0.14297773231765679,
+        "up_z": 0.9562486990994649,
+        "kinetic_j": 0.0127550114151724,
+        "foot_load": 0.0,
+        "nonfoot_load": 119.65599266266555,
+        "total_load": 119.65599266266555,
+        "com_speed": 0.00844344036948514
+      }
+    },
+    {
+      "level": 22,
+      "evaluations": 4720,
+      "score": 2.6227849226294273,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1786418017592727,
+        "base_height": 0.14178634999404757,
+        "up_z": 0.9787039922323744,
+        "kinetic_j": 0.011299529432528158,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.72150094773937,
+        "total_load": 109.72150094773937,
+        "com_speed": 0.002483869001127441
+      }
+    },
+    {
+      "level": 23,
+      "evaluations": 4944,
+      "score": 2.6227849226294273,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1786418017592727,
+        "base_height": 0.14178634999404757,
+        "up_z": 0.9787039922323744,
+        "kinetic_j": 0.011299529432528158,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.72150094773937,
+        "total_load": 109.72150094773937,
+        "com_speed": 0.002483869001127441
+      }
+    },
+    {
+      "level": 24,
+      "evaluations": 5168,
+      "score": 2.643129396990231,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.18571525867994967,
+        "base_height": 0.15624039598295889,
+        "up_z": 0.9615768741818115,
+        "kinetic_j": 0.006275670337046687,
+        "foot_load": 0.0,
+        "nonfoot_load": 112.68734569206262,
+        "total_load": 112.68734569206262,
+        "com_speed": 0.007854992675221014
+      }
+    },
+    {
+      "level": 25,
+      "evaluations": 5392,
+      "score": 2.7411396513856845,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.18477973183447108,
+        "base_height": 0.1589373861505184,
+        "up_z": 0.9569159158443081,
+        "kinetic_j": 0.0073576133637942,
+        "foot_load": 0.0,
+        "nonfoot_load": 106.23035937181137,
+        "total_load": 106.23035937181137,
+        "com_speed": 0.007483577388602818
+      }
+    },
+    {
+      "level": 26,
+      "evaluations": 5616,
+      "score": 2.818161757058175,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1899590046529892,
+        "base_height": 0.16971989881692423,
+        "up_z": 0.9499316696165783,
+        "kinetic_j": 0.009848369329385993,
+        "foot_load": 17.000526130643706,
+        "nonfoot_load": 88.81398245006537,
+        "total_load": 105.81450858070907,
+        "com_speed": 0.0013868431564318796
+      }
+    },
+    {
+      "level": 27,
+      "evaluations": 5840,
+      "score": 2.8477965043888434,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.18961647811150237,
+        "base_height": 0.17164790711091804,
+        "up_z": 0.9615484348739727,
+        "kinetic_j": 0.009049389063294725,
+        "foot_load": 22.53143476790257,
+        "nonfoot_load": 85.13758584772626,
+        "total_load": 107.66902061562882,
+        "com_speed": 0.005807570338639704
+      }
+    },
+    {
+      "level": 28,
+      "evaluations": 6000,
+      "score": 2.8477965043888434,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.18961647811150237,
+        "base_height": 0.17164790711091804,
+        "up_z": 0.9615484348739727,
+        "kinetic_j": 0.009049389063294725,
+        "foot_load": 22.53143476790257,
+        "nonfoot_load": 85.13758584772626,
+        "total_load": 107.66902061562882,
+        "com_speed": 0.005807570338639704
+      }
+    }
+  ],
+  "handovers": [],
+  "observed_edges": {
+    "SUPINE->SUPINE": 343,
+    "SUPINE->TRANSITION": 23,
+    "SUPINE->HAND_SUPPORT": 49,
+    "SUPINE->SIT": 33,
+    "HAND_SUPPORT->HAND_SUPPORT": 2181,
+    "HAND_SUPPORT->TRANSITION": 331,
+    "HAND_SUPPORT->SUPINE": 555,
+    "TRANSITION->SUPINE": 123,
+    "TRANSITION->HAND_SUPPORT": 120,
+    "TRANSITION->TRANSITION": 85,
+    "TRANSITION->SIT": 61,
+    "SIT->SUPINE": 180,
+    "SIT->SIT": 559,
+    "SIT->HAND_SUPPORT": 67,
+    "HAND_SUPPORT->SIT": 757,
+    "SIT->TRANSITION": 10,
+    "HAND_SUPPORT->ALLFOURS": 47,
+    "ALLFOURS->ALLFOURS": 120,
+    "ALLFOURS->TRANSITION": 48,
+    "ALLFOURS->HAND_SUPPORT": 127,
+    "ALLFOURS->SIT": 146,
+    "ALLFOURS->SUPINE": 7,
+    "TRANSITION->ALLFOURS": 11,
+    "HAND_SUPPORT->SIDE_R": 16,
+    "HAND_SUPPORT->PRONE": 1
+  },
+  "final": {
+    "com_height": 0.18961647811150237,
+    "base_height": 0.17164790711091804,
+    "up_z": 0.9615484348739727,
+    "kinetic_j": 0.009049389063294725,
+    "foot_load": 22.53143476790257,
+    "nonfoot_load": 85.13758584772626,
+    "total_load": 107.66902061562882,
+    "com_speed": 0.005807570338639704
+  },
+  "action_blocks": 19,
+  "source_sha256": "512727bd70e329ea449c7f0e8799b9482bbb808507fead8186feed1b41975384"
+}

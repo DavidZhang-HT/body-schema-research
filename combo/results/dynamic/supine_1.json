@@ -1,0 +1,1796 @@
+{
+  "pose": "supine",
+  "seed": 1,
+  "selection": "dynamic",
+  "success": true,
+  "evaluations": 4235,
+  "budget": 6000,
+  "width": 14,
+  "branches": 16,
+  "settle": {
+    "pose": "supine",
+    "seed": 1,
+    "settled": true,
+    "seconds": 3.481999999999838,
+    "kinetic_j": 8.652389846606428e-08
+  },
+  "seconds": 406.6240065097809,
+  "history": [
+    {
+      "level": 1,
+      "evaluations": 16,
+      "score": 0.8208832908992245,
+      "mode": "SUPINE",
+      "metrics": {
+        "com_height": 0.09389551097446557,
+        "base_height": 0.0847707711703947,
+        "up_z": 0.2885441387747252,
+        "kinetic_j": 0.031064653681916694,
+        "foot_load": 23.429825008871966,
+        "nonfoot_load": 89.11092166444254,
+        "total_load": 112.54074667331452,
+        "com_speed": 0.012692877817408375,
+        "foot_height": 0.14117441920815396
+      }
+    },
+    {
+      "level": 2,
+      "evaluations": 240,
+      "score": 1.1767021795328905,
+      "mode": "SUPINE",
+      "metrics": {
+        "com_height": 0.11013353717746516,
+        "base_height": 0.0792145890776188,
+        "up_z": 0.47472001880796016,
+        "kinetic_j": 0.019518402573639185,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.68849864540483,
+        "total_load": 109.68849864540483,
+        "com_speed": 0.006895757998257814,
+        "foot_height": 0.1738763368520979
+      }
+    },
+    {
+      "level": 3,
+      "evaluations": 464,
+      "score": 1.4405347566502547,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1092825885928566,
+        "base_height": 0.07536214760949675,
+        "up_z": 0.80218475671045,
+        "kinetic_j": 0.03289800666775261,
+        "foot_load": 9.822433817687115,
+        "nonfoot_load": 96.60931226312199,
+        "total_load": 106.4317460808091,
+        "com_speed": 0.013094966620599975,
+        "foot_height": 0.13489323080836738
+      }
+    },
+    {
+      "level": 4,
+      "evaluations": 688,
+      "score": 2.084369066238104,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.15131469580406529,
+        "base_height": 0.14230013802545532,
+        "up_z": 0.806264481527234,
+        "kinetic_j": 0.024956483229349066,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.29722014401543,
+        "total_load": 108.29722014401543,
+        "com_speed": 0.01699858766946044,
+        "foot_height": 0.14204055011059333
+      }
+    },
+    {
+      "level": 5,
+      "evaluations": 912,
+      "score": 2.4639427071142217,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1594672718260267,
+        "base_height": 0.14124298727577445,
+        "up_z": 0.9236620874758208,
+        "kinetic_j": 0.008818857260863759,
+        "foot_load": 0.0,
+        "nonfoot_load": 113.93074675696236,
+        "total_load": 113.93074675696236,
+        "com_speed": 0.02682510682505323,
+        "foot_height": 0.15651068719287586
+      }
+    },
+    {
+      "level": 6,
+      "evaluations": 1136,
+      "score": 2.4639427071142217,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1594672718260267,
+        "base_height": 0.14124298727577445,
+        "up_z": 0.9236620874758208,
+        "kinetic_j": 0.008818857260863759,
+        "foot_load": 0.0,
+        "nonfoot_load": 113.93074675696236,
+        "total_load": 113.93074675696236,
+        "com_speed": 0.02682510682505323,
+        "foot_height": 0.15651068719287586
+      }
+    },
+    {
+      "level": 7,
+      "evaluations": 1360,
+      "score": 2.4639427071142217,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1594672718260267,
+        "base_height": 0.14124298727577445,
+        "up_z": 0.9236620874758208,
+        "kinetic_j": 0.008818857260863759,
+        "foot_load": 0.0,
+        "nonfoot_load": 113.93074675696236,
+        "total_load": 113.93074675696236,
+        "com_speed": 0.02682510682505323,
+        "foot_height": 0.15651068719287586
+      }
+    },
+    {
+      "level": 8,
+      "evaluations": 1584,
+      "score": 2.3143866792882806,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.13998035996737243,
+        "base_height": 0.14253136704461702,
+        "up_z": 0.8024872660705004,
+        "kinetic_j": 0.004899181739587622,
+        "foot_load": 0.0,
+        "nonfoot_load": 106.95597732764958,
+        "total_load": 106.95597732764958,
+        "com_speed": 0.0009410971559209978,
+        "foot_height": 0.10088222333918126
+      }
+    },
+    {
+      "level": 9,
+      "evaluations": 1808,
+      "score": 2.328869307278798,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1361997411303979,
+        "base_height": 0.12458220199463643,
+        "up_z": 0.9174621806254926,
+        "kinetic_j": 0.005604686824050752,
+        "foot_load": 24.254927993449858,
+        "nonfoot_load": 82.41915462034727,
+        "total_load": 106.67408261379713,
+        "com_speed": 0.012711384887341914,
+        "foot_height": 0.10710038390152345
+      }
+    },
+    {
+      "level": 10,
+      "evaluations": 2032,
+      "score": 2.328869307278798,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1361997411303979,
+        "base_height": 0.12458220199463643,
+        "up_z": 0.9174621806254926,
+        "kinetic_j": 0.005604686824050752,
+        "foot_load": 24.254927993449858,
+        "nonfoot_load": 82.41915462034727,
+        "total_load": 106.67408261379713,
+        "com_speed": 0.012711384887341914,
+        "foot_height": 0.10710038390152345
+      }
+    },
+    {
+      "level": 11,
+      "evaluations": 2256,
+      "score": 2.4264490779874106,
+      "mode": "ALLFOURS",
+      "metrics": {
+        "com_height": 0.16953674272456695,
+        "base_height": 0.18428595371888634,
+        "up_z": 0.7707975475366747,
+        "kinetic_j": 0.0208999650053794,
+        "foot_load": 27.807158692317778,
+        "nonfoot_load": 93.33764351050056,
+        "total_load": 121.14480220281833,
+        "com_speed": 0.012543736386775048,
+        "foot_height": 0.11954108986013481
+      }
+    },
+    {
+      "level": 12,
+      "evaluations": 2480,
+      "score": 2.5603883521197304,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1740754715865469,
+        "base_height": 0.18448618701900724,
+        "up_z": 0.8374622179144511,
+        "kinetic_j": 0.008159349810728226,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.98167098861126,
+        "total_load": 109.98167098861126,
+        "com_speed": 0.008824587564777789,
+        "foot_height": 0.1183345907759802
+      }
+    },
+    {
+      "level": 13,
+      "evaluations": 2704,
+      "score": 2.5603883521197304,
+      "mode": "HAND_SUPPORT",
+      "metrics": {
+        "com_height": 0.1740754715865469,
+        "base_height": 0.18448618701900724,
+        "up_z": 0.8374622179144511,
+        "kinetic_j": 0.008159349810728226,
+        "foot_load": 0.0,
+        "nonfoot_load": 109.98167098861126,
+        "total_load": 109.98167098861126,
+        "com_speed": 0.008824587564777789,
+        "foot_height": 0.1183345907759802
+      }
+    },
+    {
+      "level": 14,
+      "evaluations": 2928,
+      "score": 2.763273085097267,
+      "mode": "TRANSITION",
+      "metrics": {
+        "com_height": 0.18796537373813277,
+        "base_height": 0.19580761439875186,
+        "up_z": 0.8752777566925426,
+        "kinetic_j": 0.006656526798143238,
+        "foot_load": 0.0,
+        "nonfoot_load": 100.52650286861785,
+        "total_load": 100.52650286861785,
+        "com_speed": 0.013449573161960358,
+        "foot_height": 0.10402375917572272
+      }
+    },
+    {
+      "level": 15,
+      "evaluations": 3152,
+      "score": 3.1362402877294313,
+      "mode": "TRANSITION",
+      "metrics": {
+        "com_height": 0.2039314523913542,
+        "base_height": 0.21797848468166697,
+        "up_z": 0.9932677281300665,
+        "kinetic_j": 0.014047746486866198,
+        "foot_load": 49.752480088127086,
+        "nonfoot_load": 58.2910742744112,
+        "total_load": 108.04355436253829,
+        "com_speed": 0.016730787138620123,
+        "foot_height": 0.11594569074415265
+      }
+    },
+    {
+      "level": 16,
+      "evaluations": 3376,
+      "score": 3.1362402877294313,
+      "mode": "TRANSITION",
+      "metrics": {
+        "com_height": 0.2039314523913542,
+        "base_height": 0.21797848468166697,
+        "up_z": 0.9932677281300665,
+        "kinetic_j": 0.014047746486866198,
+        "foot_load": 49.752480088127086,
+        "nonfoot_load": 58.2910742744112,
+        "total_load": 108.04355436253829,
+        "com_speed": 0.016730787138620123,
+        "foot_height": 0.11594569074415265
+      }
+    },
+    {
+      "level": 17,
+      "evaluations": 3600,
+      "score": 3.1362402877294313,
+      "mode": "TRANSITION",
+      "metrics": {
+        "com_height": 0.2039314523913542,
+        "base_height": 0.21797848468166697,
+        "up_z": 0.9932677281300665,
+        "kinetic_j": 0.014047746486866198,
+        "foot_load": 49.752480088127086,
+        "nonfoot_load": 58.2910742744112,
+        "total_load": 108.04355436253829,
+        "com_speed": 0.016730787138620123,
+        "foot_height": 0.11594569074415265
+      }
+    },
+    {
+      "level": 18,
+      "evaluations": 3824,
+      "score": 3.187160711884936,
+      "mode": "TRANSITION",
+      "metrics": {
+        "com_height": 0.20767636435061385,
+        "base_height": 0.22511471295592922,
+        "up_z": 0.9854393108702885,
+        "kinetic_j": 0.001632675270131884,
+        "foot_load": 41.55398502383469,
+        "nonfoot_load": 68.22007063627453,
+        "total_load": 109.77405566010921,
+        "com_speed": 0.010578886342168034,
+        "foot_height": 0.10329994145622134
+      }
+    },
+    {
+      "level": 19,
+      "evaluations": 4048,
+      "score": 3.187160711884936,
+      "mode": "TRANSITION",
+      "metrics": {
+        "com_height": 0.20767636435061385,
+        "base_height": 0.22511471295592922,
+        "up_z": 0.9854393108702885,
+        "kinetic_j": 0.001632675270131884,
+        "foot_load": 41.55398502383469,
+        "nonfoot_load": 68.22007063627453,
+        "total_load": 109.77405566010921,
+        "com_speed": 0.010578886342168034,
+        "foot_height": 0.10329994145622134
+      }
+    },
+    {
+      "level": 20,
+      "evaluations": 4235,
+      "score": 2.255448719228172,
+      "mode": "CROUCH",
+      "metrics": {
+        "com_height": 0.20579111699241476,
+        "base_height": 0.18908764644105744,
+        "up_z": 0.995238615635466,
+        "kinetic_j": 0.03912981173608271,
+        "foot_load": 104.60228480111905,
+        "nonfoot_load": 0.0,
+        "total_load": 104.60228480111905,
+        "com_speed": 0.0402878041697802,
+        "foot_height": 0.08542127577700104
+      }
+    }
+  ],
+  "handovers": [
+    {
+      "evaluation": 3167,
+      "success": false,
+      "entry": {
+        "com_height": 0.20937088631605255,
+        "base_height": 0.21989623945640374,
+        "up_z": 0.9525888710542783,
+        "kinetic_j": 1.2851644781109,
+        "foot_load": 93.54078776886243,
+        "nonfoot_load": 0.0,
+        "total_load": 93.54078776886243,
+        "com_speed": 0.32382419154698444,
+        "foot_height": 0.09469584055987179
+      },
+      "final": {
+        "com_height": 0.0957999368940366,
+        "base_height": 0.10286801648405133,
+        "up_z": 0.34398640231876565,
+        "kinetic_j": 6.3179875718445935,
+        "foot_load": 0.0,
+        "nonfoot_load": 585.7858781539704,
+        "total_load": 585.7858781539704,
+        "com_speed": 0.6426395587392167
+      },
+      "seconds": 0.9
+    },
+    {
+      "evaluation": 3212,
+      "success": false,
+      "entry": {
+        "com_height": 0.19407186153047332,
+        "base_height": 0.19100424943821825,
+        "up_z": 0.9503844567541447,
+        "kinetic_j": 1.4066279726608004,
+        "foot_load": 121.4782602448463,
+        "nonfoot_load": 0.0,
+        "total_load": 121.4782602448463,
+        "com_speed": 0.4301578703335924,
+        "foot_height": 0.10720132362394841
+      },
+      "final": {
+        "com_height": 0.10948739442304341,
+        "base_height": 0.1149567917612309,
+        "up_z": 0.34906938005212573,
+        "kinetic_j": 4.704778579291266,
+        "foot_load": 0.0,
+        "nonfoot_load": 84.93777113211041,
+        "total_load": 84.93777113211041,
+        "com_speed": 0.6772665112933899
+      },
+      "seconds": 0.4
+    },
+    {
+      "evaluation": 3315,
+      "success": false,
+      "entry": {
+        "com_height": 0.20781780529715269,
+        "base_height": 0.2033393087610454,
+        "up_z": 0.9445578433412143,
+        "kinetic_j": 0.09868727771216233,
+        "foot_load": 111.86662974082356,
+        "nonfoot_load": 0.0,
+        "total_load": 111.86662974082356,
+        "com_speed": 0.07289626843389593,
+        "foot_height": 0.10886044271656109
+      },
+      "final": {
+        "com_height": 0.11424081804078913,
+        "base_height": 0.1305709063180714,
+        "up_z": 0.33934999267458804,
+        "kinetic_j": 6.021910912432782,
+        "foot_load": 0.0,
+        "nonfoot_load": 24.84393463864825,
+        "total_load": 24.84393463864825,
+        "com_speed": 0.8317775219638655
+      },
+      "seconds": 0.78
+    },
+    {
+      "evaluation": 3367,
+      "success": false,
+      "entry": {
+        "com_height": 0.19217565199018405,
+        "base_height": 0.20728290185753312,
+        "up_z": 0.9257014647280587,
+        "kinetic_j": 0.5190109701244233,
+        "foot_load": 81.39460899709513,
+        "nonfoot_load": 0.0,
+        "total_load": 81.39460899709513,
+        "com_speed": 0.2577913412831239,
+        "foot_height": 0.11468572424332481
+      },
+      "final": {
+        "com_height": 0.08795381521264535,
+        "base_height": 0.08257399389020702,
+        "up_z": 0.4591195427217473,
+        "kinetic_j": 3.695821420410541e-05,
+        "foot_load": 13.655863568320076,
+        "nonfoot_load": 94.25459951897547,
+        "total_load": 107.91046308729554,
+        "com_speed": 0.0014875913084285023
+      },
+      "seconds": 5.0
+    },
+    {
+      "evaluation": 3432,
+      "success": false,
+      "entry": {
+        "com_height": 0.1986513199203489,
+        "base_height": 0.20325943556989184,
+        "up_z": 0.9241445515902418,
+        "kinetic_j": 0.030568152605205266,
+        "foot_load": 94.30160536586865,
+        "nonfoot_load": 0.0,
+        "total_load": 94.30160536586865,
+        "com_speed": 0.037146322990317594,
+        "foot_height": 0.11420489452105881
+      },
+      "final": {
+        "com_height": 0.09260712029775277,
+        "base_height": 0.07604687466386936,
+        "up_z": 0.5043042166692455,
+        "kinetic_j": 1.1361734185462307,
+        "foot_load": 0.0,
+        "nonfoot_load": 258.80573398346706,
+        "total_load": 258.80573398346706,
+        "com_speed": 0.2679105695772186
+      },
+      "seconds": 0.66
+    },
+    {
+      "evaluation": 3501,
+      "success": false,
+      "entry": {
+        "com_height": 0.20983596301434754,
+        "base_height": 0.19617870352990974,
+        "up_z": 0.9656031919894719,
+        "kinetic_j": 0.07063355439979233,
+        "foot_load": 107.34800818721655,
+        "nonfoot_load": 0.0,
+        "total_load": 107.34800818721655,
+        "com_speed": 0.06373738999347259,
+        "foot_height": 0.11021923051763197
+      },
+      "final": {
+        "com_height": 0.15052490832639795,
+        "base_height": 0.17070642448510423,
+        "up_z": 0.3202103442555573,
+        "kinetic_j": 4.838551734611505,
+        "foot_load": 0.0,
+        "nonfoot_load": 0.0,
+        "total_load": 0.0,
+        "com_speed": 0.7123621956282142
+      },
+      "seconds": 0.72
+    },
+    {
+      "evaluation": 3537,
+      "success": false,
+      "entry": {
+        "com_height": 0.20601631299419412,
+        "base_height": 0.20123975489885887,
+        "up_z": 0.9514561908189438,
+        "kinetic_j": 0.014783733549773956,
+        "foot_load": 93.68960658560394,
+        "nonfoot_load": 0.0,
+        "total_load": 93.68960658560394,
+        "com_speed": 0.011603860889107847,
+        "foot_height": 0.10850233160270861
+      },
+      "final": {
+        "com_height": 0.1272942658972347,
+        "base_height": 0.14574569433419157,
+        "up_z": 0.3463273420216017,
+        "kinetic_j": 8.276773790599293,
+        "foot_load": 0.0,
+        "nonfoot_load": 41.975160176830315,
+        "total_load": 41.975160176830315,
+        "com_speed": 0.942279101290174
+      },
+      "seconds": 0.76
+    },
+    {
+      "evaluation": 3538,
+      "success": false,
+      "entry": {
+        "com_height": 0.1966277265273302,
+        "base_height": 0.1962142278396209,
+        "up_z": 0.9342692947495772,
+        "kinetic_j": 0.5892737816035787,
+        "foot_load": 79.29734121508609,
+        "nonfoot_load": 0.0,
+        "total_load": 79.29734121508609,
+        "com_speed": 0.2518350463048219,
+        "foot_height": 0.1136837633910243
+      },
+      "final": {
+        "com_height": 0.08903993806855065,
+        "base_height": 0.07976574332059051,
+        "up_z": 0.4487909249346858,
+        "kinetic_j": 0.02098771016978966,
+        "foot_load": 17.59127923807114,
+        "nonfoot_load": 87.90841223625529,
+        "total_load": 105.49969147432643,
+        "com_speed": 0.04068765431515302
+      },
+      "seconds": 2.48
+    },
+    {
+      "evaluation": 3540,
+      "success": false,
+      "entry": {
+        "com_height": 0.19938991000735176,
+        "base_height": 0.19736463216648917,
+        "up_z": 0.9446854173047273,
+        "kinetic_j": 0.2064724035275229,
+        "foot_load": 116.91960310831769,
+        "nonfoot_load": 0.0,
+        "total_load": 116.91960310831769,
+        "com_speed": 0.16283754779392426,
+        "foot_height": 0.11580617341090768
+      },
+      "final": {
+        "com_height": 0.09535717413028784,
+        "base_height": 0.07744487230023359,
+        "up_z": 0.4097413712842165,
+        "kinetic_j": 6.097531738748181,
+        "foot_load": 0.0,
+        "nonfoot_load": 69.94856329969306,
+        "total_load": 69.94856329969306,
+        "com_speed": 0.6815081224849273
+      },
+      "seconds": 0.9400000000000001
+    },
+    {
+      "evaluation": 3578,
+      "success": false,
+      "entry": {
+        "com_height": 0.20671058994453023,
+        "base_height": 0.19706809796987837,
+        "up_z": 0.9683030004023512,
+        "kinetic_j": 0.032066301898135134,
+        "foot_load": 118.49506721913743,
+        "nonfoot_load": 0.0,
+        "total_load": 118.49506721913743,
+        "com_speed": 0.008036797361309843,
+        "foot_height": 0.10220550569706385
+      },
+      "final": {
+        "com_height": 0.12532951147377663,
+        "base_height": 0.14190026939018857,
+        "up_z": 0.33328817848305814,
+        "kinetic_j": 3.121782531832297,
+        "foot_load": 0.0,
+        "nonfoot_load": 73.4658314344405,
+        "total_load": 73.4658314344405,
+        "com_speed": 0.5713033209670005
+      },
+      "seconds": 0.9400000000000001
+    },
+    {
+      "evaluation": 3579,
+      "success": false,
+      "entry": {
+        "com_height": 0.1820780806200179,
+        "base_height": 0.18434523622836005,
+        "up_z": 0.9200296552857213,
+        "kinetic_j": 0.028529526090449033,
+        "foot_load": 105.94206841038027,
+        "nonfoot_load": 0.0,
+        "total_load": 105.94206841038027,
+        "com_speed": 0.037300932225279165,
+        "foot_height": 0.09358894053928513
+      },
+      "final": {
+        "com_height": 0.11367186196916794,
+        "base_height": 0.13449566023686574,
+        "up_z": 0.3067632750913858,
+        "kinetic_j": 8.722490098976214,
+        "foot_load": 0.0,
+        "nonfoot_load": 45.47704970160355,
+        "total_load": 45.47704970160355,
+        "com_speed": 0.9321588968799911
+      },
+      "seconds": 0.78
+    },
+    {
+      "evaluation": 3620,
+      "success": false,
+      "entry": {
+        "com_height": 0.20014383178960787,
+        "base_height": 0.19473476607539392,
+        "up_z": 0.9680784795542243,
+        "kinetic_j": 0.11729860277547807,
+        "foot_load": 154.407246663425,
+        "nonfoot_load": 1.7003343061294345,
+        "total_load": 156.10758096955445,
+        "com_speed": 0.09409579926924456,
+        "foot_height": 0.11332376681929482
+      },
+      "final": {
+        "com_height": 0.12356577925963436,
+        "base_height": 0.14576992923499377,
+        "up_z": 0.29978647243682666,
+        "kinetic_j": 6.042872093531251,
+        "foot_load": 22.049406444604703,
+        "nonfoot_load": 362.68472926922885,
+        "total_load": 384.73413571383355,
+        "com_speed": 0.8285875451788638
+      },
+      "seconds": 0.92
+    },
+    {
+      "evaluation": 3651,
+      "success": false,
+      "entry": {
+        "com_height": 0.20398032366446217,
+        "base_height": 0.1962213654670924,
+        "up_z": 0.9899746705826253,
+        "kinetic_j": 0.19412511214091505,
+        "foot_load": 82.3778387590424,
+        "nonfoot_load": 0.0,
+        "total_load": 82.3778387590424,
+        "com_speed": 0.11652571404810506,
+        "foot_height": 0.11818610480852065
+      },
+      "final": {
+        "com_height": 0.1388869912126474,
+        "base_height": 0.1702962011986939,
+        "up_z": 0.3214680889562667,
+        "kinetic_j": 6.444046106264645,
+        "foot_load": 0.0,
+        "nonfoot_load": 76.26230558203153,
+        "total_load": 76.26230558203153,
+        "com_speed": 0.769295794969037
+      },
+      "seconds": 0.46
+    },
+    {
+      "evaluation": 3717,
+      "success": false,
+      "entry": {
+        "com_height": 0.19027627589096868,
+        "base_height": 0.1982071827257727,
+        "up_z": 0.9281425302176002,
+        "kinetic_j": 0.12049703789019228,
+        "foot_load": 118.69408246422181,
+        "nonfoot_load": 0.0,
+        "total_load": 118.69408246422181,
+        "com_speed": 0.10854155159267649,
+        "foot_height": 0.11206676045404218
+      },
+      "final": {
+        "com_height": 0.09513562446248566,
+        "base_height": 0.07920687209152186,
+        "up_z": 0.49150040867419786,
+        "kinetic_j": 1.7374822966532575,
+        "foot_load": 0.0,
+        "nonfoot_load": 474.59444099509966,
+        "total_load": 474.59444099509966,
+        "com_speed": 0.3831828502309009
+      },
+      "seconds": 0.8200000000000001
+    },
+    {
+      "evaluation": 3726,
+      "success": false,
+      "entry": {
+        "com_height": 0.20057247603151265,
+        "base_height": 0.19295214836822852,
+        "up_z": 0.9562795453709223,
+        "kinetic_j": 0.03434485286467835,
+        "foot_load": 96.60869731932058,
+        "nonfoot_load": 0.0,
+        "total_load": 96.60869731932058,
+        "com_speed": 0.03823830307884295,
+        "foot_height": 0.11288327176011566
+      },
+      "final": {
+        "com_height": 0.09173512217316697,
+        "base_height": 0.09629188890984641,
+        "up_z": 0.32793087272415866,
+        "kinetic_j": 7.560499278153695,
+        "foot_load": 0.0,
+        "nonfoot_load": 424.0164206782887,
+        "total_load": 424.0164206782887,
+        "com_speed": 0.8153565353918407
+      },
+      "seconds": 0.58
+    },
+    {
+      "evaluation": 3734,
+      "success": false,
+      "entry": {
+        "com_height": 0.20213071295120447,
+        "base_height": 0.2043175372394175,
+        "up_z": 0.9499914092544128,
+        "kinetic_j": 0.04374248005728872,
+        "foot_load": 98.14161345657017,
+        "nonfoot_load": 0.0,
+        "total_load": 98.14161345657017,
+        "com_speed": 0.041162562522815076,
+        "foot_height": 0.11650020614639885
+      },
+      "final": {
+        "com_height": 0.1025138313152311,
+        "base_height": 0.07910699959993617,
+        "up_z": 0.9357342178620518,
+        "kinetic_j": 0.22191262424217525,
+        "foot_load": 36.44809776660971,
+        "nonfoot_load": 90.68116898670334,
+        "total_load": 127.12926675331306,
+        "com_speed": 0.1029010226216727
+      },
+      "seconds": 1.48
+    },
+    {
+      "evaluation": 3743,
+      "success": false,
+      "entry": {
+        "com_height": 0.1938287357757548,
+        "base_height": 0.19254890746020706,
+        "up_z": 0.9981031213294022,
+        "kinetic_j": 0.09399775810087266,
+        "foot_load": 104.30790665082705,
+        "nonfoot_load": 0.0,
+        "total_load": 104.30790665082705,
+        "com_speed": 0.08379263878815635,
+        "foot_height": 0.09348274691188138
+      },
+      "final": {
+        "com_height": 0.08861688044210443,
+        "base_height": 0.08502572509647396,
+        "up_z": 0.3456964975487896,
+        "kinetic_j": 0.550747830007771,
+        "foot_load": 19.21783796083556,
+        "nonfoot_load": 86.95252326621332,
+        "total_load": 106.17036122704889,
+        "com_speed": 0.1533553768599974
+      },
+      "seconds": 1.46
+    },
+    {
+      "evaluation": 3757,
+      "success": false,
+      "entry": {
+        "com_height": 0.187127508700516,
+        "base_height": 0.19344034644038424,
+        "up_z": 0.9280865277592465,
+        "kinetic_j": 0.3603089665860376,
+        "foot_load": 124.27068079521177,
+        "nonfoot_load": 0.0,
+        "total_load": 124.27068079521177,
+        "com_speed": 0.1849724035761004,
+        "foot_height": 0.10867895154173501
+      },
+      "final": {
+        "com_height": 0.09620997828302841,
+        "base_height": 0.07717006146438715,
+        "up_z": 0.5934450271070292,
+        "kinetic_j": 1.461819089712332,
+        "foot_load": 0.0,
+        "nonfoot_load": 60.88524461282904,
+        "total_load": 60.88524461282904,
+        "com_speed": 0.2984629056708997
+      },
+      "seconds": 0.6
+    },
+    {
+      "evaluation": 3762,
+      "success": false,
+      "entry": {
+        "com_height": 0.2086922092723005,
+        "base_height": 0.21360897703783338,
+        "up_z": 0.903546713553128,
+        "kinetic_j": 0.3716962750264435,
+        "foot_load": 81.20324759546432,
+        "nonfoot_load": 0.0,
+        "total_load": 81.20324759546432,
+        "com_speed": 0.17850788966633105,
+        "foot_height": 0.11129655074803974
+      },
+      "final": {
+        "com_height": 0.0968229211750826,
+        "base_height": 0.09318777270212471,
+        "up_z": 0.3256910810071285,
+        "kinetic_j": 6.7203262935527235,
+        "foot_load": 0.0,
+        "nonfoot_load": 697.2601994021696,
+        "total_load": 697.2601994021696,
+        "com_speed": 0.7534351696923783
+      },
+      "seconds": 0.74
+    },
+    {
+      "evaluation": 3777,
+      "success": false,
+      "entry": {
+        "com_height": 0.20586826032157646,
+        "base_height": 0.19668803098925958,
+        "up_z": 0.9692156587753331,
+        "kinetic_j": 0.029438647552044377,
+        "foot_load": 102.03990065570295,
+        "nonfoot_load": 7.232747092428085,
+        "total_load": 109.27264774813104,
+        "com_speed": 0.003942865411060728,
+        "foot_height": 0.10133553425021521
+      },
+      "final": {
+        "com_height": 0.12176361063029459,
+        "base_height": 0.1392480240964703,
+        "up_z": 0.3196955134923055,
+        "kinetic_j": 2.631084505663447,
+        "foot_load": 0.0,
+        "nonfoot_load": 63.59815944861954,
+        "total_load": 63.59815944861954,
+        "com_speed": 0.51546023373462
+      },
+      "seconds": 0.96
+    },
+    {
+      "evaluation": 3787,
+      "success": false,
+      "entry": {
+        "com_height": 0.20285135134939394,
+        "base_height": 0.19528904796507388,
+        "up_z": 0.9669614965217943,
+        "kinetic_j": 0.0877726675494994,
+        "foot_load": 106.78308674920902,
+        "nonfoot_load": 0.0,
+        "total_load": 106.78308674920902,
+        "com_speed": 0.09769164040779853,
+        "foot_height": 0.0865427760575596
+      },
+      "final": {
+        "com_height": 0.12579317902098502,
+        "base_height": 0.14287013918237007,
+        "up_z": 0.34918122272217755,
+        "kinetic_j": 9.606606498550171,
+        "foot_load": 0.0,
+        "nonfoot_load": 87.4906128045588,
+        "total_load": 87.4906128045588,
+        "com_speed": 0.9328260146315175
+      },
+      "seconds": 1.02
+    },
+    {
+      "evaluation": 3793,
+      "success": false,
+      "entry": {
+        "com_height": 0.20601631299419412,
+        "base_height": 0.20123975489885887,
+        "up_z": 0.9514561908189438,
+        "kinetic_j": 0.014783733549773956,
+        "foot_load": 93.68960658560394,
+        "nonfoot_load": 0.0,
+        "total_load": 93.68960658560394,
+        "com_speed": 0.011603860889107847,
+        "foot_height": 0.10850233160270861
+      },
+      "final": {
+        "com_height": 0.1272942658972347,
+        "base_height": 0.14574569433419157,
+        "up_z": 0.3463273420216017,
+        "kinetic_j": 8.276773790599293,
+        "foot_load": 0.0,
+        "nonfoot_load": 41.975160176830315,
+        "total_load": 41.975160176830315,
+        "com_speed": 0.942279101290174
+      },
+      "seconds": 0.76
+    },
+    {
+      "evaluation": 3796,
+      "success": false,
+      "entry": {
+        "com_height": 0.20221235754976716,
+        "base_height": 0.1986440632480042,
+        "up_z": 0.9322419937365741,
+        "kinetic_j": 0.051964165742536685,
+        "foot_load": 107.69994839251613,
+        "nonfoot_load": 0.0,
+        "total_load": 107.69994839251613,
+        "com_speed": 0.06523278594695357,
+        "foot_height": 0.11171588061274265
+      },
+      "final": {
+        "com_height": 0.08399398176289981,
+        "base_height": 0.07819415941924908,
+        "up_z": 0.42117782933147685,
+        "kinetic_j": 1.9817431886294954,
+        "foot_load": 0.0,
+        "nonfoot_load": 251.35597017974825,
+        "total_load": 251.35597017974825,
+        "com_speed": 0.40885815401832504
+      },
+      "seconds": 0.74
+    },
+    {
+      "evaluation": 3804,
+      "success": false,
+      "entry": {
+        "com_height": 0.19279738045108988,
+        "base_height": 0.18783036590431373,
+        "up_z": 0.9282332785767688,
+        "kinetic_j": 0.3891054104064986,
+        "foot_load": 169.89819332402234,
+        "nonfoot_load": 0.0,
+        "total_load": 169.89819332402234,
+        "com_speed": 0.17485858161361678,
+        "foot_height": 0.10463082701134763
+      },
+      "final": {
+        "com_height": 0.09852599364133648,
+        "base_height": 0.10804011390572223,
+        "up_z": 0.3437440829583716,
+        "kinetic_j": 6.424024929990732,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.92108586279656,
+        "total_load": 108.92108586279656,
+        "com_speed": 0.763837784812598
+      },
+      "seconds": 0.54
+    },
+    {
+      "evaluation": 3855,
+      "success": false,
+      "entry": {
+        "com_height": 0.18932944078754785,
+        "base_height": 0.19575028641975092,
+        "up_z": 0.9330946613165533,
+        "kinetic_j": 0.14552470205253823,
+        "foot_load": 108.09929348501502,
+        "nonfoot_load": 0.0,
+        "total_load": 108.09929348501502,
+        "com_speed": 0.12492610229904076,
+        "foot_height": 0.11534630995698868
+      },
+      "final": {
+        "com_height": 0.09728578527818015,
+        "base_height": 0.07494350726651892,
+        "up_z": 0.499620254600313,
+        "kinetic_j": 4.658379712030767,
+        "foot_load": 0.0,
+        "nonfoot_load": 79.71423559073457,
+        "total_load": 79.71423559073457,
+        "com_speed": 0.5998642195441979
+      },
+      "seconds": 0.92
+    },
+    {
+      "evaluation": 3862,
+      "success": false,
+      "entry": {
+        "com_height": 0.20763775875201895,
+        "base_height": 0.20719338666361342,
+        "up_z": 0.9451876408618354,
+        "kinetic_j": 0.054655046672635925,
+        "foot_load": 113.21749000989334,
+        "nonfoot_load": 0.0,
+        "total_load": 113.21749000989334,
+        "com_speed": 0.05446303399215053,
+        "foot_height": 0.10077355752988376
+      },
+      "final": {
+        "com_height": 0.135350055323686,
+        "base_height": 0.13897185063247652,
+        "up_z": 0.33171755922654544,
+        "kinetic_j": 4.380962225580611,
+        "foot_load": 0.0,
+        "nonfoot_load": 59.415738006578,
+        "total_load": 59.415738006578,
+        "com_speed": 0.6948923836588926
+      },
+      "seconds": 1.18
+    },
+    {
+      "evaluation": 3886,
+      "success": false,
+      "entry": {
+        "com_height": 0.19039193528892404,
+        "base_height": 0.18738884628816796,
+        "up_z": 0.9404600240524912,
+        "kinetic_j": 0.23941828242166738,
+        "foot_load": 186.1292955128069,
+        "nonfoot_load": 0.0,
+        "total_load": 186.1292955128069,
+        "com_speed": 0.169718663526232,
+        "foot_height": 0.10349221100133066
+      },
+      "final": {
+        "com_height": 0.0885917545959041,
+        "base_height": 0.08721745787693325,
+        "up_z": 0.32146488086692226,
+        "kinetic_j": 3.2869028747990368,
+        "foot_load": 0.0,
+        "nonfoot_load": 67.60649053005177,
+        "total_load": 67.60649053005177,
+        "com_speed": 0.29863860577277923
+      },
+      "seconds": 0.92
+    },
+    {
+      "evaluation": 3893,
+      "success": false,
+      "entry": {
+        "com_height": 0.19678286310184612,
+        "base_height": 0.2078083795630811,
+        "up_z": 0.9444564919984022,
+        "kinetic_j": 0.004039697841721957,
+        "foot_load": 98.68774574404716,
+        "nonfoot_load": 0.0,
+        "total_load": 98.68774574404716,
+        "com_speed": 0.0027281459578740695,
+        "foot_height": 0.11773269546378155
+      },
+      "final": {
+        "com_height": 0.08791036982383466,
+        "base_height": 0.0799764734026347,
+        "up_z": 0.33474745345500323,
+        "kinetic_j": 1.4313785400346317,
+        "foot_load": 0.0,
+        "nonfoot_load": 112.96580181797141,
+        "total_load": 112.96580181797141,
+        "com_speed": 0.3438628931886748
+      },
+      "seconds": 0.72
+    },
+    {
+      "evaluation": 3901,
+      "success": false,
+      "entry": {
+        "com_height": 0.20157698106865868,
+        "base_height": 0.2074434009619191,
+        "up_z": 0.9499833984672799,
+        "kinetic_j": 0.280860586844825,
+        "foot_load": 117.88952227066814,
+        "nonfoot_load": 0.0,
+        "total_load": 117.88952227066814,
+        "com_speed": 0.19219496042565953,
+        "foot_height": 0.09181501987762859
+      },
+      "final": {
+        "com_height": 0.09911383366497842,
+        "base_height": 0.07918385190815452,
+        "up_z": 0.7483470863516887,
+        "kinetic_j": 1.290769709356601,
+        "foot_load": 54.72603401823446,
+        "nonfoot_load": 30.220759928926924,
+        "total_load": 84.94679394716138,
+        "com_speed": 0.3328613534981701
+      },
+      "seconds": 1.04
+    },
+    {
+      "evaluation": 3947,
+      "success": false,
+      "entry": {
+        "com_height": 0.21181860128859467,
+        "base_height": 0.19642604437119837,
+        "up_z": 0.9651690093392759,
+        "kinetic_j": 0.04165558399564678,
+        "foot_load": 103.66837196030644,
+        "nonfoot_load": 0.0,
+        "total_load": 103.66837196030644,
+        "com_speed": 0.054503220566030804,
+        "foot_height": 0.10825158258898257
+      },
+      "final": {
+        "com_height": 0.0864786993137311,
+        "base_height": 0.08495704309525327,
+        "up_z": 0.34987048818155253,
+        "kinetic_j": 1.5032119677937033,
+        "foot_load": 0.0,
+        "nonfoot_load": 129.70054858430407,
+        "total_load": 129.70054858430407,
+        "com_speed": 0.3521133177292744
+      },
+      "seconds": 0.74
+    },
+    {
+      "evaluation": 3967,
+      "success": false,
+      "entry": {
+        "com_height": 0.21867377886862058,
+        "base_height": 0.1970987715978461,
+        "up_z": 0.9922134211734838,
+        "kinetic_j": 0.18734559917014354,
+        "foot_load": 114.10003490537068,
+        "nonfoot_load": 0.0,
+        "total_load": 114.10003490537068,
+        "com_speed": 0.15069995344964424,
+        "foot_height": 0.09221337440009775
+      },
+      "final": {
+        "com_height": 0.15707799811275602,
+        "base_height": 0.1879986793357909,
+        "up_z": 0.33747882242475935,
+        "kinetic_j": 4.402141781521892,
+        "foot_load": 0.0,
+        "nonfoot_load": 89.88907680030577,
+        "total_load": 89.88907680030577,
+        "com_speed": 0.6474919776036664
+      },
+      "seconds": 0.8
+    },
+    {
+      "evaluation": 3982,
+      "success": false,
+      "entry": {
+        "com_height": 0.2170501796294517,
+        "base_height": 0.22050082086208822,
+        "up_z": 0.9028170666881179,
+        "kinetic_j": 0.41963829136189135,
+        "foot_load": 106.73049405104746,
+        "nonfoot_load": 0.0,
+        "total_load": 106.73049405104746,
+        "com_speed": 0.23779902694435257,
+        "foot_height": 0.09884027839707148
+      },
+      "final": {
+        "com_height": 0.09011371917119533,
+        "base_height": 0.07890908405869737,
+        "up_z": 0.48095132664985923,
+        "kinetic_j": 0.4419008242572471,
+        "foot_load": 23.942160993989024,
+        "nonfoot_load": 127.94330981706723,
+        "total_load": 151.88547081105625,
+        "com_speed": 0.1636555005176865
+      },
+      "seconds": 1.34
+    },
+    {
+      "evaluation": 4001,
+      "success": false,
+      "entry": {
+        "com_height": 0.20586826032157646,
+        "base_height": 0.19668803098925958,
+        "up_z": 0.9692156587753331,
+        "kinetic_j": 0.029438647552044377,
+        "foot_load": 102.03990065570295,
+        "nonfoot_load": 7.232747092428085,
+        "total_load": 109.27264774813104,
+        "com_speed": 0.003942865411060728,
+        "foot_height": 0.10133553425021521
+      },
+      "final": {
+        "com_height": 0.12176361063029459,
+        "base_height": 0.1392480240964703,
+        "up_z": 0.3196955134923055,
+        "kinetic_j": 2.631084505663447,
+        "foot_load": 0.0,
+        "nonfoot_load": 63.59815944861954,
+        "total_load": 63.59815944861954,
+        "com_speed": 0.51546023373462
+      },
+      "seconds": 0.96
+    },
+    {
+      "evaluation": 4017,
+      "success": false,
+      "entry": {
+        "com_height": 0.20601631299419412,
+        "base_height": 0.20123975489885887,
+        "up_z": 0.9514561908189438,
+        "kinetic_j": 0.014783733549773956,
+        "foot_load": 93.68960658560394,
+        "nonfoot_load": 0.0,
+        "total_load": 93.68960658560394,
+        "com_speed": 0.011603860889107847,
+        "foot_height": 0.10850233160270861
+      },
+      "final": {
+        "com_height": 0.1272942658972347,
+        "base_height": 0.14574569433419157,
+        "up_z": 0.3463273420216017,
+        "kinetic_j": 8.276773790599293,
+        "foot_load": 0.0,
+        "nonfoot_load": 41.975160176830315,
+        "total_load": 41.975160176830315,
+        "com_speed": 0.942279101290174
+      },
+      "seconds": 0.76
+    },
+    {
+      "evaluation": 4025,
+      "success": false,
+      "entry": {
+        "com_height": 0.20271374900560057,
+        "base_height": 0.19645386372848,
+        "up_z": 0.9383778853201143,
+        "kinetic_j": 0.390219288653439,
+        "foot_load": 259.6547291568292,
+        "nonfoot_load": 0.0,
+        "total_load": 259.6547291568292,
+        "com_speed": 0.19851163665380994,
+        "foot_height": 0.10730363982401925
+      },
+      "final": {
+        "com_height": 0.08784763978047648,
+        "base_height": 0.08080607255078981,
+        "up_z": 0.30625870085643747,
+        "kinetic_j": 3.205160546213357,
+        "foot_load": 0.0,
+        "nonfoot_load": 432.5212015068341,
+        "total_load": 432.5212015068341,
+        "com_speed": 0.4641888378469411
+      },
+      "seconds": 0.7000000000000001
+    },
+    {
+      "evaluation": 4028,
+      "success": false,
+      "entry": {
+        "com_height": 0.19889762270544922,
+        "base_height": 0.204004358492,
+        "up_z": 0.9647172337383324,
+        "kinetic_j": 0.06634261989653548,
+        "foot_load": 124.61325494137499,
+        "nonfoot_load": 0.0,
+        "total_load": 124.61325494137499,
+        "com_speed": 0.08334338936266524,
+        "foot_height": 0.10380301216660859
+      },
+      "final": {
+        "com_height": 0.10207944758692512,
+        "base_height": 0.07985346563230088,
+        "up_z": 0.5935621127977586,
+        "kinetic_j": 0.11712422375043283,
+        "foot_load": 20.828713971545312,
+        "nonfoot_load": 71.8154128608285,
+        "total_load": 92.64412683237381,
+        "com_speed": 0.08342791618046708
+      },
+      "seconds": 1.6600000000000001
+    },
+    {
+      "evaluation": 4076,
+      "success": false,
+      "entry": {
+        "com_height": 0.2204033307595807,
+        "base_height": 0.21783740470045618,
+        "up_z": 0.9885274098500956,
+        "kinetic_j": 0.37007806130607646,
+        "foot_load": 101.84736822093842,
+        "nonfoot_load": 0.0,
+        "total_load": 101.84736822093842,
+        "com_speed": 0.13488682040009192,
+        "foot_height": 0.11248071710964522
+      },
+      "final": {
+        "com_height": 0.088860321195718,
+        "base_height": 0.07439575754653868,
+        "up_z": 0.5564603712195291,
+        "kinetic_j": 0.8280686075195389,
+        "foot_load": 27.59945793629763,
+        "nonfoot_load": 69.60275403670283,
+        "total_load": 97.20221197300046,
+        "com_speed": 0.25182067534593433
+      },
+      "seconds": 0.78
+    },
+    {
+      "evaluation": 4092,
+      "success": false,
+      "entry": {
+        "com_height": 0.21478863744611293,
+        "base_height": 0.20592111135189028,
+        "up_z": 0.9103849732658603,
+        "kinetic_j": 0.11925807195704116,
+        "foot_load": 106.13198060719044,
+        "nonfoot_load": 0.0,
+        "total_load": 106.13198060719044,
+        "com_speed": 0.06997137587948912,
+        "foot_height": 0.10092636988257903
+      },
+      "final": {
+        "com_height": 0.09571928075654483,
+        "base_height": 0.07998142071800254,
+        "up_z": 0.740251435528556,
+        "kinetic_j": 0.07736183387761474,
+        "foot_load": 38.10600603511956,
+        "nonfoot_load": 71.06026691895961,
+        "total_load": 109.16627295407918,
+        "com_speed": 0.04295853675322665
+      },
+      "seconds": 1.28
+    },
+    {
+      "evaluation": 4114,
+      "success": false,
+      "entry": {
+        "com_height": 0.19259338644890037,
+        "base_height": 0.1992633079442191,
+        "up_z": 0.944215179865262,
+        "kinetic_j": 0.1647115048626928,
+        "foot_load": 111.8542134269093,
+        "nonfoot_load": 0.0,
+        "total_load": 111.8542134269093,
+        "com_speed": 0.15029598089296625,
+        "foot_height": 0.11589202239439371
+      },
+      "final": {
+        "com_height": 0.0909900503082771,
+        "base_height": 0.07673669198683394,
+        "up_z": 0.47725065180937326,
+        "kinetic_j": 3.3687949141474616,
+        "foot_load": 0.0,
+        "nonfoot_load": 275.7645979579069,
+        "total_load": 275.7645979579069,
+        "com_speed": 0.410714284805686
+      },
+      "seconds": 0.8
+    },
+    {
+      "evaluation": 4120,
+      "success": false,
+      "entry": {
+        "com_height": 0.19271934181097666,
+        "base_height": 0.20498059612961955,
+        "up_z": 0.9143424802807386,
+        "kinetic_j": 0.11804312114502581,
+        "foot_load": 93.13266807393518,
+        "nonfoot_load": 0.0,
+        "total_load": 93.13266807393518,
+        "com_speed": 0.10899518610170389,
+        "foot_height": 0.11475273680882611
+      },
+      "final": {
+        "com_height": 0.09894457932610128,
+        "base_height": 0.07995615478720002,
+        "up_z": 0.7090907251856823,
+        "kinetic_j": 0.14163161846468209,
+        "foot_load": 16.49061876440054,
+        "nonfoot_load": 100.78349934480322,
+        "total_load": 117.27411810920376,
+        "com_speed": 0.08140984934895314
+      },
+      "seconds": 1.6600000000000001
+    },
+    {
+      "evaluation": 4172,
+      "success": false,
+      "entry": {
+        "com_height": 0.18600588383785546,
+        "base_height": 0.19835530744746635,
+        "up_z": 0.9209507698908665,
+        "kinetic_j": 0.11270797918151391,
+        "foot_load": 113.17157606779148,
+        "nonfoot_load": 3.7745167061584084,
+        "total_load": 116.94609277394989,
+        "com_speed": 0.10920119842931299,
+        "foot_height": 0.11620743576112047
+      },
+      "final": {
+        "com_height": 0.10970111220308931,
+        "base_height": 0.08572449452784879,
+        "up_z": 0.9788969573345765,
+        "kinetic_j": 7.763372071703658e-05,
+        "foot_load": 32.58271809553703,
+        "nonfoot_load": 75.328141953816,
+        "total_load": 107.91086004935303,
+        "com_speed": 0.001833150185477014
+      },
+      "seconds": 5.0
+    },
+    {
+      "evaluation": 4181,
+      "success": false,
+      "entry": {
+        "com_height": 0.25477266568866086,
+        "base_height": 0.2658034571523502,
+        "up_z": 0.9507892655347285,
+        "kinetic_j": 0.8090099369277581,
+        "foot_load": 108.26057301215666,
+        "nonfoot_load": 0.0,
+        "total_load": 108.26057301215666,
+        "com_speed": 0.3177244238515601,
+        "foot_height": 0.07092108562558332
+      },
+      "final": {
+        "com_height": 0.1326034333109819,
+        "base_height": 0.16423488866951544,
+        "up_z": 0.27274933080521413,
+        "kinetic_j": 9.249951490049936,
+        "foot_load": 0.0,
+        "nonfoot_load": 64.5807983031543,
+        "total_load": 64.5807983031543,
+        "com_speed": 0.9532192981676354
+      },
+      "seconds": 0.36
+    },
+    {
+      "evaluation": 4194,
+      "success": false,
+      "entry": {
+        "com_height": 0.2106302756927596,
+        "base_height": 0.20103493216360244,
+        "up_z": 0.9455347379220689,
+        "kinetic_j": 0.04503168050832192,
+        "foot_load": 82.6148266655086,
+        "nonfoot_load": 0.0,
+        "total_load": 82.6148266655086,
+        "com_speed": 0.029168737263104563,
+        "foot_height": 0.11652972597073233
+      },
+      "final": {
+        "com_height": 0.08876035867824093,
+        "base_height": 0.08348690095464759,
+        "up_z": 0.3369595889880215,
+        "kinetic_j": 0.7684830677254342,
+        "foot_load": 34.722838333674716,
+        "nonfoot_load": 89.1864419691521,
+        "total_load": 123.90928030282682,
+        "com_speed": 0.29761653484449985
+      },
+      "seconds": 0.78
+    },
+    {
+      "evaluation": 4195,
+      "success": false,
+      "entry": {
+        "com_height": 0.2142472218330849,
+        "base_height": 0.2005080700603356,
+        "up_z": 0.9478641467974745,
+        "kinetic_j": 0.0256608711545459,
+        "foot_load": 105.18732482419796,
+        "nonfoot_load": 0.0,
+        "total_load": 105.18732482419796,
+        "com_speed": 0.02433394915422137,
+        "foot_height": 0.10839699597144822
+      },
+      "final": {
+        "com_height": 0.14733961920760227,
+        "base_height": 0.15071447073238495,
+        "up_z": 0.3360532392966509,
+        "kinetic_j": 3.8906665082399554,
+        "foot_load": 24.702192035929063,
+        "nonfoot_load": 271.77209062377756,
+        "total_load": 296.4742826597066,
+        "com_speed": 0.5256356974336248
+      },
+      "seconds": 0.78
+    },
+    {
+      "evaluation": 4199,
+      "success": false,
+      "entry": {
+        "com_height": 0.20491734040305562,
+        "base_height": 0.202775091933387,
+        "up_z": 0.9122972158106575,
+        "kinetic_j": 0.05364355209796385,
+        "foot_load": 109.1357365757564,
+        "nonfoot_load": 0.0,
+        "total_load": 109.1357365757564,
+        "com_speed": 0.07092360404433629,
+        "foot_height": 0.11698985043632859
+      },
+      "final": {
+        "com_height": 0.10485831569529391,
+        "base_height": 0.11258025610111266,
+        "up_z": 0.30542118959021697,
+        "kinetic_j": 6.609998289203343,
+        "foot_load": 0.0,
+        "nonfoot_load": 108.33159532984764,
+        "total_load": 108.33159532984764,
+        "com_speed": 0.8132246234463437
+      },
+      "seconds": 1.1
+    },
+    {
+      "evaluation": 4201,
+      "success": false,
+      "entry": {
+        "com_height": 0.21447802014861042,
+        "base_height": 0.2009526512493544,
+        "up_z": 0.9823077236129256,
+        "kinetic_j": 0.027783857033414173,
+        "foot_load": 108.74693487115982,
+        "nonfoot_load": 0.0,
+        "total_load": 108.74693487115982,
+        "com_speed": 0.02056896849258493,
+        "foot_height": 0.08942677243207953
+      },
+      "final": {
+        "com_height": 0.14235275971447278,
+        "base_height": 0.1638894947968509,
+        "up_z": 0.3163033075090862,
+        "kinetic_j": 4.283549941778852,
+        "foot_load": 0.0,
+        "nonfoot_load": 65.46363457427745,
+        "total_load": 65.46363457427745,
+        "com_speed": 0.643299932878823
+      },
+      "seconds": 0.9
+    },
+    {
+      "evaluation": 4203,
+      "success": false,
+      "entry": {
+        "com_height": 0.19962855913055333,
+        "base_height": 0.1962290035137207,
+        "up_z": 0.9126593314423348,
+        "kinetic_j": 0.31514045540476315,
+        "foot_load": 99.80494277277889,
+        "nonfoot_load": 0.0,
+        "total_load": 99.80494277277889,
+        "com_speed": 0.18524051626032048,
+        "foot_height": 0.09769845658392803
+      },
+      "final": {
+        "com_height": 0.08382330780072968,
+        "base_height": 0.07833692068120258,
+        "up_z": 0.5899156623242753,
+        "kinetic_j": 1.9605492487590075,
+        "foot_load": 27.243734380819184,
+        "nonfoot_load": 0.0,
+        "total_load": 27.243734380819184,
+        "com_speed": 0.4317823091609174
+      },
+      "seconds": 0.7000000000000001
+    },
+    {
+      "evaluation": 4205,
+      "success": false,
+      "entry": {
+        "com_height": 0.1969973109254186,
+        "base_height": 0.19838015445578458,
+        "up_z": 0.9505901380501562,
+        "kinetic_j": 0.29857740026344864,
+        "foot_load": 108.4607476828246,
+        "nonfoot_load": 0.0,
+        "total_load": 108.4607476828246,
+        "com_speed": 0.16704847570834802,
+        "foot_height": 0.10674193274318926
+      },
+      "final": {
+        "com_height": 0.13380833582633173,
+        "base_height": 0.14402172630636437,
+        "up_z": 0.3454775564887315,
+        "kinetic_j": 5.479111996535935,
+        "foot_load": 0.0,
+        "nonfoot_load": 64.9119926166401,
+        "total_load": 64.9119926166401,
+        "com_speed": 0.7446642972706553
+      },
+      "seconds": 0.9400000000000001
+    },
+    {
+      "evaluation": 4211,
+      "success": false,
+      "entry": {
+        "com_height": 0.20487014183573146,
+        "base_height": 0.21062780916696186,
+        "up_z": 0.9052815498789452,
+        "kinetic_j": 0.15737131028209778,
+        "foot_load": 86.81235661082803,
+        "nonfoot_load": 0.0,
+        "total_load": 86.81235661082803,
+        "com_speed": 0.13286129765732949,
+        "foot_height": 0.11487644003280165
+      },
+      "final": {
+        "com_height": 0.09084759603669887,
+        "base_height": 0.07663410686357335,
+        "up_z": 0.5174351913690303,
+        "kinetic_j": 2.4033620422551203,
+        "foot_load": 0.0,
+        "nonfoot_load": 180.9709621177395,
+        "total_load": 180.9709621177395,
+        "com_speed": 0.34916169694886695
+      },
+      "seconds": 0.96
+    },
+    {
+      "evaluation": 4225,
+      "success": false,
+      "entry": {
+        "com_height": 0.20586826032157646,
+        "base_height": 0.19668803098925958,
+        "up_z": 0.9692156587753331,
+        "kinetic_j": 0.029438647552044377,
+        "foot_load": 102.03990065570295,
+        "nonfoot_load": 7.232747092428085,
+        "total_load": 109.27264774813104,
+        "com_speed": 0.003942865411060728,
+        "foot_height": 0.10133553425021521
+      },
+      "final": {
+        "com_height": 0.12176361063029459,
+        "base_height": 0.1392480240964703,
+        "up_z": 0.3196955134923055,
+        "kinetic_j": 2.631084505663447,
+        "foot_load": 0.0,
+        "nonfoot_load": 63.59815944861954,
+        "total_load": 63.59815944861954,
+        "com_speed": 0.51546023373462
+      },
+      "seconds": 0.96
+    },
+    {
+      "evaluation": 4229,
+      "success": false,
+      "entry": {
+        "com_height": 0.199503505882107,
+        "base_height": 0.19016940183064848,
+        "up_z": 0.9955800101199526,
+        "kinetic_j": 0.0397227846996393,
+        "foot_load": 118.65394001561401,
+        "nonfoot_load": 6.7631567977040845,
+        "total_load": 125.4170968133181,
+        "com_speed": 0.05114384573191656,
+        "foot_height": 0.089978500621888
+      },
+      "final": {
+        "com_height": 0.1409383426921056,
+        "base_height": 0.17197911432332935,
+        "up_z": 0.28327368929490804,
+        "kinetic_j": 4.896620233799288,
+        "foot_load": 0.0,
+        "nonfoot_load": 28.05789297150998,
+        "total_load": 28.05789297150998,
+        "com_speed": 0.7100354340752658
+      },
+      "seconds": 0.9
+    },
+    {
+      "evaluation": 4234,
+      "success": false,
+      "entry": {
+        "com_height": 0.22133015862565958,
+        "base_height": 0.20021349409246766,
+        "up_z": 0.991561482896127,
+        "kinetic_j": 0.018791547256267714,
+        "foot_load": 103.90703353694208,
+        "nonfoot_load": 0.0,
+        "total_load": 103.90703353694208,
+        "com_speed": 0.024977649820626023,
+        "foot_height": 0.10001348339271005
+      },
+      "final": {
+        "com_height": 0.1431981452761555,
+        "base_height": 0.17216255952952608,
+        "up_z": 0.29425832301483706,
+        "kinetic_j": 5.8750072082355,
+        "foot_load": 15.857988323532732,
+        "nonfoot_load": 37.00789180461243,
+        "total_load": 52.86588012814516,
+        "com_speed": 0.7664204437938146
+      },
+      "seconds": 0.68
+    },
+    {
+      "evaluation": 4235,
+      "success": true,
+      "entry": {
+        "com_height": 0.20579111699241476,
+        "base_height": 0.18908764644105744,
+        "up_z": 0.995238615635466,
+        "kinetic_j": 0.03912981173608271,
+        "foot_load": 104.60228480111905,
+        "nonfoot_load": 0.0,
+        "total_load": 104.60228480111905,
+        "com_speed": 0.0402878041697802,
+        "foot_height": 0.08542127577700104
+      },
+      "final": {
+        "com_height": 0.32283956388115076,
+        "base_height": 0.35711652765565144,
+        "up_z": 0.9978212105808298,
+        "kinetic_j": 2.761905060349164e-07,
+        "foot_load": 107.91076249608092,
+        "nonfoot_load": 0.0,
+        "total_load": 107.91076249608092,
+        "com_speed": 7.566310034597392e-05
+      },
+      "seconds": 5.0
+    }
+  ],
+  "observed_edges": {
+    "SUPINE->SUPINE": 229,
+    "SUPINE->HAND_SUPPORT": 83,
+    "SUPINE->TRANSITION": 26,
+    "HAND_SUPPORT->HAND_SUPPORT": 1221,
+    "HAND_SUPPORT->SUPINE": 253,
+    "HAND_SUPPORT->TRANSITION": 199,
+    "SUPINE->SIDE_L": 2,
+    "SUPINE->SIT": 12,
+    "HAND_SUPPORT->SIT": 353,
+    "SIDE_L->TRANSITION": 11,
+    "SIDE_L->SIDE_L": 5,
+    "TRANSITION->TRANSITION": 928,
+    "TRANSITION->HAND_SUPPORT": 49,
+    "TRANSITION->SUPINE": 44,
+    "SIT->SIT": 164,
+    "SIT->SUPINE": 22,
+    "SIT->TRANSITION": 5,
+    "SIT->HAND_SUPPORT": 46,
+    "TRANSITION->SIT": 30,
+    "HAND_SUPPORT->ALLFOURS": 16,
+    "HAND_SUPPORT->SIDE_R": 2,
+    "SIT->PRONE": 1,
+    "SIT->ALLFOURS": 2,
+    "HAND_SUPPORT->SIDE_L": 2,
+    "HAND_SUPPORT->CROUCH": 2,
+    "ALLFOURS->ALLFOURS": 64,
+    "ALLFOURS->TRANSITION": 65,
+    "ALLFOURS->SUPINE": 9,
+    "ALLFOURS->SIT": 37,
+    "ALLFOURS->SIDE_R": 4,
+    "ALLFOURS->HAND_SUPPORT": 29,
+    "TRANSITION->CROUCH": 53,
+    "TRANSITION->ALLFOURS": 13,
+    "TRANSITION->SIDE_R": 35,
+    "CROUCH->TRANSITION": 177,
+    "CROUCH->HAND_SUPPORT": 3,
+    "CROUCH->SIT": 7,
+    "CROUCH->SIDE_R": 2,
+    "CROUCH->ALLFOURS": 4,
+    "CROUCH->SUPINE": 1,
+    "CROUCH->CROUCH": 25
+  },
+  "final": {
+    "com_height": 0.20579111699241476,
+    "base_height": 0.18908764644105744,
+    "up_z": 0.995238615635466,
+    "kinetic_j": 0.03912981173608271,
+    "foot_load": 104.60228480111905,
+    "nonfoot_load": 0.0,
+    "total_load": 104.60228480111905,
+    "com_speed": 0.0402878041697802,
+    "foot_height": 0.08542127577700104
+  },
+  "action_blocks": 16,
+  "source_sha256": "512727bd70e329ea449c7f0e8799b9482bbb808507fead8186feed1b41975384"
+}

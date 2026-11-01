@@ -1,0 +1,6 @@
+results/**/*.pkl
+results/**/*.tmp
+results/**/*_trace.npz
+*.mp4
+
+results/**/*.render.lock
